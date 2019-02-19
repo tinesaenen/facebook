@@ -1,3 +1,10 @@
+* { box-sizing: border-box; }
+img { max-width: 100%; }
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,7 +15,51 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root, .app, main {
+  height: 100%;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+
+.header {
+  background: black;
+  padding: 10px 20px;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 5px;
+  background: #ddd;
+}
+
+.feed {
+  width: 33%;
+  margin: 0 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.feed__loading {
+  padding: 50px;
+  font-size: 72px;
+  opacity: 0.5;
+}
+
+.item {
+  background: white;
+  margin-bottom: 20px;
+ }
+
+.item__profileImage {
+  border-radius: 50%;
 }
