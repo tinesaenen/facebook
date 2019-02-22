@@ -72,16 +72,6 @@ const DATA = [
       "Een beetje moe? probeer Sleepy Time™! Slapen was nog nooit zo makkelijk.",
     image: "/imagesNotifications/Sleepy_Time_App.jpg"
   },
-  // {
-  //   id: 4,
-  //   type: "notification",
-  //   dt: 1234981243,
-  //   message:
-  //     "We merken dat het best wel warm is waar je nu bent. Kunnen we je verleiden met een vroegboekkorting op een reis naar Noorwegen?",
-  //   text:
-  //     "Een beetje moe? probeer Sleepy Time™! Slapen was nog nooit zo makkelijk.",
-  //   image: "/imagesNotifications/Sleepy_Time_App.jpg"
-  // },
 
   //  ----------------------ADVERTISEMENTS-------------------------//
   {

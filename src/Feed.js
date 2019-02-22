@@ -125,36 +125,3 @@ export default class Feed extends Component {
     );
   }
 }
-
-// renderAd(ad) {
-//   return (
-//     <div className="item ad-item" key={ad.id}>
-//       <div className="item__adHeader">
-//         <img
-//           className="item__profileImage"
-//           src={ad.profileImage}
-//           width={45}
-//           height={45}
-//           alt={ad.profileName}
-//         />
-//         <div className="item__profileNameContainer">
-//           <span className="item__profileName">{ad.profileName}</span>
-//           <span className="item__action"> {ad.action}</span>
-//           <span className="item__messageSource"> {ad.messageSource}</span>
-//         </div>
-//       </div>
-//       <div className="item__body">
-//         <img className="item__image" src={ad.image} alt={ad.text} />
-//         <p className="item__messageSourceWebsite">
-//           <a href={ad.messageSourceWebsite}>{ad.messageSourceWebsite}</a>
-//         </p>
-//         <div className="item__text">{ad.text}</div>
-//       </div>
-//       <div className="item__actions">
-//         <span className="item__smiley">{ad.smiley}</span>
-//         <span className="item__profileName"> {ad.profileName}</span>
-//         <span> {ad.messageResponse}</span>
-//       </div>
-//     </div>
-//   );
-// }

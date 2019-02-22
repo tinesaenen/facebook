@@ -32,7 +32,6 @@ code {
 }
 
 .leftColumn {
-  background: red;
   width: 30%;
   margin: 0 10px;
 }
@@ -154,4 +153,9 @@ main {
 }
 
 .item__pageNameContainer {
+}
+
+.liveFaceTracking {
+  background: white;
+  margin: 0px 0px 10px 0px;
 }
