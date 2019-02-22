@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
 }
+
 img {
   max-width: 100%;
 }
+
 html,
 body {
   height: 100%;
@@ -31,19 +33,24 @@ code {
     monospace;
 }
 
+/*-----------------------structuur pagina-------------------------*/
+
 .leftColumn {
   width: 30%;
   margin: 0 10px;
+  overflow-y: auto;
 }
 
 .middleColumn {
   width: 40%;
   margin: 0 10px;
+  overflow-y: auto;
 }
 
 .rightColumn {
   width: 30%;
   margin: 0 10px;
+  overflow-y: auto;
 }
 
 .header {
@@ -62,7 +69,6 @@ main {
 }
 
 .feed {
-  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -74,6 +80,8 @@ main {
   font-size: 72px;
   opacity: 0.5;
 }
+
+/*-----------------------items-------------------------*/
 
 .item {
   background: white;
@@ -106,6 +114,10 @@ main {
   margin: 3px 10px 8px 10px;
 }
 
+.item__image {
+  width: 100%;
+}
+
 .item__text {
   font-size: 20px;
   font-weight: 500;
@@ -129,8 +141,9 @@ main {
 }
 
 .item__notificationText {
-  background: #0a208f;
-  color: white;
+  background: #c8d1e4;
+  color: #7b93c3;
+  font-size: 14px;
 }
 
 .item__notificationF {
@@ -152,8 +165,21 @@ main {
   margin: 0px;
 }
 
-.item__pageNameContainer {
+.item__subText {
+  margin: 0px 10px 10px 10px;
 }
+
+.item__notificationTextContainer {
+  background: #c8d1e4;
+  padding: 6px 10px 10px 10px;
+}
+
+.item__notificationTextTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #7b93c3;
+}
+/*-----------------------Facetracking-------------------------*/
 
 .liveFaceTracking {
   background: white;

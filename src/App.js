@@ -14,7 +14,7 @@ export default class App extends Component {
         <main>
           <div className="leftColumn">
             <div className="liveFaceTracking">facialrecognition</div>
-            <Feed types={["notification"]} />
+            <Feed types={["notification", "mininotification"]} />
           </div>
           <div className="middleColumn">
             <Feed types={["post", "news"]} />

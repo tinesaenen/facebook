@@ -35,6 +35,8 @@ export default class Feed extends Component {
       return this.renderNews(item);
     } else if (item.type === "notification") {
       return this.renderNotification(item);
+    } else if (item.type === "mininotification") {
+      return this.renderMiniNotification(item);
     } else if (item.type === "ad") {
       return this.renderAd(item);
     } else {
@@ -94,7 +96,31 @@ export default class Feed extends Component {
             src={notification.image}
             alt={notification.text}
           />
-          <div className="item__notificationText">{notification.text}</div>
+          <div className="item__notificationTextContainer">
+            <div className="item__notificationTextTitle">
+              {notification.textTitle}
+            </div>
+            <div className="item__notificationText">{notification.text}</div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  renderMiniNotification(mininotification) {
+    console.log(mininotification);
+    return (
+      <div className="item notification-item" key={mininotification.id}>
+        <div className="item__body">
+          <div className="item__notificationHeader">
+            <img
+              className="item__notificationF"
+              src="/imagesIcons/notification_F.png"
+            />
+            <p className="item__notificationHeaderText">
+              {mininotification.message}
+            </p>
+          </div>
         </div>
       </div>
     );
