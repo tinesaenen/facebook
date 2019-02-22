@@ -1,6 +1,11 @@
-* { box-sizing: border-box; }
-img { max-width: 100%; }
-html, body {
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+html,
+body {
   height: 100%;
   overflow: hidden;
 }
@@ -15,7 +20,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root, .app, main {
+#root,
+.app,
+main {
   height: 100%;
 }
 
@@ -24,11 +31,27 @@ code {
     monospace;
 }
 
+.leftColumn {
+  background: red;
+  width: 30%;
+  margin: 0 10px;
+}
+
+.middleColumn {
+  width: 40%;
+  margin: 0 10px;
+}
+
+.rightColumn {
+  width: 30%;
+  margin: 0 10px;
+}
 
 .header {
-  background: black;
-  padding: 10px 20px;
+  background: #4267b2;
+  padding: 10px 10px;
   color: white;
+  height: 40px;
 }
 
 main {
@@ -36,12 +59,10 @@ main {
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 5px;
-  background: #ddd;
+  background: #e8ecf4;
 }
 
 .feed {
-  width: 33%;
-  margin: 0 10px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -58,8 +79,79 @@ main {
 .item {
   background: white;
   margin-bottom: 20px;
- }
+}
 
+.item__newsHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+.item__profileNameContainer {
+  margin: 10px 10px 10px 0px;
+}
 .item__profileImage {
   border-radius: 50%;
+  margin: 10px;
+}
+
+.item__profileName {
+  color: #4667a8;
+}
+
+.item__messageSource {
+  color: #4667a8;
+}
+
+.item__messageSourceWebsite {
+  color: #f20c39;
+  margin: 3px 10px 8px 10px;
+}
+
+.item__text {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 3px 10px 10px 10px;
+}
+
+.item__actions {
+  margin: 10px;
+}
+
+.item__notificationHeader {
+  background: #90a3ca;
+  display: flex;
+  flex-direction: row;
+}
+
+.item__notificationHeaderText {
+  margin: 0px;
+  padding: 10px;
+  color: white;
+}
+
+.item__notificationText {
+  background: #0a208f;
+  color: white;
+}
+
+.item__notificationF {
+  padding: 10px 0px 10px 10px;
+  max-height: 55px;
+  width: 33px;
+}
+
+.item__adHeader {
+  display: flex;
+  flex-direction: row;
+}
+
+.item__pageName {
+  color: #4667a8;
+}
+
+.item__gesponsord {
+  margin: 0px;
+}
+
+.item__pageNameContainer {
 }
