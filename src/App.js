@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import Feed from "./Feed";
 
 export default class App extends Component {
@@ -7,17 +6,21 @@ export default class App extends Component {
     return (
       <div className="app">
         <header className="header">
-          <img src={logo} className="header__logo" alt="logo" height="20" />
-          <input />
+          <img
+            src="/imagesIcons/logoFacebook.png"
+            className="header__logo"
+            alt="logo"
+            height="20"
+          />
+          <input className="header__input" />
         </header>
-
         <main>
           <div className="leftColumn">
             <div className="liveFaceTracking">facialrecognition</div>
-            <Feed types={["notification", "mininotification"]} />
+            <Feed types={["notification", "miniNotification"]} />
           </div>
           <div className="middleColumn">
-            <Feed types={["post", "news"]} />
+            <Feed types={["news", "bigNews", "status"]} />
           </div>
           <div className="rightColumn">
             <Feed types={["ad"]} />
