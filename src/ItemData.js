@@ -103,17 +103,12 @@ const DATA = [
     id: 3,
     type: "status",
     dt: 1234981243,
-    text: "ik ben een status",
-    subText:
-      "Een leerling die dinsdagavond na school werd afgetuigd door leeftijdsgenoten, doet anoniem zijn verhaal. Hij vertelt hoe hij in een straatje werd gelokt. Daar kreeg hij plots klappen. De beelden van het zinloos geweld verschenen op social media en werden massaal gedeeld...",
-    profileName: "Beatrix Verhoeven",
+    text:
+      "Iemand tips voor een rondreis in Ijsland? We gaan een rondtrip maken aan de noordkant van het eiland! Alvast bedankt 💙💜🧡",
+    profileName: "Inne Grijp",
     profileImage: "/imagesProfilePeople/Beatrix_Verhoeven.jpeg",
-    image: "/imagesPosts/Beatrix_Verhoeven_geweldJongeren.jpeg",
-    messageSource: "Het Laatste Nieuws",
-    messageSourceWebsite: "hln.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse:
-      "en 3 anderen hebben droevig en kwaad gekeken naar dit bericht",
+    action: "heeft een status geplaatst",
+    messageResponse: "en 3 anderen hebben gereageerd op dit bericht",
     smiley: "😤😢"
   },
 

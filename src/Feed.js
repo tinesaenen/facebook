@@ -134,18 +134,10 @@ export default class Feed extends Component {
           <div className="item__profileNameContainer">
             <span className="item__profileName">{status.profileName}</span>
             <span className="item__action"> {status.action}</span>
-            <span className="item__messageSource"> {status.messageSource}</span>
           </div>
         </div>
         <div className="item__body">
-          <img className="item__image" src={status.image} alt={status.text} />
-          <p className="item__messageSourceWebsite">
-            <a href={status.messageSourceWebsite}>
-              {status.messageSourceWebsite}
-            </a>
-          </p>
-          <div className="item__text">{status.text}</div>
-          <div className="item__subText">{status.subText}</div>
+          <div className="item__statusText">{status.text}</div>
         </div>
         <div className="item__actions">
           <span className="item__smiley">{status.smiley}</span>
