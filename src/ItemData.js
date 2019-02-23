@@ -61,6 +61,62 @@ const DATA = [
     smiley: "😍😌"
   },
 
+  {
+    id: 3,
+    type: "news",
+    dt: 1234981243,
+    text:
+      "Aflevering 3 van ‘Temptation’ in vogelvlucht: de mannen houden bitchfight met verleiders",
+    profileName: "Vijf",
+    profileImage: "/imagesProfilePages/Vijf.png",
+    image: "/imagesPosts/Vijf_temptation.jpeg",
+    messageSource: "Vijf",
+    messageSourceWebsite: "vijf.be",
+    action: "heeft gereageerd op een bericht van",
+    messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😍😌"
+  },
+
+  // -------------------------BIG NEWS----------------------------//
+
+  {
+    id: 3,
+    type: "bigNews",
+    dt: 1234981243,
+    text: "Slachtoffer zinloos geweld getuigt anoniem",
+    subText:
+      "Een leerling die dinsdagavond na school werd afgetuigd door leeftijdsgenoten, doet anoniem zijn verhaal. Hij vertelt hoe hij in een straatje werd gelokt. Daar kreeg hij plots klappen. De beelden van het zinloos geweld verschenen op social media en werden massaal gedeeld...",
+    profileName: "Beatrix Verhoeven",
+    profileImage: "/imagesProfilePeople/Beatrix_Verhoeven.jpeg",
+    image: "/imagesPosts/Beatrix_Verhoeven_geweldJongeren.jpeg",
+    messageSource: "Het Laatste Nieuws",
+    messageSourceWebsite: "hln.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse:
+      "en 3 anderen hebben droevig en kwaad gekeken naar dit bericht",
+    smiley: "😤😢"
+  },
+
+  // -------------------------STATUS----------------------------//
+
+  {
+    id: 3,
+    type: "status",
+    dt: 1234981243,
+    text: "ik ben een status",
+    subText:
+      "Een leerling die dinsdagavond na school werd afgetuigd door leeftijdsgenoten, doet anoniem zijn verhaal. Hij vertelt hoe hij in een straatje werd gelokt. Daar kreeg hij plots klappen. De beelden van het zinloos geweld verschenen op social media en werden massaal gedeeld...",
+    profileName: "Beatrix Verhoeven",
+    profileImage: "/imagesProfilePeople/Beatrix_Verhoeven.jpeg",
+    image: "/imagesPosts/Beatrix_Verhoeven_geweldJongeren.jpeg",
+    messageSource: "Het Laatste Nieuws",
+    messageSourceWebsite: "hln.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse:
+      "en 3 anderen hebben droevig en kwaad gekeken naar dit bericht",
+    smiley: "😤😢"
+  },
+
   // -----------------------NOTIFICATION-------------------------//
   {
     id: 4,
@@ -77,11 +133,11 @@ const DATA = [
     id: 4,
     type: "notification",
     dt: 1234981243,
-    message: "Hallo Werner, zware dag gehad? Je ziet er wat moe uit",
+    message: "Hallo, zware dag gehad? Je ziet er een beetje moe uit...",
     text:
       "Heel de dag lang energie met het sinaasappelsap van je AD Delhaize. Nu met bovendien 35% korting!",
     image: "/imagesNotifications/minute_maid.jpeg",
-    textTitle: "Ad Delhaize — Sinaasappelsap"
+    textTitle: "Ad Delhaize — Vers sinaasappelsap"
   },
   {
     id: 4,
@@ -98,19 +154,19 @@ const DATA = [
 
   {
     id: 4,
-    type: "mininotification",
+    type: "miniNotification",
     dt: 1234981243,
     message: "Niet vergeten te lachen! het leven duurt maar even"
   },
   {
     id: 4,
-    type: "mininotification",
+    type: "miniNotification",
     dt: 1234981243,
     message: "We meten een hoog decibelgehalte in de ruimte waar je nu zit."
   },
   {
     id: 4,
-    type: "mininotification",
+    type: "miniNotification",
     dt: 1234981243,
     message:
       "Veel van je vrienden zijn aanwezig op de plek waar je nu bent. Kijk maar om je heen."

@@ -33,9 +33,13 @@ export default class Feed extends Component {
   renderItem(item) {
     if (item.type === "news") {
       return this.renderNews(item);
+    } else if (item.type === "bigNews") {
+      return this.renderBigNews(item);
+    } else if (item.type === "status") {
+      return this.renderStatus(item);
     } else if (item.type === "notification") {
       return this.renderNotification(item);
-    } else if (item.type === "mininotification") {
+    } else if (item.type === "miniNotification") {
       return this.renderMiniNotification(item);
     } else if (item.type === "ad") {
       return this.renderAd(item);
@@ -77,6 +81,81 @@ export default class Feed extends Component {
     );
   }
 
+  renderBigNews(bigNews) {
+    return (
+      <div className="item news-item" key={bigNews.id}>
+        <div className="item__newsHeader">
+          <img
+            className="item__profileImage"
+            src={bigNews.profileImage}
+            width={45}
+            height={45}
+            alt={bigNews.profileName}
+          />
+          <div className="item__profileNameContainer">
+            <span className="item__profileName">{bigNews.profileName}</span>
+            <span className="item__action"> {bigNews.action}</span>
+            <span className="item__messageSource">
+              {" "}
+              {bigNews.messageSource}
+            </span>
+          </div>
+        </div>
+        <div className="item__body">
+          <img className="item__image" src={bigNews.image} alt={bigNews.text} />
+          <p className="item__messageSourceWebsite">
+            <a href={bigNews.messageSourceWebsite}>
+              {bigNews.messageSourceWebsite}
+            </a>
+          </p>
+          <div className="item__text">{bigNews.text}</div>
+          <div className="item__subText">{bigNews.subText}</div>
+        </div>
+        <div className="item__actions">
+          <span className="item__smiley">{bigNews.smiley}</span>
+          <span className="item__profileName"> {bigNews.profileName}</span>
+          <span> {bigNews.messageResponse}</span>
+        </div>
+      </div>
+    );
+  }
+
+  renderStatus(status) {
+    return (
+      <div className="item news-item" key={status.id}>
+        <div className="item__newsHeader">
+          <img
+            className="item__profileImage"
+            src={status.profileImage}
+            width={45}
+            height={45}
+            alt={status.profileName}
+          />
+          <div className="item__profileNameContainer">
+            <span className="item__profileName">{status.profileName}</span>
+            <span className="item__action"> {status.action}</span>
+            <span className="item__messageSource"> {status.messageSource}</span>
+          </div>
+        </div>
+        <div className="item__body">
+          <img className="item__image" src={status.image} alt={status.text} />
+          <p className="item__messageSourceWebsite">
+            <a href={status.messageSourceWebsite}>
+              {status.messageSourceWebsite}
+            </a>
+          </p>
+          <div className="item__text">{status.text}</div>
+          <div className="item__subText">{status.subText}</div>
+        </div>
+        <div className="item__actions">
+          <span className="item__smiley">{status.smiley}</span>
+          <span className="item__profileName"> {status.profileName}</span>
+          <span> {status.messageResponse}</span>
+        </div>
+      </div>
+    );
+  }
+
   renderNotification(notification) {
     console.log(notification);
     return (
@@ -107,10 +186,10 @@ export default class Feed extends Component {
     );
   }
 
-  renderMiniNotification(mininotification) {
-    console.log(mininotification);
+  renderMiniNotification(miniNotification) {
+    console.log(miniNotification);
     return (
-      <div className="item notification-item" key={mininotification.id}>
+      <div className="item notification-item" key={miniNotification.id}>
         <div className="item__body">
           <div className="item__notificationHeader">
             <img
@@ -118,7 +197,7 @@ export default class Feed extends Component {
               src="/imagesIcons/notification_F.png"
             />
             <p className="item__notificationHeaderText">
-              {mininotification.message}
+              {miniNotification.message}
             </p>
           </div>
         </div>

@@ -60,6 +60,14 @@ code {
   height: 40px;
 }
 
+.header__logo {
+  margin: 0px 10px 0px 0px;
+}
+
+.header__input {
+  width: 350px;
+}
+
 main {
   display: flex;
   flex-direction: row;
@@ -120,7 +128,7 @@ main {
 
 .item__text {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   margin: 3px 10px 10px 10px;
 }
 
@@ -184,4 +192,5 @@ main {
 .liveFaceTracking {
   background: white;
   margin: 0px 0px 10px 0px;
+  position: sticky;
 }
