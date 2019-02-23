@@ -37,6 +37,8 @@ export default class Feed extends Component {
       return this.renderBigNews(item);
     } else if (item.type === "status") {
       return this.renderStatus(item);
+    } else if (item.type === "picture") {
+      return this.renderPicture(item);
     } else if (item.type === "notification") {
       return this.renderNotification(item);
     } else if (item.type === "miniNotification") {
@@ -115,6 +117,36 @@ export default class Feed extends Component {
           <span className="item__smiley">{bigNews.smiley}</span>
           <span className="item__profileName"> {bigNews.profileName}</span>
           <span> {bigNews.messageResponse}</span>
+        </div>
+      </div>
+    );
+  }
+
+  renderPicture(picture) {
+    return (
+      <div className="item news-item" key={picture.id}>
+        <div className="item__newsHeader">
+          <img
+            className="item__profileImage"
+            src={picture.profileImage}
+            width={45}
+            height={45}
+            alt={picture.profileName}
+          />
+          <div className="item__profileNameContainer">
+            <span className="item__profileName">{picture.profileName}</span>
+            <span className="item__action"> {picture.action}</span>
+            <span className="item__messageSource">{picture.messageSource}</span>
+          </div>
+        </div>
+        <div className="item__body">
+          <div className="item__text">{picture.text}</div>
+          <img className="item__image" src={picture.image} alt={picture.text} />
+        </div>
+        <div className="item__actions">
+          <span className="item__smiley">{picture.smiley}</span>
+          <span className="item__profileName"> {picture.profileName}</span>
+          <span> {picture.messageResponse}</span>
         </div>
       </div>
     );

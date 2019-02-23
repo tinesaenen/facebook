@@ -20,7 +20,7 @@ export default class App extends Component {
             <Feed types={["notification", "miniNotification"]} />
           </div>
           <div className="middleColumn">
-            <Feed types={["news", "bigNews", "status"]} />
+            <Feed types={["news", "bigNews", "status", "picture"]} />
           </div>
           <div className="rightColumn">
             <Feed types={["ad"]} />

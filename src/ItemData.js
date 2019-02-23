@@ -112,6 +112,21 @@ const DATA = [
     smiley: "😤😢"
   },
 
+  // -------------------------PICTURE----------------------------//
+
+  {
+    id: 2,
+    type: "picture",
+    dt: 1234981243,
+    text: "Kinderen willen wel sporten, maar er zijn geen trainers meer",
+    profileName: "Arianne Janssens",
+    profileImage: "/imagesProfilePeople/Arianne_Janssens.jpeg",
+    image: "/imagesPosts/Arianne_Jansses_trainersSporten.jpg",
+    action: "heeft gereageerd op een bericht van",
+    messageResponse: "en 3 anderen hebben triest gekeken naar dit bericht",
+    smiley: "😔"
+  },
+
   // -----------------------NOTIFICATION-------------------------//
   {
     id: 4,
