@@ -35,10 +35,26 @@ code {
 
 /*-----------------------structuur pagina-------------------------*/
 
+.leftColumn::-webkit-scrollbar {
+  display: none;
+}
+
+.middleColumn::-webkit-scrollbar {
+  display: none;
+}
+
+.rightColumn::-webkit-scrollbar {
+  display: none;
+}
+
 .leftColumn {
   width: 30%;
   margin: 0 10px;
   overflow-y: auto;
+}
+
+.leftColumnScroll {
+  margin: 195px 0px 0px 0px;
 }
 
 .middleColumn {
@@ -102,10 +118,13 @@ main {
 }
 
 .item__profileNameContainer {
-  margin: 10px 10px 10px 0px;
+  margin: 13px 10px 10px 0px;
 }
 .item__profileImage {
   border-radius: 50%;
+  border: 1px;
+  border-style: solid;
+  border-color: lightsteelblue;
   margin: 10px;
 }
 
@@ -143,6 +162,12 @@ main {
   margin: 10px;
 }
 
+.item__date {
+  margin: 3px 0px 0px 0px;
+  font-size: 13px;
+  color: #90a3ca;
+}
+
 .item__notificationHeader {
   background: #90a3ca;
   display: flex;
@@ -164,7 +189,7 @@ main {
 .item__notificationF {
   padding: 10px 0px 10px 10px;
   max-height: 55px;
-  width: 33px;
+  width: 29px;
 }
 
 .item__adHeader {
@@ -176,8 +201,14 @@ main {
   color: #4667a8;
 }
 
+.item__pageNameContainer {
+  margin: 13px 10px 10px 0px;
+}
+
 .item__gesponsord {
-  margin: 0px;
+  margin: 3px 0px 0px 0px;
+  font-size: 13px;
+  color: grey;
 }
 
 .item__subText {
@@ -194,10 +225,13 @@ main {
   font-weight: 500;
   color: #7b93c3;
 }
+
 /*-----------------------Facetracking-------------------------*/
 
 .liveFaceTracking {
-  background: white;
+  background: pink;
   margin: 0px 0px 10px 0px;
-  position: sticky;
+  position: fixed;
+  height: 180px;
+  width: 411px;
 }

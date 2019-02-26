@@ -65,6 +65,7 @@ export default class Feed extends Component {
             <span className="item__profileName">{news.profileName}</span>
             <span className="item__action"> {news.action}</span>
             <span className="item__messageSource"> {news.messageSource}</span>
+            <p className="item__date"> {news.date}</p>
           </div>
         </div>
         <div className="item__body">
@@ -97,10 +98,8 @@ export default class Feed extends Component {
           <div className="item__profileNameContainer">
             <span className="item__profileName">{bigNews.profileName}</span>
             <span className="item__action"> {bigNews.action}</span>
-            <span className="item__messageSource">
-              {" "}
-              {bigNews.messageSource}
-            </span>
+            <span className="item__messageSource">{bigNews.messageSource}</span>
+            <p className="item__date"> {bigNews.date}</p>
           </div>
         </div>
         <div className="item__body">
@@ -136,11 +135,11 @@ export default class Feed extends Component {
           <div className="item__profileNameContainer">
             <span className="item__profileName">{picture.profileName}</span>
             <span className="item__action"> {picture.action}</span>
-            <span className="item__messageSource">{picture.messageSource}</span>
+            <p className="item__date"> {picture.date}</p>
           </div>
         </div>
         <div className="item__body">
-          <div className="item__text">{picture.text}</div>
+          <div className="item__subText">{picture.text}</div>
           <img className="item__image" src={picture.image} alt={picture.text} />
         </div>
         <div className="item__actions">
@@ -166,6 +165,7 @@ export default class Feed extends Component {
           <div className="item__profileNameContainer">
             <span className="item__profileName">{status.profileName}</span>
             <span className="item__action"> {status.action}</span>
+            <p className="item__date"> {status.date}</p>
           </div>
         </div>
         <div className="item__body">
@@ -242,7 +242,7 @@ export default class Feed extends Component {
           />
           <div className="item__pageNameContainer">
             <span className="item__pageName">{ad.pageName}</span>
-            <span className="item__gesponsord">gesponsord</span>
+            <p className="item__gesponsord">◉ gesponsord</p>
           </div>
         </div>
         <div className="item__body">
