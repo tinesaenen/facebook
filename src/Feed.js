@@ -45,6 +45,8 @@ export default class Feed extends Component {
       return this.renderMiniNotification(item);
     } else if (item.type === "ad") {
       return this.renderAd(item);
+    } else if (item.type === "story") {
+      return this.renderStory(item);
     } else {
       return this.renderNews(item);
     }
@@ -249,6 +251,23 @@ export default class Feed extends Component {
           <img className="item__image" src={ad.image} alt={ad.text} />
           <div className="item__text">{ad.text}</div>
           <div className="item__subText">{ad.subText}</div>
+        </div>
+      </div>
+    );
+  }
+
+  renderStory(story) {
+    return (
+      <div className="item story-item" key={story.id}>
+        <div className="item__storyItem">
+          <img
+            className="item__storyProfileImage"
+            src={story.profileImage}
+            width={45}
+            height={45}
+            alt={story.profileName}
+          />
+          <p className="item__storyProfileName">{story.profileName}</p>
         </div>
       </div>
     );

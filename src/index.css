@@ -47,6 +47,10 @@ code {
   display: none;
 }
 
+.storyContainer::-webkit-scrollbar {
+  display: none;
+}
+
 .leftColumn {
   width: 30%;
   margin: 0 10px;
@@ -55,6 +59,10 @@ code {
 
 .leftColumnScroll {
   margin: 195px 0px 0px 0px;
+}
+
+.rightColumnScroll {
+  margin: 104px 0px 0px 0px;
 }
 
 .middleColumn {
@@ -92,9 +100,16 @@ main {
   background: #e8ecf4;
 }
 
-.feed {
+.verticalFeed {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.horizontalFeed {
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
@@ -103,6 +118,12 @@ main {
   padding: 50px;
   font-size: 72px;
   opacity: 0.5;
+}
+
+.gekleurdeDiv {
+  background: #e8ecf4;
+  height: 20px;
+  width: 411px;
 }
 
 /*-----------------------items-------------------------*/
@@ -146,20 +167,20 @@ main {
 }
 
 .item__text {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   margin: 3px 10px 10px 10px;
 }
 
 .item__statusText {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   font-style: oblique;
   margin: 0px 10px 10px 10px;
 }
 
 .item__actions {
-  margin: 10px;
+  padding: 0px 10px 10px 10px;
 }
 
 .item__date {
@@ -183,7 +204,7 @@ main {
 .item__notificationText {
   background: #c8d1e4;
   color: #7b93c3;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .item__notificationF {
@@ -212,7 +233,7 @@ main {
 }
 
 .item__subText {
-  margin: 0px 10px 10px 10px;
+  padding: 0px 10px 10px 10px;
 }
 
 .item__notificationTextContainer {
@@ -221,7 +242,7 @@ main {
 }
 
 .item__notificationTextTitle {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: #7b93c3;
 }
@@ -234,4 +255,44 @@ main {
   position: fixed;
   height: 180px;
   width: 411px;
+}
+
+/*-----------------------stories-------------------------*/
+
+.storyContainer {
+  margin: 0px 0px 10px 0px;
+  position: fixed;
+  height: 125px;
+  width: 411px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.story-item {
+  display: inline-block;
+  padding: 5px;
+  margin: 0px;
+}
+
+.item__storyProfileImage {
+  border-radius: 50%;
+  border: 1px;
+  border-style: solid;
+  border-color: lightsteelblue;
+  margin: 3px 5px 1px 5px;
+}
+
+.item__storyProfileName {
+  margin: 0px 0px 2px 0px;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.item__storyItem {
+  width: 60px;
+  padding: 0px 4px 0px 4px;
 }

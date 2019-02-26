@@ -103,6 +103,25 @@ const DATA = [
     smiley: "😤😢"
   },
 
+  {
+    id: 3,
+    type: "bigNews",
+    dt: 1234981243,
+    text:
+      "Protesterende bewoner Delfgauw brengt blauwe kliko terug naar gemeente",
+    subText:
+      "Leen van Vliet bracht zijn blauwe kliko uit protest terug naar de gemeente Pijnacker-Nootdorp. ‘Ik zie geen toegevoegde waarde in een extra kliko, als de grijze niet regelmatig geleegd wordt’, schrijft hij in een op de prullenbak geplakte brief...",
+    profileName: "Robin Debont",
+    profileImage: "/imagesProfilePeople/Robin_Debont.jpeg",
+    date: "22 minuten geleden",
+    image: "/imagesPosts/blauwe_kliko.jpeg",
+    messageSource: "AD",
+    messageSourceWebsite: "ad.n",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 10 anderen hebben neutraal gekeken naar dit bericht",
+    smiley: "🙂"
+  },
+
   // -------------------------STATUS----------------------------//
 
   {
@@ -352,38 +371,38 @@ const DATA = [
   },
 
   //----------------------ADVERTISEMENTS-------------------------//
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/Pearl.png",
-  //   pageName: "Pearl Opticien ",
-  //   image: "/imagesAds/meerdere_brillen.jpg",
-  //   text:
-  //     "Heb je nog niet voldoende brillen? Kijk hoeveel je er op je hoofd kan plaatsen bij je Pearl Opticien!",
-  //   subText: "nu 20 % korting op ons hele assortiment"
-  // },
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/apple.png",
-  //   pageName: "Apple ",
-  //   image: "/imagesAds/apple_watch.jpg",
-  //   text:
-  //     "Oude versie beu? Tijd voor een nieuwe? De Apple watch series 4 is nu verkrijgbaar in de App Store",
-  //   subText: "Ga langs bij je lokale Switch handelaar en vraag voor meer info"
-  // },
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/esprit.png",
-  //   pageName: "Esprit ",
-  //   image: "/imagesAds/blauw_hemd_esprit.png",
-  //   text: "Zomercollectie nu beschikbaar bij Esprit!",
-  //   subText: "Koppelkorting op elk blauw item dat u koopt"
-  // },
+  {
+    id: 5,
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/Pearl.png",
+    pageName: "Pearl Opticien ",
+    image: "/imagesAds/meerdere_brillen.jpg",
+    text:
+      "Heb je nog niet voldoende brillen? Kijk hoeveel je er op je hoofd kan plaatsen bij je Pearl Opticien!",
+    subText: "nu 20 % korting op ons hele assortiment"
+  },
+  {
+    id: 5,
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/apple.png",
+    pageName: "Apple ",
+    image: "/imagesAds/apple_watch.jpg",
+    text:
+      "Oude versie beu? Tijd voor een nieuwe? De Apple watch series 4 is nu verkrijgbaar in de App Store",
+    subText: "Ga langs bij je lokale Switch handelaar en vraag voor meer info"
+  },
+  {
+    id: 5,
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/esprit.png",
+    pageName: "Esprit ",
+    image: "/imagesAds/blauw_hemd_esprit.png",
+    text: "Zomercollectie nu beschikbaar bij Esprit!",
+    subText: "Koppelkorting op elk blauw item dat u koopt"
+  },
   {
     id: 5,
     type: "ad",
@@ -413,6 +432,130 @@ const DATA = [
     image: "/imagesAds/wix.jpg",
     text: "Wix your website",
     subText: "Design your own logo with the Wix Logo Maker"
+  },
+
+  //----------------------Story-------------------------//
+
+  {
+    id: 5,
+    type: "story",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/Glen_Verhalen.jpeg",
+    profileName: "Glen Verhalen",
+    image: "/imagesAds/wix.jpg"
+  },
+  {
+    id: 5,
+    type: "story",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/Ivo_Leysen.jpeg",
+    profileName: "Ivo Leysen",
+    image: "/imagesAds/wix.jpg"
+  },
+  {
+    id: 5,
+    type: "story",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/Jos_Vantielen.jpeg",
+    profileName: "Jos Vantielen ",
+    image: "/imagesAds/wix.jpg"
+  },
+  {
+    id: 5,
+    type: "story",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/Karel_Vandebroeck.jpeg",
+    profileName: "Karel Vandebroeck",
+    image: "/imagesAds/wix.jpg"
+  },
+  {
+    id: 5,
+    type: "story",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/Liesbeth_Van_Impen.jpeg",
+    profileName: "Liesbeth Van Impen",
+    image: "/imagesAds/wix.jpg"
+  },
+  {
+    id: 5,
+    type: "story",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/lizzy_Luyten.jpeg",
+    profileName: "Lizzy Luyten",
+    image: "/imagesAds/wix.jpg"
+  },
+  {
+    id: 5,
+    type: "story",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/Robbe_Rijckaert.jpeg",
+    profileName: "Robbe Rijckart",
+    image: "/imagesAds/wix.jpg"
+  },
+  {
+    id: 5,
+    type: "story",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/Sasha_Smets.jpeg",
+    profileName: "Sasha Smets",
+    image: "/imagesAds/wix.jpg"
+  },
+  {
+    id: 5,
+    type: "story",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/Tessa_Sanders.jpeg",
+    profileName: "Tessa Sanders",
+    image: "/imagesAds/wix.jpg"
+  },
+  {
+    id: 5,
+    type: "story",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/Tessa_Van_den_Driessche.jpeg",
+    profileName: "Tessa Van de Driesche ",
+    image: "/imagesAds/wix.jpg"
+  },
+  {
+    id: 5,
+    type: "story",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/Yikhay_Lee.jpeg",
+    profileName: "Yikhay Lee",
+    image: "/imagesAds/wix.jpg"
+  },
+  {
+    id: 5,
+    type: "story",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/Vanessa_Heaght.jpeg",
+    profileName: "Vanessa Heaght",
+    image: "/imagesAds/wix.jpg"
+  },
+
+  {
+    id: 5,
+    type: "story",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/Sara_Hendriksen.jpeg",
+    profileName: "Sara Hendriksen ",
+    image: "/imagesAds/wix.jpg"
+  },
+  {
+    id: 5,
+    type: "story",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/Philip_Aerts.jpeg",
+    profileName: "Philip Aerts",
+    image: "/imagesAds/wix.jpg"
+  },
+  {
+    id: 5,
+    type: "story",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/Rik_Torfs.jpeg",
+    profileName: "Rik Torfs",
+    image: "/imagesAds/wix.jpg"
   }
 ];
 
