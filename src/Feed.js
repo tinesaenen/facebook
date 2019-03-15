@@ -47,6 +47,8 @@ export default class Feed extends Component {
       return this.renderAd(item);
     } else if (item.type === "story") {
       return this.renderStory(item);
+    } else if (item.type === "gif") {
+      return this.renderGif(item);
     } else {
       return this.renderNews(item);
     }
@@ -148,6 +150,36 @@ export default class Feed extends Component {
           <span className="item__smiley">{picture.smiley}</span>
           <span className="item__profileName"> {picture.profileName}</span>
           <span> {picture.messageResponse}</span>
+        </div>
+      </div>
+    );
+  }
+
+  renderGif(gif) {
+    return (
+      <div className="item news-item" key={gif.id}>
+        <div className="item__newsHeader">
+          <img
+            className="item__profileImage"
+            src={gif.profileImage}
+            width={45}
+            height={45}
+            alt={gif.profileName}
+          />
+          <div className="item__profileNameContainer">
+            <span className="item__profileName">{gif.profileName}</span>
+            <span className="item__action"> {gif.action}</span>
+            <p className="item__date"> {gif.date}</p>
+          </div>
+        </div>
+        <div className="item__body">
+          <div className="item__subText">{gif.text}</div>
+          <img className="item__image" src={gif.image} alt={gif.text} />
+        </div>
+        <div className="item__actions">
+          <span className="item__smiley">{gif.smiley}</span>
+          <span className="item__profileName"> {gif.profileName}</span>
+          <span> {gif.messageResponse}</span>
         </div>
       </div>
     );

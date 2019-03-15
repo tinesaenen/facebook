@@ -38,7 +38,7 @@ export default class App extends Component {
           <div className="middleColumn">
             <Feed
               className="verticalFeed"
-              types={["news", "bigNews", "status", "picture"]}
+              types={["news", "bigNews", "status", "picture", "gif"]}
             />
           </div>
           <div className="rightColumn">
