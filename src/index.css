@@ -54,11 +54,15 @@ code {
 .leftColumn {
   width: 30%;
   margin: 0 10px;
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .leftColumnScroll {
-  margin: 195px 0px 0px 0px;
+  margin: 10px 0px 0px 0px;
+  overflow-y: auto;
+  flex: 1;
 }
 
 .rightColumnScroll {
@@ -97,7 +101,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 5px;
-  background: #e8ecf4;
+  background: #e1e6f0;
 }
 
 .verticalFeed {
@@ -124,6 +128,7 @@ main {
   background: #e8ecf4;
   height: 20px;
   width: 411px;
+  position: sticky;
 }
 
 /*-----------------------items-------------------------*/
@@ -251,10 +256,28 @@ main {
 
 .liveFaceTracking {
   background: pink;
+  display: flex;
+  flex-direction: row;
   margin: 0px 0px 10px 0px;
-  position: fixed;
-  height: 180px;
+  /* height: 180px; */
   width: 411px;
+}
+
+.liveFaceTracking__video video {
+  max-width: 200px;
+}
+
+.liveFaceTracking__video canvas {
+  max-width: 200px;
+}
+
+.liveFaceTracking__stats {
+  flex: 1;
+}
+
+.liveFaceTracking__stats p {
+  padding: 2px 5px 2px 5px;
+  margin: 0px;
 }
 
 /*-----------------------stories-------------------------*/
