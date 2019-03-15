@@ -1,7 +1,399 @@
 const DATA = [
   //http://source.unsplash.com/random/75x75?girl
 
+  //----------------------ADVERTISEMENTS-------------------------//
+
+  {
+    id: 5,
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/batibouw.jpg",
+    pageName: "Batibouw ",
+    image: "/imagesAds/impermo_batibouw.jpg",
+    text: "TEGELS, NATUURSTEEN & PARKET",
+    subText:
+      "Gevarieerd assortiment & inspiratievolle toonzalen & grootste aanbod in België"
+  },
+  {
+    id: 5,
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/sportpaleis.jpg",
+    pageName: "Sportpeleis ",
+    image: "/imagesAds/cher_sportpaleis.jpg",
+    text: "Cher Here We Go Again Tour 2019",
+    subText: "Slechts enkele tickets beschikbaar vanaf €67"
+  },
+  {
+    id: 5,
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/orange.jpg",
+    pageName: "Orange Belgium ",
+    image: "/imagesAds/orange_geit.jpg",
+    text: "Ontdek nu onze Flybox",
+    subText: "€20 per maand, voor verdere details surf naar www.orange.be"
+  },
+  {
+    id: 5,
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/proximus.png",
+    pageName: "Proximus ",
+    image: "/imagesAds/proximus.jpg",
+    text: "Bekijk Netflix 6 maanden gratis met Proximus",
+    subText: "Bekijk Breaking bad nu op Neflix"
+  },
+  {
+    id: 5,
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/bol_com.jpg",
+    pageName: "Bol.com ",
+    image: "/imagesAds/bol_com.png",
+    text: "De mooiste sierkussens aan een spotprijsje",
+    subText: "Bol.com: de winkel van ons allemaal"
+  },
+  {
+    id: 5,
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/coca_cola.png",
+    pageName: "Coca Cola belgium ",
+    image: "https://media.giphy.com/media/13BlyK63hHAdUc/giphy.gif",
+    text: "Coca Cola... Taste The Feeling",
+    subText: "Echte klassiekers gaan nooit uit de mode"
+  },
+  {
+    id: 5,
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/tui.png",
+    pageName: "Tui ",
+    image: "/imagesAds/reizen_winnen_tui.jpeg",
+    text: "Win elke dag een reis met HLN en TUI",
+    subText:
+      "Met de zomer achter de rug en de herfst in het land... Droom je ook al van je volgende reis?"
+  },
+  {
+    id: 5,
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/nutella.png",
+    pageName: "Nutella ",
+    image: "/imagesAds/nutella.jpg",
+    text: "Ieder zijn unieke pot!",
+    subText: "Personaliseer nu je Nutella® pot!"
+  },
+  {
+    id: 5,
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/mcdonalds.jpg",
+    pageName: "McDonald's ",
+    image: "/imagesAds/happymeal_McDonalds.jpg",
+    text: "Bij ieder voordeelmenu nu een Happy Meal voor maar €2,50",
+    subText: "Ga snel naar je dichtstbijzijnde McDonald's!"
+  },
+  {
+    id: 5,
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/de_morgen.png",
+    pageName: "De Morgen ",
+    image: "/imagesAds/de_morgen.jpg",
+    text: "Lees De Morgen nu 1 maand gratis",
+    subText: "Geef het tegenovergesteld ook een kans"
+  },
+  {
+    id: 5,
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/trix.jpeg",
+    pageName: "Trix Antwerpen ",
+    image: "/imagesAds/sold_out_trix.png",
+    text: "GODSMACK US + LIKE A STORM NZ Uitverkocht",
+    subText: "Dit concert is in samenwerking met Biebob"
+  },
+  {
+    id: 5,
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/wix.jpg",
+    pageName: "Wix ",
+    image: "/imagesAds/wix.jpg",
+    text: "Wix your website",
+    subText: "Design your own logo with the Wix Logo Maker"
+  },
+
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "geert",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/joker.jpg",
+  //   pageName: "Joker",
+  //   image: "/imagesAds/joker_australie.jpg",
+  //   text: "Op bezoek bij familieleden?",
+  //   subText:
+  //     "Laat je reis naar Australië plannen bij Joker voor een vakantie zonder zorgen!"
+  // },
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "geert",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/schleiper.png",
+  //   pageName: "Schleiper",
+  //   image: "/imagesAds/aquarelle.jpg",
+  //   text: "Alles voor de creative ziel",
+  //   subText: "Prachtige aquarelverf van Windsor and Newton voor een spotprijs"
+  // },
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "geert",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/zoo_antwerpen.jpg",
+  //   pageName: "Zoo van Antwerpen",
+  //   image: "/imagesAds/zoo_antwerpen.jpg",
+  //   text: "Ook eens even Ronddolen in de Dierentuin?",
+  //   subText: "Dé plek om inspiratie op te doen voor illustrators"
+  // },
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "geert",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/tui.png",
+  //   pageName: "Tui",
+  //   image: "/imagesAds/singapore.jpg",
+  //   text: "Nu vroegboekkorting op 10 dagen naar Singapore",
+  //   subText:
+  //     "Voel je je soms ook nostalgisch? Haal die mooie herinneringen weer boven dankzij dit prachtig aanbod!"
+  // },
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "reg",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/inno.jpg",
+  //   pageName: "Inno",
+  //   image: "/imagesAds/serax.jpg",
+  //   text: "Serax™ — We Design Happiness",
+  //   subText:
+  //     "Serax looks for beauty every day, for the good things that make life worth living, the things that create a home that inspires happiness. To experience, to share, and to discover…"
+  // },
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "reg",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/middelheim_museum.jpg",
+  //   pageName: "Lino type",
+  //   image: "/imagesAds/dennis_tyfus",
+  //   text: "My Niece’s Pierced Knees tentoonstelling van Dennis Tyfus",
+  //   subText: "de toegang tot het Middelheidmuseum is volledig gratis"
+  // },
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "reg",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/linotype.jpg",
+  //   pageName: "Lino type",
+  //   image: "/imagesAds/helvetica.png",
+  //   text:
+  //     "Deze klassieker is perfect voor het maken van een logo! Je mag hem zeker niet missen in je typekit",
+  //   subText: "Helvetica font download"
+  // },
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "reg",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/standaard_boekhandel.png",
+  //   pageName: "Standaard boekhandel",
+  //   image: "/imagesAds/geluk_voor_kinderen.jpeg",
+  //   text:
+  //     "Dit boek leert je het leven te ervaren als een feest. Positief en hoopvol ingesteld zijn, maakt je veerkrachtiger en gelukkiger.",
+  //   subText: "Voor slechts € 20,50 bij uw standaard boekhandel"
+  // },
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "reg",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/2dehands.jpg",
+  //   pageName: "2dehands",
+  //   image: "/imagesAds/letterkast.jpg",
+  //   text: "letterkast/zetbok/drukkerijkast/kralenkast",
+  //   subText:
+  //     "Een letterkast uit een drukkerij, de zetbok heeft 20 letterkasten/letterbakken met 1 handvat, de onderverdelingen van de letterkasten zijn in hout, vlak verstelbaar bovenvlak met een inox toplaag, op het bovenblad zitten 2 handvaten om het blad in een schuine stand te zetten."
+  // },
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "jan",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/11.11.11.jpg",
+  //   pageName: "11.11.11",
+  //   image: "/imagesAds/11.11.11.jpg",
+  //   text:
+  //     "Heb jij ook energie, talent, goesting om mee te werken aan een betere wereld? Vind jij ook een structurele aanpak van armoede en ontwikkeling belangrijk?  Dan ben je bij 11.11.11 aan het goede adres.",
+  //   subText:
+  //     "Je kan je engageren naar gelang je interesses en beschikbare tijd."
+  // },
+
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "werner",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/wohi.png",
+  //   pageName: "Wohi",
+  //   image: "/imagesAds/luck_sac_zitkussen.jpg",
+  //   text:
+  //     "Nooit meer een stijve rug dankzij de ultra comfortabele zitzak van Luckt Sac",
+  //   subText: "Verkrijgbaar in verschillende kleuren en maten"
+  // },
+
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "werner",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/second_life.jpg",
+  //   pageName: "Youtube",
+  //   image: "/imagesAds/second_life.jpg",
+  //   text:
+  //     "Have an Adventure and Discover incredible experiences, fascinating people, and vibrant communities in this vast virtual world",
+  //   subText: "Maak nu je gratis account voor uren speelplezier"
+  // },
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "jan",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/youtube.png",
+  //   pageName: "Youtube",
+  //   image: "/imagesAds/eyes_wide_shut.png",
+  //   text:
+  //     "Who Took My Badjas This wicked tune is made by the Samplekings. It contains a famous oneliner of a Belgian commercial of Belgacom. All credits for the vocalsamples go to the advertising agency of Belgacom. Badjas is the dutch word for bathrobe. Enjoy the sound of the badjas!",
+  //   subText: "bekijk de video nu!"
+  // },
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "jan",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/apple.png",
+  //   pageName: "Apple ",
+  //   image: "/imagesAds/apple_watch.jpg",
+  //   text:
+  //     "Oude versie beu? Tijd voor een nieuwe? De Apple watch series 4 is nu verkrijgbaar in de App Store",
+  //   subText: "Ga langs bij je lokale Switch handelaar en vraag voor meer info"
+  // },
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "werner",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/Pearl.png",
+  //   pageName: "Pearl Opticien ",
+  //   image: "/imagesAds/meerdere_brillen.jpg",
+  //   text:
+  //     "Heb je nog niet voldoende brillen? Kijk hoeveel je er op je hoofd kan plaatsen bij je Pearl Opticien!",
+  //   subText: "nu 20 % korting op ons hele assortiment"
+  // },
+
+  // {
+  //   id: 5,
+  //   type: "ad",
+  //   // target: "werner",
+  //   dt: 1234981243,
+  //   profileImage: "/imagesProfilePages/esprit.png",
+  //   pageName: "Esprit ",
+  //   image: "/imagesAds/blauw_hemd_esprit.png",
+  //   text: "Zomercollectie nu beschikbaar bij Esprit!",
+  //   subText: "Koppelkorting op elk blauw item dat u koopt"
+  // },
+
+  // -----------------------VIDEOS-------------------------//
+
+  {
+    id: 2,
+    type: "video",
+    dt: 1234981243,
+    text:
+      "Paid two bucks at a local flea market for this old, rusty cleaver. It did not look like much and hat a lot of rust pitting on one side, the handle was ruined and had severe blow marks on the spine. The seller seemed surprised I took it. As you can see in the video, as soon as I took the first layer of rust out, the makers mark became visible. It is made by an old German company named DANKRE, that specialized in kitchen cutlery. After all the rust was removed, it became visible that the cleaver was made from two different types of steel, one hard for the cutting edge and one softer for the main body and spine, so it can better take shocks. From this I get this was a good quality tool that deserves to be restored.",
+    profileName: "The Small Workshop",
+    profileImage: "/imagesProfilePages/the_small_workshop.jpg",
+    date: "49 minuten geleden",
+    videolink: "https://www.youtube.com/embed/hS9PA6SuyyU",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 3 anderen hebben verwonderd gereageerd op dit bericht",
+    smiley: "😮"
+  },
+
+  {
+    id: 2,
+    type: "video",
+    dt: 1234981243,
+    text: "OMG check:",
+    profileName: "Inne Grijp",
+    profileImage: "/imagesProfilePeople/inne_Grijp.jpeg",
+    date: "8 minuten geleden",
+    videolink: "https://www.youtube.com/embed/SwVWfrZ3Q50",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 3 anderen hebben verwonderd gereageerd op dit bericht",
+    smiley: "😮"
+  },
+
+  {
+    id: 2,
+    type: "video",
+    dt: 1234981243,
+    text: "Megabulb zou echt van pas komen af en toe 😉",
+    profileName: "Hugo Quintelier",
+    profileImage: "/imagesProfilePeople/Hugo_Quintelier.jpeg",
+    date: "2 minuten geleden",
+    videolink: "https://www.youtube.com/embed/EjAJn5kNinw",
+    action: "heeft een video geplaatst",
+    messageResponse:
+      "en 24 anderen hebben verwonderd gereageerd op dit bericht",
+    smiley: "😮"
+  },
+  {
+    id: 2,
+    type: "video",
+    dt: 1234981243,
+    text:
+      "Five Creepy Facts About The Madeleine McCann Case...Totally freaked me out man",
+    profileName: "Erik Bosmans",
+    profileImage: "/imagesProfilePeople/Erik_Bosmans.jpeg",
+    date: "12 minuten geleden",
+    videolink: "https://www.youtube.com/embed/_0AuBVd7NjM",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 24 anderen hebben kwaad gereageerd op dit bericht",
+    smiley: "😡"
+  },
+
   // -----------------------GIFS-------------------------//
+
+  {
+    id: 2,
+    type: "gif",
+    dt: 1234981243,
+    text: "I Feel Fancy",
+    profileName: "Guy Gabriëls",
+    profileImage: "/imagesProfilePeople/Guy_Gabriëls.jpeg",
+    date: "zojuist",
+    image: "https://media.giphy.com/media/35xM7aBzdCg7WzvK7b/giphy.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 7 anderen hebben ingestemd met dit bericht",
+    smiley: "🤩"
+  },
   {
     id: 2,
     type: "gif",
@@ -540,20 +932,7 @@ const DATA = [
     messageResponse: "en 3 anderen hebben droevig gereageerd op dit bericht",
     smiley: "😢"
   },
-  {
-    id: 2,
-    type: "picture",
-    dt: 1234981243,
-    text:
-      "Mijn dochter Hailey is sinds deze ochtend vermist! Ze is 12jaar 1m55 heeft u haar gezien contacteer me aub en delen is lief...Laatst gezien in schoten",
-    profileName: "Simon Martin",
-    profileImage: "/imagesProfilePeople/Simon_Martin.jpeg",
-    date: "59 minuten geleden",
-    image: "/imagesPosts/vermist_schoten.jpg",
-    action: "heeft een foto geplaatst",
-    messageResponse: "en 3 anderen hebben droevig gereageerd op dit bericht",
-    smiley: "😢"
-  },
+
   {
     id: 2,
     type: "picture",
@@ -851,231 +1230,6 @@ const DATA = [
     dt: 1234981243,
     message:
       "Nick de Bouwer heeft al veel berichten van je geliket, sturen we hem een vriendschapsverzoek?"
-  },
-
-  //----------------------ADVERTISEMENTS-------------------------//
-
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "geert",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/joker.jpg",
-  //   pageName: "Joker",
-  //   image: "/imagesAds/joker_australie.jpg",
-  //   text: "Op bezoek bij familieleden?",
-  //   subText:
-  //     "Laat je reis naar Australië plannen bij Joker voor een vakantie zonder zorgen!"
-  // },
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "geert",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/schleiper.png",
-  //   pageName: "Schleiper",
-  //   image: "/imagesAds/aquarelle.jpg",
-  //   text: "Alles voor de creative ziel",
-  //   subText: "Prachtige aquarelverf van Windsor and Newton voor een spotprijs"
-  // },
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "geert",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/zoo_antwerpen.jpg",
-  //   pageName: "Zoo van Antwerpen",
-  //   image: "/imagesAds/zoo_antwerpen.jpg",
-  //   text: "Ook eens even Ronddolen in de Dierentuin?",
-  //   subText: "Dé plek om inspiratie op te doen voor illustrators"
-  // },
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "geert",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/tui.png",
-  //   pageName: "Tui",
-  //   image: "/imagesAds/singapore.jpg",
-  //   text: "Nu vroegboekkorting op 10 dagen naar Singapore",
-  //   subText:
-  //     "Voel je je soms ook nostalgisch? Haal die mooie herinneringen weer boven dankzij dit prachtig aanbod!"
-  // },
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "reg",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/inno.jpg",
-  //   pageName: "Inno",
-  //   image: "/imagesAds/serax.jpg",
-  //   text: "Serax™ — We Design Happiness",
-  //   subText:
-  //     "Serax looks for beauty every day, for the good things that make life worth living, the things that create a home that inspires happiness. To experience, to share, and to discover…"
-  // },
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "reg",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/middelheim_museum.jpg",
-  //   pageName: "Lino type",
-  //   image: "/imagesAds/dennis_tyfus",
-  //   text: "My Niece’s Pierced Knees tentoonstelling van Dennis Tyfus",
-  //   subText: "de toegang tot het Middelheidmuseum is volledig gratis"
-  // },
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "reg",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/linotype.jpg",
-  //   pageName: "Lino type",
-  //   image: "/imagesAds/helvetica.png",
-  //   text:
-  //     "Deze klassieker is perfect voor het maken van een logo! Je mag hem zeker niet missen in je typekit",
-  //   subText: "Helvetica font download"
-  // },
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "reg",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/standaard_boekhandel.png",
-  //   pageName: "Standaard boekhandel",
-  //   image: "/imagesAds/geluk_voor_kinderen.jpeg",
-  //   text:
-  //     "Dit boek leert je het leven te ervaren als een feest. Positief en hoopvol ingesteld zijn, maakt je veerkrachtiger en gelukkiger.",
-  //   subText: "Voor slechts € 20,50 bij uw standaard boekhandel"
-  // },
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "reg",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/2dehands.jpg",
-  //   pageName: "2dehands",
-  //   image: "/imagesAds/letterkast.jpg",
-  //   text: "letterkast/zetbok/drukkerijkast/kralenkast",
-  //   subText:
-  //     "Een letterkast uit een drukkerij, de zetbok heeft 20 letterkasten/letterbakken met 1 handvat, de onderverdelingen van de letterkasten zijn in hout, vlak verstelbaar bovenvlak met een inox toplaag, op het bovenblad zitten 2 handvaten om het blad in een schuine stand te zetten."
-  // },
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "jan",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/11.11.11.jpg",
-  //   pageName: "11.11.11",
-  //   image: "/imagesAds/11.11.11.jpg",
-  //   text:
-  //     "Heb jij ook energie, talent, goesting om mee te werken aan een betere wereld? Vind jij ook een structurele aanpak van armoede en ontwikkeling belangrijk?  Dan ben je bij 11.11.11 aan het goede adres.",
-  //   subText:
-  //     "Je kan je engageren naar gelang je interesses en beschikbare tijd."
-  // },
-
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "werner",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/wohi.png",
-  //   pageName: "Wohi",
-  //   image: "/imagesAds/luck_sac_zitkussen.jpg",
-  //   text:
-  //     "Nooit meer een stijve rug dankzij de ultra comfortabele zitzak van Luckt Sac",
-  //   subText: "Verkrijgbaar in verschillende kleuren en maten"
-  // },
-
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "werner",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/second_life.jpg",
-  //   pageName: "Youtube",
-  //   image: "/imagesAds/second_life.jpg",
-  //   text:
-  //     "Have an Adventure and Discover incredible experiences, fascinating people, and vibrant communities in this vast virtual world",
-  //   subText: "Maak nu je gratis account voor uren speelplezier"
-  // },
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "jan",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/youtube.png",
-  //   pageName: "Youtube",
-  //   image: "/imagesAds/eyes_wide_shut.png",
-  //   text:
-  //     "Who Took My Badjas This wicked tune is made by the Samplekings. It contains a famous oneliner of a Belgian commercial of Belgacom. All credits for the vocalsamples go to the advertising agency of Belgacom. Badjas is the dutch word for bathrobe. Enjoy the sound of the badjas!",
-  //   subText: "bekijk de video nu!"
-  // },
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "jan",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/apple.png",
-  //   pageName: "Apple ",
-  //   image: "/imagesAds/apple_watch.jpg",
-  //   text:
-  //     "Oude versie beu? Tijd voor een nieuwe? De Apple watch series 4 is nu verkrijgbaar in de App Store",
-  //   subText: "Ga langs bij je lokale Switch handelaar en vraag voor meer info"
-  // },
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "werner",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/Pearl.png",
-  //   pageName: "Pearl Opticien ",
-  //   image: "/imagesAds/meerdere_brillen.jpg",
-  //   text:
-  //     "Heb je nog niet voldoende brillen? Kijk hoeveel je er op je hoofd kan plaatsen bij je Pearl Opticien!",
-  //   subText: "nu 20 % korting op ons hele assortiment"
-  // },
-
-  // {
-  //   id: 5,
-  //   type: "ad",
-  //   // target: "werner",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/esprit.png",
-  //   pageName: "Esprit ",
-  //   image: "/imagesAds/blauw_hemd_esprit.png",
-  //   text: "Zomercollectie nu beschikbaar bij Esprit!",
-  //   subText: "Koppelkorting op elk blauw item dat u koopt"
-  // },
-  {
-    id: 5,
-    type: "ad",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/de_morgen.png",
-    pageName: "De Morgen ",
-    image: "/imagesAds/de_morgen.jpg",
-    text: "Lees De Morgen nu 1 maand gratis",
-    subText: "Geef het tegenovergesteld ook een kans"
-  },
-  {
-    id: 5,
-    type: "ad",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/trix.jpeg",
-    pageName: "Trix Antwerpen ",
-    image: "/imagesAds/sold_out_trix.png",
-    text: "GODSMACK US + LIKE A STORM NZ Uitverkocht",
-    subText: "Dit concert is in samenwerking met Biebob"
-  },
-  {
-    id: 5,
-    type: "ad",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/wix.jpg",
-    pageName: "Wix ",
-    image: "/imagesAds/wix.jpg",
-    text: "Wix your website",
-    subText: "Design your own logo with the Wix Logo Maker"
   },
 
   //----------------------Story-------------------------//
