@@ -16,7 +16,18 @@ export default class App extends Component {
         </header>
         <main>
           <div className="leftColumn">
-            <div className="liveFaceTracking">facialrecognition</div>
+            <div className="liveFaceTracking">
+              <div className="liveFaceTracking__video" />
+              <div className="liveFaceTracking__stats">
+                <p>Vreugde: {(emotions.joy || 0).toFixed(2)}%</p>
+                <p>Woede: {(emotions.anger || 0).toFixed(2)}%</p>
+                <p>Verdriet: {(emotions.sadness || 0).toFixed(2)}%</p>
+                <p>Afgunst: {(emotions.disgust || 0).toFixed(2)}%</p>
+                <p>Minachting: {(emotions.contempt || 0).toFixed(2)}%</p>
+                <p>Angst: {(emotions.fear || 0).toFixed(2)}%</p>
+                <p>Verwondering: {(emotions.surprise || 0).toFixed(2)}%</p>
+              </div>
+            </div>
             <div className="leftColumnScroll">
               <Feed
                 className="verticalFeed"
