@@ -47,6 +47,8 @@ export default class Feed extends Component {
       return this.renderAd(item);
     } else if (item.type === "story") {
       return this.renderStory(item);
+    } else if (item.type === "video") {
+      return this.renderVideo(item);
     } else if (item.type === "gif") {
       return this.renderGif(item);
     } else {
@@ -180,6 +182,42 @@ export default class Feed extends Component {
           <span className="item__smiley">{gif.smiley}</span>
           <span className="item__profileName"> {gif.profileName}</span>
           <span> {gif.messageResponse}</span>
+        </div>
+      </div>
+    );
+  }
+
+  renderVideo(video) {
+    return (
+      <div className="item news-item" key={video.id}>
+        <div className="item__newsHeader">
+          <img
+            className="item__profileImage"
+            src={video.profileImage}
+            width={45}
+            height={45}
+            alt={video.profileName}
+          />
+          <div className="item__profileNameContainer">
+            <span className="item__profileName">{video.profileName}</span>
+            <span className="item__action"> {video.action}</span>
+            <p className="item__date"> {video.date}</p>
+          </div>
+        </div>
+        <div className="item__body">
+          <div className="item__subText">{video.text}</div>
+          <iframe
+            width="548"
+            height="308"
+            src={video.videolink}
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          />
+        </div>
+        <div className="item__actions">
+          <span className="item__smiley">{video.smiley}</span>
+          <span className="item__profileName"> {video.profileName}</span>
+          <span> {video.messageResponse}</span>
         </div>
       </div>
     );
