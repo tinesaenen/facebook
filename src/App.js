@@ -143,7 +143,7 @@ export default class App extends Component {
   }
 
   calculateWidth(percent) {
-    return (percent / 100) * 130;
+    return (percent / 100) * 135;
   }
 
   render() {
