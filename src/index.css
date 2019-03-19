@@ -259,25 +259,66 @@ main {
   display: flex;
   flex-direction: row;
   margin: 0px 0px 10px 0px;
-  /* height: 180px; */
+  /* height: 180pCx; */
   width: 411px;
 }
 
 .liveFaceTracking__video video {
-  max-width: 200px;
+  /* width: 200px; */
+  height: 200px;
+}
+
+.videoCanvas {
+  width: 170px;
+  object-fit: fill;
+  display: block;
+  height: 230px;
+  overflow: hidden;
+  /* padding-right: 50px; */
 }
 
 .liveFaceTracking__video canvas {
-  max-width: 200px;
+  height: 230px;
+  margin-left: -68px;
 }
 
 .liveFaceTracking__stats {
   flex: 1;
+  width: 220px;
 }
 
 .liveFaceTracking__stats p {
-  padding: 2px 5px 2px 5px;
+  padding: 0px 5px 0px 5px;
   margin: 0px;
+  font-size: 15px;
+}
+
+.emotion {
+  display: flex;
+}
+
+.procent {
+  color: white;
+}
+
+.balk {
+  background-color: #90a3ca;
+  border-radius: 0px 10px 10px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.onderliggendeBalk {
+  background-color: #90a3ca52;
+  width: 140px;
+  height: 18px;
+  border-radius: 0px 10px 10px 0px;
+  margin: 3px 3px 0px 0px;
+}
+
+.emotion-label {
+  width: 115px;
+  font-size: 15px;
+  color: #4667a8;
 }
 
 /*-----------------------stories-------------------------*/
