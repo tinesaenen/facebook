@@ -45,8 +45,8 @@ export default class App extends Component {
     const canvas = document.querySelector("#face_video_canvas");
     const ctx = canvas.getContext("2d");
     ctx.strokeStyle = "white";
-    ctx.strokeWidth = 2;
     const points = face.featurePoints;
+    ctx.lineWidth = 1;
     ctx.beginPath();
     // Kaak
     ctx.moveTo(points[0].x, points[0].y);
@@ -73,21 +73,21 @@ export default class App extends Component {
     ctx.lineTo(points[15].x, points[15].y);
     ctx.lineTo(points[12].x, points[12].y);
 
-    // oog links hor
-    ctx.moveTo(points[16].x, points[16].y);
-    ctx.lineTo(points[17].x, points[17].y);
+    // // oog links hor
+    // ctx.moveTo(points[16].x, points[16].y);
+    // ctx.lineTo(points[17].x, points[17].y);
 
-    // oog links vert
-    ctx.moveTo(points[30].x, points[30].y);
-    ctx.lineTo(points[31].x, points[31].y);
+    // // oog links vert
+    // ctx.moveTo(points[30].x, points[30].y);
+    // ctx.lineTo(points[31].x, points[31].y);
 
-    // oog rechts hor
-    ctx.moveTo(points[18].x, points[18].y);
-    ctx.lineTo(points[19].x, points[19].y);
+    // // oog rechts hor
+    // ctx.moveTo(points[18].x, points[18].y);
+    // ctx.lineTo(points[19].x, points[19].y);
 
-    // oog rechts vert
-    ctx.moveTo(points[32].x, points[32].y);
-    ctx.lineTo(points[33].x, points[33].y);
+    // // oog rechts vert
+    // ctx.moveTo(points[32].x, points[32].y);
+    // ctx.lineTo(points[33].x, points[33].y);
 
     // mond buiten
     ctx.moveTo(points[20].x, points[20].y);
@@ -109,8 +109,33 @@ export default class App extends Component {
 
     ctx.stroke();
 
+    let oogx1 = (points[16].x + points[17].x + points[30].x + points[31].x) / 4;
+    let oogy1 = (points[16].y + points[17].y + points[30].y + points[31].y) / 4;
+    ctx.beginPath();
+    ctx.moveTo(oogx1, oogy1);
+    ctx.arc(oogx1, oogy1, 5, 0, 2 * Math.PI);
+    ctx.fill();
+
+    let oogx2 = (points[18].x + points[19].x + points[32].x + points[33].x) / 4;
+    let oogy2 = (points[18].y + points[19].y + points[32].y + points[33].y) / 4;
+    ctx.beginPath();
+    ctx.moveTo(oogx2, oogy2);
+    ctx.arc(oogx2, oogy2, 5, 0, 2 * Math.PI);
+    ctx.fill();
+
     ctx.fillStyle = "white";
     for (let i = 0; i < 34; i++) {
+      if (
+        i === 16 ||
+        i === 17 ||
+        i === 30 ||
+        i === 31 ||
+        i === 18 ||
+        i === 19 ||
+        i === 32 ||
+        i === 33
+      )
+        continue;
       const pt = face.featurePoints[i];
       ctx.fillRect(pt.x - 2, pt.y - 2, 4, 4);
     }
@@ -123,27 +148,25 @@ export default class App extends Component {
       angstdiv = document.querySelector(`.emotion-angst`),
       verwonderingdiv = document.querySelector(`.emotion-verwondering`);
 
-    let vreugdebalk = this.calculateWidth(this.state.emotions.joy);
-    let woedebalk = this.calculateWidth(this.state.emotions.anger);
-    let verdrietbalk = this.calculateWidth(this.state.emotions.sadness);
-    let afgunstbalk = this.calculateWidth(this.state.emotions.disgust);
-    let minachtingbalk = this.calculateWidth(this.state.emotions.contempt);
-    let angstbalk = this.calculateWidth(this.state.emotions.fear);
-    let verwonderingbalk = this.calculateWidth(this.state.emotions.surprise);
+    vreugdediv.style.width = `${this.state.emotions.joy}%`;
+    woedediv.style.width = `${this.state.emotions.anger}%`;
+    verdrietdiv.style.width = `${this.state.emotions.sadness}%`;
+    afgunstdiv.style.width = `${this.state.emotions.disgust}%`;
+    minachtingdiv.style.width = `${this.state.emotions.contempt}%`;
+    angstdiv.style.width = `${this.state.emotions.fear}%`;
+    verwonderingdiv.style.width = `${this.state.emotions.surprise}%`;
 
-    console.log(vreugdebalk);
+    var dt = new Date();
+    document.getElementById("time").innerHTML =
+      dt.toLocaleTimeString() + " CET";
 
-    vreugdediv.style.width = `${vreugdebalk}px`;
-    woedediv.style.width = `${woedebalk}px`;
-    verdrietdiv.style.width = `${verdrietbalk}px`;
-    afgunstdiv.style.width = `${afgunstbalk}px`;
-    minachtingdiv.style.width = `${minachtingbalk}px`;
-    angstdiv.style.width = `${angstbalk}px`;
-    verwonderingdiv.style.width = `${verwonderingbalk}px`;
-  }
-
-  calculateWidth(percent) {
-    return (percent / 100) * 135;
+    var dt = new Date();
+    document.getElementById("date").innerHTML =
+      ("0" + (dt.getMonth() + 1)).slice(-2) +
+      "/" +
+      ("0" + dt.getDate()).slice(-2) +
+      "/" +
+      dt.getFullYear();
   }
 
   render() {
@@ -165,83 +188,96 @@ export default class App extends Component {
               <div className="videoCanvas">
                 <div className="liveFaceTracking__video" />
               </div>
-              <div className="liveFaceTracking__stats">
-                <div className="emotion">
-                  <p className="emotion-label">Vreugde</p>
-                  <div className="onderliggendeBalk">
-                    <div className="emotion-vreugde balk">
-                      <p className="procent">
-                        {(emotions.joy || 0).toFixed(2)}%
-                      </p>
+              <div>
+                <div className="timeStatLabelContainer">
+                  <p className="timeStatLabel" id="date" />
+                  <p className="timeStatLabel" id="time" />
+                  <p className="timeStatLabel">BELGIE </p>
+                  <p className="timeStatLabel">51°11’56,742”N</p>
+                  <p className="timeStatLabel">4°24’14,293”O</p>
+                </div>
+                <div className="liveFaceTracking__stats">
+                  <div className="emotion">
+                    <p className="emotion-label">Vreugde</p>
+                    <div className="onderliggendeBalk">
+                      <div className="emotion-vreugde balk">
+                        <p className="procent">
+                          {(emotions.joy || 0).toFixed(2)}%
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="emotion">
-                  <p className="emotion-label">Woede</p>
-                  <div className="onderliggendeBalk">
-                    <div className="emotion-woede balk">
-                      <p className="procent">
-                        {(emotions.anger || 0).toFixed(2)}%
-                      </p>
+                  <div className="emotion">
+                    <p className="emotion-label">Woede</p>
+                    <div className="onderliggendeBalk">
+                      <div className="emotion-woede balk">
+                        <p className="procent">
+                          {(emotions.anger || 0).toFixed(2)}%
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="emotion">
-                  <p className="emotion-label">Verdriet</p>
-                  <div className="onderliggendeBalk">
-                    <div className="emotion-verdriet balk">
-                      <p className="procent">
-                        {(emotions.sadness || 0).toFixed(2)}%
-                      </p>
+                  <div className="emotion">
+                    <p className="emotion-label">Verdriet</p>
+                    <div className="onderliggendeBalk">
+                      <div className="emotion-verdriet balk">
+                        <p className="procent">
+                          {(emotions.sadness || 0).toFixed(2)}%
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="emotion">
-                  <p className="emotion-label">Afgunst</p>
-                  <div className="onderliggendeBalk">
-                    <div className="emotion-afgunst balk">
-                      <p className="procent">
-                        {(emotions.disgust || 0).toFixed(2)}%
-                      </p>
+                  <div className="emotion">
+                    <p className="emotion-label">Afgunst</p>
+                    <div className="onderliggendeBalk">
+                      <div className="emotion-afgunst balk">
+                        <p className="procent">
+                          {(emotions.disgust || 0).toFixed(2)}%
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="emotion">
-                  <p className="emotion-label">Minachtig</p>
-                  <div className="onderliggendeBalk">
-                    <div className="emotion-minachting balk">
-                      <p className="procent">
-                        {(emotions.contempt || 0).toFixed(2)}%
-                      </p>
+                  <div className="emotion">
+                    <p className="emotion-label">Minachtig</p>
+                    <div className="onderliggendeBalk">
+                      <div className="emotion-minachting balk">
+                        <p className="procent">
+                          {(emotions.contempt || 0).toFixed(2)}%
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="emotion">
-                  <p className="emotion-label">Angst</p>
-                  <div className="onderliggendeBalk">
-                    <div className="emotion-angst balk">
-                      <p className="procent">
-                        {(emotions.fear || 0).toFixed(2)}%
-                      </p>
+                  <div className="emotion">
+                    <p className="emotion-label">Angst</p>
+                    <div className="onderliggendeBalk">
+                      <div className="emotion-angst balk">
+                        <p className="procent">
+                          {(emotions.fear || 0).toFixed(2)}%
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="emotion">
-                  <p className="emotion-label">Verbazing</p>
-                  <div className="onderliggendeBalk">
-                    <div className="emotion-verwondering balk">
-                      <p className="procent">
-                        {(emotions.surprise || 0).toFixed(2)}%
-                      </p>
+                  <div className="emotion">
+                    <p className="emotion-label">Verbazing</p>
+                    <div className="onderliggendeBalk">
+                      <div className="emotion-verwondering balk">
+                        <p className="procent">
+                          {(emotions.surprise || 0).toFixed(2)}%
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div className="privacySerieus">
+              * Wij nemen uw privacy heel serieus.
+            </div>
             <div className="leftColumnScroll">
               <Feed
                 className="verticalFeed"
                 types={["notification", "miniNotification"]}
+                autoRefresh={true}
               />
             </div>
           </div>

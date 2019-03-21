@@ -138,6 +138,21 @@ main {
   margin-bottom: 20px;
 }
 
+.notification-item {
+  animation: slide-in 0.5s ease-out;
+  transition: all 0.3s;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translate(-30vw, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 .item__newsHeader {
   display: flex;
   flex-direction: row;
@@ -258,7 +273,7 @@ main {
   background: white;
   display: flex;
   flex-direction: row;
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 0px 0px;
   /* height: 180pCx; */
   /* width: 411px; */
 }
@@ -288,7 +303,7 @@ main {
 
 .liveFaceTracking__stats {
   flex: 1;
-  width: 58%;
+  margin: 0px 0px 5px 0px;
 }
 
 .liveFaceTracking__stats p {
@@ -323,6 +338,25 @@ main {
   width: 115px;
   font-size: 15px;
   color: #4667a8;
+}
+
+.timeStatLabelContainer {
+  margin: 4px 0px 8px 0px;
+}
+
+.timeStatLabel {
+  font-size: 12px;
+  color: #90a3ca;
+  margin: 0px 0px 0px 5px;
+}
+
+.privacySerieus {
+  background-color: #90a3ca52;
+  padding: 3px;
+  font-size: 12px;
+  font-style: italic;
+  color: white;
+  text-align: center;
 }
 
 /*-----------------------stories-------------------------*/

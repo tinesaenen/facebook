@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import DATA from "./ItemData";
 
+function random(min, max) {
+  return min + Math.random() * (max - min);
+}
+
 export default class Feed extends Component {
   constructor(props) {
     super(props);
@@ -12,11 +16,23 @@ export default class Feed extends Component {
     const items = DATA.filter(
       item => types.includes(item.type) && !item.target
     );
-    this.setState({ items, isLoading: false });
+    this.setState({ items, itemCount: 0, isLoading: false });
+    if (this.props.autoRefresh) {
+      setTimeout(this.increaseCounter.bind(this), random(1000, 7000));
+    }
+  }
+
+  increaseCounter() {
+    this.setState({ itemCount: this.state.itemCount + 1 });
+    setTimeout(this.increaseCounter.bind(this), random(1000, 7000));
   }
 
   render() {
-    const { isLoading, items } = this.state;
+    let { isLoading, items, itemCount } = this.state;
+    if (this.props.autoRefresh) {
+      items = items.slice(0, itemCount);
+      items = items.reverse();
+    }
     const itemElements = items.map(item => this.renderItem(item));
     return (
       <div className="feed">
@@ -253,7 +269,7 @@ export default class Feed extends Component {
   }
 
   renderNotification(notification) {
-    console.log(notification);
+    // console.log(notification);
     return (
       <div className="item notification-item" key={notification.id}>
         <div className="item__body">
@@ -283,7 +299,7 @@ export default class Feed extends Component {
   }
 
   renderMiniNotification(miniNotification) {
-    console.log(miniNotification);
+    // console.log(miniNotification);
     return (
       <div className="item notification-item" key={miniNotification.id}>
         <div className="item__body">

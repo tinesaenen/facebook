@@ -5,6 +5,8 @@ let DATA = [
 
   {
     type: "ad",
+    emotionStatus: "happy",
+    order: 1,
     dt: 1234981243,
     profileImage: "/imagesProfilePages/batibouw.jpg",
     pageName: "Batibouw ",
