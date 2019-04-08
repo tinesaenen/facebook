@@ -282,11 +282,6 @@ main {
   width: 50%;
 } */
 
-.liveFaceTracking__video video {
-  /* width: 200px; */
-  /* height: 200px; */
-}
-
 .videoCanvas {
   width: 42%;
   object-fit: fill;
