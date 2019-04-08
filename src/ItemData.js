@@ -8,6 +8,61 @@ let DATA = [
     emotionStatus: "happy",
     order: 1,
     dt: 1234981243,
+    profileImage: "/imagesProfilePages/ikea.png",
+    pageName: "Ikea ",
+    image: "/imagesAds/ikea_paars.jpg",
+    text: "Claim je Kamer!",
+    subText:
+      "Heb je het ineens helemaal gehad met die roze paardengordijnen en of dat Bob de Bouwer bed? Dan is jouw kinderkamer toe aan een grondige make-over. Want je kamer is vanaf nu van jou alleen. Het is jouw plek om met je vrienden te chillen, te slapen en je huiswerk te doen. Style ‘m dus in jouw stijl!"
+  },
+  {
+    type: "ad",
+    emotionStatus: "happy",
+    order: 2,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/telenet.jpg",
+    pageName: "Telenet ",
+    image: "/imagesAds/wigo_telenet.jpg",
+    text: "Wigo van Telenet",
+    subText: "De meest voordelige formule voor het hele gezin"
+  },
+  {
+    type: "ad",
+    emotionStatus: "happy",
+    order: 3,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/coca_cola.png",
+    pageName: "Coca Cola Belgium ",
+    image: "https://media.giphy.com/media/wyACQYUOdpFLO/giphy.gif",
+    text: "Share the happiness",
+    subText: "Spreading the happiness since 1892 "
+  },
+  {
+    type: "ad",
+    emotionStatus: "happy",
+    order: 4,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/rituals.png",
+    pageName: "Rituals ",
+    image: "/imagesAds/rituals_meditatie.jpg",
+    text: "Rituals|Home & Body Cosmetics",
+    subText: "Download onze nieuwe app en relax"
+  },
+  {
+    type: "ad",
+    emotionStatus: "happy",
+    order: 5,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/fortune_factory.png",
+    pageName: "Fortune Factory ",
+    image: "/imagesAds/klavertje-vier-in-blikje.png",
+    text: "Klavertje vier in eigen doosje",
+    subText:
+      "Deel jouw geluk met een persoonlijke boodschap in een volledig eigen ontworpen doosje!"
+  },
+  {
+    type: "ad",
+    dt: 1234981243,
     profileImage: "/imagesProfilePages/batibouw.jpg",
     pageName: "Batibouw ",
     image: "/imagesAds/impermo_batibouw.jpg",
@@ -81,6 +136,8 @@ let DATA = [
   },
   {
     type: "ad",
+    emotionStatus: "happy",
+    order: 5,
     dt: 1234981243,
     profileImage: "/imagesProfilePages/mcdonalds.jpg",
     pageName: "McDonald's ",
@@ -476,6 +533,22 @@ let DATA = [
 
   {
     type: "news",
+    emotionStatus: "happy",
+    order: 6,
+    dt: 1234981243,
+    text: "Ex-stropers worden natuurbeschermers",
+    profileName: "Goed Nieuws Vlaanderen",
+    profileImage: "/imagesProfilePages/goed_nieuws_vlaanderen.jpg",
+    date: "5 minuten geleden",
+    image: "/imagesPosts/stroper_natuurbeschermer.jpg",
+    messageSource: "Goed Nieuws Vlaanderen",
+    messageSourceWebsite: "goednieuws.vlaanderen",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 98 anderen hebben neutraal gekeken naar dit bericht",
+    smiley: "😃"
+  },
+  {
+    type: "news",
     dt: 1234981243,
     text: "Hij kwam van Kanegem en hij wist van (n)iets",
     profileName: "Wouter Gijsemans",
@@ -701,7 +774,25 @@ let DATA = [
   //     "en 3 anderen hebben droevig en kwaad gekeken naar dit bericht",
   //   smiley: "😤😢"
   // },
-
+  {
+    type: "bigNews",
+    emotionStatus: "happy",
+    order: 7,
+    dt: 1234981243,
+    text:
+      "De 'Runner's High' is geen mythe: hoe sporten je gelukkiger kan maken",
+    subText:
+      "De zaligmakende effecten van een goede work-out zijn vergelijkbaar met die van heroïne of morfine",
+    profileName: "Lizzy Luyten",
+    profileImage: "/imagesProfilePeople/lizzy_Luyten.jpeg",
+    date: "16 minuten geleden",
+    image: "/imagesPosts/runner_high.jpeg",
+    messageSource: " De Morgen",
+    messageSourceWebsite: "demorgen.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 53 anderen hebben gelukkig gekeken naar dit bericht",
+    smiley: "🙂"
+  },
   {
     type: "bigNews",
     dt: 1234981243,
@@ -908,6 +999,8 @@ let DATA = [
   },
   {
     type: "picture",
+    emotionStatus: "happy",
+    order: 8,
     dt: 1234981243,
     text: "Haha, LOL!",
     profileName: "Funny Cat Memes",
@@ -920,6 +1013,8 @@ let DATA = [
   },
   {
     type: "picture",
+    emotionStatus: "happy",
+    order: 9,
     dt: 1234981243,
     text: "True that",
     profileName: "Funny Cat Memes",
@@ -1049,6 +1144,18 @@ let DATA = [
 
   {
     type: "notification",
+    emotionStatus: "happy",
+    order: 10,
+    dt: 1234981243,
+    message: "Goed nieuws: enkel zonneschijn voor de komende dagen!",
+    text:
+      "Een eenvoudige, prachtige app van Aplle om de weersverwachting te zien. bekijk voor plaatsen over heel de wereld de huidige temperatuur, de weersverwachting per uur voor de komende 24 uur en een 10-daagse weersverwachting.",
+    image: "/imagesNotifications/goed_weer.png",
+    textTitle: "Weer — Apple"
+  },
+
+  {
+    type: "notification",
     dt: 1234981243,
     message:
       "We merken dat je er wat moe uitziet vandaag... Misschien moet je vanavond wat vroeger gaan slapen?",
@@ -1090,9 +1197,35 @@ let DATA = [
 
   {
     type: "miniNotification",
+    emotionStatus: "happy",
+    order: 11,
+    dt: 1234981243,
+    message:
+      "Als je wil kan je je lach nu delen met je vrienden. Wil je live gaan op je Facebookverhaal?"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "happy",
+    order: 12,
+    dt: 1234981243,
+    message:
+      "Wat zie je er gelukkig uit vandaag! Geef jezelf nog een boost met een klavertje vier. Kijk maar tussen je advertenties."
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "happy",
+    order: 13,
+    dt: 1234981243,
+    message:
+      "Wat zie je er gelukkig uit vandaag! Geef jezelf nog een boost met een klavertje vier. Kijk maar tussen je advertenties."
+  },
+
+  {
+    type: "miniNotification",
     dt: 1234981243,
     message: "Niet vergeten te lachen! het leven duurt maar even"
   },
+
   {
     type: "miniNotification",
     dt: 1234981243,
