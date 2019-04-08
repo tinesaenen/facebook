@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Feed from "./Feed";
+import AudioAnalyser from "./AudioAnalyser";
 
 let detector;
 
@@ -28,6 +29,22 @@ export default class App extends Component {
     detector.detectAllEmojis();
     detector.detectAllAppearance();
     detector.start();
+
+    var pubnubDemo = new window.PubNub({
+      publishKey: "pub-c-d4621507-6ae8-4cf8-a156-cfb1c8d2a4cb",
+      subscribeKey: "sub-c-40748466-5610-11e9-93f3-8ed1bbcba485"
+    });
+
+    pubnubDemo.addListener({
+      message: function(message) {
+        console.log(message);
+        alert(JSON.stringify(message));
+      }
+    });
+
+    pubnubDemo.subscribe({
+      channels: ["main"]
+    });
   }
 
   componentWillUnmount() {
@@ -113,14 +130,17 @@ export default class App extends Component {
     let oogy1 = (points[16].y + points[17].y + points[30].y + points[31].y) / 4;
     ctx.beginPath();
     ctx.moveTo(oogx1, oogy1);
-    ctx.arc(oogx1, oogy1, 5, 0, 2 * Math.PI);
+    ctx.arc(oogx1, oogy1, 6, 0, 2 * Math.PI);
+    ctx.fillStyle = "cyan";
+
     ctx.fill();
 
     let oogx2 = (points[18].x + points[19].x + points[32].x + points[33].x) / 4;
     let oogy2 = (points[18].y + points[19].y + points[32].y + points[33].y) / 4;
     ctx.beginPath();
     ctx.moveTo(oogx2, oogy2);
-    ctx.arc(oogx2, oogy2, 5, 0, 2 * Math.PI);
+    ctx.arc(oogx2, oogy2, 6, 0, 2 * Math.PI);
+    ctx.fillStyle = "cyan";
     ctx.fill();
 
     ctx.fillStyle = "white";
@@ -195,7 +215,9 @@ export default class App extends Component {
                   <p className="timeStatLabel">BELGIE </p>
                   <p className="timeStatLabel">51°11’56,742”N</p>
                   <p className="timeStatLabel">4°24’14,293”O</p>
+                  <AudioAnalyser />
                 </div>
+
                 <div className="liveFaceTracking__stats">
                   <div className="emotion">
                     <p className="emotion-label">Vreugde</p>
