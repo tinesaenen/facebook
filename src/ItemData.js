@@ -1197,6 +1197,62 @@ let DATA = [
 
   {
     type: "miniNotification",
+    emotionStatus: "angry",
+    order: 11,
+    dt: 1234981243,
+    message:
+      "Je scrollt zeer snel door je feed: vanaf nu bedraagt je scrollsnelheid slechts 50%." //fix me
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "angry",
+    order: 11,
+    dt: 1234981243,
+    message:
+      "Je hebt je gegevens nog niet volledig aangevuld. We missen je banknummer nog."
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "angry",
+    order: 11,
+    dt: 1234981243,
+    message:
+      "Je hebt je gegevens nog niet volledig aangevuld. We missen je pincode nog."
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "angry",
+    order: 11,
+    dt: 1234981243,
+    message:
+      "Je hebt je gegevens nog niet volledig aangevuld. We missen je adres nog."
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "angry",
+    order: 11,
+    dt: 1234981243,
+    message:
+      "Door al dat fronsen gaan die rimpeltjes niet kleiner worden..."
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "angry",
+    order: 11,
+    dt: 1234981243,
+    message:
+      "We hebben een aantal spelfouten ontdekt in je laatste status. Passen we ze even aan voor u?"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "angry",
+    order: 11,
+    dt: 1234981243,
+    message:
+      "Je hebt je gegevens nog niet volledig aangevuld. We missen je telefonnnummer nog."
+  },
+  {
+    type: "miniNotification",
     emotionStatus: "happy",
     order: 11,
     dt: 1234981243,

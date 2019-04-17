@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Feed from "./Feed";
 import AudioAnalyser from "./AudioAnalyser";
+// import InfiniteScroll from "react-infinite-scroll-component";
 
 let detector;
 
@@ -303,12 +304,14 @@ export default class App extends Component {
               />
             </div>
           </div>
+
           <div className="middleColumn">
             <Feed
               className="verticalFeed"
               types={["news", "bigNews", "status", "picture", "gif", "video"]}
             />
           </div>
+
           <div className="rightColumn">
             <div className="storyContainer">
               <Feed className="horizontalFeed" types={["story"]} />
