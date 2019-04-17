@@ -336,7 +336,7 @@ main {
 }
 
 .timeStatLabelContainer {
-  margin: 4px 0px 8px 0px;
+  margin: 4px 20px 8px 0px;
 }
 
 .timeStatLabel {
@@ -353,7 +353,10 @@ main {
   color: white;
   text-align: center;
 }
+.timeStatAnalyserContainer {
+display: flex;
 
+}
 /*-----------------------stories-------------------------*/
 
 .storyContainer {

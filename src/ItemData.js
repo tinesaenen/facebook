@@ -3,6 +3,30 @@ let DATA = [
 
   //----------------------ADVERTISEMENTS-------------------------//
 
+ {
+    type: "ad",
+    emotionStatus: "angry",
+    order: 1,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/dove.png",
+    pageName: "Dove ",
+    image: "/imagesAds/dove_zeep.gif",
+    text: "Deep moisture van Dove",
+    subText:
+      "softer, smoother skin after one shower"
+  },
+ {
+    type: "ad",
+    emotionStatus: "angry",
+    order: 1,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/h&m.png",
+    pageName: "H&M ",
+    image: "/imagesAds/cool_monkey.jpg",
+    text: "Coolest monkey in the jungle",
+    subText:
+      "Printed hooded top voor €8,99 | verkrijgbaar in oranje, groen en zwart"
+  },
   {
     type: "ad",
     emotionStatus: "happy",
@@ -352,6 +376,7 @@ let DATA = [
 
   // -----------------------VIDEOS-------------------------//
 
+  
   {
     type: "video",
     dt: 1234981243,
@@ -407,7 +432,19 @@ let DATA = [
   },
 
   // -----------------------GIFS-------------------------//
-
+{
+    type: "gif",
+    emotionStatus: "angry",
+    dt: 1234981243,
+    text: "Hoofdpijn...",
+    profileName: "Erik Bosmans",
+    profileImage: "/imagesProfilePeople/Erik_Bosmans.jpeg",
+    date: "zojuist",
+    image: "https://media.giphy.com/media/cilRNyEykgiSA/giphy.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 7 anderen hebben ingestemd met dit bericht",
+    smiley: "😵"
+  },
   {
     type: "gif",
     dt: 1234981243,
@@ -531,6 +568,7 @@ let DATA = [
 
   // -------------------------NEWS----------------------------//
 
+  
   {
     type: "news",
     emotionStatus: "happy",
@@ -1142,6 +1180,18 @@ let DATA = [
   //   textTitle: "Homespace — Building better tomorrows"
   // },
 
+
+  {
+    type: "notification",
+    emotionStatus: "angry",
+    order: 10,
+    dt: 1234981243,
+    message: "Alles wat je nodig hebt om optimaal te kunnen scrollen!", //fix me
+    text:
+      "Je positieve berichten zijn op voor vandaag. Als je meer positieve berichten wil zien, ga dan naar de FacebookStore.",
+    image: "/imagesNotifications/facebook-store1.jpg",
+    textTitle: "Facebook Store"
+  },
   {
     type: "notification",
     emotionStatus: "happy",
@@ -1338,84 +1388,72 @@ let DATA = [
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Glen_Verhalen.jpeg",
     profileName: "Glen Verhalen",
-    image: "/imagesAds/wix.jpg"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Ivo_Leysen.jpeg",
     profileName: "Ivo Leysen",
-    image: "/imagesAds/wix.jpg"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Jos_Vantielen.jpeg",
     profileName: "Jos Vantielen ",
-    image: "/imagesAds/wix.jpg"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Karel_Vandebroeck.jpeg",
     profileName: "Karel Vandebroeck",
-    image: "/imagesAds/wix.jpg"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Liesbeth_Van_Impen.jpeg",
     profileName: "Liesbeth Van Impen",
-    image: "/imagesAds/wix.jpg"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/lizzy_Luyten.jpeg",
     profileName: "Lizzy Luyten",
-    image: "/imagesAds/wix.jpg"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Robbe_Rijckaert.jpeg",
     profileName: "Robbe Rijckart",
-    image: "/imagesAds/wix.jpg"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Sasha_Smets.jpeg",
     profileName: "Sasha Smets",
-    image: "/imagesAds/wix.jpg"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Tessa_Sanders.jpeg",
     profileName: "Tessa Sanders",
-    image: "/imagesAds/wix.jpg"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Tessa_Van_den_Driessche.jpeg",
     profileName: "Tessa Van de Driesche ",
-    image: "/imagesAds/wix.jpg"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Yikhay_Lee.jpeg",
     profileName: "Yikhay Lee",
-    image: "/imagesAds/wix.jpg"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Vanessa_Heaght.jpeg",
     profileName: "Vanessa Heaght",
-    image: "/imagesAds/wix.jpg"
   },
 
   {
@@ -1423,21 +1461,18 @@ let DATA = [
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Sara_Hendriksen.jpeg",
     profileName: "Sara Hendriksen ",
-    image: "/imagesAds/wix.jpg"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Philip_Aerts.jpeg",
     profileName: "Philip Aerts",
-    image: "/imagesAds/wix.jpg"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Rik_Torfs.jpeg",
     profileName: "Rik Torfs",
-    image: "/imagesAds/wix.jpg"
   }
 ];
 

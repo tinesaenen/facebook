@@ -42,14 +42,14 @@ export default class AudioAnalyser extends Component {
     const ctx = this.ctx;
     // achtergrond
     ctx.save();
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "#dbe1ee";
     ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
     // fft frequency display
     var frequencies = new Uint8Array(128);
     this.analyser.getByteFrequencyData(frequencies);
     // console.log(frequencies);
-    ctx.fillStyle = "#5D93FF";
+    ctx.fillStyle = "#90a3ca";
     for (let i = 0; i < frequencies.length; i++) {
       ctx.fillRect(i * 10, 450, 5, -frequencies[i]);
     }
@@ -57,7 +57,7 @@ export default class AudioAnalyser extends Component {
     var timedomain = new Uint8Array(128);
     // debugger;
     this.analyser.getByteTimeDomainData(timedomain);
-    ctx.strokeStyle = "#0FD0B9";
+    ctx.strokeStyle = "red";
     ctx.lineWidth = 4;
     ctx.beginPath();
     for (let i = 0; i < timedomain.length; i++) {
@@ -70,6 +70,6 @@ export default class AudioAnalyser extends Component {
   }
 
   render() {
-    return <canvas ref={this.canvasRef} />;
+    return <canvas style={{width: 140, height:75, margin: 3, }} ref={this.canvasRef} />;
   }
 }

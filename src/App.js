@@ -210,15 +210,16 @@ export default class App extends Component {
                 <div className="liveFaceTracking__video" />
               </div>
               <div>
+              <div className="timeStatAnalyserContainer">
                 <div className="timeStatLabelContainer">
                   <p className="timeStatLabel" id="date" />
                   <p className="timeStatLabel" id="time" />
                   <p className="timeStatLabel">BELGIE </p>
                   <p className="timeStatLabel">51°11’56,742”N</p>
                   <p className="timeStatLabel">4°24’14,293”O</p>
+                  </div>
                   <AudioAnalyser />
-                </div>
-
+              </div>
                 <div className="liveFaceTracking__stats">
                   <div className="emotion">
                     <p className="emotion-label">Vreugde</p>
