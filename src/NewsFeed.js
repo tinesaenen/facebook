@@ -19,24 +19,22 @@ export default class Feed extends Component {
 
   componentDidMount() {
     const types = this.props.types;
-    this.state.allItems = DATA.filter(
+    const allItems = DATA.filter(
       item => types.includes(item.type) && !item.target
     );
-    this.state.items = this.state.allItems.slice(0, 10);
+    const items = allItems.slice(0, 10);
+    this.setState({ allItems, items });
   }
 
   fetchData = () => {
-    if (this.props.emotion) {
-      const newItems = this.state.allItems.filter(item => item.emotionStatus === this.props.emotion);
-      newItems.sort((a, b) => a.order - b.order);
-      console.log(newItems);
-      this.setState({
-        items: this.state.items.concat(newItems)
-      });
-      return;
+    let newItems = this.state.allItems.filter(item => item.emotionStatus === this.props.emotion);
+    if (newItems.length > 0) {
+      // newItems.sort((a, b) => a.order - b.order);
+    } else {
+      const newIndex = this.state.items.length;
+      newItems = this.state.allItems.slice(newIndex, newIndex + 10);
+      newItems = newItems.filter(item => typeof item.emotionStatus === 'undefined');
     }
-    const newIndex = this.state.items.length;
-    const newItems = this.state.allItems.slice(newIndex, newIndex + 10);
     setTimeout(() => {
       this.setState({
         items: this.state.items.concat(newItems)
