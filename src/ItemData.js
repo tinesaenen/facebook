@@ -1,9 +1,163 @@
 let DATA = [
-  //http://source.unsplash.com/random/75x75?girl
+  //----------------------INTRO-------------------------//
+  {
+    type: "introPicture",
+    dt: 1234981243,
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    action: "heeft een bericht geplaatst",
+    date: "12 minuten geleden",
+    image: "/imagesIntro/hey_jij_daar.png",
+    smiley: "😮",
+    number: "214"
+  },
+  {
+    type: "introPicture",
+    dt: 1234981243,
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    action: "heeft een bericht geplaatst",
+    date: "13 minuten geleden",
+    image: "/imagesIntro/ben_jij_het_ook_beu.png",
+    smiley: "😮",
+    number: "214"
+  },
+  {
+    type: "introPicture",
+    dt: 1234981243,
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    action: "heeft een bericht geplaatst",
+    date: "13 minuten geleden",
+    image: "/imagesIntro/je_scrolt.png",
+    smiley: "😮",
+    number: "214"
+  },
+  {
+    type: "introPicture",
+    dt: 1234981243,
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    action: "heeft een bericht geplaatst",
+    date: "13 minuten geleden",
+    image: "/imagesIntro/als_masterproject.png", //nieuw design verschijnt
+    smiley: "😮",
+    number: "214"
+  },
+  {
+    type: "introPicture",
+    dt: 1234981243,
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    action: "heeft een bericht geplaatst",
+    date: "13 minuten geleden",
+    image: "/imagesIntro/met_het_verzachten.png", //emotietracking verschijnt
+    smiley: "😮",
+    number: "214"
+  },
+  {
+    type: "introPicture",
+    dt: 1234981243,
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    action: "heeft een bericht geplaatst",
+    date: "13 minuten geleden",
+    image: "/imagesIntro/coding_timelapse.png",
+    smiley: "😮",
+    number: "214"
+  },
+  {
+    type: "introPicture",
+    dt: 1234981243,
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    action: "heeft een bericht geplaatst",
+    date: "13 minuten geleden",
+    image: "/imagesIntro/Wanneer_FB_je_emoties.png",
+    smiley: "😮",
+    number: "214"
+  },
+  {
+    type: "introPicture",
+    dt: 1234981243,
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    action: "heeft een bericht geplaatst",
+    date: "13 minuten geleden",
+    image: "/imagesIntro/in_de_middenkolom.png", // reclame verschijnt
+    smiley: "😮",
+    number: "214"
+  },
+  {
+    type: "introPicture",
+    dt: 1234981243,
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    action: "heeft een bericht geplaatst",
+    date: "13 minuten geleden",
+    image: "/imagesIntro/coding_timelapse.png",
+    smiley: "😮",
+    number: "214"
+  },
+
+  {
+    type: "introPicture",
+    dt: 1234981243,
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    action: "heeft een bericht geplaatst",
+    date: "13 minuten geleden",
+    image: "/imagesIntro/de_selectie_berichten.png",
+    smiley: "😮",
+    number: "214"
+  },
+  {
+    type: "introPicture",
+    dt: 1234981243,
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    action: "heeft een bericht geplaatst",
+    date: "13 minuten geleden",
+    image: "/imagesIntro/naast_deze_feature.png", // notificaties verschijnen
+    smiley: "😮",
+    number: "214"
+  },
+  {
+    type: "introPicture",
+    dt: 1234981243,
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    action: "heeft een bericht geplaatst",
+    date: "13 minuten geleden",
+    image: "/imagesIntro/zin_om_het_zelf.png", // vanaf nu wordt de koppeling tussen emotie en berichten gemaakt
+    smiley: "😮",
+    number: "214"
+  },
 
   //----------------------ADVERTISEMENTS-------------------------//
 
- {
+  {
+    type: "ad",
+    emotionStatus: "happy",
+    order: 2,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/telenet.jpg",
+    pageName: "Telenet ",
+    image: "/imagesAds/wigo_telenet.jpg",
+    text: "Wigo van Telenet",
+    subText: "De meest voordelige formule voor het hele gezin"
+  },
+
+  {
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/nutella.png",
+    pageName: "Nutella ",
+    image: "/imagesAds/nutella.jpg",
+    text: "Ieder zijn unieke pot!",
+    subText: "Personaliseer nu je Nutella® pot!"
+  },
+  {
     type: "ad",
     emotionStatus: "angry",
     order: 1,
@@ -12,13 +166,12 @@ let DATA = [
     pageName: "Dove ",
     image: "/imagesAds/dove_zeep.gif",
     text: "Deep moisture van Dove",
-    subText:
-      "softer, smoother skin after one shower"
+    subText: "softer, smoother skin after one shower"
   },
- {
+  {
     type: "ad",
     emotionStatus: "angry",
-    order: 1,
+    order: 2,
     dt: 1234981243,
     profileImage: "/imagesProfilePages/h&m.png",
     pageName: "H&M ",
@@ -39,17 +192,7 @@ let DATA = [
     subText:
       "Heb je het ineens helemaal gehad met die roze paardengordijnen en of dat Bob de Bouwer bed? Dan is jouw kinderkamer toe aan een grondige make-over. Want je kamer is vanaf nu van jou alleen. Het is jouw plek om met je vrienden te chillen, te slapen en je huiswerk te doen. Style ‘m dus in jouw stijl!"
   },
-  {
-    type: "ad",
-    emotionStatus: "happy",
-    order: 2,
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/telenet.jpg",
-    pageName: "Telenet ",
-    image: "/imagesAds/wigo_telenet.jpg",
-    text: "Wigo van Telenet",
-    subText: "De meest voordelige formule voor het hele gezin"
-  },
+
   {
     type: "ad",
     emotionStatus: "happy",
@@ -149,15 +292,7 @@ let DATA = [
     subText:
       "Met de zomer achter de rug en de herfst in het land... Droom je ook al van je volgende reis?"
   },
-  {
-    type: "ad",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/nutella.png",
-    pageName: "Nutella ",
-    image: "/imagesAds/nutella.jpg",
-    text: "Ieder zijn unieke pot!",
-    subText: "Personaliseer nu je Nutella® pot!"
-  },
+
   {
     type: "ad",
     emotionStatus: "happy",
@@ -374,9 +509,234 @@ let DATA = [
   //   subText: "Koppelkorting op elk blauw item dat u koopt"
   // },
 
+  // -------------------------NEWS----------------------------//
+
+  {
+    type: "news",
+    dt: 1234981243,
+    text:
+      "Het allermooiste aan de dansvideo’s van Angèle en Léo is de liefde die je erin kan ontwaren",
+    profileName: "Atar Jabeir",
+    profileImage: "/imagesProfilePeople/Atar_Jabeir.jpeg",
+    date: "5 seconden geleden",
+    image: "/imagesPosts/Atar_Jabeir_AngeleVideo.jpeg",
+    messageSource: "De Morgen",
+    messageSourceWebsite: "demorgen.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😍😌"
+  },
+
+  {
+    type: "news",
+    emotionStatus: "happy",
+    order: 6,
+    dt: 1234981243,
+    text: "Ex-stropers worden natuurbeschermers",
+    profileName: "Goed Nieuws Vlaanderen",
+    profileImage: "/imagesProfilePages/goed_nieuws_vlaanderen.jpg",
+    date: "5 minuten geleden",
+    image: "/imagesPosts/stroper_natuurbeschermer.jpg",
+    messageSource: "Goed Nieuws Vlaanderen",
+    messageSourceWebsite: "goednieuws.vlaanderen",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 98 anderen hebben neutraal gekeken naar dit bericht",
+    smiley: "😃"
+  },
+  {
+    type: "news",
+    dt: 1234981243,
+    text: "Senaat herroept Trumps noodtoestand",
+    profileName: "Lucien de Feyter",
+    profileImage: "/imagesProfilePeople/Lucien_De_Feyter.jpeg",
+    date: "3 minuten geleden",
+    image: "/imagesPosts/Senaat_Trump_noodtoestand.jpg",
+    messageSource: "De Standaard",
+    messageSourceWebsite: "standaard.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 34 anderen hebben neutraal gekeken naar dit bericht",
+    smiley: "😐"
+  },
+  {
+    type: "news",
+    dt: 1234981243,
+    text: "Hij kwam van Kanegem en hij wist van (n)iets",
+    profileName: "Wouter Gijsemans",
+    profileImage: "/imagesProfilePeople/Wouter_Gijsemans.jpeg",
+    date: "3 uur geleden",
+    image: "/imagesPosts/kardinaal_daneels.jpg",
+    messageSource: "De Standaard",
+    messageSourceWebsite: "standaard.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 34 anderen hebben neutraal gekeken naar dit bericht",
+    smiley: "😶"
+  },
+  {
+    type: "news",
+    dt: 1234981243,
+    text: "Kamer keurt minimale dienstverlening in gevangenissen goed",
+    profileName: "Tessa Van Den Driessche",
+    profileImage: "/imagesProfilePeople/Tessa_Van_den_Driessche.jpeg",
+    date: "2 uur geleden",
+    image: "/imagesPosts/gevangenissen.jpg",
+    messageSource: "De Standaard",
+    messageSourceWebsite: "standaard.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 21 anderen hebben neutraal gekeken naar dit bericht",
+    smiley: "😶"
+  },
+  {
+    type: "news",
+    dt: 1234981243,
+    text: "Lachen met Lubach",
+    profileName: "Sara Hendriksen",
+    profileImage: "/imagesProfilePeople/Sara_Hendriksen.jpeg",
+    date: "2 uur geleden",
+    image: "/imagesPosts/lubach.jpg",
+    messageSource: "De Standaard",
+    messageSourceWebsite: "standaard.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 21 anderen hebben gelachen naar dit bericht",
+    smiley: "😁"
+  },
+  {
+    type: "news",
+    dt: 1234981243,
+    text: "Pleidooi voor een harde Brexit",
+    profileName: "Rik Torfs",
+    profileImage: "/imagesProfilePeople/Rik_Torfs.jpeg",
+    date: "2 uur geleden",
+    image: "/imagesPosts/pleidooi_brexit_voetbal.jpg",
+    messageSource: "De Standaard",
+    messageSourceWebsite: "standaard.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 21 anderen hebben droevig naar dit bericht",
+    smiley: "😢"
+  },
+
+  {
+    type: "news",
+    dt: 1234981243,
+    text: "The Intercept trekt stekker uit Snowden-archief",
+    profileName: "Melanie Baerdman",
+    profileImage: "/imagesProfilePeople/Melanie_Baerdman.jpeg",
+    date: "23 minuten geleden",
+    image: "/imagesPosts/snowden.jpg",
+    messageSource: "De Standaard",
+    messageSourceWebsite: "standaard.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 21 anderen hebben gelachen naar dit bericht",
+    smiley: "😃"
+  },
+
+  {
+    type: "news",
+    dt: 1234981243,
+    text: "Jongeren kicken niet meer op een auto",
+    profileName: "Fien Helsen",
+    profileImage: "/imagesProfilePeople/Fien_Helsen.jpeg",
+    date: "3 minuten geleden",
+    image: "/imagesPosts/jongeren_kick_auto.jpg",
+    messageSource: "De Standaard",
+    messageSourceWebsite: "standaard.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😲"
+  },
+  {
+    type: "news",
+    dt: 1234981243,
+    text: "België blijft ver onder zijn CO2-doelstellingen",
+    profileName: "Dylan Cools",
+    profileImage: "/imagesProfilePeople/Dylan_Cools.jpeg",
+    date: "2 seconden geleden",
+    image: "/imagesPosts/belgië_CO2.jpg",
+    messageSource: "De Standaard",
+    messageSourceWebsite: "standaard.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 3 anderen hebben droevig gekeken naar dit bericht",
+    smiley: "😭"
+  },
+
+  {
+    type: "news",
+    dt: 1234981243,
+    text:
+      "Joodse graven geschonden in aanloop van protesten tegen antisemitisme",
+    profileName: "Aline Van Heverlee",
+    profileImage: "/imagesProfilePeople/Aline_Van_Heverlee.jpeg",
+    date: "20 minuten geleden",
+    image: "/imagesPosts/ALine_van_Heverlee_joosdeGraven.jpg",
+    messageSource: "De Standaard",
+    messageSourceWebsite: "standaard.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 20 anderen hebben kwaad gekeken naar dit bericht",
+    smiley: "😡"
+  },
+  {
+    type: "news",
+    dt: 1234981243,
+    text: "Kinderen willen wel sporten, maar er zijn geen trainers meer",
+    profileName: "Arianne Janssens",
+    profileImage: "/imagesProfilePeople/Arianne_Janssens.jpeg",
+    date: "2 minuten geleden",
+    image: "/imagesPosts/Arianne_Jansses_trainersSporten.jpg",
+    messageSource: "De Standaard",
+    messageSourceWebsite: "standaard.be",
+    action: "heeft gereageerd op een bericht van",
+    messageResponse: "en 3 anderen hebben triest gekeken naar dit bericht",
+    smiley: "😔"
+  },
+  {
+    type: "news",
+    dt: 1234981243,
+    text:
+      "Nu al bloeiende krokussen en fladderende vlinders: is dat wel goed voor de natuur?",
+    profileName: "Arne Goossens",
+    profileImage: "/imagesProfilePeople/Arne_Goossens.jpeg",
+    date: "3 uur geleden",
+    image: "/imagesPosts/Arne_Goossens_Krokussen.jpeg",
+    messageSource: "De Morgen",
+    messageSourceWebsite: "demorgen.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😨😱"
+  },
+
+  {
+    type: "news",
+    dt: 1234981243,
+    text:
+      "Aflevering 3 van ‘Temptation’ in vogelvlucht: de mannen houden bitchfight met verleiders",
+    profileName: "Vijf",
+    profileImage: "/imagesProfilePages/Vijf.png",
+    date: "5 minuten geleden",
+    image: "/imagesPosts/Vijf_temptation.jpeg",
+    messageSource: "Vijf",
+    messageSourceWebsite: "vijf.be",
+    action: "heeft gereageerd op een bericht van",
+    messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😍😌"
+  },
+
+  // {
+  //   type: "news",
+  //   // target: "jan",
+  //   dt: 1234981243,
+  //   text: "Blijft toch een goe schijfke he?",
+  //   profileName: "Samplekings",
+  //   profileImage: "/imagesProfilePages/sample_kings.jpg",
+  //   date: "2 minuten geleden",
+  //   image: "/imagesPosts/who_took_my_badjas.jpg",
+  //   messageSource: "Vijf",
+  //   messageSourceWebsite: "https://www.youtube.com/watch?v=CrfEMVfpH34",
+  //   action: "heeft gereageerd op een bericht van",
+  //   messageResponse: "en 3 anderen hebben gelachen gekeken naar dit bericht",
+  //   smiley: "🤩"
+  // },
+
   // -----------------------VIDEOS-------------------------//
 
-  
   {
     type: "video",
     dt: 1234981243,
@@ -432,9 +792,10 @@ let DATA = [
   },
 
   // -----------------------GIFS-------------------------//
-{
+  {
     type: "gif",
     emotionStatus: "angry",
+    order: 3,
     dt: 1234981243,
     text: "Hoofdpijn...",
     profileName: "Erik Bosmans",
@@ -565,232 +926,6 @@ let DATA = [
     messageResponse: "en 3 anderen hebben gelachen met dit bericht",
     smiley: "😂"
   },
-
-  // -------------------------NEWS----------------------------//
-
-  
-  {
-    type: "news",
-    emotionStatus: "happy",
-    order: 6,
-    dt: 1234981243,
-    text: "Ex-stropers worden natuurbeschermers",
-    profileName: "Goed Nieuws Vlaanderen",
-    profileImage: "/imagesProfilePages/goed_nieuws_vlaanderen.jpg",
-    date: "5 minuten geleden",
-    image: "/imagesPosts/stroper_natuurbeschermer.jpg",
-    messageSource: "Goed Nieuws Vlaanderen",
-    messageSourceWebsite: "goednieuws.vlaanderen",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 98 anderen hebben neutraal gekeken naar dit bericht",
-    smiley: "😃"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Hij kwam van Kanegem en hij wist van (n)iets",
-    profileName: "Wouter Gijsemans",
-    profileImage: "/imagesProfilePeople/Wouter_Gijsemans.jpeg",
-    date: "3 uur geleden",
-    image: "/imagesPosts/kardinaal_daneels.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 34 anderen hebben neutraal gekeken naar dit bericht",
-    smiley: "😶"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Kamer keurt minimale dienstverlening in gevangenissen goed",
-    profileName: "Tessa Van Den Driessche",
-    profileImage: "/imagesProfilePeople/Tessa_Van_den_Driessche.jpeg",
-    date: "2 uur geleden",
-    image: "/imagesPosts/gevangenissen.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 21 anderen hebben neutraal gekeken naar dit bericht",
-    smiley: "😶"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Lachen met Lubach",
-    profileName: "Sara Hendriksen",
-    profileImage: "/imagesProfilePeople/Sara_Hendriksen.jpeg",
-    date: "2 uur geleden",
-    image: "/imagesPosts/lubach.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 21 anderen hebben gelachen naar dit bericht",
-    smiley: "😁"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Pleidooi voor een harde Brexit",
-    profileName: "Rik Torfs",
-    profileImage: "/imagesProfilePeople/Rik_Torfs.jpeg",
-    date: "2 uur geleden",
-    image: "/imagesPosts/pleidooi_brexit_voetbal.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 21 anderen hebben droevig naar dit bericht",
-    smiley: "😢"
-  },
-
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "The Intercept trekt stekker uit Snowden-archief",
-    profileName: "Melanie Baerdman",
-    profileImage: "/imagesProfilePeople/Melanie_Baerdman.jpeg",
-    date: "23 minuten geleden",
-    image: "/imagesPosts/snowden.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 21 anderen hebben gelachen naar dit bericht",
-    smiley: "😃"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Senaat herroept Trumps noodtoestand",
-    profileName: "Lucien de Feyter",
-    profileImage: "/imagesProfilePeople/Lucien_De_Feyter.jpeg",
-    date: "3 minuten geleden",
-    image: "/imagesPosts/Senaat_Trump_noodtoestand.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 34 anderen hebben neutraal gekeken naar dit bericht",
-    smiley: "😐"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Jongeren kicken niet meer op een auto",
-    profileName: "Fien Helsen",
-    profileImage: "/imagesProfilePeople/Fien_Helsen.jpeg",
-    date: "3 minuten geleden",
-    image: "/imagesPosts/jongeren_kick_auto.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
-    smiley: "😲"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "België blijft ver onder zijn CO2-doelstellingen",
-    profileName: "Dylan Cools",
-    profileImage: "/imagesProfilePeople/Dylan_Cools.jpeg",
-    date: "2 seconden geleden",
-    image: "/imagesPosts/belgië_CO2.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 3 anderen hebben droevig gekeken naar dit bericht",
-    smiley: "😭"
-  },
-
-  {
-    type: "news",
-    dt: 1234981243,
-    text:
-      "Het allermooiste aan de dansvideo’s van Angèle en Léo is de liefde die je erin kan ontwaren",
-    profileName: "Atar Jabeir",
-    profileImage: "/imagesProfilePeople/Atar_Jabeir.jpeg",
-    date: "5 seconden geleden",
-    image: "/imagesPosts/Atar_Jabeir_AngeleVideo.jpeg",
-    messageSource: "De Morgen",
-    messageSourceWebsite: "demorgen.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
-    smiley: "😍😌"
-  },
-
-  {
-    type: "news",
-    dt: 1234981243,
-    text:
-      "Joodse graven geschonden in aanloop van protesten tegen antisemitisme",
-    profileName: "Aline Van Heverlee",
-    profileImage: "/imagesProfilePeople/Aline_Van_Heverlee.jpeg",
-    date: "20 minuten geleden",
-    image: "/imagesPosts/ALine_van_Heverlee_joosdeGraven.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 20 anderen hebben kwaad gekeken naar dit bericht",
-    smiley: "😡"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Kinderen willen wel sporten, maar er zijn geen trainers meer",
-    profileName: "Arianne Janssens",
-    profileImage: "/imagesProfilePeople/Arianne_Janssens.jpeg",
-    date: "2 minuten geleden",
-    image: "/imagesPosts/Arianne_Jansses_trainersSporten.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft gereageerd op een bericht van",
-    messageResponse: "en 3 anderen hebben triest gekeken naar dit bericht",
-    smiley: "😔"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text:
-      "Nu al bloeiende krokussen en fladderende vlinders: is dat wel goed voor de natuur?",
-    profileName: "Arne Goossens",
-    profileImage: "/imagesProfilePeople/Arne_Goossens.jpeg",
-    date: "3 uur geleden",
-    image: "/imagesPosts/Arne_Goossens_Krokussen.jpeg",
-    messageSource: "De Morgen",
-    messageSourceWebsite: "demorgen.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
-    smiley: "😨😱"
-  },
-
-  {
-    type: "news",
-    dt: 1234981243,
-    text:
-      "Aflevering 3 van ‘Temptation’ in vogelvlucht: de mannen houden bitchfight met verleiders",
-    profileName: "Vijf",
-    profileImage: "/imagesProfilePages/Vijf.png",
-    date: "5 minuten geleden",
-    image: "/imagesPosts/Vijf_temptation.jpeg",
-    messageSource: "Vijf",
-    messageSourceWebsite: "vijf.be",
-    action: "heeft gereageerd op een bericht van",
-    messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
-    smiley: "😍😌"
-  },
-
-  // {
-  //   type: "news",
-  //   // target: "jan",
-  //   dt: 1234981243,
-  //   text: "Blijft toch een goe schijfke he?",
-  //   profileName: "Samplekings",
-  //   profileImage: "/imagesProfilePages/sample_kings.jpg",
-  //   date: "2 minuten geleden",
-  //   image: "/imagesPosts/who_took_my_badjas.jpg",
-  //   messageSource: "Vijf",
-  //   messageSourceWebsite: "https://www.youtube.com/watch?v=CrfEMVfpH34",
-  //   action: "heeft gereageerd op een bericht van",
-  //   messageResponse: "en 3 anderen hebben gelachen gekeken naar dit bericht",
-  //   smiley: "🤩"
-  // },
 
   // -------------------------BIG NEWS----------------------------//
 
@@ -1180,10 +1315,10 @@ let DATA = [
   //   textTitle: "Homespace — Building better tomorrows"
   // },
 
-
   {
     type: "notification",
     emotionStatus: "angry",
+    order: 4,
     order: 10,
     dt: 1234981243,
     message: "Alles wat je nodig hebt om optimaal te kunnen scrollen!", //fix me
@@ -1256,7 +1391,7 @@ let DATA = [
   {
     type: "miniNotification",
     emotionStatus: "angry",
-    order: 11,
+    order: 5,
     dt: 1234981243,
     message:
       "Je hebt je gegevens nog niet volledig aangevuld. We missen je banknummer nog."
@@ -1264,7 +1399,7 @@ let DATA = [
   {
     type: "miniNotification",
     emotionStatus: "angry",
-    order: 11,
+    order: 6,
     dt: 1234981243,
     message:
       "Je hebt je gegevens nog niet volledig aangevuld. We missen je pincode nog."
@@ -1272,7 +1407,7 @@ let DATA = [
   {
     type: "miniNotification",
     emotionStatus: "angry",
-    order: 11,
+    order: 7,
     dt: 1234981243,
     message:
       "Je hebt je gegevens nog niet volledig aangevuld. We missen je adres nog."
@@ -1280,15 +1415,14 @@ let DATA = [
   {
     type: "miniNotification",
     emotionStatus: "angry",
-    order: 11,
+    order: 8,
     dt: 1234981243,
-    message:
-      "Door al dat fronsen gaan die rimpeltjes niet kleiner worden..."
+    message: "Door al dat fronsen gaan die rimpeltjes niet kleiner worden..."
   },
   {
     type: "miniNotification",
     emotionStatus: "angry",
-    order: 11,
+    order: 9,
     dt: 1234981243,
     message:
       "We hebben een aantal spelfouten ontdekt in je laatste status. Passen we ze even aan voor u?"
@@ -1296,7 +1430,7 @@ let DATA = [
   {
     type: "miniNotification",
     emotionStatus: "angry",
-    order: 11,
+    order: 10,
     dt: 1234981243,
     message:
       "Je hebt je gegevens nog niet volledig aangevuld. We missen je telefonnnummer nog."
@@ -1387,92 +1521,92 @@ let DATA = [
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Glen_Verhalen.jpeg",
-    profileName: "Glen Verhalen",
+    profileName: "Glen Verhalen"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Ivo_Leysen.jpeg",
-    profileName: "Ivo Leysen",
+    profileName: "Ivo Leysen"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Jos_Vantielen.jpeg",
-    profileName: "Jos Vantielen ",
+    profileName: "Jos Vantielen "
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Karel_Vandebroeck.jpeg",
-    profileName: "Karel Vandebroeck",
+    profileName: "Karel Vandebroeck"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Liesbeth_Van_Impen.jpeg",
-    profileName: "Liesbeth Van Impen",
+    profileName: "Liesbeth Van Impen"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/lizzy_Luyten.jpeg",
-    profileName: "Lizzy Luyten",
+    profileName: "Lizzy Luyten"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Robbe_Rijckaert.jpeg",
-    profileName: "Robbe Rijckart",
+    profileName: "Robbe Rijckart"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Sasha_Smets.jpeg",
-    profileName: "Sasha Smets",
+    profileName: "Sasha Smets"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Tessa_Sanders.jpeg",
-    profileName: "Tessa Sanders",
+    profileName: "Tessa Sanders"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Tessa_Van_den_Driessche.jpeg",
-    profileName: "Tessa Van de Driesche ",
+    profileName: "Tessa Van de Driesche "
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Yikhay_Lee.jpeg",
-    profileName: "Yikhay Lee",
+    profileName: "Yikhay Lee"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Vanessa_Heaght.jpeg",
-    profileName: "Vanessa Heaght",
+    profileName: "Vanessa Heaght"
   },
 
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Sara_Hendriksen.jpeg",
-    profileName: "Sara Hendriksen ",
+    profileName: "Sara Hendriksen "
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Philip_Aerts.jpeg",
-    profileName: "Philip Aerts",
+    profileName: "Philip Aerts"
   },
   {
     type: "story",
     dt: 1234981243,
     profileImage: "/imagesProfilePeople/Rik_Torfs.jpeg",
-    profileName: "Rik Torfs",
+    profileName: "Rik Torfs"
   }
 ];
 

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Feed from "./Feed";
+import NewsFeed from "./NewsFeed";
 import AudioAnalyser from "./AudioAnalyser";
-// import InfiniteScroll from "react-infinite-scroll-component";
 
 let detector;
 
@@ -201,7 +201,7 @@ export default class App extends Component {
             alt="logo"
             height="20"
           />
-          <input className="header__input" />
+          <input className="header__input" placeholder="zoeken" />
         </header>
         <main>
           <div className="leftColumn">
@@ -210,16 +210,16 @@ export default class App extends Component {
                 <div className="liveFaceTracking__video" />
               </div>
               <div>
-              <div className="timeStatAnalyserContainer">
-                <div className="timeStatLabelContainer">
-                  <p className="timeStatLabel" id="date" />
-                  <p className="timeStatLabel" id="time" />
-                  <p className="timeStatLabel">BELGIE </p>
-                  <p className="timeStatLabel">51°11’56,742”N</p>
-                  <p className="timeStatLabel">4°24’14,293”O</p>
+                <div className="timeStatAnalyserContainer">
+                  <div className="timeStatLabelContainer">
+                    <p className="timeStatLabel" id="date" />
+                    <p className="timeStatLabel" id="time" />
+                    <p className="timeStatLabel">BELGIE </p>
+                    <p className="timeStatLabel">51°11’56,742”N</p>
+                    <p className="timeStatLabel">4°24’14,293”O</p>
                   </div>
                   <AudioAnalyser />
-              </div>
+                </div>
                 <div className="liveFaceTracking__stats">
                   <div className="emotion">
                     <p className="emotion-label">Vreugde</p>
@@ -306,10 +306,18 @@ export default class App extends Component {
             </div>
           </div>
 
-          <div className="middleColumn">
-            <Feed
+          <div className="middleColumn" id="newsfeed-wrapper">
+            <NewsFeed
               className="verticalFeed"
-              types={["news", "bigNews", "status", "picture", "gif", "video"]}
+              types={[
+                "news",
+                "bigNews",
+                "status",
+                "picture",
+                "gif",
+                "video",
+                "introPicture"
+              ]}
             />
           </div>
 

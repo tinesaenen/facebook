@@ -23,9 +23,13 @@ body {
 }
 
 #root,
-.app,
-main {
+.app {
   height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
 }
 
 code {
@@ -52,11 +56,13 @@ code {
 }
 
 .leftColumn {
+  height: 100%;
   width: 30%;
   margin: 0 10px;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  overflow-y: auto;
+  overflow: hidden;
 }
 
 .leftColumnScroll {
@@ -72,12 +78,15 @@ code {
 .middleColumn {
   width: 40%;
   margin: 0 10px;
+  height: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .rightColumn {
   width: 30%;
   margin: 0 10px;
+  height: 100%;
   overflow-y: auto;
 }
 
@@ -86,21 +95,27 @@ code {
   padding: 10px 10px;
   color: white;
   height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .header__logo {
-  margin: 0px 10px 0px 0px;
+  margin: 0px 20px 0px 0px;
 }
 
 .header__input {
   width: 350px;
+  height: 20px;
 }
 
 main {
+  flex: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 5px;
+  /* align-items: stretch; */
+  padding: 10px 10px 0px 10px;
   background: #e1e6f0;
 }
 
@@ -171,6 +186,13 @@ main {
 
 .item__profileName {
   color: #4667a8;
+}
+
+/* 
+.darkmode item__profileName   fix me dark mode*/
+
+.item__numberLikes {
+  color: red;
 }
 
 .item__messageSource {
@@ -354,8 +376,7 @@ main {
   text-align: center;
 }
 .timeStatAnalyserContainer {
-display: flex;
-
+  display: flex;
 }
 /*-----------------------stories-------------------------*/
 

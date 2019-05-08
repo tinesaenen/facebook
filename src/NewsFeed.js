@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 import DATA from "./ItemData";
+import InfiniteScroll from "react-infinite-scroll-component";
+import spinner from "./spinner.gif";
+
+// let currentFeedItems = [];
+let loadNewData = 0;
+// let items;
 
 function random(min, max) {
   return min + Math.random() * (max - min);
@@ -8,45 +14,57 @@ function random(min, max) {
 export default class Feed extends Component {
   constructor(props) {
     super(props);
-    this.state = { isLoading: true, items: [] };
+    this.state = { isLoading: true, allItems: [], items: [] };
   }
 
   componentDidMount() {
     const types = this.props.types;
-    const items = DATA.filter(
+    this.state.allItems = DATA.filter(
       item => types.includes(item.type) && !item.target
     );
-    this.setState({ items, itemCount: 0, isLoading: false });
-    if (this.props.autoRefresh) {
-      setTimeout(this.increaseCounter.bind(this), random(1000, 7000));
-    }
+    this.state.items = this.state.allItems.slice(0, 10);
   }
 
-  increaseCounter() {
-    this.setState({ itemCount: this.state.itemCount + 1 });
-    setTimeout(this.increaseCounter.bind(this), random(1000, 7000));
-  }
+  fetchData = () => {
+    const newIndex = this.state.items.length;
+    const newItems = this.state.allItems.slice(newIndex, newIndex + 10);
+    setTimeout(() => {
+      this.setState({
+        items: this.state.items.concat(newItems)
+      });
+    }, 1000);
+  };
 
   render() {
-    let { isLoading, items, itemCount } = this.state;
-    if (this.props.autoRefresh) {
-      items = items.slice(0, itemCount);
-      items = items.reverse();
-    }
-    const itemElements = items.map(item => this.renderItem(item));
     return (
-      <div className="feed">
-        {isLoading && (
-          <div className="feed__loading">
-            <i className="fas fa-spin fa-spinner" />
-          </div>
+      <InfiniteScroll
+        dataLength={this.state.items.length}
+        next={this.fetchData}
+        hasMore={this.state.items.length < this.state.allItems.length}
+        loader={
+          <img style={{ width: 25, verticalAlign: "middle" }} src={spinner} />
+        }
+        // height={700}
+        scrollableTarget="newsfeed-wrapper"
+        endMessage={
+          <p style={{ textAlign: "center" }}>
+            <b>Yay! You have seen it all</b>
+          </p>
+        }
+        // scrollThreshold={0.7}
+      >
+        {this.state.items.map((i, index) =>
+          // <div key={index}>div - #{index}</div>
+          this.renderItem(i)
         )}
-        {itemElements}
-      </div>
+      </InfiniteScroll>
     );
   }
 
   renderItem(item) {
+    console.log(this.state.items.length);
+    console.log(item);
+
     if (item.type === "news") {
       return this.renderNews(item);
     } else if (item.type === "bigNews") {
@@ -67,8 +85,6 @@ export default class Feed extends Component {
       return this.renderVideo(item);
     } else if (item.type === "gif") {
       return this.renderGif(item);
-    } else if (item.type === "introPicture") {
-      return this.renderIntroPicture(item);
     } else {
       return this.renderNews(item);
     }
@@ -356,36 +372,6 @@ export default class Feed extends Component {
             alt={story.profileName}
           />
           <p className="item__storyProfileName">{story.profileName}</p>
-        </div>
-      </div>
-    );
-  }
-
-  renderIntroPicture(introPicture) {
-    return (
-      <div className="item news-item" key={introPicture.id}>
-        <div className="item__newsHeader">
-          <img
-            className="item__profileImage"
-            src={introPicture.profileImage}
-            width={45}
-            height={45}
-            alt={introPicture.profileName}
-          />
-          <div className="item__profileNameContainer">
-            <span className="item__profileName">
-              {introPicture.profileName}
-            </span>
-            <span className="item__action"> {introPicture.action}</span>
-            <p className="item__date"> {introPicture.date}</p>
-          </div>
-        </div>
-        <div className="item__body">
-          <img className="item__image" src={introPicture.image} />
-        </div>
-        <div className="item__actions">
-          <span className="item__smiley">{introPicture.smiley}</span>
-          <span className="item__numberLikes">{introPicture.number}</span>
         </div>
       </div>
     );
