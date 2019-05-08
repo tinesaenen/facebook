@@ -8,31 +8,66 @@ function random(min, max) {
 export default class Feed extends Component {
   constructor(props) {
     super(props);
-    this.state = { isLoading: true, items: [] };
+    this.state = {
+      isLoading: true,
+      allItems: [],
+      items: [],
+      itemIndex: 0,
+      joyIndex: 0,
+    };
+    this.emotionCounters = {};
   }
 
   componentDidMount() {
     const types = this.props.types;
-    const items = DATA.filter(
+    const allItems = DATA.filter(
       item => types.includes(item.type) && !item.target
     );
-    this.setState({ items, itemCount: 0, isLoading: false });
+    this.setState({ allItems, items: [], isLoading: false });
     if (this.props.autoRefresh) {
-      setTimeout(this.increaseCounter.bind(this), random(1000, 7000));
+      setTimeout(this.fetchNewItems.bind(this), random(1000, 7000));
+    } else {
+      this.setState({ items: allItems });
     }
   }
 
-  increaseCounter() {
-    this.setState({ itemCount: this.state.itemCount + 1 });
-    setTimeout(this.increaseCounter.bind(this), random(1000, 7000));
+  fetchNewItems() {
+    let emotionOrder = 1;
+    let newItems;
+    let itemIndex = this.state.itemIndex;
+    if (this.props.emotion) {
+      let counter = this.emotionCounters[this.props.emotion];
+      if (!counter) {
+        counter = 1;
+      } else {
+        counter += 1;
+      }
+      this.emotionCounters[this.props.emotion] = counter;
+      //console.log('COUNTERS', this.emotionCounters);
+      const newItem = this.state.allItems.find(item => item.emotionStatus === this.props.emotion && item.order === counter);
+      if (newItem) {
+       newItems = [newItem]
+      } else {
+        newItems = [];
+      }
+      //newItems = this.state.allItems.filter(item => item.emotionStatus === this.props.emotion);
+      console.log('EMO', this.props.emotion, newItems);
+    } else {
+      // newItems = this.state.allItems.slice(itemIndex, itemIndex + 1);
+      newItems = [];
+      itemIndex += 1;
+    }
+    const items = newItems.concat(this.state.items);
+    this.setState({ items, itemIndex, emotionOrder })
+    setTimeout(this.fetchNewItems.bind(this), random(1000, 7000));
   }
 
   render() {
-    let { isLoading, items, itemCount } = this.state;
-    if (this.props.autoRefresh) {
-      items = items.slice(0, itemCount);
-      items = items.reverse();
-    }
+    let { isLoading, items } = this.state;
+    //if (this.props.autoRefresh) {
+      //items = items.slice(0, itemCount);
+      //items = items.reverse();
+    //}
     const itemElements = items.map(item => this.renderItem(item));
     return (
       <div className="feed">
