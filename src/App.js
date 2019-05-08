@@ -72,13 +72,11 @@ export default class App extends Component {
 
   onAffectivaImage(faces, image, timestamp) {
     if (faces.length !== 1) {
-      this.setState({ emotions: {} });
+      // this.setState({ emotions: {} });
       return;
     }
 
     const face = faces[0];
-    this.setState({ emotions: face.emotions });
-    this.checkEmotions(face.emotions);
 
     const canvas = document.querySelector("#face_video_canvas");
     const ctx = canvas.getContext("2d");
@@ -189,13 +187,13 @@ export default class App extends Component {
       angstdiv = document.querySelector(`.emotion-angst`),
       verwonderingdiv = document.querySelector(`.emotion-verwondering`);
 
-    vreugdediv.style.width = `${this.state.emotions.joy}%`;
-    woedediv.style.width = `${this.state.emotions.anger}%`;
-    verdrietdiv.style.width = `${this.state.emotions.sadness}%`;
-    afgunstdiv.style.width = `${this.state.emotions.disgust}%`;
-    minachtingdiv.style.width = `${this.state.emotions.contempt}%`;
-    angstdiv.style.width = `${this.state.emotions.fear}%`;
-    verwonderingdiv.style.width = `${this.state.emotions.surprise}%`;
+    vreugdediv.style.width = `${face.emotions.joy}%`;
+    woedediv.style.width = `${face.emotions.anger}%`;
+    verdrietdiv.style.width = `${face.emotions.sadness}%`;
+    afgunstdiv.style.width = `${face.emotions.disgust}%`;
+    minachtingdiv.style.width = `${face.emotions.contempt}%`;
+    angstdiv.style.width = `${face.emotions.fear}%`;
+    verwonderingdiv.style.width = `${face.emotions.surprise}%`;
 
     var dt = new Date();
     document.getElementById("time").innerHTML =
@@ -208,6 +206,9 @@ export default class App extends Component {
       ("0" + dt.getDate()).slice(-2) +
       "/" +
       dt.getFullYear();
+
+  //this.setState({ emotions: face.emotions });
+    this.checkEmotions(face.emotions);
   }
 
   render() {
