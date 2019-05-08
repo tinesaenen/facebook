@@ -8,7 +8,11 @@ let detector;
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { emotions: {} };
+    this.state = {
+      emotions: {},
+      currentEmotion: null,
+      emotionCooldown: Date.now()
+    };
   }
 
   componentDidMount() {
@@ -52,6 +56,20 @@ export default class App extends Component {
     detector.stop();
   }
 
+  checkEmotions(emotions) {
+    if (this.state.emotionCooldown > Date.now()) return;
+    const keys = Object.keys(emotions);
+    for (const key of keys) {
+      const value = emotions[key];
+      if (value > 90) {
+        this.setState({ currentEmotion: key, emotionCooldown: Date.now() + 5 * 1000 });
+        console.log('CURRENT EMOTION', key);
+        return;
+      }
+    }
+    this.setState({ currentEmotion: null });
+  }
+
   onAffectivaImage(faces, image, timestamp) {
     if (faces.length !== 1) {
       this.setState({ emotions: {} });
@@ -60,6 +78,8 @@ export default class App extends Component {
 
     const face = faces[0];
     this.setState({ emotions: face.emotions });
+    this.checkEmotions(face.emotions);
+
     const canvas = document.querySelector("#face_video_canvas");
     const ctx = canvas.getContext("2d");
     ctx.strokeStyle = "white";
@@ -309,6 +329,7 @@ export default class App extends Component {
           <div className="middleColumn" id="newsfeed-wrapper">
             <NewsFeed
               className="verticalFeed"
+              emotion={this.state.currentEmotion}
               types={[
                 "news",
                 "bigNews",

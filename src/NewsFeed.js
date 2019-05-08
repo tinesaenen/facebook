@@ -26,6 +26,15 @@ export default class Feed extends Component {
   }
 
   fetchData = () => {
+    if (this.props.emotion) {
+      const newItems = this.state.allItems.filter(item => item.emotionStatus === this.props.emotion);
+      newItems.sort((a, b) => a.order - b.order);
+      console.log(newItems);
+      this.setState({
+        items: this.state.items.concat(newItems)
+      });
+      return;
+    }
     const newIndex = this.state.items.length;
     const newItems = this.state.allItems.slice(newIndex, newIndex + 10);
     setTimeout(() => {
@@ -53,6 +62,7 @@ export default class Feed extends Component {
         }
         // scrollThreshold={0.7}
       >
+        <p>EMOTION: { this.props.emotion}</p>
         {this.state.items.map((i, index) =>
           // <div key={index}>div - #{index}</div>
           this.renderItem(i)
@@ -62,8 +72,8 @@ export default class Feed extends Component {
   }
 
   renderItem(item) {
-    console.log(this.state.items.length);
-    console.log(item);
+    // console.log(this.state.items.length);
+    // console.log(item);
 
     if (item.type === "news") {
       return this.renderNews(item);

@@ -138,7 +138,7 @@ let DATA = [
 
   {
     type: "ad",
-    emotionStatus: "happy",
+    emotionStatus: "joy",
     order: 2,
     dt: 1234981243,
     profileImage: "/imagesProfilePages/telenet.jpg",
@@ -182,7 +182,7 @@ let DATA = [
   },
   {
     type: "ad",
-    emotionStatus: "happy",
+    emotionStatus: "joy",
     order: 1,
     dt: 1234981243,
     profileImage: "/imagesProfilePages/ikea.png",
@@ -195,7 +195,7 @@ let DATA = [
 
   {
     type: "ad",
-    emotionStatus: "happy",
+    emotionStatus: "joy",
     order: 3,
     dt: 1234981243,
     profileImage: "/imagesProfilePages/coca_cola.png",
@@ -206,7 +206,7 @@ let DATA = [
   },
   {
     type: "ad",
-    emotionStatus: "happy",
+    emotionStatus: "joy",
     order: 4,
     dt: 1234981243,
     profileImage: "/imagesProfilePages/rituals.png",
@@ -217,7 +217,7 @@ let DATA = [
   },
   {
     type: "ad",
-    emotionStatus: "happy",
+    emotionStatus: "joy",
     order: 5,
     dt: 1234981243,
     profileImage: "/imagesProfilePages/fortune_factory.png",
@@ -295,7 +295,7 @@ let DATA = [
 
   {
     type: "ad",
-    emotionStatus: "happy",
+    emotionStatus: "joy",
     order: 5,
     dt: 1234981243,
     profileImage: "/imagesProfilePages/mcdonalds.jpg",
@@ -529,7 +529,7 @@ let DATA = [
 
   {
     type: "news",
-    emotionStatus: "happy",
+    emotionStatus: "joy",
     order: 6,
     dt: 1234981243,
     text: "Ex-stropers worden natuurbeschermers",
@@ -949,7 +949,7 @@ let DATA = [
   // },
   {
     type: "bigNews",
-    emotionStatus: "happy",
+    emotionStatus: "joy",
     order: 7,
     dt: 1234981243,
     text:
@@ -1172,7 +1172,7 @@ let DATA = [
   },
   {
     type: "picture",
-    emotionStatus: "happy",
+    emotionStatus: "joy",
     order: 8,
     dt: 1234981243,
     text: "Haha, LOL!",
@@ -1186,7 +1186,7 @@ let DATA = [
   },
   {
     type: "picture",
-    emotionStatus: "happy",
+    emotionStatus: "joy",
     order: 9,
     dt: 1234981243,
     text: "True that",
@@ -1329,7 +1329,7 @@ let DATA = [
   },
   {
     type: "notification",
-    emotionStatus: "happy",
+    emotionStatus: "joy",
     order: 10,
     dt: 1234981243,
     message: "Goed nieuws: enkel zonneschijn voor de komende dagen!",
@@ -1437,7 +1437,7 @@ let DATA = [
   },
   {
     type: "miniNotification",
-    emotionStatus: "happy",
+    emotionStatus: "joy",
     order: 11,
     dt: 1234981243,
     message:
@@ -1445,7 +1445,7 @@ let DATA = [
   },
   {
     type: "miniNotification",
-    emotionStatus: "happy",
+    emotionStatus: "joy",
     order: 12,
     dt: 1234981243,
     message:
@@ -1453,7 +1453,7 @@ let DATA = [
   },
   {
     type: "miniNotification",
-    emotionStatus: "happy",
+    emotionStatus: "joy",
     order: 13,
     dt: 1234981243,
     message:
