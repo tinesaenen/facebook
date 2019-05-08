@@ -207,7 +207,7 @@ export default class App extends Component {
       "/" +
       dt.getFullYear();
 
-  //this.setState({ emotions: face.emotions });
+    // this.setState({ emotions: face.emotions });
     this.checkEmotions(face.emotions);
   }
 
@@ -245,10 +245,7 @@ export default class App extends Component {
                   <div className="emotion">
                     <p className="emotion-label">Vreugde</p>
                     <div className="onderliggendeBalk">
-                      <div className="emotion-vreugde balk">
-                        <p className="procent">
-                          {(emotions.joy || 0).toFixed(2)}%
-                        </p>
+                      <div className="emotion-vreugde balk">&nbsp;
                       </div>
                     </div>
                   </div>
@@ -322,6 +319,7 @@ export default class App extends Component {
               <Feed
                 className="verticalFeed"
                 types={["notification", "miniNotification"]}
+                emotion={this.state.currentEmotion}
                 autoRefresh={true}
               />
             </div>
@@ -330,7 +328,6 @@ export default class App extends Component {
           <div className="middleColumn" id="newsfeed-wrapper">
             <NewsFeed
               className="verticalFeed"
-              emotion={this.state.currentEmotion}
               types={[
                 "news",
                 "bigNews",
@@ -340,6 +337,7 @@ export default class App extends Component {
                 "video",
                 "introPicture"
               ]}
+              emotion={this.state.currentEmotion}
             />
           </div>
 
