@@ -188,7 +188,7 @@ main {
   color: #4667a8;
 }
 
-/* 
+/*
 .darkmode item__profileName   fix me dark mode*/
 
 .item__numberLikes {
@@ -303,6 +303,9 @@ main {
 /* .liveFaceTracking__video {
   width: 50%;
 } */
+
+#face_video {
+display: none; }
 
 .videoCanvas {
   width: 42%;
