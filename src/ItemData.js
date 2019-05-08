@@ -1330,7 +1330,7 @@ let DATA = [
   {
     type: "notification",
     emotionStatus: "joy",
-    order: 10,
+    order: 1,
     dt: 1234981243,
     message: "Goed nieuws: enkel zonneschijn voor de komende dagen!",
     text:
@@ -1438,7 +1438,7 @@ let DATA = [
   {
     type: "miniNotification",
     emotionStatus: "joy",
-    order: 11,
+    order: 2,
     dt: 1234981243,
     message:
       "Als je wil kan je je lach nu delen met je vrienden. Wil je live gaan op je Facebookverhaal?"
@@ -1446,20 +1446,11 @@ let DATA = [
   {
     type: "miniNotification",
     emotionStatus: "joy",
-    order: 12,
+    order: 3,
     dt: 1234981243,
     message:
       "Wat zie je er gelukkig uit vandaag! Geef jezelf nog een boost met een klavertje vier. Kijk maar tussen je advertenties."
   },
-  {
-    type: "miniNotification",
-    emotionStatus: "joy",
-    order: 13,
-    dt: 1234981243,
-    message:
-      "Wat zie je er gelukkig uit vandaag! Geef jezelf nog een boost met een klavertje vier. Kijk maar tussen je advertenties."
-  },
-
   {
     type: "miniNotification",
     dt: 1234981243,
