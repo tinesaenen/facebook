@@ -62,8 +62,11 @@ export default class App extends Component {
     for (const key of keys) {
       const value = emotions[key];
       if (value > 90) {
-        this.setState({ currentEmotion: key, emotionCooldown: Date.now() + 5 * 1000 });
-        console.log('CURRENT EMOTION', key);
+        this.setState({
+          currentEmotion: key,
+          emotionCooldown: Date.now() + 5 * 1000
+        });
+        console.log("CURRENT EMOTION", key);
         return;
       }
     }
@@ -209,6 +212,14 @@ export default class App extends Component {
 
     // this.setState({ emotions: face.emotions });
     this.checkEmotions(face.emotions);
+
+    document.querySelector("#switch").addEventListener("click", function() {
+      if (document.body.className === "light") {
+        document.body.className = "dark";
+      } else {
+        document.body.className = "light";
+      }
+    });
   }
 
   render() {
@@ -223,6 +234,7 @@ export default class App extends Component {
             height="20"
           />
           <input className="header__input" placeholder="zoeken" />
+          <button id="switch">Switch</button>
         </header>
         <main>
           <div className="leftColumn">
@@ -245,68 +257,43 @@ export default class App extends Component {
                   <div className="emotion">
                     <p className="emotion-label">Vreugde</p>
                     <div className="onderliggendeBalk">
-                      <div className="emotion-vreugde balk">&nbsp;
-                      </div>
+                      <div className="emotion-vreugde balk">&nbsp;</div>
                     </div>
                   </div>
                   <div className="emotion">
                     <p className="emotion-label">Woede</p>
                     <div className="onderliggendeBalk">
-                      <div className="emotion-woede balk">
-                        <p className="procent">
-                          {(emotions.anger || 0).toFixed(2)}%
-                        </p>
-                      </div>
+                      <div className="emotion-woede balk">&nbsp;</div>
                     </div>
                   </div>
                   <div className="emotion">
                     <p className="emotion-label">Verdriet</p>
                     <div className="onderliggendeBalk">
-                      <div className="emotion-verdriet balk">
-                        <p className="procent">
-                          {(emotions.sadness || 0).toFixed(2)}%
-                        </p>
-                      </div>
+                      <div className="emotion-verdriet balk">&nbsp;</div>
                     </div>
                   </div>
                   <div className="emotion">
                     <p className="emotion-label">Afgunst</p>
                     <div className="onderliggendeBalk">
-                      <div className="emotion-afgunst balk">
-                        <p className="procent">
-                          {(emotions.disgust || 0).toFixed(2)}%
-                        </p>
-                      </div>
+                      <div className="emotion-afgunst balk">&nbsp;</div>
                     </div>
                   </div>
                   <div className="emotion">
                     <p className="emotion-label">Minachtig</p>
                     <div className="onderliggendeBalk">
-                      <div className="emotion-minachting balk">
-                        <p className="procent">
-                          {(emotions.contempt || 0).toFixed(2)}%
-                        </p>
-                      </div>
+                      <div className="emotion-minachting balk">&nbsp;</div>
                     </div>
                   </div>
                   <div className="emotion">
                     <p className="emotion-label">Angst</p>
                     <div className="onderliggendeBalk">
-                      <div className="emotion-angst balk">
-                        <p className="procent">
-                          {(emotions.fear || 0).toFixed(2)}%
-                        </p>
-                      </div>
+                      <div className="emotion-angst balk">&nbsp;</div>
                     </div>
                   </div>
                   <div className="emotion">
                     <p className="emotion-label">Verbazing</p>
                     <div className="onderliggendeBalk">
-                      <div className="emotion-verwondering balk">
-                        <p className="procent">
-                          {(emotions.surprise || 0).toFixed(2)}%
-                        </p>
-                      </div>
+                      <div className="emotion-verwondering balk">&nbsp;</div>
                     </div>
                   </div>
                 </div>
