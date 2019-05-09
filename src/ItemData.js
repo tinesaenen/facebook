@@ -1,138 +1,138 @@
 let DATA = [
   //----------------------INTRO-------------------------//
-  {
-    type: "introPicture",
-    dt: 1234981243,
-    profileName: "Tine Saenen",
-    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-    action: "heeft een bericht geplaatst",
-    date: "12 minuten geleden",
-    image: "/imagesIntro/hey_jij_daar.png",
-    smiley: "😮",
-    number: "214"
-  },
-  {
-    type: "introPicture",
-    dt: 1234981243,
-    profileName: "Tine Saenen",
-    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-    action: "heeft een bericht geplaatst",
-    date: "13 minuten geleden",
-    image: "/imagesIntro/ben_jij_het_ook_beu.png",
-    smiley: "😮",
-    number: "214"
-  },
-  {
-    type: "introPicture",
-    dt: 1234981243,
-    profileName: "Tine Saenen",
-    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-    action: "heeft een bericht geplaatst",
-    date: "13 minuten geleden",
-    image: "/imagesIntro/je_scrolt.png",
-    smiley: "😮",
-    number: "214"
-  },
-  {
-    type: "introPicture",
-    dt: 1234981243,
-    profileName: "Tine Saenen",
-    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-    action: "heeft een bericht geplaatst",
-    date: "13 minuten geleden",
-    image: "/imagesIntro/als_masterproject.png", //nieuw design verschijnt
-    smiley: "😮",
-    number: "214"
-  },
-  {
-    type: "introPicture",
-    dt: 1234981243,
-    profileName: "Tine Saenen",
-    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-    action: "heeft een bericht geplaatst",
-    date: "13 minuten geleden",
-    image: "/imagesIntro/met_het_verzachten.png", //emotietracking verschijnt
-    smiley: "😮",
-    number: "214"
-  },
-  {
-    type: "introPicture",
-    dt: 1234981243,
-    profileName: "Tine Saenen",
-    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-    action: "heeft een bericht geplaatst",
-    date: "13 minuten geleden",
-    image: "/imagesIntro/coding_timelapse.png",
-    smiley: "😮",
-    number: "214"
-  },
-  {
-    type: "introPicture",
-    dt: 1234981243,
-    profileName: "Tine Saenen",
-    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-    action: "heeft een bericht geplaatst",
-    date: "13 minuten geleden",
-    image: "/imagesIntro/Wanneer_FB_je_emoties.png",
-    smiley: "😮",
-    number: "214"
-  },
-  {
-    type: "introPicture",
-    dt: 1234981243,
-    profileName: "Tine Saenen",
-    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-    action: "heeft een bericht geplaatst",
-    date: "13 minuten geleden",
-    image: "/imagesIntro/in_de_middenkolom.png", // reclame verschijnt
-    smiley: "😮",
-    number: "214"
-  },
-  {
-    type: "introPicture",
-    dt: 1234981243,
-    profileName: "Tine Saenen",
-    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-    action: "heeft een bericht geplaatst",
-    date: "13 minuten geleden",
-    image: "/imagesIntro/coding_timelapse.png",
-    smiley: "😮",
-    number: "214"
-  },
+  // {
+  //   type: "introPicture",
+  //   dt: 1234981243,
+  //   profileName: "Tine Saenen",
+  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+  //   action: "heeft een bericht geplaatst",
+  //   date: "12 minuten geleden",
+  //   image: "/imagesIntro/hey_jij_daar.png",
+  //   smiley: "😮",
+  //   number: "214"
+  // },
+  // {
+  //   type: "introPicture",
+  //   dt: 1234981243,
+  //   profileName: "Tine Saenen",
+  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+  //   action: "heeft een bericht geplaatst",
+  //   date: "13 minuten geleden",
+  //   image: "/imagesIntro/ben_jij_het_ook_beu.png",
+  //   smiley: "😮",
+  //   number: "214"
+  // },
+  // {
+  //   type: "introPicture",
+  //   dt: 1234981243,
+  //   profileName: "Tine Saenen",
+  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+  //   action: "heeft een bericht geplaatst",
+  //   date: "13 minuten geleden",
+  //   image: "/imagesIntro/je_scrolt.png",
+  //   smiley: "😮",
+  //   number: "214"
+  // },
+  // {
+  //   type: "introPicture",
+  //   dt: 1234981243,
+  //   profileName: "Tine Saenen",
+  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+  //   action: "heeft een bericht geplaatst",
+  //   date: "13 minuten geleden",
+  //   image: "/imagesIntro/als_masterproject.png", //nieuw design verschijnt
+  //   smiley: "😮",
+  //   number: "214"
+  // },
+  // {
+  //   type: "introPicture",
+  //   dt: 1234981243,
+  //   profileName: "Tine Saenen",
+  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+  //   action: "heeft een bericht geplaatst",
+  //   date: "13 minuten geleden",
+  //   image: "/imagesIntro/met_het_verzachten.png", //emotietracking verschijnt
+  //   smiley: "😮",
+  //   number: "214"
+  // },
+  // {
+  //   type: "introPicture",
+  //   dt: 1234981243,
+  //   profileName: "Tine Saenen",
+  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+  //   action: "heeft een bericht geplaatst",
+  //   date: "13 minuten geleden",
+  //   image: "/imagesIntro/coding_timelapse.png",
+  //   smiley: "😮",
+  //   number: "214"
+  // },
+  // {
+  //   type: "introPicture",
+  //   dt: 1234981243,
+  //   profileName: "Tine Saenen",
+  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+  //   action: "heeft een bericht geplaatst",
+  //   date: "13 minuten geleden",
+  //   image: "/imagesIntro/Wanneer_FB_je_emoties.png",
+  //   smiley: "😮",
+  //   number: "214"
+  // },
+  // {
+  //   type: "introPicture",
+  //   dt: 1234981243,
+  //   profileName: "Tine Saenen",
+  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+  //   action: "heeft een bericht geplaatst",
+  //   date: "13 minuten geleden",
+  //   image: "/imagesIntro/in_de_middenkolom.png", // reclame verschijnt
+  //   smiley: "😮",
+  //   number: "214"
+  // },
+  // {
+  //   type: "introPicture",
+  //   dt: 1234981243,
+  //   profileName: "Tine Saenen",
+  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+  //   action: "heeft een bericht geplaatst",
+  //   date: "13 minuten geleden",
+  //   image: "/imagesIntro/coding_timelapse.png",
+  //   smiley: "😮",
+  //   number: "214"
+  // },
 
-  {
-    type: "introPicture",
-    dt: 1234981243,
-    profileName: "Tine Saenen",
-    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-    action: "heeft een bericht geplaatst",
-    date: "13 minuten geleden",
-    image: "/imagesIntro/de_selectie_berichten.png",
-    smiley: "😮",
-    number: "214"
-  },
-  {
-    type: "introPicture",
-    dt: 1234981243,
-    profileName: "Tine Saenen",
-    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-    action: "heeft een bericht geplaatst",
-    date: "13 minuten geleden",
-    image: "/imagesIntro/naast_deze_feature.png", // notificaties verschijnen
-    smiley: "😮",
-    number: "214"
-  },
-  {
-    type: "introPicture",
-    dt: 1234981243,
-    profileName: "Tine Saenen",
-    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-    action: "heeft een bericht geplaatst",
-    date: "13 minuten geleden",
-    image: "/imagesIntro/zin_om_het_zelf.png", // vanaf nu wordt de koppeling tussen emotie en berichten gemaakt
-    smiley: "😮",
-    number: "214"
-  },
+  // {
+  //   type: "introPicture",
+  //   dt: 1234981243,
+  //   profileName: "Tine Saenen",
+  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+  //   action: "heeft een bericht geplaatst",
+  //   date: "13 minuten geleden",
+  //   image: "/imagesIntro/de_selectie_berichten.png",
+  //   smiley: "😮",
+  //   number: "214"
+  // },
+  // {
+  //   type: "introPicture",
+  //   dt: 1234981243,
+  //   profileName: "Tine Saenen",
+  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+  //   action: "heeft een bericht geplaatst",
+  //   date: "13 minuten geleden",
+  //   image: "/imagesIntro/naast_deze_feature.png", // notificaties verschijnen
+  //   smiley: "😮",
+  //   number: "214"
+  // },
+  // {
+  //   type: "introPicture",
+  //   dt: 1234981243,
+  //   profileName: "Tine Saenen",
+  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+  //   action: "heeft een bericht geplaatst",
+  //   date: "13 minuten geleden",
+  //   image: "/imagesIntro/zin_om_het_zelf.png", // vanaf nu wordt de koppeling tussen emotie en berichten gemaakt
+  //   smiley: "😮",
+  //   number: "214"
+  // },
 
   //----------------------ADVERTISEMENTS-------------------------//
 
@@ -527,22 +527,22 @@ let DATA = [
     smiley: "😍😌"
   },
 
-  {
-    type: "news",
-    emotionStatus: "joy",
-    order: 6,
-    dt: 1234981243,
-    text: "Ex-stropers worden natuurbeschermers",
-    profileName: "Goed Nieuws Vlaanderen",
-    profileImage: "/imagesProfilePages/goed_nieuws_vlaanderen.jpg",
-    date: "5 minuten geleden",
-    image: "/imagesPosts/stroper_natuurbeschermer.jpg",
-    messageSource: "Goed Nieuws Vlaanderen",
-    messageSourceWebsite: "goednieuws.vlaanderen",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 98 anderen hebben neutraal gekeken naar dit bericht",
-    smiley: "😃"
-  },
+  // {
+  //   type: "news",
+  //   emotionStatus: "joy",
+  //   order: 6,
+  //   dt: 1234981243,
+  //   text: "Ex-stropers worden natuurbeschermers",
+  //   profileName: "Goed Nieuws Vlaanderen",
+  //   profileImage: "/imagesProfilePages/goed_nieuws_vlaanderen.jpg",
+  //   date: "5 minuten geleden",
+  //   image: "/imagesPosts/stroper_natuurbeschermer.jpg",
+  //   messageSource: "Goed Nieuws Vlaanderen",
+  //   messageSourceWebsite: "goednieuws.vlaanderen",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse: "en 98 anderen hebben neutraal gekeken naar dit bericht",
+  //   smiley: "😃"
+  // },
   {
     type: "news",
     dt: 1234981243,
@@ -1333,8 +1333,7 @@ let DATA = [
     order: 1,
     dt: 1234981243,
     message: "Goed nieuws: enkel zonneschijn voor de komende dagen!",
-    text:
-      "Een eenvoudige, prachtige app van Aplle om de weersverwachting te zien. bekijk voor plaatsen over heel de wereld de huidige temperatuur, de weersverwachting per uur voor de komende 24 uur en een 10-daagse weersverwachting.",
+    text: "Een prachtige app van Aplle om de weersverwachting te zien.",
     image: "/imagesNotifications/goed_weer.png",
     textTitle: "Weer — Apple"
   },

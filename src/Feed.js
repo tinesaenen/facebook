@@ -13,7 +13,7 @@ export default class Feed extends Component {
       allItems: [],
       items: [],
       itemIndex: 0,
-      joyIndex: 0,
+      joyIndex: 0
     };
     this.emotionCounters = {};
   }
@@ -44,29 +44,32 @@ export default class Feed extends Component {
       }
       this.emotionCounters[this.props.emotion] = counter;
       //console.log('COUNTERS', this.emotionCounters);
-      const newItem = this.state.allItems.find(item => item.emotionStatus === this.props.emotion && item.order === counter);
+      const newItem = this.state.allItems.find(
+        item =>
+          item.emotionStatus === this.props.emotion && item.order === counter
+      );
       if (newItem) {
-       newItems = [newItem]
+        newItems = [newItem];
       } else {
         newItems = [];
       }
       //newItems = this.state.allItems.filter(item => item.emotionStatus === this.props.emotion);
-      console.log('EMO', this.props.emotion, newItems);
+      console.log("EMO", this.props.emotion, newItems);
     } else {
       // newItems = this.state.allItems.slice(itemIndex, itemIndex + 1);
       newItems = [];
       itemIndex += 1;
     }
     const items = newItems.concat(this.state.items);
-    this.setState({ items, itemIndex, emotionOrder })
+    this.setState({ items, itemIndex, emotionOrder });
     setTimeout(this.fetchNewItems.bind(this), random(1000, 7000));
   }
 
   render() {
     let { isLoading, items } = this.state;
     //if (this.props.autoRefresh) {
-      //items = items.slice(0, itemCount);
-      //items = items.reverse();
+    //items = items.slice(0, itemCount);
+    //items = items.reverse();
     //}
     const itemElements = items.map(item => this.renderItem(item));
     return (
@@ -136,8 +139,8 @@ export default class Feed extends Component {
         </div>
         <div className="item__actions">
           <span className="item__smiley">{news.smiley}</span>
-          <span className="item__profileName"> {news.profileName}</span>
-          <span> {news.messageResponse}</span>
+          {/* <span className="item__profileName"> {news.profileName}</span> */}
+          {/* <span> {news.messageResponse}</span> */}
         </div>
       </div>
     );
@@ -173,8 +176,8 @@ export default class Feed extends Component {
         </div>
         <div className="item__actions">
           <span className="item__smiley">{bigNews.smiley}</span>
-          <span className="item__profileName"> {bigNews.profileName}</span>
-          <span> {bigNews.messageResponse}</span>
+          {/* <span className="item__profileName"> {bigNews.profileName}</span> */}
+          {/* <span> {bigNews.messageResponse}</span> */}
         </div>
       </div>
     );
@@ -203,8 +206,8 @@ export default class Feed extends Component {
         </div>
         <div className="item__actions">
           <span className="item__smiley">{picture.smiley}</span>
-          <span className="item__profileName"> {picture.profileName}</span>
-          <span> {picture.messageResponse}</span>
+          {/* <span className="item__profileName"> {picture.profileName}</span> */}
+          {/* <span> {picture.messageResponse}</span> */}
         </div>
       </div>
     );
@@ -233,8 +236,8 @@ export default class Feed extends Component {
         </div>
         <div className="item__actions">
           <span className="item__smiley">{gif.smiley}</span>
-          <span className="item__profileName"> {gif.profileName}</span>
-          <span> {gif.messageResponse}</span>
+          {/* <span className="item__profileName"> {gif.profileName}</span> */}
+          {/* <span> {gif.messageResponse}</span> */}
         </div>
       </div>
     );
@@ -269,8 +272,8 @@ export default class Feed extends Component {
         </div>
         <div className="item__actions">
           <span className="item__smiley">{video.smiley}</span>
-          <span className="item__profileName"> {video.profileName}</span>
-          <span> {video.messageResponse}</span>
+          {/* <span className="item__profileName"> {video.profileName}</span> */}
+          {/* <span> {video.messageResponse}</span> */}
         </div>
       </div>
     );
@@ -298,8 +301,8 @@ export default class Feed extends Component {
         </div>
         <div className="item__actions">
           <span className="item__smiley">{status.smiley}</span>
-          <span className="item__profileName"> {status.profileName}</span>
-          <span> {status.messageResponse}</span>
+          {/* <span className="item__profileName"> {status.profileName}</span> */}
+          {/* <span> {status.messageResponse}</span> */}
         </div>
       </div>
     );
@@ -311,10 +314,10 @@ export default class Feed extends Component {
       <div className="item notification-item" key={notification.id}>
         <div className="item__body">
           <div className="item__notificationHeader">
-            <img
+            {/* <img
               className="item__notificationF"
               src="/imagesIcons/notification_F.png"
-            />
+            /> */}
             <p className="item__notificationHeaderText">
               {notification.message}
             </p>
@@ -341,10 +344,10 @@ export default class Feed extends Component {
       <div className="item notification-item" key={miniNotification.id}>
         <div className="item__body">
           <div className="item__notificationHeader">
-            <img
+            {/* <img
               className="item__notificationF"
               src="/imagesIcons/notification_F.png"
-            />
+            /> */}
             <p className="item__notificationHeaderText">
               {miniNotification.message}
             </p>

@@ -153,7 +153,7 @@ export default class App extends Component {
     ctx.beginPath();
     ctx.moveTo(oogx1, oogy1);
     ctx.arc(oogx1, oogy1, 6, 0, 2 * Math.PI);
-    ctx.fillStyle = "cyan";
+    ctx.fillStyle = "#0d76ff";
 
     ctx.fill();
 
@@ -162,7 +162,7 @@ export default class App extends Component {
     ctx.beginPath();
     ctx.moveTo(oogx2, oogy2);
     ctx.arc(oogx2, oogy2, 6, 0, 2 * Math.PI);
-    ctx.fillStyle = "cyan";
+    ctx.fillStyle = "#0d76ff";
     ctx.fill();
 
     ctx.fillStyle = "white";
@@ -212,14 +212,6 @@ export default class App extends Component {
 
     // this.setState({ emotions: face.emotions });
     this.checkEmotions(face.emotions);
-
-    document.querySelector("#switch").addEventListener("click", function() {
-      if (document.body.className === "light") {
-        document.body.className = "dark";
-      } else {
-        document.body.className = "light";
-      }
-    });
   }
 
   render() {
@@ -227,14 +219,27 @@ export default class App extends Component {
     return (
       <div className="app">
         <header className="header">
+          <div className="logo_search_container">
+            <img
+              src="/imagesIcons/logo_fb_oldStyle.png"
+              className="header__logo logo_oldStyle"
+              alt="logo"
+              height="25"
+            />
+            <img
+              src="/imagesIcons/logoFacebook.png"
+              className="header__logo logo_newStyle"
+              alt="logo"
+              height="25"
+            />
+            <input className="header__input" placeholder="zoeken" />
+          </div>
           <img
-            src="/imagesIcons/logoFacebook.png"
-            className="header__logo"
+            src="/imagesIcons/icons_oldStyle.png"
+            className="header__icons_oldStyle"
             alt="logo"
-            height="20"
+            height="30"
           />
-          <input className="header__input" placeholder="zoeken" />
-          <button id="switch">Switch</button>
         </header>
         <main>
           <div className="leftColumn">
@@ -300,7 +305,8 @@ export default class App extends Component {
               </div>
             </div>
             <div className="privacySerieus">
-              * Wij nemen uw privacy heel serieus.
+              * Wij nemen uw privacy heel serieus. Klik om door te gaan naar de
+              privacyovereenkomst.
             </div>
             <div className="leftColumnScroll">
               <Feed
