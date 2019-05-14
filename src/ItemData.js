@@ -1321,7 +1321,7 @@ let DATA = [
     order: 4,
     order: 10,
     dt: 1234981243,
-    message: "Alles wat je nodig hebt om optimaal te kunnen scrollen!", //fix me
+    message: "Alles wat je nodig hebt om optimaal te kunnen scrollen!",
     text:
       "Je positieve berichten zijn op voor vandaag. Als je meer positieve berichten wil zien, ga dan naar de FacebookStore.",
     image: "/imagesNotifications/facebook-store1.jpg",
@@ -1333,7 +1333,8 @@ let DATA = [
     order: 1,
     dt: 1234981243,
     message: "Goed nieuws: enkel zonneschijn voor de komende dagen!",
-    text: "Een prachtige app van Aplle om de weersverwachting te zien.",
+    text:
+      "Een prachtige app van Aplle om de weersverwachting te zien. Zoek en Het weer apps in de App Store en download ze op je iPad, iPhone of iPod touch. De App Store heeft een breed assortiment Het weer voor je ...",
     image: "/imagesNotifications/goed_weer.png",
     textTitle: "Weer — Apple"
   },

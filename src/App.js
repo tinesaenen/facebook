@@ -243,6 +243,12 @@ export default class App extends Component {
         </header>
         <main>
           <div className="leftColumn">
+            <img
+              src="/imagesIcons/linker_kolom_oldStyle.png"
+              className="linkerkolom__icons_oldStyle"
+              alt="logo"
+              height="inherit"
+            />
             <div className="liveFaceTracking">
               <div className="videoCanvas">
                 <div className="liveFaceTracking__video" />
@@ -335,9 +341,14 @@ export default class App extends Component {
           </div>
 
           <div className="rightColumn">
+            <img
+              src="/imagesIcons/rechter_kolom_oldstyle.jpg"
+              className="rechterkolom__icons_oldStyle"
+              alt="logo"
+              height="inherit"
+            />
             <div className="storyContainer">
               <Feed className="horizontalFeed" types={["story"]} />
-              <div className="gekleurdeDiv" />
             </div>
 
             <div className="rightColumnScroll">

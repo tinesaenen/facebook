@@ -312,13 +312,13 @@ export default class Feed extends Component {
     // console.log(notification);
     return (
       <div className="item notification-item" key={notification.id}>
-        <div className="item__body">
-          <div className="item__notificationHeader">
+        <div className="item__body item__bodyBigNotification">
+          <div className="item__notificationHeader item__bigNotificationHeader">
             {/* <img
               className="item__notificationF"
               src="/imagesIcons/notification_F.png"
             /> */}
-            <p className="item__notificationHeaderText">
+            <p className="item__notificationHeaderText ">
               {notification.message}
             </p>
           </div>
@@ -364,19 +364,21 @@ export default class Feed extends Component {
           <img
             className="item__profileImage"
             src={ad.profileImage}
-            width={45}
-            height={45}
+            width={32}
+            height={32}
             alt={ad.pageName}
           />
           <div className="item__pageNameContainer">
-            <span className="item__pageName">{ad.pageName}</span>
-            <p className="item__gesponsord">◉ gesponsord</p>
+            <span className="item__pageName item__adName ">{ad.pageName}</span>
+            <p className="item__gesponsord">
+              <span className="item__gesponsordBolletje">◉ </span>gesponsord
+            </p>
           </div>
         </div>
-        <div className="item__body">
+        <div className="item__bodyAd">
           <img className="item__image" src={ad.image} alt={ad.text} />
-          <div className="item__text">{ad.text}</div>
-          <div className="item__subText">{ad.subText}</div>
+          <div className="item__textAd">{ad.text}</div>
+          <div className="item__subTextAd">{ad.subText}</div>
         </div>
       </div>
     );

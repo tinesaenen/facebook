@@ -166,8 +166,10 @@ export default class Feed extends Component {
                 {bigNews.messageSourceWebsite}
               </a>
             </p>
-            <div className="item__text">{bigNews.text}</div>
-            <div className="item__subText">{bigNews.subText}</div>
+            <div className="item__text item__textBigNews">{bigNews.text}</div>
+            <div className="item__subText item__subTextBigNews">
+              {bigNews.subText}
+            </div>
           </div>
         </div>
 
@@ -373,7 +375,7 @@ export default class Feed extends Component {
         <div className="item__body">
           <img className="item__image" src={ad.image} alt={ad.text} />
           <div className="item__text">{ad.text}</div>
-          <div className="item__subText">{ad.subText}</div>
+          <div className="item__subText item__subTextAd">{ad.subText}</div>
         </div>
       </div>
     );
