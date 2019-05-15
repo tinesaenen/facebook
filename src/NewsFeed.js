@@ -53,7 +53,10 @@ export default class Feed extends Component {
         next={this.fetchData}
         hasMore={this.state.items.length < this.state.allItems.length}
         loader={
-          <img style={{ width: 25, verticalAlign: "middle" }} src={spinner} />
+          <img
+            style={{ width: 25, verticalAlign: "middle", margin: 40 }}
+            src={spinner}
+          />
         }
         // height={700}
         scrollableTarget="newsfeed-wrapper"

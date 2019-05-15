@@ -42,7 +42,8 @@ let DATA = [
     image: "/imagesIntro/Mark_tape_cam.jpg",
     action: "heeft een foto geplaatst",
     messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
-    smiley: "😰"
+    smiley: "😰",
+    onVisible: "showAlert"
   },
   {
     type: "bigNewsOwnPost",
@@ -175,7 +176,7 @@ let DATA = [
   {
     type: "picture",
     dt: 1234981243,
-    text: "You're free to try it Dumb Fucks!",
+    text: "You're free to try it, Dumb Fucks!",
     profileName: "Mark Zuckerberg",
     profileImage: "/imagesProfilePeople/mark.jpeg",
     date: "9 minuten geleden",

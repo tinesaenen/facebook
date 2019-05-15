@@ -214,11 +214,27 @@ export default class App extends Component {
     this.checkEmotions(face.emotions);
   }
 
+  onSwitch() {
+    if (document.body.className === "oldStyle") {
+      document.body.className = "newStyle";
+    } else {
+      document.body.className = "oldStyle";
+    }
+  }
+
   render() {
     const { emotions } = this.state;
+
     return (
       <div className="app">
         <header className="header">
+          <button
+            id="switch"
+            onClick={this.onSwitch.bind(this)}
+            style={{ position: "absolute", right: 0 }}
+          >
+            Switch
+          </button>
           <div className="logo_search_container">
             <img
               src="/imagesIcons/logo_fb_oldStyle.png"
