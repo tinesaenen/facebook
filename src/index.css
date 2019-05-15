@@ -28,7 +28,7 @@
   --rechterkolom-icons-oldStyle-newStyle: none;
 
   /* posts */
-  --post-border-radius-oldStyle: 3px;
+  --post-border-radius-oldStyle: 4px;
   --post-border-radius-newStyle: 11px;
   --post-border-color-oldStyle: 1px solid #dddfe2;
   --post-border-color-newStyle: 1px solid #e8eef6;
@@ -238,6 +238,7 @@
 
 .oldStyle .item__bodyColor {
   background: var(--post-item-body-color-oldStyle);
+  padding-bottom: 6px;
 }
 
 .newStyle .item__bodyColor {

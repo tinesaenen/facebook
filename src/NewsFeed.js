@@ -81,6 +81,8 @@ export default class Feed extends Component {
       return this.renderNews(item);
     } else if (item.type === "bigNews") {
       return this.renderBigNews(item);
+    } else if (item.type === "bigNewsOwnPost") {
+      return this.renderBigNewsOwnPost(item);
     } else if (item.type === "status") {
       return this.renderStatus(item);
     } else if (item.type === "picture") {
@@ -175,6 +177,58 @@ export default class Feed extends Component {
 
         <div className="item__actions">
           <span className="item__smiley">{bigNews.smiley}</span>
+          {/* <span className="item__profileName"> {bigNews.profileName}</span>
+          <span> {bigNews.messageResponse}</span> */}
+        </div>
+      </div>
+    );
+  }
+
+  renderBigNewsOwnPost(bigNewsOwnPost) {
+    return (
+      <div className="item news-item" key={bigNewsOwnPost.id}>
+        <div className="item__newsHeader">
+          <img
+            className="item__profileImage"
+            src={bigNewsOwnPost.profileImage}
+            width={45}
+            height={45}
+            alt={bigNewsOwnPost.profileName}
+          />
+          <div className="item__profileNameContainer">
+            <span className="item__profileName">
+              {bigNewsOwnPost.profileName}
+            </span>
+            <span className="item__action"> {bigNewsOwnPost.action}</span>
+            {/* <span className="item__messageSource">
+              {bigNewsOwnPost.messageSource}
+            </span> */}
+            <p className="item__date"> {bigNewsOwnPost.date}</p>
+          </div>
+        </div>
+        <div className="item__body item__bodyColor">
+          <img
+            className="item__image"
+            src={bigNewsOwnPost.image}
+            alt={bigNewsOwnPost.text}
+          />
+          <div className="item__messagesource_itemText_container">
+            <p className="item__messageSourceWebsite">
+              <a href={bigNewsOwnPost.messageSourceWebsite}>
+                {bigNewsOwnPost.messageSourceWebsite}
+              </a>
+            </p>
+            <div className="item__text item__textBigNews">
+              {bigNewsOwnPost.text}
+            </div>
+            <div className="item__subText item__subTextBigNews">
+              {bigNewsOwnPost.subText}
+            </div>
+          </div>
+        </div>
+
+        <div className="item__actions">
+          <span className="item__smiley">{bigNewsOwnPost.smiley}</span>
           {/* <span className="item__profileName"> {bigNews.profileName}</span>
           <span> {bigNews.messageResponse}</span> */}
         </div>

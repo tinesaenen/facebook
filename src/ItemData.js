@@ -1,138 +1,189 @@
 let DATA = [
   //----------------------INTRO-------------------------//
-  // {
-  //   type: "introPicture",
-  //   dt: 1234981243,
-  //   profileName: "Tine Saenen",
-  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-  //   action: "heeft een bericht geplaatst",
-  //   date: "12 minuten geleden",
-  //   image: "/imagesIntro/hey_jij_daar.png",
-  //   smiley: "😮",
-  //   number: "214"
-  // },
-  // {
-  //   type: "introPicture",
-  //   dt: 1234981243,
-  //   profileName: "Tine Saenen",
-  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-  //   action: "heeft een bericht geplaatst",
-  //   date: "13 minuten geleden",
-  //   image: "/imagesIntro/ben_jij_het_ook_beu.png",
-  //   smiley: "😮",
-  //   number: "214"
-  // },
-  // {
-  //   type: "introPicture",
-  //   dt: 1234981243,
-  //   profileName: "Tine Saenen",
-  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-  //   action: "heeft een bericht geplaatst",
-  //   date: "13 minuten geleden",
-  //   image: "/imagesIntro/je_scrolt.png",
-  //   smiley: "😮",
-  //   number: "214"
-  // },
-  // {
-  //   type: "introPicture",
-  //   dt: 1234981243,
-  //   profileName: "Tine Saenen",
-  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-  //   action: "heeft een bericht geplaatst",
-  //   date: "13 minuten geleden",
-  //   image: "/imagesIntro/als_masterproject.png", //nieuw design verschijnt
-  //   smiley: "😮",
-  //   number: "214"
-  // },
-  // {
-  //   type: "introPicture",
-  //   dt: 1234981243,
-  //   profileName: "Tine Saenen",
-  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-  //   action: "heeft een bericht geplaatst",
-  //   date: "13 minuten geleden",
-  //   image: "/imagesIntro/met_het_verzachten.png", //emotietracking verschijnt
-  //   smiley: "😮",
-  //   number: "214"
-  // },
-  // {
-  //   type: "introPicture",
-  //   dt: 1234981243,
-  //   profileName: "Tine Saenen",
-  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-  //   action: "heeft een bericht geplaatst",
-  //   date: "13 minuten geleden",
-  //   image: "/imagesIntro/coding_timelapse.png",
-  //   smiley: "😮",
-  //   number: "214"
-  // },
-  // {
-  //   type: "introPicture",
-  //   dt: 1234981243,
-  //   profileName: "Tine Saenen",
-  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-  //   action: "heeft een bericht geplaatst",
-  //   date: "13 minuten geleden",
-  //   image: "/imagesIntro/Wanneer_FB_je_emoties.png",
-  //   smiley: "😮",
-  //   number: "214"
-  // },
-  // {
-  //   type: "introPicture",
-  //   dt: 1234981243,
-  //   profileName: "Tine Saenen",
-  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-  //   action: "heeft een bericht geplaatst",
-  //   date: "13 minuten geleden",
-  //   image: "/imagesIntro/in_de_middenkolom.png", // reclame verschijnt
-  //   smiley: "😮",
-  //   number: "214"
-  // },
-  // {
-  //   type: "introPicture",
-  //   dt: 1234981243,
-  //   profileName: "Tine Saenen",
-  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-  //   action: "heeft een bericht geplaatst",
-  //   date: "13 minuten geleden",
-  //   image: "/imagesIntro/coding_timelapse.png",
-  //   smiley: "😮",
-  //   number: "214"
-  // },
+  {
+    type: "bigNewsOwnPost",
+    dt: 1234981243,
+    text:
+      "Only 15 minutes of surfing the social media platform is enough to cause depression, a new Israeli study suggests.",
+    subText:
+      "A study managed by a social psychologist from the Department of Behavioral Sciences at the Hadassah Academic College in Jerusalem concludes that 15 minutes of surfing on Facebook is enough to make one vulnerable to depression, mainly as a result of reduced self-esteem.",
+    profileName: "World Israel News",
+    profileImage: "/imagesProfilePages/world_israel_news.jpg",
+    date: "1 minuut geleden",
+    image: "/imagesIntro/FB_mental_health_1.jpg",
+    messageSource: " Norman Simon",
+    messageSourceWebsite: "worldisraelnews.com",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 195 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😨"
+  },
+  {
+    type: "news",
+    dt: 1234981243,
+    text:
+      "Maanden voor de eerste symptomen zichtbaar of voelbaar zijn, kan Facebook al voorspellen dat je een hoger risico loopt op depressie.",
+    profileName: "Stan Vanroosbroek",
+    profileImage: "/imagesProfilePeople/Stan_Vanroosbroek.jpeg",
+    date: "5 seconden geleden",
+    image: "/imagesIntro/FB_mental_health_2.jpeg",
+    messageSource: "HLN",
+    messageSourceWebsite: "www.hln.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 3 anderen hebben droevig gekeken naar dit bericht",
+    smiley: "😢😐"
+  },
+  {
+    type: "picture",
+    dt: 1234981243,
+    text: "WE WORDEN AFGELUISTERD!!! 😵😵😵",
+    profileName: "Conspiracy Time",
+    profileImage: "/imagesProfilePages/conspiracy_time.png",
+    date: "2 minuten geleden",
+    image: "/imagesIntro/Mark_tape_cam.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
+    smiley: "😰"
+  },
+  {
+    type: "bigNewsOwnPost",
+    dt: 1234981243,
+    text: "Tim Verheyden maakt de balans op van 15 jaar Facebook.",
+    subText:
+      "Technologie zou de wereld beter maken. Dat was de belofte. Maar heeft Facebook van de wereld effectief een betere plaats gemaakt? Heeft Facebook ons dichter bij elkaar gebracht? En wat is de prijs die we daarvoor betalen?",
+    profileName: "Canvas",
+    profileImage: "/imagesProfilePages/canvas.png",
+    date: "4 minuut geleden",
+    image: "/imagesIntro/facebook_enik.jpg",
+    messageSource: "canvas.be",
+    messageSourceWebsite: "www.canvas.be",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 83 anderen hebben benieuwd gekeken naar dit bericht",
+    smiley: "🧐"
+  },
+  {
+    type: "video",
+    dt: 1234981243,
+    text:
+      "How To Set Up Your Facebook Pixel For Beginners In 2019 | Easy Facebook Pixel Tutorial",
+    profileName: "Jason Wardrop",
+    profileImage: "/imagesProfilePeople/jason_wardrop.jpg",
+    date: "9 minuten geleden",
+    videolink: "https://www.youtube.com/embed/SkYNivD8iM8",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 3 anderen hebben verwonderd gereageerd op dit bericht",
+    smiley: "😮"
+  },
+  {
+    type: "picture",
+    dt: 1234981243,
+    text: "I assure you, Facebook Respects your privacy... YEAH RIGHT!? 😂",
+    profileName: "Mieke Embreghts",
+    profileImage: "/imagesProfilePeople/Mieke_Embreghts.jpeg",
+    date: "7 minuten geleden",
+    image: "/imagesIntro/Mark_vow.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 968 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😂🤪"
+  },
 
-  // {
-  //   type: "introPicture",
-  //   dt: 1234981243,
-  //   profileName: "Tine Saenen",
-  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-  //   action: "heeft een bericht geplaatst",
-  //   date: "13 minuten geleden",
-  //   image: "/imagesIntro/de_selectie_berichten.png",
-  //   smiley: "😮",
-  //   number: "214"
-  // },
-  // {
-  //   type: "introPicture",
-  //   dt: 1234981243,
-  //   profileName: "Tine Saenen",
-  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-  //   action: "heeft een bericht geplaatst",
-  //   date: "13 minuten geleden",
-  //   image: "/imagesIntro/naast_deze_feature.png", // notificaties verschijnen
-  //   smiley: "😮",
-  //   number: "214"
-  // },
-  // {
-  //   type: "introPicture",
-  //   dt: 1234981243,
-  //   profileName: "Tine Saenen",
-  //   profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-  //   action: "heeft een bericht geplaatst",
-  //   date: "13 minuten geleden",
-  //   image: "/imagesIntro/zin_om_het_zelf.png", // vanaf nu wordt de koppeling tussen emotie en berichten gemaakt
-  //   smiley: "😮",
-  //   number: "214"
-  // },
+  {
+    type: "picture",
+    dt: 1234981243,
+    text: "Heeey, ik verkoop mijn procesfolio na de jury!",
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    date: "56 minuten geleden",
+    image: "/imagesIntro/procesfolio_mockup.png",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 256 anderen hebben gelachen naar dit bericht",
+    smiley: "🤪"
+  },
+  {
+    type: "bigNewsOwnPost",
+    dt: 1234981243,
+    text: "Facebook heeft bevestigd dat ze werken aan afluister software...",
+    subText:
+      "Neen, dit is geen hoax! Wat we tot kort allemaal vreesden, is net werkelijkheid geworden. Vanaf nu zal Facebook je kunnen filmen en afluisteren terwijl je door je feed scrolt.",
+    profileName: "De Morgen",
+    profileImage: "/imagesProfilePages/de_morgen.png",
+    date: "19 minuten geleden",
+    image: "/imagesIntro/facebook_luistert_af.jpg",
+    messageSource: "canvas.be",
+    messageSourceWebsite: "www.canvas.be",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 83 anderen hebben benieuwd gekeken naar dit bericht",
+    smiley: "😱"
+  },
+  {
+    type: "bigNewsOwnPost",
+    dt: 1234981243,
+    text: "HET IS ZOVER. U WORDT GEFILMD.",
+    subText:
+      "Vanaf vandaag weet Facebook nog meer over je... Ze analyseren je emoties en spelen er maar al te graag op in",
+    profileName: "The Verge",
+    profileImage: "/imagesProfilePages/the_verge.jpg",
+    date: "2 uur geleden",
+    image: "/imagesIntro/facial_recognition.png",
+    messageSource: "www.theverge.com",
+    messageSourceWebsite: "www.theverge.com",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 83 anderen hebben benieuwd gekeken naar dit bericht",
+    smiley: "😰😨😢😂😀"
+  },
+  {
+    type: "picture",
+    dt: 1234981243,
+    text:
+      "Nooit eerder was het zo simpel om je product te adverteren. Op Facebook Business beantwoorden we al je vragen!",
+    profileName: "Facebook",
+    profileImage: "/imagesProfilePages/facebook.png",
+    date: "4 minuten geleden",
+    image: "/imagesIntro/Facebook_advertising.png",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
+    smiley: "😮"
+  },
+  {
+    type: "bigNewsOwnPost",
+    dt: 1234981243,
+    text: "Wordt Facebook de nieuwe Cortana en Alexa?",
+    subText:
+      "Na de nieuwe update spreekt Facebook voortaan tegen je alsof ze naast je zit. Wanneer je droevig kijkt naar de camera, zal ze je proberen troosten.",
+    profileName: "Gazet van Antwerpen",
+    profileImage: "/imagesProfilePages/gva.png",
+    date: "2 uur geleden",
+    image: "/imagesIntro/cortana_alexa.png",
+    messageSource: "www.theverge.com",
+    messageSourceWebsite: "www.theverge.com",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 83 anderen hebben benieuwd gekeken naar dit bericht",
+    smiley: "😀"
+  },
+  {
+    type: "picture",
+    dt: 1234981243,
+    text:
+      "Vanaf vandaag heeft Facebook een nieuw jasje. Wat vinden jullie ervan?",
+    profileName: "Facebook",
+    profileImage: "/imagesProfilePages/facebook.png",
+    date: "4 minuten geleden",
+    image: "/imagesIntro/redesign.png",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
+    smiley: "🙂😍"
+  },
+  {
+    type: "picture",
+    dt: 1234981243,
+    text: "You're free to try it Dumb Fucks!",
+    profileName: "Mark Zuckerberg",
+    profileImage: "/imagesProfilePeople/mark.jpeg",
+    date: "9 minuten geleden",
+    image: "/imagesIntro/zuck_happy.jpeg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
+    smiley: "😀"
+  },
 
   //----------------------ADVERTISEMENTS-------------------------//
 

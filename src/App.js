@@ -330,6 +330,7 @@ export default class App extends Component {
               types={[
                 "news",
                 "bigNews",
+                "bigNewsOwnPost",
                 "status",
                 "picture",
                 "gif",
