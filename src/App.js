@@ -11,6 +11,7 @@ export default class App extends Component {
       currentEmotion: null,
       emotionCooldown: Date.now(),
       showFaceTracking: false,
+      showAds: false,
     };
   }
 
@@ -65,6 +66,11 @@ export default class App extends Component {
   showFaceTracking({ isIntersecting }) {
     if (!isIntersecting) return;
     this.setState({ showFaceTracking: true });
+  }
+
+  showAds({ isIntersecting }) {
+    if (!isIntersecting) return;
+    this.setState({ showAds: true });
   }
 
   render() {
@@ -140,15 +146,15 @@ export default class App extends Component {
           </div>
 
           <div className="rightColumn">
-            <img
+            { !this.state.showAds && <img
               src="/imagesIcons/rechter_kolom_oldstyle.jpg"
               className="rechterkolom__icons_oldStyle"
               alt="logo"
               height="inherit"
-            />
-            <div className="storyContainer">
+            /> }
+            { this.state.showAds && <div className="storyContainer">
               <Feed className="horizontalFeed" types={["story"]} />
-            </div>
+            </div> }
 
             <div className="rightColumnScroll">
               <Feed className="verticalFeed" types={["ad"]} />

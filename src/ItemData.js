@@ -59,7 +59,8 @@ let DATA = [
     messageSourceWebsite: "www.canvas.be",
     action: "heeft een bericht gedeeld",
     messageResponse: "en 83 anderen hebben benieuwd gekeken naar dit bericht",
-    smiley: "🧐"
+    smiley: "🧐",
+    onVisible: "showAds"
   },
   {
     type: "video",

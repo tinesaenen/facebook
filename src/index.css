@@ -122,9 +122,10 @@
   display: var(--rechterkolom-icons-oldStyle-newStyle);
 }
 
-.oldStyle .rightColumnScroll {
+/*.oldStyle .rightColumnScroll {
   display: var(--rechterkolom-icons-oldStyle-newStyle);
 }
+*/
 
 .newStyle .rechterkolom__icons_oldStyle {
   display: var(--rechterkolom-icons-oldStyle-newStyle);
