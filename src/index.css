@@ -112,7 +112,7 @@
 /* linker kolom */
 
 .newStyle .linkerkolom__icons_oldStyle {
-  display: var(--linkerkolom-logo-oldStyle-newStyle);
+  display: none;
   margin-right: 100px;
 }
 
@@ -493,7 +493,7 @@ main {
   font-size: 16px;
 }
 
-/* 
+/*
 .darkmode item__profileName   fix me dark mode*/
 
 .item__numberLikes {
@@ -656,6 +656,10 @@ main {
   border-radius: 11px;
   /* height: 180pCx; */
   /* width: 411px; */
+}
+
+#face_video {
+  display: none;
 }
 
 /* .liveFaceTracking__video {

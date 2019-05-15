@@ -43,7 +43,7 @@ let DATA = [
     action: "heeft een foto geplaatst",
     messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
     smiley: "😰",
-    onVisible: "showAlert"
+    onVisible: "showFaceTracking"
   },
   {
     type: "bigNewsOwnPost",

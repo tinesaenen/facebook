@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import DATA from "./ItemData";
 import InfiniteScroll from "react-infinite-scroll-component";
+import Observer from '@researchgate/react-intersection-observer';
 import spinner from "./spinner.gif";
 
 // let currentFeedItems = [];
@@ -49,6 +50,7 @@ export default class Feed extends Component {
   render() {
     return (
       <InfiniteScroll
+        ref={this.scroller}
         dataLength={this.state.items.length}
         next={this.fetchData}
         hasMore={this.state.items.length < this.state.allItems.length}
@@ -79,32 +81,40 @@ export default class Feed extends Component {
   renderItem(item) {
     // console.log(this.state.items.length);
     // console.log(item);
+    let element;
 
     if (item.type === "news") {
-      return this.renderNews(item);
+      element = this.renderNews(item);
     } else if (item.type === "bigNews") {
-      return this.renderBigNews(item);
+      element = this.renderBigNews(item);
     } else if (item.type === "bigNewsOwnPost") {
-      return this.renderBigNewsOwnPost(item);
+      element = this.renderBigNewsOwnPost(item);
     } else if (item.type === "status") {
-      return this.renderStatus(item);
+      element = this.renderStatus(item);
     } else if (item.type === "picture") {
-      return this.renderPicture(item);
+      element = this.renderPicture(item);
     } else if (item.type === "notification") {
-      return this.renderNotification(item);
+      element = this.renderNotification(item);
     } else if (item.type === "miniNotification") {
-      return this.renderMiniNotification(item);
+      element = this.renderMiniNotification(item);
     } else if (item.type === "ad") {
-      return this.renderAd(item);
+      element = this.renderAd(item);
     } else if (item.type === "story") {
-      return this.renderStory(item);
+      element = this.renderStory(item);
     } else if (item.type === "video") {
-      return this.renderVideo(item);
+      element = this.renderVideo(item);
     } else if (item.type === "gif") {
-      return this.renderGif(item);
+      element = this.renderGif(item);
     } else {
-      return this.renderNews(item);
+      element = this.renderNews(item);
     }
+    if (item.onVisible) {
+      element = <Observer
+        onChange={this.props.app[item.onVisible].bind(this.props.app)}
+        threshold={0.5}
+        >{element}</Observer>
+    }
+    return element;
   }
 
   renderNews(news) {
