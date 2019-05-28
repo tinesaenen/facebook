@@ -10,12 +10,9 @@ export default class Feed extends Component {
     super(props);
     this.state = {
       isLoading: true,
-      allItems: [],
-      items: [],
-      itemIndex: 0,
-      joyIndex: 0
+      items: []
     };
-    this.emotionCounters = {};
+    this.seen = new Set();
     this.prevEmotion = null;
     console.log(this.state.allItems);
   }
@@ -45,46 +42,33 @@ export default class Feed extends Component {
   }
 
   fetchNewItems() {
-    let emotionOrder = 1;
-    let newItems;
-    let itemIndex = this.state.itemIndex;
-    let hasNext = false;
+    let newItem;
     if (this.props.target) {
-      console.log("SHOW TARGET MESGSAS");
-    } else if (this.props.emotion) {
-      let counter = this.emotionCounters[this.props.emotion];
-      if (!counter) {
-        counter = 1;
-      } else {
-        counter += 1;
-      }
-      this.emotionCounters[this.props.emotion] = counter;
-      //console.log('COUNTERS', this.emotionCounters);
-      const nextItems = this.state.allItems.filter(
+      newItem = DATA.find(
         item =>
-          item.emotionStatus === this.props.emotion && item.order >= counter
+          item &&
+          this.props.types.includes(item.type) &&
+          item.target === this.props.target &&
+          !this.seen.has(item)
       );
-      if (nextItems.length > 0) {
-        newItems = [nextItems[0]];
-        if (nextItems.length > 1) {
-          hasNext = true;
-        }
-      } else {
-        newItems = [];
-      }
-      //newItems = this.state.allItems.filter(item => item.emotionStatus === this.props.emotion);
-      console.log("EMO", this.props.emotion, newItems);
-    } else {
-      console.log("WAS GING T O SHOW STUFF");
-      // newItems = this.state.allItems.slice(itemIndex, itemIndex + 1);
-      newItems = [];
-      itemIndex += 1;
+    } else if (this.props.emotion) {
+      newItem = DATA.find(
+        item =>
+          item &&
+          this.props.types.includes(item.type) &&
+          !item.target &&
+          !item.firstNotification &&
+          item.emotionStatus === this.props.emotion &&
+          !this.seen.has(item)
+      );
     }
-    const items = newItems.concat(this.state.items);
-    this.setState({ items, itemIndex, emotionOrder });
-    if (hasNext) {
-      setTimeout(this.fetchNewItems.bind(this), random(2000, 7000));
+    if (newItem) {
+      this.seen.add(newItem);
+      const items = this.state.items;
+      items.unshift(newItem);
+      this.setState({ items });
     }
+    setTimeout(this.fetchNewItems.bind(this), random(5000, 10000));
   }
 
   render() {

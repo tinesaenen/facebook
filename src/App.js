@@ -65,26 +65,26 @@ export default class App extends Component {
 
   switchToNewStyle({ isIntersecting }) {
     if (!isIntersecting) return;
-    this.audio.play();
+    // this.audio.play();
     document.body.className = "newStyle";
   }
 
   showFaceTracking({ isIntersecting }) {
     if (!isIntersecting) return;
-    this.audio.play();
+    // this.audio.play();
     this.setState({ showFaceTracking: true });
     this.setState({});
   }
 
   showAds({ isIntersecting }) {
     if (!isIntersecting) return;
-    this.audio.play();
+    // this.audio.play();
     this.setState({ showAds: true });
   }
 
   showNotifications({ isIntersecting }) {
     if (!isIntersecting) return;
-    this.audio.play();
+    // this.audio.play();
     this.setState({ showNotifications: true });
   }
 
