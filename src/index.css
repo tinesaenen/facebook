@@ -660,11 +660,16 @@ main {
 .liveFaceTracking {
   background: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0px 0px 0px 0px;
-  border-radius: 11px;
+  /* border-radius: 11px; */
   /* height: 180pCx; */
   /* width: 411px; */
+}
+
+.equaliserTimeContainer {
+  display: flex;
+  flex-direction: row;
 }
 
 #face_video {
@@ -676,7 +681,7 @@ main {
 } */
 
 .videoCanvas {
-  width: 48%;
+  width: 100%;
   object-fit: fill;
   display: block;
   /* height: 230px; */
@@ -685,13 +690,15 @@ main {
 }
 
 .liveFaceTracking__video canvas {
-  height: 230px;
-  margin-left: -98px;
+  /* height: 260px; */
+  width: 100%;
+  /* margin-left: -98px; */
 }
 
 .liveFaceTracking__stats {
   flex: 1;
   margin: 0px 0px 5px 0px;
+  width: 50%;
 }
 
 .liveFaceTracking__stats p {
@@ -735,7 +742,7 @@ main {
 }
 
 .timeStatLabelContainer {
-  margin: 4px 20px 8px 0px;
+  /* margin: 4px 20px 8px 0px; */
 }
 
 .timeStatLabel {
@@ -752,6 +759,8 @@ main {
 }
 .timeStatAnalyserContainer {
   display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
 /*-----------------------stories-------------------------*/

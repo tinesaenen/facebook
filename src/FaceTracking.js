@@ -2,11 +2,15 @@ import React, { Component, Fragment } from "react";
 import AudioAnalyser from "./AudioAnalyser";
 
 export default class FaceTracking extends Component {
-
   componentDidMount() {
     const videoRoot = document.querySelector(".liveFaceTracking__video");
     const faceMode = window.affdex.FaceDetectorMode.LARGE_FACES;
-    this.detector = new window.affdex.CameraDetector(videoRoot, 645, 485, faceMode);
+    this.detector = new window.affdex.CameraDetector(
+      videoRoot,
+      645,
+      485,
+      faceMode
+    );
 
     this.detector.addEventListener("onInitializeSuccess", function() {
       document.querySelector("#face_video_canvas").style.display = "block";
@@ -172,72 +176,76 @@ export default class FaceTracking extends Component {
   }
 
   render() {
-    return (<Fragment>
+    return (
+      <Fragment>
         <div className="liveFaceTracking">
-        <div className="videoCanvas">
-          <div className="liveFaceTracking__video" />
-        </div>
-        <div>
-          <div className="timeStatAnalyserContainer">
-            <div className="timeStatLabelContainer">
-              <p className="timeStatLabel" id="date" />
-              <p className="timeStatLabel" id="time" />
-              <p className="timeStatLabel">BELGIE </p>
-              <p className="timeStatLabel">51°11’56,742”N</p>
-              <p className="timeStatLabel">4°24’14,293”O</p>
-            </div>
-            <AudioAnalyser />
+          <div className="videoCanvas">
+            <div className="liveFaceTracking__video" />
           </div>
-          <div className="liveFaceTracking__stats">
-            <div className="emotion">
-              <p className="emotion-label">Vreugde</p>
-              <div className="onderliggendeBalk">
-                <div className="emotion-vreugde balk">&nbsp;</div>
+          <div className="equaliserTimeContainer">
+            <div className="liveFaceTracking__stats">
+              <div className="emotion">
+                <p className="emotion-label">Vreugde</p>
+                <div className="onderliggendeBalk">
+                  <div className="emotion-vreugde balk">&nbsp;</div>
+                </div>
+              </div>
+              <div className="emotion">
+                <p className="emotion-label">Woede</p>
+                <div className="onderliggendeBalk">
+                  <div className="emotion-woede balk">&nbsp;</div>
+                </div>
+              </div>
+              <div className="emotion">
+                <p className="emotion-label">Verdriet</p>
+                <div className="onderliggendeBalk">
+                  <div className="emotion-verdriet balk">&nbsp;</div>
+                </div>
+              </div>
+              <div className="emotion">
+                <p className="emotion-label">Afgunst</p>
+                <div className="onderliggendeBalk">
+                  <div className="emotion-afgunst balk">&nbsp;</div>
+                </div>
+              </div>
+              <div className="emotion">
+                <p className="emotion-label">Minachtig</p>
+                <div className="onderliggendeBalk">
+                  <div className="emotion-minachting balk">&nbsp;</div>
+                </div>
+              </div>
+              <div className="emotion">
+                <p className="emotion-label">Angst</p>
+                <div className="onderliggendeBalk">
+                  <div className="emotion-angst balk">&nbsp;</div>
+                </div>
+              </div>
+              <div className="emotion">
+                <p className="emotion-label">Verbazing</p>
+                <div className="onderliggendeBalk">
+                  <div className="emotion-verwondering balk">&nbsp;</div>
+                </div>
               </div>
             </div>
-            <div className="emotion">
-              <p className="emotion-label">Woede</p>
-              <div className="onderliggendeBalk">
-                <div className="emotion-woede balk">&nbsp;</div>
+            <div className="timeStatAnalyserContainer">
+              <div className="timeStatLabelContainer">
+                <p className="timeStatLabel" id="date" />
+                <p className="timeStatLabel" id="time" />
+                <p className="timeStatLabel">BELGIE </p>
+                <p className="timeStatLabel">51°11’56,742”N</p>
+                <p className="timeStatLabel">4°24’14,293”O</p>
               </div>
-            </div>
-            <div className="emotion">
-              <p className="emotion-label">Verdriet</p>
-              <div className="onderliggendeBalk">
-                <div className="emotion-verdriet balk">&nbsp;</div>
-              </div>
-            </div>
-            <div className="emotion">
-              <p className="emotion-label">Afgunst</p>
-              <div className="onderliggendeBalk">
-                <div className="emotion-afgunst balk">&nbsp;</div>
-              </div>
-            </div>
-            <div className="emotion">
-              <p className="emotion-label">Minachtig</p>
-              <div className="onderliggendeBalk">
-                <div className="emotion-minachting balk">&nbsp;</div>
-              </div>
-            </div>
-            <div className="emotion">
-              <p className="emotion-label">Angst</p>
-              <div className="onderliggendeBalk">
-                <div className="emotion-angst balk">&nbsp;</div>
-              </div>
-            </div>
-            <div className="emotion">
-              <p className="emotion-label">Verbazing</p>
-              <div className="onderliggendeBalk">
-                <div className="emotion-verwondering balk">&nbsp;</div>
+              <div>
+                <AudioAnalyser />
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="privacySerieus">
-        * Wij nemen uw privacy heel serieus. Klik om door te gaan naar de
-        privacyovereenkomst.
-      </div>
-    </Fragment>);
+        <div className="privacySerieus">
+          * Wij nemen uw privacy heel serieus. Klik om door te gaan naar de
+          privacyovereenkomst.
+        </div>
+      </Fragment>
+    );
   }
 }

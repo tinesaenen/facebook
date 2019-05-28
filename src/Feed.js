@@ -24,7 +24,9 @@ export default class Feed extends Component {
     const types = this.props.types;
     const allItems = DATA.filter(
       item =>
-        types.includes(item.type) && !item.target && !item.firstNotification
+        types.includes(item.type) &&
+        (!item.target || item.target === this.props.target) &&
+        !item.firstNotification
     );
     const items = DATA.filter(item => item.firstNotification);
     this.setState({ allItems, items, isLoading: false });
@@ -47,7 +49,9 @@ export default class Feed extends Component {
     let newItems;
     let itemIndex = this.state.itemIndex;
     let hasNext = false;
-    if (this.props.emotion) {
+    if (this.props.target) {
+      console.log("SHOW TARGET MESGSAS");
+    } else if (this.props.emotion) {
       let counter = this.emotionCounters[this.props.emotion];
       if (!counter) {
         counter = 1;
@@ -71,6 +75,7 @@ export default class Feed extends Component {
       //newItems = this.state.allItems.filter(item => item.emotionStatus === this.props.emotion);
       console.log("EMO", this.props.emotion, newItems);
     } else {
+      console.log("WAS GING T O SHOW STUFF");
       // newItems = this.state.allItems.slice(itemIndex, itemIndex + 1);
       newItems = [];
       itemIndex += 1;
@@ -78,7 +83,7 @@ export default class Feed extends Component {
     const items = newItems.concat(this.state.items);
     this.setState({ items, itemIndex, emotionOrder });
     if (hasNext) {
-      setTimeout(this.fetchNewItems.bind(this), random(1000, 7000));
+      setTimeout(this.fetchNewItems.bind(this), random(2000, 7000));
     }
   }
 

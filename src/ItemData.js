@@ -387,182 +387,182 @@ let DATA = [
     subText: "Design your own logo with the Wix Logo Maker"
   },
 
-  // {
-  //   type: "ad",
-  //   // target: "geert",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/joker.jpg",
-  //   pageName: "Joker",
-  //   image: "/imagesAds/joker_australie.jpg",
-  //   text: "Op bezoek bij familieleden?",
-  //   subText:
-  //     "Laat je reis naar Australië plannen bij Joker voor een vakantie zonder zorgen!"
-  // },
-  // {
-  //   type: "ad",
-  //   // target: "geert",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/schleiper.png",
-  //   pageName: "Schleiper",
-  //   image: "/imagesAds/aquarelle.jpg",
-  //   text: "Alles voor de creative ziel",
-  //   subText: "Prachtige aquarelverf van Windsor and Newton voor een spotprijs"
-  // },
-  // {
-  //   type: "ad",
-  //   // target: "geert",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/zoo_antwerpen.jpg",
-  //   pageName: "Zoo van Antwerpen",
-  //   image: "/imagesAds/zoo_antwerpen.jpg",
-  //   text: "Ook eens even Ronddolen in de Dierentuin?",
-  //   subText: "Dé plek om inspiratie op te doen voor illustrators"
-  // },
-  // {
-  //   type: "ad",
-  //   // target: "geert",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/tui.png",
-  //   pageName: "Tui",
-  //   image: "/imagesAds/singapore.jpg",
-  //   text: "Nu vroegboekkorting op 10 dagen naar Singapore",
-  //   subText:
-  //     "Voel je je soms ook nostalgisch? Haal die mooie herinneringen weer boven dankzij dit prachtig aanbod!"
-  // },
-  // {
-  //   type: "ad",
-  //   // target: "reg",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/inno.jpg",
-  //   pageName: "Inno",
-  //   image: "/imagesAds/serax.jpg",
-  //   text: "Serax™ — We Design Happiness",
-  //   subText:
-  //     "Serax looks for beauty every day, for the good things that make life worth living, the things that create a home that inspires happiness. To experience, to share, and to discover…"
-  // },
-  // {
-  //   type: "ad",
-  //   // target: "reg",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/middelheim_museum.jpg",
-  //   pageName: "Lino type",
-  //   image: "/imagesAds/dennis_tyfus",
-  //   text: "My Niece’s Pierced Knees tentoonstelling van Dennis Tyfus",
-  //   subText: "de toegang tot het Middelheidmuseum is volledig gratis"
-  // },
-  // {
-  //   type: "ad",
-  //   // target: "reg",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/linotype.jpg",
-  //   pageName: "Lino type",
-  //   image: "/imagesAds/helvetica.png",
-  //   text:
-  //     "Deze klassieker is perfect voor het maken van een logo! Je mag hem zeker niet missen in je typekit",
-  //   subText: "Helvetica font download"
-  // },
-  // {
-  //   type: "ad",
-  //   // target: "reg",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/standaard_boekhandel.png",
-  //   pageName: "Standaard boekhandel",
-  //   image: "/imagesAds/geluk_voor_kinderen.jpeg",
-  //   text:
-  //     "Dit boek leert je het leven te ervaren als een feest. Positief en hoopvol ingesteld zijn, maakt je veerkrachtiger en gelukkiger.",
-  //   subText: "Voor slechts € 20,50 bij uw standaard boekhandel"
-  // },
-  // {
-  //   type: "ad",
-  //   // target: "reg",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/2dehands.jpg",
-  //   pageName: "2dehands",
-  //   image: "/imagesAds/letterkast.jpg",
-  //   text: "letterkast/zetbok/drukkerijkast/kralenkast",
-  //   subText:
-  //     "Een letterkast uit een drukkerij, de zetbok heeft 20 letterkasten/letterbakken met 1 handvat, de onderverdelingen van de letterkasten zijn in hout, vlak verstelbaar bovenvlak met een inox toplaag, op het bovenblad zitten 2 handvaten om het blad in een schuine stand te zetten."
-  // },
-  // {
-  //   type: "ad",
-  //   // target: "jan",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/11.11.11.jpg",
-  //   pageName: "11.11.11",
-  //   image: "/imagesAds/11.11.11.jpg",
-  //   text:
-  //     "Heb jij ook energie, talent, goesting om mee te werken aan een betere wereld? Vind jij ook een structurele aanpak van armoede en ontwikkeling belangrijk?  Dan ben je bij 11.11.11 aan het goede adres.",
-  //   subText:
-  //     "Je kan je engageren naar gelang je interesses en beschikbare tijd."
-  // },
+  {
+    type: "ad",
+    target: "geert",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/joker.jpg",
+    pageName: "Joker",
+    image: "/imagesAds/joker_australie.jpg",
+    text: "Op bezoek bij familieleden?",
+    subText:
+      "Laat je reis naar Australië plannen bij Joker voor een vakantie zonder zorgen!"
+  },
+  {
+    type: "ad",
+    target: "geert",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/schleiper.png",
+    pageName: "Schleiper",
+    image: "/imagesAds/aquarelle.jpg",
+    text: "Alles voor de creative ziel",
+    subText: "Prachtige aquarelverf van Windsor and Newton voor een spotprijs"
+  },
+  {
+    type: "ad",
+    target: "geert",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/zoo_antwerpen.jpg",
+    pageName: "Zoo van Antwerpen",
+    image: "/imagesAds/zoo_antwerpen.jpg",
+    text: "Ook eens even Ronddolen in de Dierentuin?",
+    subText: "Dé plek om inspiratie op te doen voor illustrators"
+  },
+  {
+    type: "ad",
+    target: "geert",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/tui.png",
+    pageName: "Tui",
+    image: "/imagesAds/singapore.jpg",
+    text: "Nu vroegboekkorting op 10 dagen naar Singapore",
+    subText:
+      "Voel je je soms ook nostalgisch? Haal die mooie herinneringen weer boven dankzij dit prachtig aanbod!"
+  },
+  {
+    type: "ad",
+    target: "reg",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/inno.jpg",
+    pageName: "Inno",
+    image: "/imagesAds/serax.jpg",
+    text: "Serax™ — We Design Happiness",
+    subText:
+      "Serax looks for beauty every day, for the good things that make life worth living, the things that create a home that inspires happiness. To experience, to share, and to discover…"
+  },
+  {
+    type: "ad",
+    target: "reg",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/middelheim_museum.jpg",
+    pageName: "Lino type",
+    image: "/imagesAds/dennis_tyfus",
+    text: "My Niece’s Pierced Knees tentoonstelling van Dennis Tyfus",
+    subText: "de toegang tot het Middelheidmuseum is volledig gratis"
+  },
+  {
+    type: "ad",
+    target: "reg",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/linotype.jpg",
+    pageName: "Lino type",
+    image: "/imagesAds/helvetica.png",
+    text:
+      "Deze klassieker is perfect voor het maken van een logo! Je mag hem zeker niet missen in je typekit",
+    subText: "Helvetica font download"
+  },
+  {
+    type: "ad",
+    target: "reg",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/standaard_boekhandel.png",
+    pageName: "Standaard boekhandel",
+    image: "/imagesAds/geluk_voor_kinderen.jpeg",
+    text:
+      "Dit boek leert je het leven te ervaren als een feest. Positief en hoopvol ingesteld zijn, maakt je veerkrachtiger en gelukkiger.",
+    subText: "Voor slechts € 20,50 bij uw standaard boekhandel"
+  },
+  {
+    type: "ad",
+    target: "reg",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/2dehands.jpg",
+    pageName: "2dehands",
+    image: "/imagesAds/letterkast.jpg",
+    text: "letterkast/zetbok/drukkerijkast/kralenkast",
+    subText:
+      "Een letterkast uit een drukkerij, de zetbok heeft 20 letterkasten/letterbakken met 1 handvat, de onderverdelingen van de letterkasten zijn in hout, vlak verstelbaar bovenvlak met een inox toplaag, op het bovenblad zitten 2 handvaten om het blad in een schuine stand te zetten."
+  },
+  {
+    type: "ad",
+    target: "jan",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/11.11.11.jpg",
+    pageName: "11.11.11",
+    image: "/imagesAds/11.11.11.jpg",
+    text:
+      "Heb jij ook energie, talent, goesting om mee te werken aan een betere wereld? Vind jij ook een structurele aanpak van armoede en ontwikkeling belangrijk?  Dan ben je bij 11.11.11 aan het goede adres.",
+    subText:
+      "Je kan je engageren naar gelang je interesses en beschikbare tijd."
+  },
 
-  // {
-  //   type: "ad",
-  //   // target: "werner",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/wohi.png",
-  //   pageName: "Wohi",
-  //   image: "/imagesAds/luck_sac_zitkussen.jpg",
-  //   text:
-  //     "Nooit meer een stijve rug dankzij de ultra comfortabele zitzak van Luckt Sac",
-  //   subText: "Verkrijgbaar in verschillende kleuren en maten"
-  // },
+  {
+    type: "ad",
+    target: "werner",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/wohi.png",
+    pageName: "Wohi",
+    image: "/imagesAds/luck_sac_zitkussen.jpg",
+    text:
+      "Nooit meer een stijve rug dankzij de ultra comfortabele zitzak van Luckt Sac",
+    subText: "Verkrijgbaar in verschillende kleuren en maten"
+  },
 
-  // {
-  //   type: "ad",
-  //   // target: "werner",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/second_life.jpg",
-  //   pageName: "Youtube",
-  //   image: "/imagesAds/second_life.jpg",
-  //   text:
-  //     "Have an Adventure and Discover incredible experiences, fascinating people, and vibrant communities in this vast virtual world",
-  //   subText: "Maak nu je gratis account voor uren speelplezier"
-  // },
-  // {
-  //   type: "ad",
-  //   // target: "jan",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/youtube.png",
-  //   pageName: "Youtube",
-  //   image: "/imagesAds/eyes_wide_shut.png",
-  //   text:
-  //     "Who Took My Badjas This wicked tune is made by the Samplekings. It contains a famous oneliner of a Belgian commercial of Belgacom. All credits for the vocalsamples go to the advertising agency of Belgacom. Badjas is the dutch word for bathrobe. Enjoy the sound of the badjas!",
-  //   subText: "bekijk de video nu!"
-  // },
-  // {
-  //   type: "ad",
-  //   // target: "jan",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/apple.png",
-  //   pageName: "Apple ",
-  //   image: "/imagesAds/apple_watch.jpg",
-  //   text:
-  //     "Oude versie beu? Tijd voor een nieuwe? De Apple watch series 4 is nu verkrijgbaar in de App Store",
-  //   subText: "Ga langs bij je lokale Switch handelaar en vraag voor meer info"
-  // },
-  // {
-  //   type: "ad",
-  //   // target: "werner",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/Pearl.png",
-  //   pageName: "Pearl Opticien ",
-  //   image: "/imagesAds/meerdere_brillen.jpg",
-  //   text:
-  //     "Heb je nog niet voldoende brillen? Kijk hoeveel je er op je hoofd kan plaatsen bij je Pearl Opticien!",
-  //   subText: "nu 20 % korting op ons hele assortiment"
-  // },
+  {
+    type: "ad",
+    target: "werner",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/second_life.jpg",
+    pageName: "Youtube",
+    image: "/imagesAds/second_life.jpg",
+    text:
+      "Have an Adventure and Discover incredible experiences, fascinating people, and vibrant communities in this vast virtual world",
+    subText: "Maak nu je gratis account voor uren speelplezier"
+  },
+  {
+    type: "ad",
+    target: "jan",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/youtube.png",
+    pageName: "Youtube",
+    image: "/imagesAds/eyes_wide_shut.png",
+    text:
+      "Who Took My Badjas This wicked tune is made by the Samplekings. It contains a famous oneliner of a Belgian commercial of Belgacom. All credits for the vocalsamples go to the advertising agency of Belgacom. Badjas is the dutch word for bathrobe. Enjoy the sound of the badjas!",
+    subText: "bekijk de video nu!"
+  },
+  {
+    type: "ad",
+    target: "jan",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/apple.png",
+    pageName: "Apple ",
+    image: "/imagesAds/apple_watch.jpg",
+    text:
+      "Oude versie beu? Tijd voor een nieuwe? De Apple watch series 4 is nu verkrijgbaar in de App Store",
+    subText: "Ga langs bij je lokale Switch handelaar en vraag voor meer info"
+  },
+  {
+    type: "ad",
+    target: "werner",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/Pearl.png",
+    pageName: "Pearl Opticien ",
+    image: "/imagesAds/meerdere_brillen.jpg",
+    text:
+      "Heb je nog niet voldoende brillen? Kijk hoeveel je er op je hoofd kan plaatsen bij je Pearl Opticien!",
+    subText: "nu 20 % korting op ons hele assortiment"
+  },
 
-  // {
-  //   type: "ad",
-  //   // target: "werner",
-  //   dt: 1234981243,
-  //   profileImage: "/imagesProfilePages/esprit.png",
-  //   pageName: "Esprit ",
-  //   image: "/imagesAds/blauw_hemd_esprit.png",
-  //   text: "Zomercollectie nu beschikbaar bij Esprit!",
-  //   subText: "Koppelkorting op elk blauw item dat u koopt"
-  // },
+  {
+    type: "ad",
+    target: "werner",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/esprit.png",
+    pageName: "Esprit ",
+    image: "/imagesAds/blauw_hemd_esprit.png",
+    text: "Zomercollectie nu beschikbaar bij Esprit!",
+    subText: "Koppelkorting op elk blauw item dat u koopt"
+  },
 
   // -------------------------NEWS----------------------------//
 
@@ -582,22 +582,22 @@ let DATA = [
     smiley: "😍😌"
   },
 
-  // {
-  //   type: "news",
-  //   emotionStatus: "joy",
-  //   order: 6,
-  //   dt: 1234981243,
-  //   text: "Ex-stropers worden natuurbeschermers",
-  //   profileName: "Goed Nieuws Vlaanderen",
-  //   profileImage: "/imagesProfilePages/goed_nieuws_vlaanderen.jpg",
-  //   date: "5 minuten geleden",
-  //   image: "/imagesPosts/stroper_natuurbeschermer.jpg",
-  //   messageSource: "Goed Nieuws Vlaanderen",
-  //   messageSourceWebsite: "goednieuws.vlaanderen",
-  //   action: "heeft een bericht gedeeld van",
-  //   messageResponse: "en 98 anderen hebben neutraal gekeken naar dit bericht",
-  //   smiley: "😃"
-  // },
+  {
+    type: "news",
+    emotionStatus: "joy",
+    order: 6,
+    dt: 1234981243,
+    text: "Ex-stropers worden natuurbeschermers",
+    profileName: "Goed Nieuws Vlaanderen",
+    profileImage: "/imagesProfilePages/goed_nieuws_vlaanderen.jpg",
+    date: "5 minuten geleden",
+    image: "/imagesPosts/stroper_natuurbeschermer.jpg",
+    messageSource: "Goed Nieuws Vlaanderen",
+    messageSourceWebsite: "goednieuws.vlaanderen",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 98 anderen hebben neutraal gekeken naar dit bericht",
+    smiley: "😃"
+  },
   {
     type: "news",
     dt: 1234981243,
@@ -774,21 +774,21 @@ let DATA = [
     smiley: "😍😌"
   },
 
-  // {
-  //   type: "news",
-  //   // target: "jan",
-  //   dt: 1234981243,
-  //   text: "Blijft toch een goe schijfke he?",
-  //   profileName: "Samplekings",
-  //   profileImage: "/imagesProfilePages/sample_kings.jpg",
-  //   date: "2 minuten geleden",
-  //   image: "/imagesPosts/who_took_my_badjas.jpg",
-  //   messageSource: "Vijf",
-  //   messageSourceWebsite: "https://www.youtube.com/watch?v=CrfEMVfpH34",
-  //   action: "heeft gereageerd op een bericht van",
-  //   messageResponse: "en 3 anderen hebben gelachen gekeken naar dit bericht",
-  //   smiley: "🤩"
-  // },
+  {
+    type: "news",
+    target: "jan",
+    dt: 1234981243,
+    text: "Blijft toch een goe schijfke he?",
+    profileName: "Samplekings",
+    profileImage: "/imagesProfilePages/sample_kings.jpg",
+    date: "2 minuten geleden",
+    image: "/imagesPosts/who_took_my_badjas.jpg",
+    messageSource: "Vijf",
+    messageSourceWebsite: "https://www.youtube.com/watch?v=CrfEMVfpH34",
+    action: "heeft gereageerd op een bericht van",
+    messageResponse: "en 3 anderen hebben gelachen gekeken naar dit bericht",
+    smiley: "🤩"
+  },
 
   // -----------------------VIDEOS-------------------------//
 
@@ -984,24 +984,24 @@ let DATA = [
 
   // -------------------------BIG NEWS----------------------------//
 
-  // {
-  //   type: "bigNews",
-  //   // target: "jan",
-  //   dt: 1234981243,
-  //   text: "Studenten zetten koffie met creativiteit (of doen toch alsof)",
-  //   subText:
-  //     "Studenten van het tweede jaar Reclamevormgeving aan Sint-Lucas Antwerpen hebben hun eigen koffie voorgesteld. DRD4-7R heet de koffie. De naam verwijst naar het gen dat creativiteit, experiment en durf stimuleert.",
-  //   profileName: "Het Laatste Nieuws",
-  //   profileImage: "/imagesProfilePages/hln.png",
-  //   date: "22 minuten geleden",
-  //   image: "/imagesPosts/koffie_studenten.jpeg",
-  //   messageSource: " Het Laatste Nieuws",
-  //   messageSourceWebsite: "hln.be",
-  //   action: "heeft een bericht gedeeld van",
-  //   messageResponse:
-  //     "en 3 anderen hebben droevig en kwaad gekeken naar dit bericht",
-  //   smiley: "😤😢"
-  // },
+  {
+    type: "bigNews",
+    target: "jan",
+    dt: 1234981243,
+    text: "Studenten zetten koffie met creativiteit (of doen toch alsof)",
+    subText:
+      "Studenten van het tweede jaar Reclamevormgeving aan Sint-Lucas Antwerpen hebben hun eigen koffie voorgesteld. DRD4-7R heet de koffie. De naam verwijst naar het gen dat creativiteit, experiment en durf stimuleert.",
+    profileName: "Het Laatste Nieuws",
+    profileImage: "/imagesProfilePages/hln.png",
+    date: "22 minuten geleden",
+    image: "/imagesPosts/koffie_studenten.jpeg",
+    messageSource: " Het Laatste Nieuws",
+    messageSourceWebsite: "hln.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse:
+      "en 3 anderen hebben droevig en kwaad gekeken naar dit bericht",
+    smiley: "😤😢"
+  },
   {
     type: "bigNews",
     emotionStatus: "joy",
@@ -1131,47 +1131,47 @@ let DATA = [
 
   // -------------------------PICTURE----------------------------//
 
-  // {
-  //   type: "picture",
-  //   // target: "jan",
-  //   dt: 1234981243,
-  //   text: "Team Frosty wins the 2018 Twins Days Volleyball Tournament.",
-  //   profileName: "Twins Days Festival - Official",
-  //   profileImage: "/imagesProfilePages/twin_page.jpg",
-  //   date: "20 minuten geleden",
-  //   image: "/imagesPosts/twins.jpg",
-  //   messageResponse: "en 20 anderen hebben kwaad gekeken naar dit bericht",
-  //   smiley: "😡"
-  // },
+  {
+    type: "picture",
+    target: "jan",
+    dt: 1234981243,
+    text: "Team Frosty wins the 2018 Twins Days Volleyball Tournament.",
+    profileName: "Twins Days Festival - Official",
+    profileImage: "/imagesProfilePages/twin_page.jpg",
+    date: "20 minuten geleden",
+    image: "/imagesPosts/twins.jpg",
+    messageResponse: "en 20 anderen hebben kwaad gekeken naar dit bericht",
+    smiley: "😡"
+  },
 
-  // {
-  //   type: "picture",
-  //   // target: "jan",
-  //   dt: 1234981243,
-  //   text: "Al lid van motorrijders voor motorrijders?",
-  //   profileName: "Motorrijders voor Motorrijders",
-  //   profileImage: "/imagesProfilePages/motorrijders.jpg",
-  //   date: "3 minuten geleden",
-  //   image: "/imagesPosts/motorrijders.jpg",
-  //   action: "heeft een foto geplaatst",
-  //   messageResponse: "en 3 anderen hebben kwaad gereageerd op dit bericht",
-  //   smiley: "😡"
-  // },
+  {
+    type: "picture",
+    target: "jan",
+    dt: 1234981243,
+    text: "Al lid van motorrijders voor motorrijders?",
+    profileName: "Motorrijders voor Motorrijders",
+    profileImage: "/imagesProfilePages/motorrijders.jpg",
+    date: "3 minuten geleden",
+    image: "/imagesPosts/motorrijders.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 3 anderen hebben kwaad gereageerd op dit bericht",
+    smiley: "😡"
+  },
 
-  // {
-  //   type: "picture",
-  //   // target: "geert",
-  //   dt: 1234981243,
-  //   text:
-  //     "Al 25.500 leden!!! Word jij ook lid aangezien je in Antwerpen woont?",
-  //   profileName: "Als ge van Antwerpen zijt...",
-  //   profileImage: "/imagesProfilePages/als_ge_van_a_zijt.jpg",
-  //   date: "3 minuten geleden",
-  //   image: "/imagesPosts/als_ge_van_a_zijt.jpg",
-  //   action: "heeft een foto geplaatst",
-  //   messageResponse: "en 3 anderen hebben kwaad gereageerd op dit bericht",
-  //   smiley: "😡"
-  // },
+  {
+    type: "picture",
+    target: "geert",
+    dt: 1234981243,
+    text:
+      "Al 25.500 leden!!! Word jij ook lid aangezien je in Antwerpen woont?",
+    profileName: "Als ge van Antwerpen zijt...",
+    profileImage: "/imagesProfilePages/als_ge_van_a_zijt.jpg",
+    date: "3 minuten geleden",
+    image: "/imagesPosts/als_ge_van_a_zijt.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 3 anderen hebben kwaad gereageerd op dit bericht",
+    smiley: "😡"
+  },
 
   {
     type: "picture",
@@ -1377,31 +1377,29 @@ let DATA = [
     firstNotification: true
   },
 
-  // {
-  //
-  //   type: "notification",
-  //   // target: "geert",
-  //   dt: 1234981243,
-  //   message:
-  //     "Hey Geert, je hebt nog geen Facebook profiel aangemaakt!! Wordt dat eens geen tijd? Er zijn heel veel voordelen aan verbonden!",
-  //   text:
-  //     "Go to Facebook.com and follow along with this video to create your Facebook profile and account. Join your friends on Facebook by creating your own Facebook profile and account.",
-  //   image: "/imagesNotifications/facebook_profile.png",
-  //   textTitle: "Uhuru Network — Social Media Experts"
-  // },
+  {
+    type: "notification",
+    target: "geert",
+    dt: 1234981243,
+    message:
+      "Hey Geert, je hebt nog geen Facebook profiel aangemaakt!! Wordt dat eens geen tijd? Er zijn heel veel voordelen aan verbonden!",
+    text:
+      "Go to Facebook.com and follow along with this video to create your Facebook profile and account. Join your friends on Facebook by creating your own Facebook profile and account.",
+    image: "/imagesNotifications/facebook_profile.png",
+    textTitle: "Uhuru Network — Social Media Experts"
+  },
 
-  // {
-  //
-  //   type: "notification",
-  //   // target: "werner",
-  //   dt: 1234981243,
-  //   message:
-  //     "Op je wordpress pagina zagen we dat je fan bent van vituele architectuur. Hieronder een potentiële partner!",
-  //   text:
-  //     "At HomeSpace, our vision is a home for everyone in our community. We are on a mission to creatively apply our expertise to increase the number of affordable and specialized housing units in Calgary.",
-  //   image: "/imagesNotifications/homespace.jpg",
-  //   textTitle: "Homespace — Building better tomorrows"
-  // },
+  {
+    type: "notification",
+    target: "werner",
+    dt: 1234981243,
+    message:
+      "Op je wordpress pagina zagen we dat je fan bent van vituele architectuur. Hieronder een potentiële partner!",
+    text:
+      "At HomeSpace, our vision is a home for everyone in our community. We are on a mission to creatively apply our expertise to increase the number of affordable and specialized housing units in Calgary.",
+    image: "/imagesNotifications/homespace.jpg",
+    textTitle: "Homespace — Building better tomorrows"
+  },
 
   {
     type: "notification",

@@ -21,7 +21,9 @@ export default class Feed extends Component {
   componentDidMount() {
     const types = this.props.types;
     const allItems = DATA.filter(
-      item => types.includes(item.type) && !item.target
+      item =>
+        types.includes(item.type) &&
+        (!item.target || item.target === this.props.target)
     );
     const items = allItems.slice(0, 10);
     this.setState({ allItems, items });

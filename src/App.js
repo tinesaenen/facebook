@@ -9,6 +9,7 @@ export default class App extends Component {
     super(props);
     this.state = {
       emotions: {},
+      currentTarget: null,
       currentEmotion: null,
       emotionCooldown: Date.now(),
       showFaceTracking: false,
@@ -18,15 +19,17 @@ export default class App extends Component {
   }
 
   componentDidMount() {
+    this.audio = new Audio("/imagesIntro/Blip.mp3");
+
     var pubnubDemo = new window.PubNub({
       publishKey: "pub-c-d4621507-6ae8-4cf8-a156-cfb1c8d2a4cb",
       subscribeKey: "sub-c-40748466-5610-11e9-93f3-8ed1bbcba485"
     });
 
     pubnubDemo.addListener({
-      message: function(message) {
+      message: message => {
         console.log(message);
-        alert(JSON.stringify(message));
+        this.setState({ currentTarget: message.message.target });
       }
     });
 
@@ -43,7 +46,7 @@ export default class App extends Component {
       if (value > 90) {
         this.setState({
           currentEmotion: key,
-          emotionCooldown: Date.now() + 5 * 1000
+          emotionCooldown: Date.now() + 2 * 1000
         });
         console.log("CURRENT EMOTION", key);
         return;
@@ -62,29 +65,31 @@ export default class App extends Component {
 
   switchToNewStyle({ isIntersecting }) {
     if (!isIntersecting) return;
+    this.audio.play();
     document.body.className = "newStyle";
   }
 
   showFaceTracking({ isIntersecting }) {
-    // var audio = new Audio(Blip);
-    // audio.play();
     if (!isIntersecting) return;
+    this.audio.play();
     this.setState({ showFaceTracking: true });
     this.setState({});
   }
 
   showAds({ isIntersecting }) {
     if (!isIntersecting) return;
+    this.audio.play();
     this.setState({ showAds: true });
   }
 
   showNotifications({ isIntersecting }) {
     if (!isIntersecting) return;
+    this.audio.play();
     this.setState({ showNotifications: true });
   }
 
   render() {
-    const { emotions, showFaceTracking } = this.state;
+    const { emotions, showFaceTracking, currentTarget } = this.state;
 
     return (
       <div className="app">
@@ -139,6 +144,7 @@ export default class App extends Component {
                   types={["notification", "miniNotification"]}
                   emotion={this.state.currentEmotion}
                   autoRefresh={true}
+                  target={currentTarget}
                 />
               )}
             </div>
@@ -159,6 +165,7 @@ export default class App extends Component {
               ]}
               emotion={this.state.currentEmotion}
               app={this}
+              target={currentTarget}
             />
           </div>
 
@@ -178,7 +185,11 @@ export default class App extends Component {
             )}
             {this.state.showAds && (
               <div className="rightColumnScroll">
-                <Feed className="verticalFeed" types={["ad"]} />
+                <Feed
+                  className="verticalFeed"
+                  types={["ad"]}
+                  target={currentTarget}
+                />
               </div>
             )}
           </div>
