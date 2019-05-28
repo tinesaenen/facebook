@@ -42,8 +42,7 @@ let DATA = [
     image: "/imagesIntro/Mark_tape_cam.jpg",
     action: "heeft een foto geplaatst",
     messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
-    smiley: "😰",
-    onVisible: "showFaceTracking"
+    smiley: "😰"
   },
   {
     type: "bigNewsOwnPost",
@@ -59,8 +58,7 @@ let DATA = [
     messageSourceWebsite: "www.canvas.be",
     action: "heeft een bericht gedeeld",
     messageResponse: "en 83 anderen hebben benieuwd gekeken naar dit bericht",
-    smiley: "🧐",
-    onVisible: "showAds"
+    smiley: "🧐"
   },
   {
     type: "video",
@@ -121,7 +119,7 @@ let DATA = [
     dt: 1234981243,
     text: "HET IS ZOVER. U WORDT GEFILMD.",
     subText:
-      "Vanaf vandaag weet Facebook nog meer over je... Ze analyseren je emoties en spelen er maar al te graag op in",
+      "Vanaf vandaag weet Facebook nog meer over je... Ze analyseren je emoties en spelen er maar al te graag op in.",
     profileName: "The Verge",
     profileImage: "/imagesProfilePages/the_verge.jpg",
     date: "2 uur geleden",
@@ -143,7 +141,8 @@ let DATA = [
     image: "/imagesIntro/Facebook_advertising.png",
     action: "heeft een bericht gedeeld",
     messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
-    smiley: "😮"
+    smiley: "😮",
+    onVisible: "showFaceTracking"
   },
   {
     type: "bigNewsOwnPost",
@@ -159,7 +158,8 @@ let DATA = [
     messageSourceWebsite: "www.theverge.com",
     action: "heeft een bericht gedeeld",
     messageResponse: "en 83 anderen hebben benieuwd gekeken naar dit bericht",
-    smiley: "😀"
+    smiley: "😀",
+    onVisible: "showAds"
   },
   {
     type: "picture",
@@ -172,7 +172,8 @@ let DATA = [
     image: "/imagesIntro/redesign.png",
     action: "heeft een bericht gedeeld",
     messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
-    smiley: "🙂😍"
+    smiley: "🙂😍",
+    onVisible: "showNotifications"
   },
   {
     type: "picture",
@@ -181,10 +182,11 @@ let DATA = [
     profileName: "Mark Zuckerberg",
     profileImage: "/imagesProfilePeople/mark.jpeg",
     date: "9 minuten geleden",
-    image: "/imagesIntro/zuck_happy.jpeg",
+    image: "/imagesIntro/mark-zuckerberg-lizard-gif-6.gif",
     action: "heeft een bericht gedeeld",
     messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
-    smiley: "😀"
+    smiley: "😀",
+    onVisible: "switchToNewStyle"
   },
 
   //----------------------ADVERTISEMENTS-------------------------//
@@ -1342,6 +1344,39 @@ let DATA = [
   },
 
   // -----------------------NOTIFICATION-------------------------//
+
+  {
+    type: "miniNotification",
+    order: 11,
+    dt: 1234981243,
+    message: "Welkom op de vernieuwde Facebook.",
+    firstNotification: true
+  },
+  {
+    type: "miniNotification",
+    order: 11,
+    dt: 1234981243,
+    message:
+      "We hebben een nieuwe functie toegevoegd. Lach maar eens naar de camera!",
+    firstNotification: true
+  },
+  {
+    type: "miniNotification",
+    order: 11,
+    dt: 1234981243,
+    message:
+      "Met deze nieuwe technologie kunenn we je feed nog nauwkeuriger samenstellen.",
+    firstNotification: true
+  },
+  {
+    type: "miniNotification",
+    order: 11,
+    dt: 1234981243,
+    message: "We zien hoe je je voelt en lossen het.",
+
+    firstNotification: true
+  },
+
   // {
   //
   //   type: "notification",
@@ -1370,7 +1405,7 @@ let DATA = [
 
   {
     type: "notification",
-    emotionStatus: "angry",
+    emotionStatus: "anger",
     order: 4,
     order: 10,
     dt: 1234981243,
@@ -1414,7 +1449,7 @@ let DATA = [
   {
     type: "notification",
     dt: 1234981243,
-    message: "Je bent gespannen... ontspannen kan met de onderstaandebeelden",
+    message: "Je bent gespannen... ontspannen kan met deze foto's",
     text:
       "Say goodbye to insomnia and experience sleep like you never slept before.",
     image: "/imagesNotifications/relax_app.jpg",
@@ -1435,15 +1470,59 @@ let DATA = [
 
   {
     type: "miniNotification",
-    emotionStatus: "angry",
+    emotionStatus: "anger",
     order: 11,
     dt: 1234981243,
     message:
-      "Je scrollt zeer snel door je feed: vanaf nu bedraagt je scrollsnelheid slechts 50%." //fix me
+      "Je scrollt zeer snel door je feed: vanaf nu bedraagt je scrollsnelheid slechts 50%."
+  },
+
+  {
+    type: "miniNotification",
+    emotionStatus: "sadness",
+    order: 1,
+    dt: 1234981243,
+    message: "sadness"
   },
   {
     type: "miniNotification",
-    emotionStatus: "angry",
+    emotionStatus: "sadness",
+    order: 2,
+    dt: 1234981243,
+    message: "sadness2"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "sadness",
+    order: 3,
+    dt: 1234981243,
+    message: "sadness3"
+  },
+
+  {
+    type: "miniNotification",
+    emotionStatus: "disgust",
+    order: 1,
+    dt: 1234981243,
+    message: "disgust"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "disgust",
+    order: 2,
+    dt: 1234981243,
+    message: "disgust2"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "disgust",
+    order: 3,
+    dt: 1234981243,
+    message: "disgust3"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "anger",
     order: 5,
     dt: 1234981243,
     message:
@@ -1451,7 +1530,7 @@ let DATA = [
   },
   {
     type: "miniNotification",
-    emotionStatus: "angry",
+    emotionStatus: "anger",
     order: 6,
     dt: 1234981243,
     message:
@@ -1459,7 +1538,7 @@ let DATA = [
   },
   {
     type: "miniNotification",
-    emotionStatus: "angry",
+    emotionStatus: "anger",
     order: 7,
     dt: 1234981243,
     message:
@@ -1467,14 +1546,14 @@ let DATA = [
   },
   {
     type: "miniNotification",
-    emotionStatus: "angry",
+    emotionStatus: "anger",
     order: 8,
     dt: 1234981243,
     message: "Door al dat fronsen gaan die rimpeltjes niet kleiner worden..."
   },
   {
     type: "miniNotification",
-    emotionStatus: "angry",
+    emotionStatus: "anger",
     order: 9,
     dt: 1234981243,
     message:
@@ -1482,7 +1561,7 @@ let DATA = [
   },
   {
     type: "miniNotification",
-    emotionStatus: "angry",
+    emotionStatus: "anger",
     order: 10,
     dt: 1234981243,
     message:

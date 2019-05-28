@@ -16,18 +16,29 @@ export default class Feed extends Component {
       joyIndex: 0
     };
     this.emotionCounters = {};
+    this.prevEmotion = null;
+    console.log(this.state.allItems);
   }
 
   componentDidMount() {
     const types = this.props.types;
     const allItems = DATA.filter(
-      item => types.includes(item.type) && !item.target
+      item =>
+        types.includes(item.type) && !item.target && !item.firstNotification
     );
-    this.setState({ allItems, items: [], isLoading: false });
+    const items = DATA.filter(item => item.firstNotification);
+    this.setState({ allItems, items, isLoading: false });
     if (this.props.autoRefresh) {
-      setTimeout(this.fetchNewItems.bind(this), random(1000, 7000));
+      // setTimeout(this.fetchNewItems.bind(this), random(1000, 7000));
     } else {
       this.setState({ items: allItems });
+    }
+  }
+
+  componentDidUpdate() {
+    if (this.prevEmotion !== this.props.emotion) {
+      this.prevEmotion = this.props.emotion;
+      this.fetchNewItems();
     }
   }
 
@@ -35,6 +46,7 @@ export default class Feed extends Component {
     let emotionOrder = 1;
     let newItems;
     let itemIndex = this.state.itemIndex;
+    let hasNext = false;
     if (this.props.emotion) {
       let counter = this.emotionCounters[this.props.emotion];
       if (!counter) {
@@ -44,12 +56,15 @@ export default class Feed extends Component {
       }
       this.emotionCounters[this.props.emotion] = counter;
       //console.log('COUNTERS', this.emotionCounters);
-      const newItem = this.state.allItems.find(
+      const nextItems = this.state.allItems.filter(
         item =>
-          item.emotionStatus === this.props.emotion && item.order === counter
+          item.emotionStatus === this.props.emotion && item.order >= counter
       );
-      if (newItem) {
-        newItems = [newItem];
+      if (nextItems.length > 0) {
+        newItems = [nextItems[0]];
+        if (nextItems.length > 1) {
+          hasNext = true;
+        }
       } else {
         newItems = [];
       }
@@ -62,7 +77,9 @@ export default class Feed extends Component {
     }
     const items = newItems.concat(this.state.items);
     this.setState({ items, itemIndex, emotionOrder });
-    setTimeout(this.fetchNewItems.bind(this), random(1000, 7000));
+    if (hasNext) {
+      setTimeout(this.fetchNewItems.bind(this), random(1000, 7000));
+    }
   }
 
   render() {

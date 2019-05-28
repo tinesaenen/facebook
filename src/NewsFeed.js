@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import DATA from "./ItemData";
 import InfiniteScroll from "react-infinite-scroll-component";
-import Observer from '@researchgate/react-intersection-observer';
+import Observer from "@researchgate/react-intersection-observer";
 import spinner from "./spinner.gif";
 
 // let currentFeedItems = [];
@@ -56,7 +56,13 @@ export default class Feed extends Component {
         hasMore={this.state.items.length < this.state.allItems.length}
         loader={
           <img
-            style={{ width: 25, verticalAlign: "middle", margin: 40 }}
+            style={{
+              width: 25,
+              verticalAlign: "middle",
+              marginLeft: 230,
+              marginTop: 50,
+              marginBottom: 50
+            }}
             src={spinner}
           />
         }
@@ -109,10 +115,14 @@ export default class Feed extends Component {
       element = this.renderNews(item);
     }
     if (item.onVisible) {
-      element = <Observer
-        onChange={this.props.app[item.onVisible].bind(this.props.app)}
-        threshold={0.5}
-        >{element}</Observer>
+      element = (
+        <Observer
+          onChange={this.props.app[item.onVisible].bind(this.props.app)}
+          threshold={0.1}
+        >
+          {element}
+        </Observer>
+      );
     }
     return element;
   }

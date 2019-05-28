@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Feed from "./Feed";
 import NewsFeed from "./NewsFeed";
 import FaceTracking from "./FaceTracking";
+// import Blip from "./imagesIntro/Blip.mp3";
 
 export default class App extends Component {
   constructor(props) {
@@ -12,6 +13,7 @@ export default class App extends Component {
       emotionCooldown: Date.now(),
       showFaceTracking: false,
       showAds: false,
+      showNotifications: false
     };
   }
 
@@ -64,13 +66,21 @@ export default class App extends Component {
   }
 
   showFaceTracking({ isIntersecting }) {
+    // var audio = new Audio(Blip);
+    // audio.play();
     if (!isIntersecting) return;
     this.setState({ showFaceTracking: true });
+    this.setState({});
   }
 
   showAds({ isIntersecting }) {
     if (!isIntersecting) return;
     this.setState({ showAds: true });
+  }
+
+  showNotifications({ isIntersecting }) {
+    if (!isIntersecting) return;
+    this.setState({ showNotifications: true });
   }
 
   render() {
@@ -79,13 +89,13 @@ export default class App extends Component {
     return (
       <div className="app">
         <header className="header">
-          <button
+          {/* <button
             id="switch"
             onClick={this.onSwitch.bind(this)}
             style={{ position: "absolute", right: 0 }}
           >
             Switch
-          </button>
+          </button> */}
           <div className="logo_search_container">
             <img
               src="/imagesIcons/logo_fb_oldStyle.png"
@@ -110,20 +120,27 @@ export default class App extends Component {
         </header>
         <main>
           <div className="leftColumn">
-            { showFaceTracking && <FaceTracking onEmotions={this.checkEmotions.bind(this)} /> }
-            <img
-              src="/imagesIcons/linker_kolom_oldStyle.png"
-              className="linkerkolom__icons_oldStyle"
-              alt="logo"
-              height="inherit"
-            />
-            <div className="leftColumnScroll">
-              <Feed
-                className="verticalFeed"
-                types={["notification", "miniNotification"]}
-                emotion={this.state.currentEmotion}
-                autoRefresh={true}
+            {showFaceTracking && (
+              <FaceTracking onEmotions={this.checkEmotions.bind(this)} />
+            )}
+            {!showFaceTracking && (
+              <img
+                src="/imagesIcons/linker_kolom_oldStyle.png"
+                className="linkerkolom__icons_oldStyle"
+                alt="logo"
+                height="inherit"
               />
+            )}
+
+            <div className="leftColumnScroll">
+              {this.state.showNotifications && (
+                <Feed
+                  className="verticalFeed"
+                  types={["notification", "miniNotification"]}
+                  emotion={this.state.currentEmotion}
+                  autoRefresh={true}
+                />
+              )}
             </div>
           </div>
 
@@ -146,19 +163,24 @@ export default class App extends Component {
           </div>
 
           <div className="rightColumn">
-            { !this.state.showAds && <img
-              src="/imagesIcons/rechter_kolom_oldstyle.jpg"
-              className="rechterkolom__icons_oldStyle"
-              alt="logo"
-              height="inherit"
-            /> }
-            { this.state.showAds && <div className="storyContainer">
-              <Feed className="horizontalFeed" types={["story"]} />
-            </div> }
-
-            <div className="rightColumnScroll">
-              <Feed className="verticalFeed" types={["ad"]} />
-            </div>
+            {!this.state.showAds && (
+              <img
+                src="/imagesIcons/rechter_kolom_oldstyle.jpg"
+                className="rechterkolom__icons_oldStyle"
+                alt="logo"
+                height="inherit"
+              />
+            )}
+            {this.state.showAds && (
+              <div className="storyContainer">
+                <Feed className="horizontalFeed" types={["story"]} />
+              </div>
+            )}
+            {this.state.showAds && (
+              <div className="rightColumnScroll">
+                <Feed className="verticalFeed" types={["ad"]} />
+              </div>
+            )}
           </div>
           <div />
         </main>

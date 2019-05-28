@@ -22,10 +22,10 @@
   --main-font-family-newStyle: "Din Medium Regular";
 
   /*left_column*/
-  --linkerkolom-logo-oldStyle-newStyle: none;
+  --linkerkolom-logo-oldStyle-newStyle: ;
 
   /*right_column*/
-  --rechterkolom-icons-oldStyle-newStyle: none;
+  /* --rechterkolom-icons-oldStyle-newStyle: none; */
 
   /* posts */
   --post-border-radius-oldStyle: 4px;
@@ -111,10 +111,10 @@
 
 /* linker kolom */
 
-.newStyle .linkerkolom__icons_oldStyle {
+/* .newStyle .linkerkolom__icons_oldStyle {
   display: none;
   margin-right: 100px;
-}
+} */
 
 /* rechter kolom */
 
@@ -459,17 +459,25 @@ main {
 
 .notification-item {
   animation: slide-in 0.5s ease-out;
-  transition: all 0.3s;
-  background: rgba(255, 255, 255, 0);
+  transition: all 0.2s;
+  /* background: rgba(255, 255, 255, 0); */
+  /* border: 1px solid red; */
+  border-radius: 11px;
 }
 
 @keyframes slide-in {
   0% {
     transform: translate(-30vw, 0);
+    background: white;
+  }
+
+  50% {
+    background: #8ebfff;
   }
 
   100% {
     transform: translate(0, 0);
+    background: white;
   }
 }
 
@@ -546,14 +554,14 @@ main {
 }
 
 .item__notificationHeader {
-  background: white;
+  /* background: white; */
   display: flex;
   flex-direction: row;
-  border-radius: 11px;
+  /* border-radius: 11px; */
 }
 
 .item__bigNotificationHeader {
-  border-radius: 11px 11px 0px 0px;
+  /* border-radius: 11px 11px 0px 0px; */
 }
 
 .item__notificationHeaderText {
