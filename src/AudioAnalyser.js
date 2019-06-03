@@ -72,7 +72,7 @@ export default class AudioAnalyser extends Component {
   render() {
     return (
       <canvas
-        style={{ width: 100, height: 75, margin: 3 }} // aanpassen voor breedte van de equalizer
+        style={{ width: 148, height: 77, margin: 3 }} // aanpassen voor breedte van de equalizer
         ref={this.canvasRef}
       />
     );

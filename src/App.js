@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Feed from "./Feed";
 import NewsFeed from "./NewsFeed";
 import FaceTracking from "./FaceTracking";
-// import Blip from "./imagesIntro/Blip.mp3";
 
 export default class App extends Component {
   constructor(props) {
@@ -65,26 +64,26 @@ export default class App extends Component {
 
   switchToNewStyle({ isIntersecting }) {
     if (!isIntersecting) return;
-    // this.audio.play();
+    this.audio.play();
     document.body.className = "newStyle";
   }
 
   showFaceTracking({ isIntersecting }) {
     if (!isIntersecting) return;
-    // this.audio.play();
+    this.audio.play();
     this.setState({ showFaceTracking: true });
     this.setState({});
   }
 
   showAds({ isIntersecting }) {
     if (!isIntersecting) return;
-    // this.audio.play();
+    this.audio.play();
     this.setState({ showAds: true });
   }
 
   showNotifications({ isIntersecting }) {
     if (!isIntersecting) return;
-    // this.audio.play();
+    this.audio.play();
     this.setState({ showNotifications: true });
   }
 

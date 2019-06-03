@@ -158,8 +158,7 @@ export default class FaceTracking extends Component {
     verwonderingdiv.style.width = `${face.emotions.surprise}%`;
 
     var dt = new Date();
-    document.getElementById("time").innerHTML =
-      dt.toLocaleTimeString() + " CET";
+    document.getElementById("time").innerHTML = dt.toLocaleTimeString();
 
     var dt = new Date();
     document.getElementById("date").innerHTML =
@@ -227,16 +226,22 @@ export default class FaceTracking extends Component {
                 </div>
               </div>
             </div>
-            <div className="timeStatAnalyserContainer">
-              <div className="timeStatLabelContainer">
-                <p className="timeStatLabel" id="date" />
-                <p className="timeStatLabel" id="time" />
-                <p className="timeStatLabel">BELGIE </p>
-                <p className="timeStatLabel">51°11’56,742”N</p>
-                <p className="timeStatLabel">4°24’14,293”O</p>
+            <div className="timeStatAnalyserEqualiserContainer">
+              <div className="timeStatAnalyserContainer">
+                <div className="timeStatLabelContainer">
+                  <p className="timeStatLabel" id="date" />
+                  <p className="timeStatLabel" id="time" />
+                </div>
+                <div className="timeStatLabelContainer">
+                  <p className="timeStatLabel">BELGIE </p>
+                  <p className="timeStatLabel">51°11’56,742”N</p>
+                  <p className="timeStatLabel">4°24’14,293”O</p>
+                </div>
               </div>
               <div>
-                <AudioAnalyser />
+                <div className="audioAnalyser">
+                  <AudioAnalyser />
+                </div>
               </div>
             </div>
           </div>
