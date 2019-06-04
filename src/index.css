@@ -458,16 +458,42 @@ main {
 }
 
 .notification-item {
-  animation: slide-in 0.5s ease-out;
+  animation: slide-in1 0.5s ease-out;
   transition: all 0.2s;
   /* background: rgba(255, 255, 255, 0); */
   /* border: 1px solid red; */
   border-radius: 11px;
 }
 
-@keyframes slide-in {
+@keyframes slide-in1 {
   0% {
     transform: translate(-30vw, 0);
+    background: white;
+  }
+
+  50% {
+    background: #8ebfff;
+  }
+
+  100% {
+    transform: translate(0, 0);
+    background: white;
+  }
+}
+
+.ad-item {
+  border-radius: 11px;
+  animation: slide-in2 0.5s ease-out;
+  transition: all 0.2s;
+}
+
+.item .item__adHeader {
+  border-radius: 11px 11px 0px 0px;
+}
+
+@keyframes slide-in2 {
+  0% {
+    transform: translate(30vw, 0);
     background: white;
   }
 
@@ -617,15 +643,6 @@ main {
   color: #0d76ff;
 }
 
-.ad-item {
-  border-radius: 11px;
-}
-
-.item .item__adHeader {
-  background: #f6f8fb;
-  border-radius: 11px 11px 0px 0px;
-}
-
 .item__adName,
 .item__gesponsord {
   font-size: 13px;
@@ -699,7 +716,7 @@ main {
 
 .liveFaceTracking__stats {
   flex: 1;
-  margin: 5px 0px 5px 3px;
+  margin: 7px 0px 5px 3px;
   width: 50%;
 }
 
