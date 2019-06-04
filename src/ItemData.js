@@ -1,5 +1,8 @@
 let DATA = [
-  //----------------------INTRO-------------------------//
+  // --------------------------------------------------------------------------INTRO----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------INTRO----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------INTRO----------------------------------------------------------------------//
+
   {
     type: "bigNewsOwnPost",
     dt: 1234981243,
@@ -189,8 +192,755 @@ let DATA = [
     onVisible: "switchToNewStyle"
   },
 
-  //----------------------ADVERTISEMENTS-------------------------//
+  // -------------------------------------------------------------------FIRST NOTIFICATION----------------------------------------------------------------------//
+  // -------------------------------------------------------------------FIRST NOTIFICATION----------------------------------------------------------------------//
+  // -------------------------------------------------------------------FIRST NOTIFICATION----------------------------------------------------------------------//
 
+  {
+    type: "miniNotification",
+    order: 11,
+    dt: 1234981243,
+    message: "Welkom op de vernieuwde Facebook.",
+    firstNotification: true
+  },
+
+  {
+    type: "miniNotification",
+    order: 11,
+    dt: 1234981243,
+    message:
+      "We hebben een nieuwe functie toegevoegd. Lach maar eens naar de camera!",
+    firstNotification: true
+  },
+  {
+    type: "miniNotification",
+    order: 11,
+    dt: 1234981243,
+    message:
+      "Met deze nieuwe technologie kunenn we je feed nog nauwkeuriger samenstellen.",
+    firstNotification: true
+  },
+  {
+    type: "miniNotification",
+    order: 11,
+    dt: 1234981243,
+    message: "We zien hoe je je voelt en lossen het.",
+
+    firstNotification: true
+  },
+
+  // -------------------------------------------------------------------NOTIFICATION----------------------------------------------------------------------//
+  // -------------------------------------------------------------------NOTIFICATION----------------------------------------------------------------------//
+  // -------------------------------------------------------------------NOTIFICATION----------------------------------------------------------------------//
+
+  // --***********--PERSONEN----***********---//
+
+  // —WERNER—//
+
+  {
+    type: "notification",
+    target: "werner",
+    dt: 1234981243,
+    message:
+      "Op je wordpress pagina zagen we dat je fan bent van vituele architectuur. Hieronder een potentiële partner!",
+    text:
+      "At HomeSpace, our vision is a home for everyone in our community. We are on a mission to creatively apply our expertise to increase the number of affordable and specialized housing units in Calgary.",
+    image: "/imagesNotifications/homespace.jpg",
+    textTitle: "Homespace — Building better tomorrows"
+  },
+
+  // —GEERT—//
+
+  // —HUGO—//
+
+  // —JAN—//
+
+  // —REG—//
+
+  // —FREDERIK—//
+
+  // —LIEVEN—//
+
+  // —LAURA—//
+
+  // —RENATE—//
+
+  // —MIEKE—//
+
+  // —AN—//
+
+  // —VITAL—//
+
+  // —ONNO—//
+
+  // --***********--EMOTIES----***********---//
+
+  // ----JOY---//
+
+  {
+    type: "notification",
+    emotionStatus: "joy",
+    order: 2,
+    dt: 1234981243,
+    message: "Goed nieuws: enkel zonneschijn voor de komende dagen!",
+    text:
+      "Een prachtige app van Aplle om de weersverwachting te zien. Zoek en Het weer apps in de App Store en download ze op je iPad, iPhone of iPod touch. De App Store heeft een breed assortiment Het weer voor je ...",
+    image: "/imagesNotifications/goed_weer.png",
+    textTitle: "Weer — Apple"
+  },
+
+  // ----ANGRY---//
+
+  {
+    type: "notification",
+    emotionStatus: "anger",
+    order: 4,
+    order: 10,
+    dt: 1234981243,
+    message: "Alles wat je nodig hebt om optimaal te kunnen scrollen!",
+    text:
+      "Je positieve berichten zijn op voor vandaag. Als je meer positieve berichten wil zien, ga dan naar de FacebookStore.",
+    image: "/imagesNotifications/facebook-store1.jpg",
+    textTitle: "Facebook Store"
+  },
+
+  // —SADNESS—//
+
+  // —DISGUST—//
+
+  // —CONTEMPT—//
+
+  // —FEAR—//
+
+  // —SURPRISE—//
+
+  // —X—//
+
+  {
+    type: "notification",
+    dt: 1234981243,
+    message:
+      "We merken dat je er wat moe uitziet vandaag... Misschien moet je vanavond wat vroeger gaan slapen?",
+    text:
+      "Een beetje moe? probeer Sleepy Time™! Slapen was nog nooit zo makkelijk.",
+    image: "/imagesNotifications/Sleepy_Time_App.jpg",
+    textTitle: "Sleepy Time™ — 10 dagen gratis testen"
+  },
+  {
+    type: "notification",
+    dt: 1234981243,
+    message: "Hallo, zware dag gehad? Je ziet er een beetje moe uit...",
+    text:
+      "Heel de dag lang energie met het sinaasappelsap van je AD Delhaize. Nu met bovendien 35% korting!",
+    image: "/imagesNotifications/minute_maid.jpeg",
+    textTitle: "Ad Delhaize — Vers sinaasappelsap"
+  },
+  {
+    type: "notification",
+    dt: 1234981243,
+    message: "Je bent gespannen... ontspannen kan met deze foto's",
+    text:
+      "Say goodbye to insomnia and experience sleep like you never slept before.",
+    image: "/imagesNotifications/relax_app.jpg",
+    textTitle: "Relax Melodies — Sleep like never before"
+  },
+  ,
+  {
+    type: "notification",
+    dt: 1234981243,
+    message:
+      "We hebben je gezicht gevonden op 31 foto's die door je vrienden zijn geüpload. We hebben de vrijheid genomen om jouw tag toe te voegen.",
+    text: "Zelf taggen voor een kleine prijs met de Dymo label maker",
+    image: "/imagesAds/label_maker.jpg",
+    textTitle: "Dymo — Goed gelabeld is goed geordend!"
+  },
+
+  // -------------------------------------------------------------------MINI NOTIFICATION----------------------------------------------------------------------//
+  // -------------------------------------------------------------------MINI NOTIFICATION----------------------------------------------------------------------//
+  // -------------------------------------------------------------------MINI NOTIFICATION----------------------------------------------------------------------//
+
+  // -WERNER-//
+  {
+    type: "miniNotification",
+    target: "werner",
+    order: 2,
+    dt: 1234981243,
+    message: "Hallo Werner, wat zie je er stralend uit vandaag!"
+  },
+  {
+    type: "miniNotification",
+    target: "werner",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Werner, we zagen dat je je USB stick kwijt bent. Als je alles op Facebook zet, heb je geen USB meer nodig."
+  },
+  {
+    type: "miniNotification",
+    target: "werner",
+    order: 2,
+    dt: 1234981243,
+    message: "Werner, ben je Lily vergeten eten te geven? Ze miauwt nogal veel!"
+  },
+
+  // -GEERT-//
+
+  {
+    type: "miniNotification",
+    target: "geert",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Hey Geert, je hebt nog geen Facebook profiel aangemaakt!! Wordt dat eens geen tijd? Er zijn heel veel voordelen aan verbonden!"
+  },
+  {
+    type: "miniNotification",
+    target: "geert",
+    order: 2,
+    dt: 1234981243,
+    message: "Geert, Proficiat met je prijs voor Tierenduin" //fix me
+  },
+  {
+    type: "miniNotification",
+    target: "geert",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Hey Geert, deze tijd van het jaar is het heel mooi in Australië. Een tripje booken?"
+  },
+
+  // -HUGO-//
+
+  {
+    type: "miniNotification",
+    target: "hugo",
+    order: 2,
+    dt: 1234981243,
+    message: "Hugo! Wat zie je er veer vrolijk uit vandaag!"
+  },
+  {
+    type: "miniNotification",
+    target: "hugo",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Hugo, we heb een potentiele klant gevonden voor visionandfactory. Surf naar zijn profiel om eventueel iets te bespreken. https://www.facebook.com/gert.vanhoeven.2"
+  },
+  {
+    type: "miniNotification",
+    target: "hugo",
+    order: 2,
+    dt: 1234981243,
+    message: "Hugo, zijn er nog boeken beschikbaar van THINK IN COLOR?"
+  },
+
+  // -JAN-//
+
+  {
+    type: "miniNotification",
+    target: "jan",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Hey Jan, het is de bedoeling dat je profielfoto een foto van jezelf is. Kuifje kan voor sommige mensen verwarrend overkomen. Zullen we snel even een foto nemen?"
+  },
+  {
+    type: "miniNotification",
+    target: "jan",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Jan? kan je je broer misschien aansturen om ook een Facebookprofiel aan te maken?"
+  },
+  {
+    type: "miniNotification",
+    target: "jan",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Hey Jan, op de E19 richting Hever is er veel verkeershinder. Ik raad aan om een alternatieve route te nemen."
+  },
+
+  // -REG-//
+
+  {
+    type: "miniNotification",
+    target: "reg",
+    order: 2,
+    dt: 1234981243,
+    message: "Hey Reg, wat vond je van de masterproef van ..." //fix me
+  },
+  {
+    type: "miniNotification",
+    target: "reg",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Hey Reg, het is weer even geleden dat je een bericht hebt gepost op je profiel. Normaal ben je vrij actief... Is er iets mis?"
+  },
+
+  // -FREDERIK-//
+
+  {
+    type: "miniNotification",
+    target: "frederik",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Frederik, je hebt nog steeds geen Facebookprofiel. Ik weet dat je er een beetje sceptisch over bent, maar misschien kan jet het gewoon eens proberen? We nemen jouw privacy zeer serieus hoor!"
+  },
+  {
+    type: "miniNotification",
+    target: "frederik",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Hey Frederik, waarom vind ik nergens waar je woont? Wil je je adres even toevoegen?"
+  },
+
+  // -LIEVEN-//
+
+  {
+    type: "miniNotification",
+    target: "lieven",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Hey Lieven, je hebt nog steeds geen Facebookprofiel. Weet je zeker dat je er geen wil aanmaken?"
+  },
+
+  // —LAURA—//
+  // —RENATE—//
+  // —MIEKE—//
+  // —AN—//
+  // —VITAL—//
+
+  {
+    type: "miniNotification",
+    target: "vital",
+    order: 2,
+    dt: 1234981243,
+    message: "Hey Vital, niet vergeten lachen. Het leven is maar kort!"
+  },
+
+  // —ONNO—//
+
+  {
+    type: "miniNotification",
+    target: "onno",
+    order: 2,
+    dt: 1234981243,
+    message: "Onno,"
+  },
+
+  // --***********--EMOTIES----***********---//
+
+  // —JOY—//
+
+  {
+    type: "miniNotification",
+    emotionStatus: "joy",
+    order: 1,
+    dt: 1234981243,
+    message:
+      "Als je wil kan je je lach nu delen met je vrienden. Wil je live gaan op je Facebookverhaal?"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "joy",
+    order: 3,
+    dt: 1234981243,
+    message:
+      "Wat zie je er gelukkig uit vandaag! Geef jezelf nog een boost met een klavertje vier. Kijk maar tussen je advertenties."
+  },
+
+  // —ANGRY—//
+
+  {
+    type: "miniNotification",
+    emotionStatus: "anger",
+    order: 11,
+    dt: 1234981243,
+    message:
+      "Je scrollt zeer snel door je feed: vanaf nu bedraagt je scrollsnelheid slechts 50%."
+  },
+
+  {
+    type: "miniNotification",
+    emotionStatus: "anger",
+    order: 5,
+    dt: 1234981243,
+    message:
+      "Je hebt je gegevens nog niet volledig aangevuld. We missen je banknummer nog."
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "anger",
+    order: 6,
+    dt: 1234981243,
+    message:
+      "Je hebt je gegevens nog niet volledig aangevuld. We missen je pincode nog."
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "anger",
+    order: 7,
+    dt: 1234981243,
+    message:
+      "Je hebt je gegevens nog niet volledig aangevuld. We missen je adres nog."
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "anger",
+    order: 8,
+    dt: 1234981243,
+    message: "Door al dat fronsen gaan die rimpeltjes niet kleiner worden..."
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "anger",
+    order: 9,
+    dt: 1234981243,
+    message:
+      "We hebben een aantal spelfouten ontdekt in je laatste status. Passen we ze even aan voor u?"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "anger",
+    order: 10,
+    dt: 1234981243,
+    message:
+      "Je hebt je gegevens nog niet volledig aangevuld. We missen je telefonnnummer nog."
+  },
+
+  // —SADNESS—//
+
+  {
+    type: "miniNotification",
+    emotionStatus: "sadness",
+    order: 1,
+    dt: 1234981243,
+    message: "sadness"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "sadness",
+    order: 2,
+    dt: 1234981243,
+    message: "sadness2"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "sadness",
+    order: 3,
+    dt: 1234981243,
+    message: "sadness3"
+  },
+
+  // —DISGUST—//
+
+  {
+    type: "miniNotification",
+    emotionStatus: "disgust",
+    order: 1,
+    dt: 1234981243,
+    message: "disgust"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "disgust",
+    order: 2,
+    dt: 1234981243,
+    message: "disgust2"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "disgust",
+    order: 3,
+    dt: 1234981243,
+    message: "disgust3"
+  },
+
+  // —CONTEMPT—//
+
+  // —FEAR—//
+
+  // —SURPRISE—//
+
+  // —X—//
+
+  {
+    type: "miniNotification",
+    dt: 1234981243,
+    message: "Niet vergeten te lachen! het leven duurt maar even"
+  },
+
+  {
+    type: "miniNotification",
+    dt: 1234981243,
+    message: "We meten een hoog decibelgehalte in de ruimte waar je nu zit."
+  },
+  {
+    type: "miniNotification",
+    dt: 1234981243,
+    message:
+      "Veel van je vrienden zijn aanwezig op de plek waar je nu bent. Kijk maar om je heen."
+  },
+
+  {
+    type: "miniNotification",
+    dt: 1234981243,
+    message:
+      "Er zijn nog heel wat dingen die je vergat in te vullen zoals je gsm nummer, bankrekening, wachtwoorden, adres..."
+  },
+  {
+    type: "miniNotification",
+    dt: 1234981243,
+    message:
+      "We zagen op instagram dat je een reis aan het plannen bent naar Noorwegen. Klik op 'verzenden' als je dit met je vrienden wil delen."
+  },
+  {
+    type: "miniNotification",
+    dt: 1234981243,
+    message:
+      "Omdat je locatiegegevens aanstonden, weten we dat je wel wat tijd hebt gespendeerd op de eroticabeurs in Antwerp Expo. Kunnen we je nog wat extra tips geven?"
+  },
+  {
+    type: "miniNotification",
+    dt: 1234981243,
+    message:
+      "Om optimaal te kunnen plannen, kan je je agenda synchroniseren met Facebook. Alle evenementen waarbij je jezelf op aanwezig zetten worden dan automatisch gesynchroniseerd met je externe agenda."
+  },
+  {
+    type: "miniNotification",
+    dt: 1234981243,
+    message:
+      "Afgaande op je berichtenwisseling met Cecile Homans lijkt het alsof jullie ruzie hebben... Wil je dat we je vriendschap met haar opheffen?"
+  },
+  {
+    type: "miniNotification",
+    dt: 1234981243,
+    message:
+      "Nick de Bouwer heeft al veel berichten van je geliket, sturen we hem een vriendschapsverzoek?"
+  },
+
+  // --------------------------------------------------------------------------ADS----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------ADS----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------ADS----------------------------------------------------------------------//
+
+  // --***********--PERSONEN----***********---//
+
+  // —WERNER—//
+
+  {
+    type: "ad",
+    target: "werner",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/wohi.png",
+    pageName: "Wohi",
+    image: "/imagesAds/luck_sac_zitkussen.jpg",
+    text:
+      "Nooit meer een stijve rug dankzij de ultra comfortabele zitzak van Luckt Sac",
+    subText: "Verkrijgbaar in verschillende kleuren en maten"
+  },
+
+  {
+    type: "ad",
+    target: "werner",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/second_life.jpg",
+    pageName: "Youtube",
+    image: "/imagesAds/second_life.jpg",
+    text:
+      "Have an Adventure and Discover incredible experiences, fascinating people, and vibrant communities in this vast virtual world",
+    subText: "Maak nu je gratis account voor uren speelplezier"
+  },
+
+  {
+    type: "ad",
+    target: "werner",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/Pearl.png",
+    pageName: "Pearl Opticien ",
+    image: "/imagesAds/meerdere_brillen.jpg",
+    text:
+      "Heb je nog niet voldoende brillen? Kijk hoeveel je er op je hoofd kan plaatsen bij je Pearl Opticien!",
+    subText: "nu 20 % korting op ons hele assortiment"
+  },
+
+  {
+    type: "ad",
+    target: "werner",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/esprit.png",
+    pageName: "Esprit ",
+    image: "/imagesAds/blauw_hemd_esprit.png",
+    text: "Zomercollectie nu beschikbaar bij Esprit!",
+    subText: "Koppelkorting op elk blauw item dat u koopt"
+  },
+
+  // —GEERT—//
+
+  {
+    type: "ad",
+    target: "geert",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/joker.jpg",
+    pageName: "Joker",
+    image: "/imagesAds/joker_australie.jpg",
+    text: "Op bezoek bij familieleden?",
+    subText:
+      "Laat je reis naar Australië plannen bij Joker voor een vakantie zonder zorgen!"
+  },
+
+  {
+    type: "ad",
+    target: "geert",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/schleiper.png",
+    pageName: "Schleiper",
+    image: "/imagesAds/aquarelle.jpg",
+    text: "Alles voor de creative ziel",
+    subText: "Prachtige aquarelverf van Windsor and Newton voor een spotprijs"
+  },
+  {
+    type: "ad",
+    target: "geert",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/zoo_antwerpen.jpg",
+    pageName: "Zoo van Antwerpen",
+    image: "/imagesAds/zoo_antwerpen.jpg",
+    text: "Ook eens even Ronddolen in de Dierentuin?",
+    subText: "Dé plek om inspiratie op te doen voor illustrators"
+  },
+  {
+    type: "ad",
+    target: "geert",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/tui.png",
+    pageName: "Tui",
+    image: "/imagesAds/singapore.jpg",
+    text: "Nu vroegboekkorting op 10 dagen naar Singapore",
+    subText:
+      "Voel je je soms ook nostalgisch? Haal die mooie herinneringen weer boven dankzij dit prachtig aanbod!"
+  },
+
+  // —HUGO—//
+
+  // —JAN—//
+
+  {
+    type: "ad",
+    target: "jan",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/11.11.11.jpg",
+    pageName: "11.11.11",
+    image: "/imagesAds/11.11.11.jpg",
+    text:
+      "Heb jij ook energie, talent, goesting om mee te werken aan een betere wereld? Vind jij ook een structurele aanpak van armoede en ontwikkeling belangrijk?  Dan ben je bij 11.11.11 aan het goede adres.",
+    subText:
+      "Je kan je engageren naar gelang je interesses en beschikbare tijd."
+  },
+
+  {
+    type: "ad",
+    target: "jan",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/youtube.png",
+    pageName: "Youtube",
+    image: "/imagesAds/eyes_wide_shut.png",
+    text:
+      "Who Took My Badjas This wicked tune is made by the Samplekings. It contains a famous oneliner of a Belgian commercial of Belgacom. All credits for the vocalsamples go to the advertising agency of Belgacom. Badjas is the dutch word for bathrobe. Enjoy the sound of the badjas!",
+    subText: "bekijk de video nu!"
+  },
+  {
+    type: "ad",
+    target: "jan",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/apple.png",
+    pageName: "Apple ",
+    image: "/imagesAds/apple_watch.jpg",
+    text:
+      "Oude versie beu? Tijd voor een nieuwe? De Apple watch series 4 is nu verkrijgbaar in de App Store",
+    subText: "Ga langs bij je lokale Switch handelaar en vraag voor meer info"
+  },
+
+  // —REG—//
+
+  {
+    type: "ad",
+    target: "reg",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/inno.jpg",
+    pageName: "Inno",
+    image: "/imagesAds/serax.jpg",
+    text: "Serax™ — We Design Happiness",
+    subText:
+      "Serax looks for beauty every day, for the good things that make life worth living, the things that create a home that inspires happiness. To experience, to share, and to discover…"
+  },
+  {
+    type: "ad",
+    target: "reg",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/middelheim_museum.jpg",
+    pageName: "Lino type",
+    image: "/imagesAds/dennis_tyfus",
+    text: "My Niece’s Pierced Knees tentoonstelling van Dennis Tyfus",
+    subText: "de toegang tot het Middelheidmuseum is volledig gratis"
+  },
+  {
+    type: "ad",
+    target: "reg",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/linotype.jpg",
+    pageName: "Lino type",
+    image: "/imagesAds/helvetica.png",
+    text:
+      "Deze klassieker is perfect voor het maken van een logo! Je mag hem zeker niet missen in je typekit",
+    subText: "Helvetica font download"
+  },
+  {
+    type: "ad",
+    target: "reg",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/standaard_boekhandel.png",
+    pageName: "Standaard boekhandel",
+    image: "/imagesAds/geluk_voor_kinderen.jpeg",
+    text:
+      "Dit boek leert je het leven te ervaren als een feest. Positief en hoopvol ingesteld zijn, maakt je veerkrachtiger en gelukkiger.",
+    subText: "Voor slechts € 20,50 bij uw standaard boekhandel"
+  },
+  {
+    type: "ad",
+    target: "reg",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/2dehands.jpg",
+    pageName: "2dehands",
+    image: "/imagesAds/letterkast.jpg",
+    text: "letterkast/zetbok/drukkerijkast/kralenkast",
+    subText:
+      "Een letterkast uit een drukkerij, de zetbok heeft 20 letterkasten/letterbakken met 1 handvat, de onderverdelingen van de letterkasten zijn in hout, vlak verstelbaar bovenvlak met een inox toplaag, op het bovenblad zitten 2 handvaten om het blad in een schuine stand te zetten."
+  },
+
+  // —FREDERIK—//
+
+  // —LIEVEN—//
+
+  // —LAURA—//
+
+  // —RENATE—//
+
+  // —MIEKE—//
+
+  // —AN—//
+
+  // —VITAL—//
+
+  // —ONNO—//
+
+  // —***********—EMOTIES——***********—//
+
+  // —JOY—//
   {
     type: "ad",
     emotionStatus: "joy",
@@ -201,39 +951,6 @@ let DATA = [
     image: "/imagesAds/wigo_telenet.jpg",
     text: "Wigo van Telenet",
     subText: "De meest voordelige formule voor het hele gezin"
-  },
-
-  {
-    type: "ad",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/nutella.png",
-    pageName: "Nutella ",
-    image: "/imagesAds/nutella.jpg",
-    text: "Ieder zijn unieke pot!",
-    subText: "Personaliseer nu je Nutella® pot!"
-  },
-  {
-    type: "ad",
-    emotionStatus: "angry",
-    order: 1,
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/dove.png",
-    pageName: "Dove ",
-    image: "/imagesAds/dove_zeep.gif",
-    text: "Deep moisture van Dove",
-    subText: "softer, smoother skin after one shower"
-  },
-  {
-    type: "ad",
-    emotionStatus: "angry",
-    order: 2,
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/h&m.png",
-    pageName: "H&M ",
-    image: "/imagesAds/cool_monkey.jpg",
-    text: "Coolest monkey in the jungle",
-    subText:
-      "Printed hooded top voor €8,99 | verkrijgbaar in oranje, groen en zwart"
   },
   {
     type: "ad",
@@ -282,6 +999,67 @@ let DATA = [
     subText:
       "Deel jouw geluk met een persoonlijke boodschap in een volledig eigen ontworpen doosje!"
   },
+
+  {
+    type: "ad",
+    emotionStatus: "joy",
+    order: 5,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/mcdonalds.jpg",
+    pageName: "McDonald's ",
+    image: "/imagesAds/happymeal_McDonalds.jpg",
+    text: "Bij ieder voordeelmenu nu een Happy Meal voor maar €2,50",
+    subText: "Ga snel naar je dichtstbijzijnde McDonald's!"
+  },
+
+  // —ANGRY—//
+
+  {
+    type: "ad",
+    emotionStatus: "angry",
+    order: 1,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/dove.png",
+    pageName: "Dove ",
+    image: "/imagesAds/dove_zeep.gif",
+    text: "Deep moisture van Dove",
+    subText: "softer, smoother skin after one shower"
+  },
+  {
+    type: "ad",
+    emotionStatus: "angry",
+    order: 2,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/h&m.png",
+    pageName: "H&M ",
+    image: "/imagesAds/cool_monkey.jpg",
+    text: "Coolest monkey in the jungle",
+    subText:
+      "Printed hooded top voor €8,99 | verkrijgbaar in oranje, groen en zwart"
+  },
+
+  // —SADNESS—//
+
+  // —DISGUST—//
+
+  // —CONTEMPT—//
+
+  // —FEAR—//
+
+  // —SURPRISE—//
+
+  // —X—//
+
+  {
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/nutella.png",
+    pageName: "Nutella ",
+    image: "/imagesAds/nutella.jpg",
+    text: "Ieder zijn unieke pot!",
+    subText: "Personaliseer nu je Nutella® pot!"
+  },
+
   {
     type: "ad",
     dt: 1234981243,
@@ -350,17 +1128,6 @@ let DATA = [
 
   {
     type: "ad",
-    emotionStatus: "joy",
-    order: 5,
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/mcdonalds.jpg",
-    pageName: "McDonald's ",
-    image: "/imagesAds/happymeal_McDonalds.jpg",
-    text: "Bij ieder voordeelmenu nu een Happy Meal voor maar €2,50",
-    subText: "Ga snel naar je dichtstbijzijnde McDonald's!"
-  },
-  {
-    type: "ad",
     dt: 1234981243,
     profileImage: "/imagesProfilePages/de_morgen.png",
     pageName: "De Morgen ",
@@ -387,200 +1154,57 @@ let DATA = [
     subText: "Design your own logo with the Wix Logo Maker"
   },
 
-  {
-    type: "ad",
-    target: "geert",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/joker.jpg",
-    pageName: "Joker",
-    image: "/imagesAds/joker_australie.jpg",
-    text: "Op bezoek bij familieleden?",
-    subText:
-      "Laat je reis naar Australië plannen bij Joker voor een vakantie zonder zorgen!"
-  },
-  {
-    type: "ad",
-    target: "geert",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/schleiper.png",
-    pageName: "Schleiper",
-    image: "/imagesAds/aquarelle.jpg",
-    text: "Alles voor de creative ziel",
-    subText: "Prachtige aquarelverf van Windsor and Newton voor een spotprijs"
-  },
-  {
-    type: "ad",
-    target: "geert",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/zoo_antwerpen.jpg",
-    pageName: "Zoo van Antwerpen",
-    image: "/imagesAds/zoo_antwerpen.jpg",
-    text: "Ook eens even Ronddolen in de Dierentuin?",
-    subText: "Dé plek om inspiratie op te doen voor illustrators"
-  },
-  {
-    type: "ad",
-    target: "geert",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/tui.png",
-    pageName: "Tui",
-    image: "/imagesAds/singapore.jpg",
-    text: "Nu vroegboekkorting op 10 dagen naar Singapore",
-    subText:
-      "Voel je je soms ook nostalgisch? Haal die mooie herinneringen weer boven dankzij dit prachtig aanbod!"
-  },
-  {
-    type: "ad",
-    target: "reg",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/inno.jpg",
-    pageName: "Inno",
-    image: "/imagesAds/serax.jpg",
-    text: "Serax™ — We Design Happiness",
-    subText:
-      "Serax looks for beauty every day, for the good things that make life worth living, the things that create a home that inspires happiness. To experience, to share, and to discover…"
-  },
-  {
-    type: "ad",
-    target: "reg",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/middelheim_museum.jpg",
-    pageName: "Lino type",
-    image: "/imagesAds/dennis_tyfus",
-    text: "My Niece’s Pierced Knees tentoonstelling van Dennis Tyfus",
-    subText: "de toegang tot het Middelheidmuseum is volledig gratis"
-  },
-  {
-    type: "ad",
-    target: "reg",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/linotype.jpg",
-    pageName: "Lino type",
-    image: "/imagesAds/helvetica.png",
-    text:
-      "Deze klassieker is perfect voor het maken van een logo! Je mag hem zeker niet missen in je typekit",
-    subText: "Helvetica font download"
-  },
-  {
-    type: "ad",
-    target: "reg",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/standaard_boekhandel.png",
-    pageName: "Standaard boekhandel",
-    image: "/imagesAds/geluk_voor_kinderen.jpeg",
-    text:
-      "Dit boek leert je het leven te ervaren als een feest. Positief en hoopvol ingesteld zijn, maakt je veerkrachtiger en gelukkiger.",
-    subText: "Voor slechts € 20,50 bij uw standaard boekhandel"
-  },
-  {
-    type: "ad",
-    target: "reg",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/2dehands.jpg",
-    pageName: "2dehands",
-    image: "/imagesAds/letterkast.jpg",
-    text: "letterkast/zetbok/drukkerijkast/kralenkast",
-    subText:
-      "Een letterkast uit een drukkerij, de zetbok heeft 20 letterkasten/letterbakken met 1 handvat, de onderverdelingen van de letterkasten zijn in hout, vlak verstelbaar bovenvlak met een inox toplaag, op het bovenblad zitten 2 handvaten om het blad in een schuine stand te zetten."
-  },
-  {
-    type: "ad",
-    target: "jan",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/11.11.11.jpg",
-    pageName: "11.11.11",
-    image: "/imagesAds/11.11.11.jpg",
-    text:
-      "Heb jij ook energie, talent, goesting om mee te werken aan een betere wereld? Vind jij ook een structurele aanpak van armoede en ontwikkeling belangrijk?  Dan ben je bij 11.11.11 aan het goede adres.",
-    subText:
-      "Je kan je engageren naar gelang je interesses en beschikbare tijd."
-  },
+  // --------------------------------------------------------------------------NEWS----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------NEWS----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------NEWS----------------------------------------------------------------------//
 
-  {
-    type: "ad",
-    target: "werner",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/wohi.png",
-    pageName: "Wohi",
-    image: "/imagesAds/luck_sac_zitkussen.jpg",
-    text:
-      "Nooit meer een stijve rug dankzij de ultra comfortabele zitzak van Luckt Sac",
-    subText: "Verkrijgbaar in verschillende kleuren en maten"
-  },
+  // --***********--PERSONEN----***********---//
 
-  {
-    type: "ad",
-    target: "werner",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/second_life.jpg",
-    pageName: "Youtube",
-    image: "/imagesAds/second_life.jpg",
-    text:
-      "Have an Adventure and Discover incredible experiences, fascinating people, and vibrant communities in this vast virtual world",
-    subText: "Maak nu je gratis account voor uren speelplezier"
-  },
-  {
-    type: "ad",
-    target: "jan",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/youtube.png",
-    pageName: "Youtube",
-    image: "/imagesAds/eyes_wide_shut.png",
-    text:
-      "Who Took My Badjas This wicked tune is made by the Samplekings. It contains a famous oneliner of a Belgian commercial of Belgacom. All credits for the vocalsamples go to the advertising agency of Belgacom. Badjas is the dutch word for bathrobe. Enjoy the sound of the badjas!",
-    subText: "bekijk de video nu!"
-  },
-  {
-    type: "ad",
-    target: "jan",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/apple.png",
-    pageName: "Apple ",
-    image: "/imagesAds/apple_watch.jpg",
-    text:
-      "Oude versie beu? Tijd voor een nieuwe? De Apple watch series 4 is nu verkrijgbaar in de App Store",
-    subText: "Ga langs bij je lokale Switch handelaar en vraag voor meer info"
-  },
-  {
-    type: "ad",
-    target: "werner",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/Pearl.png",
-    pageName: "Pearl Opticien ",
-    image: "/imagesAds/meerdere_brillen.jpg",
-    text:
-      "Heb je nog niet voldoende brillen? Kijk hoeveel je er op je hoofd kan plaatsen bij je Pearl Opticien!",
-    subText: "nu 20 % korting op ons hele assortiment"
-  },
+  // —WERNER—//
 
-  {
-    type: "ad",
-    target: "werner",
-    dt: 1234981243,
-    profileImage: "/imagesProfilePages/esprit.png",
-    pageName: "Esprit ",
-    image: "/imagesAds/blauw_hemd_esprit.png",
-    text: "Zomercollectie nu beschikbaar bij Esprit!",
-    subText: "Koppelkorting op elk blauw item dat u koopt"
-  },
+  // —GEERT—//
 
-  // -------------------------NEWS----------------------------//
+  // —HUGO—//
+
+  // —JAN—//
 
   {
     type: "news",
+    target: "jan",
     dt: 1234981243,
-    text:
-      "Het allermooiste aan de dansvideo’s van Angèle en Léo is de liefde die je erin kan ontwaren",
-    profileName: "Atar Jabeir",
-    profileImage: "/imagesProfilePeople/Atar_Jabeir.jpeg",
-    date: "5 seconden geleden",
-    image: "/imagesPosts/Atar_Jabeir_AngeleVideo.jpeg",
-    messageSource: "De Morgen",
-    messageSourceWebsite: "demorgen.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
-    smiley: "😍😌"
+    text: "Blijft toch een goe schijfke he?",
+    profileName: "Samplekings",
+    profileImage: "/imagesProfilePages/sample_kings.jpg",
+    date: "2 minuten geleden",
+    image: "/imagesPosts/who_took_my_badjas.jpg",
+    messageSource: "Vijf",
+    messageSourceWebsite: "https://www.youtube.com/watch?v=CrfEMVfpH34",
+    action: "heeft gereageerd op een bericht van",
+    messageResponse: "en 3 anderen hebben gelachen gekeken naar dit bericht",
+    smiley: "🤩"
   },
+
+  // —REG—//
+
+  // —FREDERIK—//
+
+  // —LIEVEN—//
+
+  // —LAURA—//
+
+  // —RENATE—//
+
+  // —MIEKE—//
+
+  // —AN—//
+
+  // —VITAL—//
+
+  // —ONNO—//
+
+  // —***********—EMOTIES——***********—//
+
+  // —JOY—//
 
   {
     type: "news",
@@ -598,6 +1222,37 @@ let DATA = [
     messageResponse: "en 98 anderen hebben neutraal gekeken naar dit bericht",
     smiley: "😃"
   },
+
+  // —ANGRY—//
+
+  // —SADNESS—//
+
+  // —DISGUST—//
+
+  // —CONTEMPT—//
+
+  // —FEAR—//
+
+  // —SURPRISE—//
+
+  // —X—//
+
+  {
+    type: "news",
+    dt: 1234981243,
+    text:
+      "Het allermooiste aan de dansvideo’s van Angèle en Léo is de liefde die je erin kan ontwaren",
+    profileName: "Atar Jabeir",
+    profileImage: "/imagesProfilePeople/Atar_Jabeir.jpeg",
+    date: "5 seconden geleden",
+    image: "/imagesPosts/Atar_Jabeir_AngeleVideo.jpeg",
+    messageSource: "De Morgen",
+    messageSourceWebsite: "demorgen.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😍😌"
+  },
+
   {
     type: "news",
     dt: 1234981243,
@@ -774,23 +1429,289 @@ let DATA = [
     smiley: "😍😌"
   },
 
+  // --------------------------------------------------------------------------BIG NEWS----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------BIG NEWS----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------BIG NEWS----------------------------------------------------------------------//
+
+  // --***********--PERSONEN----***********---//
+
+  // —WERNER—//
+  // —GEERT—//
+  // —HUGO—//
+  // —JAN—//
+
   {
-    type: "news",
+    type: "bigNews",
     target: "jan",
     dt: 1234981243,
-    text: "Blijft toch een goe schijfke he?",
-    profileName: "Samplekings",
-    profileImage: "/imagesProfilePages/sample_kings.jpg",
-    date: "2 minuten geleden",
-    image: "/imagesPosts/who_took_my_badjas.jpg",
-    messageSource: "Vijf",
-    messageSourceWebsite: "https://www.youtube.com/watch?v=CrfEMVfpH34",
-    action: "heeft gereageerd op een bericht van",
-    messageResponse: "en 3 anderen hebben gelachen gekeken naar dit bericht",
-    smiley: "🤩"
+    text: "Studenten zetten koffie met creativiteit (of doen toch alsof)",
+    subText:
+      "Studenten van het tweede jaar Reclamevormgeving aan Sint-Lucas Antwerpen hebben hun eigen koffie voorgesteld. DRD4-7R heet de koffie. De naam verwijst naar het gen dat creativiteit, experiment en durf stimuleert.",
+    profileName: "Het Laatste Nieuws",
+    profileImage: "/imagesProfilePages/hln.png",
+    date: "22 minuten geleden",
+    image: "/imagesPosts/koffie_studenten.jpeg",
+    messageSource: " Het Laatste Nieuws",
+    messageSourceWebsite: "hln.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse:
+      "en 3 anderen hebben droevig en kwaad gekeken naar dit bericht",
+    smiley: "😤😢"
   },
 
-  // -----------------------VIDEOS-------------------------//
+  // —REG—//
+  // —FREDERIK—//
+  // —LIEVEN—//
+  // —LAURA—//
+  // —RENATE—//
+  // —MIEKE—//
+  // —AN—//
+  // —VITAL—//
+  // —ONNO—//
+
+  // —***********—EMOTIES——***********—//
+
+  // —JOY—//
+
+  {
+    type: "bigNews",
+    emotionStatus: "joy",
+    order: 7,
+    dt: 1234981243,
+    text:
+      "De 'Runner's High' is geen mythe: hoe sporten je gelukkiger kan maken",
+    subText:
+      "De zaligmakende effecten van een goede work-out zijn vergelijkbaar met die van heroïne of morfine",
+    profileName: "Lizzy Luyten",
+    profileImage: "/imagesProfilePeople/lizzy_Luyten.jpeg",
+    date: "16 minuten geleden",
+    image: "/imagesPosts/runner_high.jpeg",
+    messageSource: " De Morgen",
+    messageSourceWebsite: "demorgen.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 53 anderen hebben gelukkig gekeken naar dit bericht",
+    smiley: "🙂"
+  },
+
+  // —ANGRY—//
+  // —SADNESS—//
+  // —DISGUST—//
+  // —CONTEMPT—//
+  // —FEAR—//
+  // —SURPRISE—//
+
+  // —X—//
+
+  {
+    type: "bigNews",
+    dt: 1234981243,
+    text: "EU behandelt klacht Spotify tegen Apple",
+    subText:
+      "De Europese Commissie gaat serieus kijken naar de klacht van Spotify tegen Apple. Dart zei EU-commissaris voor Mededinging Margrethe Vestager in reactie op de door het van oorsprong Zweedse streamingbedrijf aangespannen aanklacht. Het team van Vestager neemt de aanklacht nog deze week in behandeling.",
+    profileName: "Steven Segerink",
+    profileImage: "/imagesProfilePeople/steven_Segerink.jpeg",
+    date: "56 minuten geleden",
+    image: "/imagesPosts/spotify_apple.jpeg",
+    messageSource: " Het Laatste Nieuws",
+    messageSourceWebsite: "hln.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse:
+      "en 87 anderen hebben verbaasd en kwaad gekeken naar dit bericht",
+    smiley: "😱"
+  },
+  {
+    type: "bigNews",
+    dt: 1234981243,
+    text:
+      "Vlees en vis verpakken in zelf meegebrachte tupperware of bokalen: het kan vanaf vandaag bij Carrrefour Spanje",
+    subText:
+      "Wie in een Spaanse vestiging van Carrefour winkelt, mag vanaf vandaag vlees, charcuterie, vis, groenten en fruit verpakken in zelf meegebrachte plastic dozen of glazen bokalen. De Franse supermarktgigant heeft in het koninkrijk meer dan duizend winkels en wil zo de afvalberg terugdringen.",
+    profileName: "Victor Selissen",
+    profileImage: "/imagesProfilePeople/Victor_Selissen.jpeg",
+    date: "9 minuten geleden",
+    image: "/imagesPosts/tupperware_vlees.jpeg",
+    messageSource: " Het Laatste Nieuws",
+    messageSourceWebsite: "hln.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse:
+      "en 231 anderen hebben verbaasd en kwaad gekeken naar dit bericht",
+    smiley: "😱"
+  },
+  {
+    type: "bigNews",
+    dt: 1234981243,
+    text:
+      "Trump dreigt met nieuwe douanetarieven op tal van Europese producten",
+    subText:
+      "De Amerikaanse president Donald Trump dreigt vandaag met nieuwe douanetarieven op tal van Europese producten, indien de Europeanen geen onderhandelingen zouden opstarten over een nieuw handelsakkoord....",
+    profileName: "Yikhay Lee",
+    profileImage: "/imagesProfilePeople/Yikhay_Lee.jpeg",
+    date: "2 minuten geleden",
+    image: "/imagesPosts/trump_geld.jpeg",
+    messageSource: " Het Laatste Nieuws",
+    messageSourceWebsite: "hln.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse:
+      "en 231 anderen hebben hopeloos en kwaad gekeken naar dit bericht",
+    smiley: "😫"
+  },
+
+  {
+    type: "bigNews",
+    dt: 1234981243,
+    text: "Geniet mee van deze superwolk vlinders",
+    subText:
+      "Rond deze tijd tref je opnieuw een massa vlinders aan in Californië. Speciaal dit jaar is dat het wereldwijde natuurverschijnsel nog nooit zo groot is geweest sind 2015. De groei heeft te maken...",
+    profileName: "Hln",
+    profileImage: "/imagesProfilePages/hln.png",
+    date: "2 minuten geleden",
+    image: "/imagesPosts/vlinders.jpeg",
+    messageSource: " Het Laatste Nieuws",
+    messageSourceWebsite: "hln.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse:
+      "en 3 anderen hebben blij en kwaad gekeken naar dit bericht",
+    smiley: "😀"
+  },
+
+  {
+    type: "bigNews",
+    dt: 1234981243,
+    text: "Slachtoffer zinloos geweld getuigt anoniem",
+    subText:
+      "Een leerling die dinsdagavond na school werd afgetuigd door leeftijdsgenoten, doet anoniem zijn verhaal. Hij vertelt hoe hij in een straatje werd gelokt. Daar kreeg hij plots klappen. De beelden van het zinloos geweld verschenen op social media en werden massaal gedeeld...",
+    profileName: "Beatrix Verhoeven",
+    profileImage: "/imagesProfilePeople/Beatrix_Verhoeven.jpeg",
+    date: "22 minuten geleden",
+    image: "/imagesPosts/Beatrix_Verhoeven_geweldJongeren.jpeg",
+    messageSource: "Het Laatste Nieuws",
+    messageSourceWebsite: "hln.be",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse:
+      "en 3 anderen hebben droevig en kwaad gekeken naar dit bericht",
+    smiley: "😤😢"
+  },
+
+  {
+    type: "bigNews",
+    dt: 1234981243,
+    text:
+      "Protesterende bewoner Delfgauw brengt blauwe kliko terug naar gemeente",
+    subText:
+      "Leen van Vliet bracht zijn blauwe kliko uit protest terug naar de gemeente Pijnacker-Nootdorp. ‘Ik zie geen toegevoegde waarde in een extra kliko, als de grijze niet regelmatig geleegd wordt’, schrijft hij in een op de prullenbak geplakte brief...",
+    profileName: "Robin Debont",
+    profileImage: "/imagesProfilePeople/Robin_Debont.jpeg",
+    date: "22 minuten geleden",
+    image: "/imagesPosts/blauwe_kliko.jpeg",
+    messageSource: "AD",
+    messageSourceWebsite: "ad.n",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 10 anderen hebben neutraal gekeken naar dit bericht",
+    smiley: "🙂"
+  },
+
+  // --------------------------------------------------------------------------BIG NEWS OWN POST----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------BIG NEWS OWN POST----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------BIG NEWS OWN POST----------------------------------------------------------------------//
+
+  // --***********--PERSONEN----***********---//
+
+  // —WERNER—//
+  // —GEERT—//
+  // —HUGO—//
+  // —JAN—//
+
+  // —REG—//
+  // —FREDERIK—//
+  // —LIEVEN—//
+  // —LAURA—//
+  // —RENATE—//
+  // —MIEKE—//
+  // —AN—//
+  // —VITAL—//
+  // —ONNO—//
+
+  // —***********—EMOTIES——***********—//
+
+  // —JOY—//
+
+  // —ANGRY—//
+
+  {
+    type: "bigNewsOwnPost",
+    emotionStatus: "anger",
+    dt: 1234981243,
+    text: "FRENEMIES UNITE IN NIEUWE ANGRY BIRDS 2 FILMPOSTER",
+    subText:
+      "A study managed by a social psychologist from the Department of Behavioral Sciences at the Hadassah Academic College in Jerusalem concludes that 15 minutes of surfing on Facebook is enough to make one vulnerable to depression, mainly as a result of reduced self-esteem.",
+    profileName: "Moviepulp",
+    profileImage: "/imagesProfilePages/moviepulp.jpg",
+    date: "1 minuut geleden",
+    image: "/imagesPosts/angry-birds-ranked-lead-100661871-large.jpg",
+    messageSource: "www.moviepulp.be",
+    messageSourceWebsite: "www.moviepulp.be",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 195 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😨"
+  },
+
+  // —SADNESS—//
+  // —DISGUST—//
+  // —CONTEMPT—//
+  // —FEAR—//
+  // —SURPRISE—//
+
+  // —X—//
+
+  // --------------------------------------------------------------------------VIDEOS----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------VIDEOS----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------VIDEOS----------------------------------------------------------------------//
+
+  // --***********--PERSONEN----***********---//
+
+  // —WERNER—//
+
+  // —GEERT—//
+
+  // —HUGO—//
+
+  // —JAN—//
+
+  // —REG—//
+
+  // —FREDERIK—//
+
+  // —LIEVEN—//
+
+  // —LAURA—//
+
+  // —RENATE—//
+
+  // —MIEKE—//
+
+  // —AN—//
+
+  // —VITAL—//
+
+  // —ONNO—//
+
+  // —***********—EMOTIES——***********—//
+
+  // —JOY—//
+
+  // —ANGRY—//
+
+  // —SADNESS—//
+
+  // —DISGUST—//
+
+  // —CONTEMPT—//
+
+  // —FEAR—//
+
+  // —SURPRISE—//
+
+  // —X—//
 
   {
     type: "video",
@@ -846,7 +1767,44 @@ let DATA = [
     smiley: "😡"
   },
 
-  // -----------------------GIFS-------------------------//
+  // --------------------------------------------------------------------------GIFS----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------GIFS----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------GIFS----------------------------------------------------------------------//
+
+  // --***********--PERSONEN----***********---//
+
+  // —WERNER—//
+
+  // —GEERT—//
+
+  // —HUGO—//
+
+  // —JAN—//
+
+  // —REG—//
+
+  // —FREDERIK—//
+
+  // —LIEVEN—//
+
+  // —LAURA—//
+
+  // —RENATE—//
+
+  // —MIEKE—//
+
+  // —AN—//
+
+  // —VITAL—//
+
+  // —ONNO—//
+
+  // —***********—EMOTIES——***********—//
+
+  // —JOY—//
+
+  // —ANGRY—//
+
   {
     type: "gif",
     emotionStatus: "angry",
@@ -861,6 +1819,19 @@ let DATA = [
     messageResponse: "en 7 anderen hebben ingestemd met dit bericht",
     smiley: "😵"
   },
+
+  // —SADNESS—//
+
+  // —DISGUST—//
+
+  // —CONTEMPT—//
+
+  // —FEAR—//
+
+  // —SURPRISE—//
+
+  // —X—//
+
   {
     type: "gif",
     dt: 1234981243,
@@ -982,154 +1953,48 @@ let DATA = [
     smiley: "😂"
   },
 
-  // -------------------------BIG NEWS----------------------------//
+  // --------------------------------------------------------------------------PICTURE----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------PICTURE----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------PICTURE----------------------------------------------------------------------//
+
+  // --***********--PERSONEN----***********---//
+
+  // —WERNER—//
 
   {
-    type: "bigNews",
-    target: "jan",
+    type: "picture",
+    target: "werner",
+    order: 8,
     dt: 1234981243,
-    text: "Studenten zetten koffie met creativiteit (of doen toch alsof)",
-    subText:
-      "Studenten van het tweede jaar Reclamevormgeving aan Sint-Lucas Antwerpen hebben hun eigen koffie voorgesteld. DRD4-7R heet de koffie. De naam verwijst naar het gen dat creativiteit, experiment en durf stimuleert.",
-    profileName: "Het Laatste Nieuws",
-    profileImage: "/imagesProfilePages/hln.png",
-    date: "22 minuten geleden",
-    image: "/imagesPosts/koffie_studenten.jpeg",
-    messageSource: " Het Laatste Nieuws",
-    messageSourceWebsite: "hln.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse:
-      "en 3 anderen hebben droevig en kwaad gekeken naar dit bericht",
-    smiley: "😤😢"
-  },
-  {
-    type: "bigNews",
-    emotionStatus: "joy",
-    order: 7,
-    dt: 1234981243,
-    text:
-      "De 'Runner's High' is geen mythe: hoe sporten je gelukkiger kan maken",
-    subText:
-      "De zaligmakende effecten van een goede work-out zijn vergelijkbaar met die van heroïne of morfine",
-    profileName: "Lizzy Luyten",
-    profileImage: "/imagesProfilePeople/lizzy_Luyten.jpeg",
-    date: "16 minuten geleden",
-    image: "/imagesPosts/runner_high.jpeg",
-    messageSource: " De Morgen",
-    messageSourceWebsite: "demorgen.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 53 anderen hebben gelukkig gekeken naar dit bericht",
-    smiley: "🙂"
-  },
-  {
-    type: "bigNews",
-    dt: 1234981243,
-    text: "EU behandelt klacht Spotify tegen Apple",
-    subText:
-      "De Europese Commissie gaat serieus kijken naar de klacht van Spotify tegen Apple. Dart zei EU-commissaris voor Mededinging Margrethe Vestager in reactie op de door het van oorsprong Zweedse streamingbedrijf aangespannen aanklacht. Het team van Vestager neemt de aanklacht nog deze week in behandeling.",
-    profileName: "Steven Segerink",
-    profileImage: "/imagesProfilePeople/steven_Segerink.jpeg",
-    date: "56 minuten geleden",
-    image: "/imagesPosts/spotify_apple.jpeg",
-    messageSource: " Het Laatste Nieuws",
-    messageSourceWebsite: "hln.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse:
-      "en 87 anderen hebben verbaasd en kwaad gekeken naar dit bericht",
-    smiley: "😱"
-  },
-  {
-    type: "bigNews",
-    dt: 1234981243,
-    text:
-      "Vlees en vis verpakken in zelf meegebrachte tupperware of bokalen: het kan vanaf vandaag bij Carrrefour Spanje",
-    subText:
-      "Wie in een Spaanse vestiging van Carrefour winkelt, mag vanaf vandaag vlees, charcuterie, vis, groenten en fruit verpakken in zelf meegebrachte plastic dozen of glazen bokalen. De Franse supermarktgigant heeft in het koninkrijk meer dan duizend winkels en wil zo de afvalberg terugdringen.",
-    profileName: "Victor Selissen",
-    profileImage: "/imagesProfilePeople/Victor_Selissen.jpeg",
-    date: "9 minuten geleden",
-    image: "/imagesPosts/tupperware_vlees.jpeg",
-    messageSource: " Het Laatste Nieuws",
-    messageSourceWebsite: "hln.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse:
-      "en 231 anderen hebben verbaasd en kwaad gekeken naar dit bericht",
-    smiley: "😱"
-  },
-  {
-    type: "bigNews",
-    dt: 1234981243,
-    text:
-      "Trump dreigt met nieuwe douanetarieven op tal van Europese producten",
-    subText:
-      "De Amerikaanse president Donald Trump dreigt vandaag met nieuwe douanetarieven op tal van Europese producten, indien de Europeanen geen onderhandelingen zouden opstarten over een nieuw handelsakkoord....",
-    profileName: "Yikhay Lee",
-    profileImage: "/imagesProfilePeople/Yikhay_Lee.jpeg",
+    text: "Herinneringen ophalen",
+    profileName: "x", //fix me
+    profileImage: "/imagesProfilePages/funny_cats.jpg",
     date: "2 minuten geleden",
-    image: "/imagesPosts/trump_geld.jpeg",
-    messageSource: " Het Laatste Nieuws",
-    messageSourceWebsite: "hln.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse:
-      "en 231 anderen hebben hopeloos en kwaad gekeken naar dit bericht",
-    smiley: "😫"
+    image: "/imagesPosts/Werner1.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 256 anderen hebben gelachen naar dit bericht",
+    smiley: "🤪"
   },
 
-  {
-    type: "bigNews",
-    dt: 1234981243,
-    text: "Geniet mee van deze superwolk vlinders",
-    subText:
-      "Rond deze tijd tref je opnieuw een massa vlinders aan in Californië. Speciaal dit jaar is dat het wereldwijde natuurverschijnsel nog nooit zo groot is geweest sind 2015. De groei heeft te maken...",
-    profileName: "Hln",
-    profileImage: "/imagesProfilePages/hln.png",
-    date: "2 minuten geleden",
-    image: "/imagesPosts/vlinders.jpeg",
-    messageSource: " Het Laatste Nieuws",
-    messageSourceWebsite: "hln.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse:
-      "en 3 anderen hebben blij en kwaad gekeken naar dit bericht",
-    smiley: "😀"
-  },
+  // —GEERT—//
 
   {
-    type: "bigNews",
-    dt: 1234981243,
-    text: "Slachtoffer zinloos geweld getuigt anoniem",
-    subText:
-      "Een leerling die dinsdagavond na school werd afgetuigd door leeftijdsgenoten, doet anoniem zijn verhaal. Hij vertelt hoe hij in een straatje werd gelokt. Daar kreeg hij plots klappen. De beelden van het zinloos geweld verschenen op social media en werden massaal gedeeld...",
-    profileName: "Beatrix Verhoeven",
-    profileImage: "/imagesProfilePeople/Beatrix_Verhoeven.jpeg",
-    date: "22 minuten geleden",
-    image: "/imagesPosts/Beatrix_Verhoeven_geweldJongeren.jpeg",
-    messageSource: "Het Laatste Nieuws",
-    messageSourceWebsite: "hln.be",
-    action: "heeft een bericht gedeeld van ",
-    messageResponse:
-      "en 3 anderen hebben droevig en kwaad gekeken naar dit bericht",
-    smiley: "😤😢"
-  },
-
-  {
-    type: "bigNews",
+    type: "picture",
+    target: "geert",
     dt: 1234981243,
     text:
-      "Protesterende bewoner Delfgauw brengt blauwe kliko terug naar gemeente",
-    subText:
-      "Leen van Vliet bracht zijn blauwe kliko uit protest terug naar de gemeente Pijnacker-Nootdorp. ‘Ik zie geen toegevoegde waarde in een extra kliko, als de grijze niet regelmatig geleegd wordt’, schrijft hij in een op de prullenbak geplakte brief...",
-    profileName: "Robin Debont",
-    profileImage: "/imagesProfilePeople/Robin_Debont.jpeg",
-    date: "22 minuten geleden",
-    image: "/imagesPosts/blauwe_kliko.jpeg",
-    messageSource: "AD",
-    messageSourceWebsite: "ad.n",
-    action: "heeft een bericht gedeeld van ",
-    messageResponse: "en 10 anderen hebben neutraal gekeken naar dit bericht",
-    smiley: "🙂"
+      "Al 25.500 leden!!! Word jij ook lid aangezien je in Antwerpen woont?",
+    profileName: "Als ge van Antwerpen zijt...",
+    profileImage: "/imagesProfilePages/als_ge_van_a_zijt.jpg",
+    date: "3 minuten geleden",
+    image: "/imagesPosts/als_ge_van_a_zijt.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 3 anderen hebben kwaad gereageerd op dit bericht",
+    smiley: "😡"
   },
 
-  // -------------------------PICTURE----------------------------//
+  // —HUGO—//
+  // —JAN—//
 
   {
     type: "picture",
@@ -1158,20 +2023,102 @@ let DATA = [
     smiley: "😡"
   },
 
+  // —REG—//
+  // —FREDERIK—//
+  // —LIEVEN—//
+  // —LAURA—//
+  // —RENATE—//
+  // —MIEKE—//
+  // —AN—//
+  // —VITAL—//
+  // —ONNO—//
+
+  // —***********—EMOTIES——***********—//
+
+  // —JOY—//
+
   {
     type: "picture",
-    target: "geert",
+    emotionStatus: "joy",
+    order: 8,
     dt: 1234981243,
-    text:
-      "Al 25.500 leden!!! Word jij ook lid aangezien je in Antwerpen woont?",
-    profileName: "Als ge van Antwerpen zijt...",
-    profileImage: "/imagesProfilePages/als_ge_van_a_zijt.jpg",
-    date: "3 minuten geleden",
-    image: "/imagesPosts/als_ge_van_a_zijt.jpg",
-    action: "heeft een foto geplaatst",
-    messageResponse: "en 3 anderen hebben kwaad gereageerd op dit bericht",
-    smiley: "😡"
+    text: "So happy today, You too?",
+    profileName: "Tessa Sanders",
+    profileImage: "/imagesProfilePeople/Tessa_Sanders.jpeg",
+    date: "8 minuten geleden",
+    image: "/imagesPosts/happy_people.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 256 anderen hebben gelachen naar dit bericht",
+    smiley: "🤪"
   },
+  {
+    type: "picture",
+    emotionStatus: "joy",
+    order: 8,
+    dt: 1234981243,
+    text: "Haha, LOL!",
+    profileName: "Funny Cat Memes",
+    profileImage: "/imagesProfilePages/funny_cats.jpg",
+    date: "3 minuten geleden",
+    image: "/imagesPosts/cat_meme_1.png",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 256 anderen hebben gelachen naar dit bericht",
+    smiley: "🤪"
+  },
+  {
+    type: "picture",
+    emotionStatus: "joy",
+    order: 9,
+    dt: 1234981243,
+    text: "True that",
+    profileName: "Funny Cat Memes",
+    profileImage: "/imagesProfilePages/funny_cats.jpg",
+    date: "3 minuten geleden",
+    image: "/imagesPosts/cat_meme_2.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 256 anderen hebben gelachen naar dit bericht",
+    smiley: "🤪"
+  },
+
+  // —ANGRY—//
+
+  {
+    type: "picture",
+    emotionStatus: "anger",
+    order: 9,
+    dt: 1234981243,
+    text: "Feeling frustrated today",
+    profileName: "Steven Segerinnk",
+    profileImage: "/imagesProfilePeople/steven_Segerink.jpeg",
+    date: "9 minuten geleden",
+    image: "/imagesPosts/We-seem-to-be-angry-all-the-time-Fox-Emerson.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 23 anderen hebben gelachen naar dit bericht",
+    smiley: "🤪"
+  },
+
+  {
+    type: "picture",
+    emotionStatus: "anger",
+    order: 9,
+    dt: 1234981243,
+    text: "Feeling frustrated today",
+    profileName: "Steven Segerinnk",
+    profileImage: "/imagesProfilePeople/steven_Segerink.jpeg",
+    date: "9 minuten geleden",
+    image: "/imagesPosts/We-seem-to-be-angry-all-the-time-Fox-Emerson.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 23 anderen hebben gelachen naar dit bericht",
+    smiley: "🤪"
+  },
+
+  // —SADNESS—//
+  // —DISGUST—//
+  // —CONTEMPT—//
+  // —FEAR—//
+  // —SURPRISE—//
+
+  // —X—//
 
   {
     type: "picture",
@@ -1225,36 +2172,56 @@ let DATA = [
     messageResponse: "en 3 anderen hebben kwaad gereageerd op dit bericht",
     smiley: "😡"
   },
-  {
-    type: "picture",
-    emotionStatus: "joy",
-    order: 8,
-    dt: 1234981243,
-    text: "Haha, LOL!",
-    profileName: "Funny Cat Memes",
-    profileImage: "/imagesProfilePages/funny_cats.jpg",
-    date: "3 minuten geleden",
-    image: "/imagesPosts/cat_meme_1.png",
-    action: "heeft een bericht gedeeld",
-    messageResponse: "en 256 anderen hebben gelachen naar dit bericht",
-    smiley: "🤪"
-  },
-  {
-    type: "picture",
-    emotionStatus: "joy",
-    order: 9,
-    dt: 1234981243,
-    text: "True that",
-    profileName: "Funny Cat Memes",
-    profileImage: "/imagesProfilePages/funny_cats.jpg",
-    date: "3 minuten geleden",
-    image: "/imagesPosts/cat_meme_2.jpg",
-    action: "heeft een bericht gedeeld",
-    messageResponse: "en 256 anderen hebben gelachen naar dit bericht",
-    smiley: "🤪"
-  },
 
-  // -------------------------STATUS----------------------------//
+  // --------------------------------------------------------------------------STATUS----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------STATUS----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------STATUS----------------------------------------------------------------------//
+
+  // --***********--PERSONEN----***********---//
+
+  // —WERNER—//
+
+  // —GEERT—//
+
+  // —HUGO—//
+
+  // —JAN—//
+
+  // —REG—//
+
+  // —FREDERIK—//
+
+  // —LIEVEN—//
+
+  // —LAURA—//
+
+  // —RENATE—//
+
+  // —MIEKE—//
+
+  // —AN—//
+
+  // —VITAL—//
+
+  // —ONNO—//
+
+  // —***********—EMOTIES——***********—//
+
+  // —JOY—//
+
+  // —ANGRY—//
+
+  // —SADNESS—//
+
+  // —DISGUST—//
+
+  // —CONTEMPT—//
+
+  // —FEAR—//
+
+  // —SURPRISE—//
+
+  // —X—//
 
   {
     type: "status",
@@ -1343,300 +2310,9 @@ let DATA = [
     smiley: "😨"
   },
 
-  // -----------------------NOTIFICATION-------------------------//
-
-  {
-    type: "miniNotification",
-    order: 11,
-    dt: 1234981243,
-    message: "Welkom op de vernieuwde Facebook.",
-    firstNotification: true
-  },
-  {
-    type: "miniNotification",
-    order: 11,
-    dt: 1234981243,
-    message:
-      "We hebben een nieuwe functie toegevoegd. Lach maar eens naar de camera!",
-    firstNotification: true
-  },
-  {
-    type: "miniNotification",
-    order: 11,
-    dt: 1234981243,
-    message:
-      "Met deze nieuwe technologie kunenn we je feed nog nauwkeuriger samenstellen.",
-    firstNotification: true
-  },
-  {
-    type: "miniNotification",
-    order: 11,
-    dt: 1234981243,
-    message: "We zien hoe je je voelt en lossen het.",
-
-    firstNotification: true
-  },
-
-  {
-    type: "notification",
-    target: "geert",
-    dt: 1234981243,
-    message:
-      "Hey Geert, je hebt nog geen Facebook profiel aangemaakt!! Wordt dat eens geen tijd? Er zijn heel veel voordelen aan verbonden!",
-    text:
-      "Go to Facebook.com and follow along with this video to create your Facebook profile and account. Join your friends on Facebook by creating your own Facebook profile and account.",
-    image: "/imagesNotifications/facebook_profile.png",
-    textTitle: "Uhuru Network — Social Media Experts"
-  },
-
-  {
-    type: "notification",
-    target: "werner",
-    dt: 1234981243,
-    message:
-      "Op je wordpress pagina zagen we dat je fan bent van vituele architectuur. Hieronder een potentiële partner!",
-    text:
-      "At HomeSpace, our vision is a home for everyone in our community. We are on a mission to creatively apply our expertise to increase the number of affordable and specialized housing units in Calgary.",
-    image: "/imagesNotifications/homespace.jpg",
-    textTitle: "Homespace — Building better tomorrows"
-  },
-
-  {
-    type: "notification",
-    emotionStatus: "anger",
-    order: 4,
-    order: 10,
-    dt: 1234981243,
-    message: "Alles wat je nodig hebt om optimaal te kunnen scrollen!",
-    text:
-      "Je positieve berichten zijn op voor vandaag. Als je meer positieve berichten wil zien, ga dan naar de FacebookStore.",
-    image: "/imagesNotifications/facebook-store1.jpg",
-    textTitle: "Facebook Store"
-  },
-  {
-    type: "notification",
-    emotionStatus: "joy",
-    order: 1,
-    dt: 1234981243,
-    message: "Goed nieuws: enkel zonneschijn voor de komende dagen!",
-    text:
-      "Een prachtige app van Aplle om de weersverwachting te zien. Zoek en Het weer apps in de App Store en download ze op je iPad, iPhone of iPod touch. De App Store heeft een breed assortiment Het weer voor je ...",
-    image: "/imagesNotifications/goed_weer.png",
-    textTitle: "Weer — Apple"
-  },
-
-  {
-    type: "notification",
-    dt: 1234981243,
-    message:
-      "We merken dat je er wat moe uitziet vandaag... Misschien moet je vanavond wat vroeger gaan slapen?",
-    text:
-      "Een beetje moe? probeer Sleepy Time™! Slapen was nog nooit zo makkelijk.",
-    image: "/imagesNotifications/Sleepy_Time_App.jpg",
-    textTitle: "Sleepy Time™ — 10 dagen gratis testen"
-  },
-  {
-    type: "notification",
-    dt: 1234981243,
-    message: "Hallo, zware dag gehad? Je ziet er een beetje moe uit...",
-    text:
-      "Heel de dag lang energie met het sinaasappelsap van je AD Delhaize. Nu met bovendien 35% korting!",
-    image: "/imagesNotifications/minute_maid.jpeg",
-    textTitle: "Ad Delhaize — Vers sinaasappelsap"
-  },
-  {
-    type: "notification",
-    dt: 1234981243,
-    message: "Je bent gespannen... ontspannen kan met deze foto's",
-    text:
-      "Say goodbye to insomnia and experience sleep like you never slept before.",
-    image: "/imagesNotifications/relax_app.jpg",
-    textTitle: "Relax Melodies — Sleep like never before"
-  },
-  ,
-  {
-    type: "notification",
-    dt: 1234981243,
-    message:
-      "We hebben je gezicht gevonden op 31 foto's die door je vrienden zijn geüpload. We hebben de vrijheid genomen om jouw tag toe te voegen.",
-    text: "Zelf taggen voor een kleine prijs met de Dymo label maker",
-    image: "/imagesAds/label_maker.jpg",
-    textTitle: "Dymo — Goed gelabeld is goed geordend!"
-  },
-
-  // -----------------------MININOTIFICATION-------------------------//
-
-  {
-    type: "miniNotification",
-    emotionStatus: "anger",
-    order: 11,
-    dt: 1234981243,
-    message:
-      "Je scrollt zeer snel door je feed: vanaf nu bedraagt je scrollsnelheid slechts 50%."
-  },
-
-  {
-    type: "miniNotification",
-    emotionStatus: "sadness",
-    order: 1,
-    dt: 1234981243,
-    message: "sadness"
-  },
-  {
-    type: "miniNotification",
-    emotionStatus: "sadness",
-    order: 2,
-    dt: 1234981243,
-    message: "sadness2"
-  },
-  {
-    type: "miniNotification",
-    emotionStatus: "sadness",
-    order: 3,
-    dt: 1234981243,
-    message: "sadness3"
-  },
-
-  {
-    type: "miniNotification",
-    emotionStatus: "disgust",
-    order: 1,
-    dt: 1234981243,
-    message: "disgust"
-  },
-  {
-    type: "miniNotification",
-    emotionStatus: "disgust",
-    order: 2,
-    dt: 1234981243,
-    message: "disgust2"
-  },
-  {
-    type: "miniNotification",
-    emotionStatus: "disgust",
-    order: 3,
-    dt: 1234981243,
-    message: "disgust3"
-  },
-  {
-    type: "miniNotification",
-    emotionStatus: "anger",
-    order: 5,
-    dt: 1234981243,
-    message:
-      "Je hebt je gegevens nog niet volledig aangevuld. We missen je banknummer nog."
-  },
-  {
-    type: "miniNotification",
-    emotionStatus: "anger",
-    order: 6,
-    dt: 1234981243,
-    message:
-      "Je hebt je gegevens nog niet volledig aangevuld. We missen je pincode nog."
-  },
-  {
-    type: "miniNotification",
-    emotionStatus: "anger",
-    order: 7,
-    dt: 1234981243,
-    message:
-      "Je hebt je gegevens nog niet volledig aangevuld. We missen je adres nog."
-  },
-  {
-    type: "miniNotification",
-    emotionStatus: "anger",
-    order: 8,
-    dt: 1234981243,
-    message: "Door al dat fronsen gaan die rimpeltjes niet kleiner worden..."
-  },
-  {
-    type: "miniNotification",
-    emotionStatus: "anger",
-    order: 9,
-    dt: 1234981243,
-    message:
-      "We hebben een aantal spelfouten ontdekt in je laatste status. Passen we ze even aan voor u?"
-  },
-  {
-    type: "miniNotification",
-    emotionStatus: "anger",
-    order: 10,
-    dt: 1234981243,
-    message:
-      "Je hebt je gegevens nog niet volledig aangevuld. We missen je telefonnnummer nog."
-  },
-  {
-    type: "miniNotification",
-    emotionStatus: "joy",
-    order: 2,
-    dt: 1234981243,
-    message:
-      "Als je wil kan je je lach nu delen met je vrienden. Wil je live gaan op je Facebookverhaal?"
-  },
-  {
-    type: "miniNotification",
-    emotionStatus: "joy",
-    order: 3,
-    dt: 1234981243,
-    message:
-      "Wat zie je er gelukkig uit vandaag! Geef jezelf nog een boost met een klavertje vier. Kijk maar tussen je advertenties."
-  },
-  {
-    type: "miniNotification",
-    dt: 1234981243,
-    message: "Niet vergeten te lachen! het leven duurt maar even"
-  },
-
-  {
-    type: "miniNotification",
-    dt: 1234981243,
-    message: "We meten een hoog decibelgehalte in de ruimte waar je nu zit."
-  },
-  {
-    type: "miniNotification",
-    dt: 1234981243,
-    message:
-      "Veel van je vrienden zijn aanwezig op de plek waar je nu bent. Kijk maar om je heen."
-  },
-
-  {
-    type: "miniNotification",
-    dt: 1234981243,
-    message:
-      "Er zijn nog heel wat dingen die je vergat in te vullen zoals je gsm nummer, bankrekening, wachtwoorden, adres..."
-  },
-  {
-    type: "miniNotification",
-    dt: 1234981243,
-    message:
-      "We zagen op instagram dat je een reis aan het plannen bent naar Noorwegen. Klik op 'verzenden' als je dit met je vrienden wil delen."
-  },
-  {
-    type: "miniNotification",
-    dt: 1234981243,
-    message:
-      "Omdat je locatiegegevens aanstonden, weten we dat je wel wat tijd hebt gespendeerd op de eroticabeurs in Antwerp Expo. Kunnen we je nog wat extra tips geven?"
-  },
-  {
-    type: "miniNotification",
-    dt: 1234981243,
-    message:
-      "Om optimaal te kunnen plannen, kan je je agenda synchroniseren met Facebook. Alle evenementen waarbij je jezelf op aanwezig zetten worden dan automatisch gesynchroniseerd met je externe agenda."
-  },
-  {
-    type: "miniNotification",
-    dt: 1234981243,
-    message:
-      "Afgaande op je berichtenwisseling met Cecile Homans lijkt het alsof jullie ruzie hebben... Wil je dat we je vriendschap met haar opheffen?"
-  },
-  {
-    type: "miniNotification",
-    dt: 1234981243,
-    message:
-      "Nick de Bouwer heeft al veel berichten van je geliket, sturen we hem een vriendschapsverzoek?"
-  },
-
-  //----------------------Story-------------------------//
+  // -------------------------------------------------------------------STORY----------------------------------------------------------------------//
+  // -------------------------------------------------------------------STORY----------------------------------------------------------------------//
+  // -------------------------------------------------------------------STORY----------------------------------------------------------------------//
 
   {
     type: "story",

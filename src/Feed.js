@@ -68,7 +68,7 @@ export default class Feed extends Component {
       items.unshift(newItem);
       this.setState({ items });
     }
-    setTimeout(this.fetchNewItems.bind(this), random(5000, 10000));
+    setTimeout(this.fetchNewItems.bind(this), random(10000, 15000));
   }
 
   render() {

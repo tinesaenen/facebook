@@ -247,8 +247,7 @@ export default class FaceTracking extends Component {
           </div>
         </div>
         <div className="privacySerieus">
-          * Wij nemen uw privacy heel serieus. Klik om door te gaan naar de
-          privacyovereenkomst.
+          * Wij nemen uw privacy heel serieus. Ga naar de privacyovereenkomst.
         </div>
       </Fragment>
     );
