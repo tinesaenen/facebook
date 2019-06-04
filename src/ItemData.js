@@ -48,6 +48,20 @@ let DATA = [
     smiley: "😰"
   },
   {
+    type: "picture",
+    dt: 1234981243,
+    text: "Alles staat gebundeld op een WordPressblog",
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    date: "zojuist",
+    image: "/imagesIntro/wordpress.png",
+    action: "heeft een foto geplaatst",
+    messageResponse:
+      "en 1 anderen hebben geïnteresseerd gekeken naar dit bericht",
+    smiley: "🧐"
+  },
+
+  {
     type: "bigNewsOwnPost",
     dt: 1234981243,
     text: "Tim Verheyden maakt de balans op van 15 jaar Facebook.",
@@ -297,9 +311,10 @@ let DATA = [
     order: 4,
     order: 10,
     dt: 1234981243,
-    message: "Alles wat je nodig hebt om optimaal te kunnen scrollen!",
-    text:
+    message:
       "Je positieve berichten zijn op voor vandaag. Als je meer positieve berichten wil zien, ga dan naar de FacebookStore.",
+    text: "Alles wat je nodig hebt om optimaal te kunnen scrollen!",
+
     image: "/imagesNotifications/facebook-store1.jpg",
     textTitle: "Facebook Store"
   },
@@ -722,6 +737,34 @@ let DATA = [
     dt: 1234981243,
     message:
       "Nick de Bouwer heeft al veel berichten van je geliket, sturen we hem een vriendschapsverzoek?"
+  },
+
+  // --------------------------------------------------------------------------FIRST ADS----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------FIRST ADS----------------------------------------------------------------------//
+  // --------------------------------------------------------------------------FIRST ADS----------------------------------------------------------------------//
+
+  {
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/swan.png",
+    pageName: "Swan Market",
+    image: "/imagesAds/swan.jpg",
+    text: "🌞 SWAN. = SHOPPEN ONDER EEN BLAUWE LUCHT! 🌞",
+    subText:
+      "Aankomende zondag gaan we nieuwe avonturen meemaken op de prachtige Grote Markt! Heel veel moois, zalig eten & drinken en toffe artiesten! Voor een fijne zondag uit in eigen stad. 💃",
+    firstAd: true
+  },
+
+  {
+    type: "ad",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/neutral.png",
+    pageName: "Neutral",
+    image: "/imagesIntro/Hangtag_plain.jpg",
+    text: "We believe in being okay. Okay clothing. Certified okay!",
+    subText:
+      "Neutral® is a market leading producer of sustainable apparel and accessories to the B2B-market.",
+    firstAd: true
   },
 
   // --------------------------------------------------------------------------ADS----------------------------------------------------------------------//
@@ -1635,6 +1678,26 @@ let DATA = [
 
   // —JOY—//
 
+  {
+    type: "bigNewsOwnPost",
+    emotionStatus: "joy",
+    dt: 1234981243,
+    text:
+      "Ook dat overtollig vet rond je buik beu? Gebruik nu Perfect Portions!",
+    subText:
+      "Speel centimeters kwijt rond je buik en heupen in een recordtijd. Nooit wae je lichaam beter in proportie dan met Perfect Portions.",
+    profileName: "Perfect Portions",
+    profileImage: "/imagesProfilePages/perfect_portions.png",
+    date: "1 minuut geleden",
+    image: "/imagesPosts/fat_happy.gif",
+    messageSource:
+      "https://www.amazon.com/Perfect-Portions-Dishwasher-Microwave-Containers/dp/B01B6DXZOW",
+    messageSourceWebsite: "perfectportions.com",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 195 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😨"
+  },
+
   // —ANGRY—//
 
   {
@@ -1698,6 +1761,20 @@ let DATA = [
   // —***********—EMOTIES——***********—//
 
   // —JOY—//
+
+  {
+    type: "video",
+    emotionStatus: "joy",
+    dt: 1234981243,
+    text: "Old man laughing hard",
+    profileName: "Bogdan Dabija",
+    profileImage: "/imagesProfilePeople/bogdan.jpg",
+    date: "3 minuten geleden",
+    videolink: "https://www.youtube.com/embed/fyEThSM4JnI",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 3 anderen hebben verwonderd gereageerd op dit bericht",
+    smiley: "😮"
+  },
 
   // —ANGRY—//
 
@@ -1823,6 +1900,21 @@ let DATA = [
   // —SADNESS—//
 
   // —DISGUST—//
+
+  {
+    type: "gif",
+    emotionStatus: "disgust",
+    order: 3,
+    dt: 1234981243,
+    text: "De kracht van durian 🤪",
+    profileName: "Simon Martin",
+    profileImage: "/imagesProfilePeople/Simon_Martin.jpeg",
+    date: "zojuist",
+    image: "/imagesPosts/durian_disgust.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 9 anderen hebben ingestemd met dit bericht",
+    smiley: "😵"
+  },
 
   // —CONTEMPT—//
 
@@ -2056,6 +2148,35 @@ let DATA = [
     emotionStatus: "joy",
     order: 8,
     dt: 1234981243,
+    text: "(OC) What do you think? Too much?",
+    profileName: "Nina Boxtaes",
+    profileImage: "/imagesProfilePeople/Nina_Boxtaes.jpeg",
+    date: "83 minuten geleden",
+    image: "/imagesPosts/image_1335730032402.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 12 anderen hebben gelachen naar dit bericht",
+    smiley: "😃😀😆"
+  },
+  {
+    type: "picture",
+    emotionStatus: "joy",
+    order: 8,
+    dt: 1234981243,
+    text: "If this doesn't make you laugh, I'm giving up",
+    profileName: "Camille Bats",
+    profileImage: "/imagesProfilePeople/Camille_Bats.jpeg",
+    date: "38 minuten geleden",
+    image: "/imagesPosts/happy_doggo.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 9732 anderen hebben gelachen naar dit bericht",
+    smiley: "😁"
+  },
+
+  {
+    type: "picture",
+    emotionStatus: "joy",
+    order: 8,
+    dt: 1234981243,
     text: "Haha, LOL!",
     profileName: "Funny Cat Memes",
     profileImage: "/imagesProfilePages/funny_cats.jpg",
@@ -2114,6 +2235,36 @@ let DATA = [
 
   // —SADNESS—//
   // —DISGUST—//
+
+  {
+    type: "picture",
+    emotionStatus: "disgust",
+    order: 9,
+    dt: 1234981243,
+    text: "*vomits*",
+    profileName: "Steven Denteer",
+    profileImage: "/imagesProfilePeople/Steven_Denteneer.jpeg",
+    date: "9 minuten geleden",
+    image: "/imagesPosts/disgust_worm.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 12 anderen hebben gelachen naar dit bericht",
+    smiley: "🤢🤮"
+  },
+
+  {
+    type: "picture",
+    emotionStatus: "disgust",
+    order: 9,
+    dt: 1234981243,
+    text: "yuk",
+    profileName: "9gag",
+    profileImage: "/imagesProfilePages/9gag.png",
+    date: "1 minuut geleden",
+    image: "/imagesPosts/disguting_meme_food.jpeg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 12 anderen hebben gelachen naar dit bericht",
+    smiley: "🤢🤮"
+  },
   // —CONTEMPT—//
   // —FEAR—//
   // —SURPRISE—//

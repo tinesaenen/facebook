@@ -23,9 +23,14 @@ export default class Feed extends Component {
       item =>
         types.includes(item.type) &&
         (!item.target || item.target === this.props.target) &&
-        !item.firstNotification
+        !item.firstNotification &&
+        !item.firstAd
     );
-    const items = DATA.filter(item => item.firstNotification);
+    const items = DATA.filter(
+      item =>
+        types.includes(item.type) && (item.firstNotification || item.firstAd)
+    );
+    console.log("ITEMS", items);
     this.setState({ allItems, items, isLoading: false });
     if (this.props.autoRefresh) {
       // setTimeout(this.fetchNewItems.bind(this), random(1000, 7000));

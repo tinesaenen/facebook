@@ -37,6 +37,12 @@ export default class App extends Component {
     });
   }
 
+  playBeep() {
+    try {
+      this.audio.play();
+    } catch (e) {}
+  }
+
   checkEmotions(emotions) {
     if (this.state.emotionCooldown > Date.now()) return;
     const keys = Object.keys(emotions);
@@ -64,26 +70,25 @@ export default class App extends Component {
 
   switchToNewStyle({ isIntersecting }) {
     if (!isIntersecting) return;
-    this.audio.play();
+    this.playBeep();
     document.body.className = "newStyle";
   }
 
   showFaceTracking({ isIntersecting }) {
     if (!isIntersecting) return;
-    this.audio.play();
+    this.playBeep();
     this.setState({ showFaceTracking: true });
-    this.setState({});
   }
 
   showAds({ isIntersecting }) {
     if (!isIntersecting) return;
-    this.audio.play();
+    this.playBeep();
     this.setState({ showAds: true });
   }
 
   showNotifications({ isIntersecting }) {
     if (!isIntersecting) return;
-    this.audio.play();
+    this.playBeep();
     this.setState({ showNotifications: true });
   }
 
@@ -187,7 +192,9 @@ export default class App extends Component {
                 <Feed
                   className="verticalFeed"
                   types={["ad"]}
+                  emotion={this.state.currentEmotion}
                   target={currentTarget}
+                  autoRefresh={true}
                 />
               </div>
             )}
