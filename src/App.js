@@ -108,7 +108,7 @@ export default class App extends Component {
               height="25"
             />
             <img
-              src="/imagesIcons/logoFacebook.png"
+              src="/imagesIcons/logoFacebook3.gif"
               className="header__logo logo_newStyle"
               alt="logo"
               height="25"
@@ -140,7 +140,7 @@ export default class App extends Component {
               {this.state.showNotifications && (
                 <Feed
                   className="verticalFeed"
-                  types={["notification", "miniNotification"]}
+                  types={["miniNotification", "notification"]}
                   emotion={this.state.currentEmotion}
                   autoRefresh={true}
                   target={currentTarget}
