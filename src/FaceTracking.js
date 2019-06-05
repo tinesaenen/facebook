@@ -157,8 +157,8 @@ export default class FaceTracking extends Component {
     angstdiv.style.width = `${face.emotions.fear}%`;
     verwonderingdiv.style.width = `${face.emotions.surprise}%`;
 
-    var dt = new Date();
-    document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+    var dt1 = new Date();
+    document.getElementById("time").innerHTML = dt1.toLocaleTimeString();
 
     var dt = new Date();
     document.getElementById("date").innerHTML =
