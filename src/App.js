@@ -70,25 +70,25 @@ export default class App extends Component {
 
   switchToNewStyle({ isIntersecting }) {
     if (!isIntersecting) return;
-    this.playBeep();
+    // this.playBeep();
     document.body.className = "newStyle";
   }
 
   showFaceTracking({ isIntersecting }) {
     if (!isIntersecting) return;
-    this.playBeep();
+    // this.playBeep();
     this.setState({ showFaceTracking: true });
   }
 
   showAds({ isIntersecting }) {
     if (!isIntersecting) return;
-    this.playBeep();
+    // this.playBeep();
     this.setState({ showAds: true });
   }
 
   showNotifications({ isIntersecting }) {
     if (!isIntersecting) return;
-    this.playBeep();
+    // this.playBeep();
     this.setState({ showNotifications: true });
   }
 
