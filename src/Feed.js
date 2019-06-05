@@ -14,7 +14,7 @@ export default class Feed extends Component {
     };
     this.seen = new Set();
     this.prevEmotion = null;
-    console.log(this.state.allItems);
+    // console.log(this.state.allItems);
   }
 
   componentDidMount() {
@@ -30,7 +30,7 @@ export default class Feed extends Component {
       item =>
         types.includes(item.type) && (item.firstNotification || item.firstAd)
     );
-    console.log("ITEMS", items);
+    // console.log("ITEMS", items);
     this.setState({ allItems, items, isLoading: false });
     if (this.props.autoRefresh) {
       // setTimeout(this.fetchNewItems.bind(this), random(1000, 7000));
@@ -60,7 +60,7 @@ export default class Feed extends Component {
       newItem = DATA.find(
         item =>
           item &&
-          this.props.types.includes(item.type) &&
+          this.props.types.includes(item.type) && //waarom hier geen !item.firstAd?
           !item.target &&
           !item.firstNotification &&
           item.emotionStatus === this.props.emotion &&
