@@ -15,47 +15,66 @@ function random(min, max) {
 export default class Feed extends Component {
   constructor(props) {
     super(props);
-    this.state = { isLoading: true, allItems: [], items: [] };
+    this.state = { isLoading: true, items: [] };
+    this.seen = new Set();
+    this.prevEmotion = null;
   }
 
   componentDidMount() {
     const types = this.props.types;
-    const allItems = DATA.filter(
-      item =>
-        types.includes(item.type) &&
-        (!item.target || item.target === this.props.target)
+    const items = DATA.filter(
+      item => types.includes(item.type) && item.firstPost //&& (item.firstNotification || item.firstAd)    //in itemData --> firstPost: true
     );
-    const items = allItems.slice(0, 10);
-    this.setState({ allItems, items });
+    this.setState({ items, isLoading: false });
   }
 
-  fetchData = () => {
-    let newItems = this.state.allItems.filter(
-      item => item.emotionStatus === this.props.emotion
-    );
-    if (newItems.length > 0) {
-      // newItems.sort((a, b) => a.order - b.order);
+  fetchNewItems() {
+    let newItem;
+    if (this.props.target) {
+      newItem = DATA.find(
+        item =>
+          item &&
+          this.props.types.includes(item.type) &&
+          item.target === this.props.target &&
+          !this.seen.has(item)
+      );
+    } else if (this.props.emotion) {
+      newItem = DATA.find(
+        item =>
+          item &&
+          this.props.types.includes(item.type) &&
+          !item.target &&
+          !item.firstPost &&
+          item.emotionStatus === this.props.emotion &&
+          !this.seen.has(item)
+      );
     } else {
-      const newIndex = this.state.items.length;
-      newItems = this.state.allItems.slice(newIndex, newIndex + 10);
-      newItems = newItems.filter(
-        item => typeof item.emotionStatus === "undefined"
+      newItem = DATA.find(
+        item =>
+          item &&
+          this.props.types.includes(item.type) &&
+          !item.firstPost &&
+          !item.target &&
+          !item.emotionStatus &&
+          !this.seen.has(item)
       );
     }
-    setTimeout(() => {
-      this.setState({
-        items: this.state.items.concat(newItems)
-      });
-    }, 1000);
-  };
+    console.log("fetchNewItems", newItem);
+    if (newItem) {
+      this.seen.add(newItem);
+      const items = this.state.items;
+      items.unshift(newItem);
+      this.setState({ items });
+    }
+  }
 
   render() {
     return (
       <InfiniteScroll
         ref={this.scroller}
         dataLength={this.state.items.length}
-        next={this.fetchData}
-        hasMore={this.state.items.length < this.state.allItems.length}
+        next={this.fetchNewItems.bind(this)}
+        hasMore={true}
         loader={
           <img
             style={{
@@ -121,6 +140,7 @@ export default class Feed extends Component {
         <Observer
           onChange={this.props.app[item.onVisible].bind(this.props.app)}
           threshold={0.1}
+          key={item.id}
         >
           {element}
         </Observer>
