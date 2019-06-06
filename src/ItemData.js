@@ -18,7 +18,8 @@ let DATA = [
     messageSourceWebsite: "worldisraelnews.com",
     action: "heeft een bericht gedeeld",
     messageResponse: "en 195 anderen hebben verbaasd gekeken naar dit bericht",
-    smiley: "😨"
+    smiley: "😨",
+    firstPost: true
   },
   {
     type: "news",
@@ -33,7 +34,8 @@ let DATA = [
     messageSourceWebsite: "www.hln.be",
     action: "heeft een bericht gedeeld van",
     messageResponse: "en 3 anderen hebben droevig gekeken naar dit bericht",
-    smiley: "😢😐"
+    smiley: "😢😐",
+    firstPost: true
   },
   {
     type: "picture",
@@ -45,7 +47,8 @@ let DATA = [
     image: "/imagesIntro/Mark_tape_cam.jpg",
     action: "heeft een foto geplaatst",
     messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
-    smiley: "😰"
+    smiley: "😰",
+    firstPost: true
   },
   {
     type: "picture",
@@ -58,7 +61,8 @@ let DATA = [
     action: "heeft een foto geplaatst",
     messageResponse:
       "en 1 anderen hebben geïnteresseerd gekeken naar dit bericht",
-    smiley: "🧐"
+    smiley: "🧐",
+    firstPost: true
   },
 
   {
@@ -75,7 +79,8 @@ let DATA = [
     messageSourceWebsite: "www.canvas.be",
     action: "heeft een bericht gedeeld",
     messageResponse: "en 83 anderen hebben benieuwd gekeken naar dit bericht",
-    smiley: "🧐"
+    smiley: "🧐",
+    firstPost: true
   },
   {
     type: "video",
@@ -88,7 +93,8 @@ let DATA = [
     videolink: "https://www.youtube.com/embed/SkYNivD8iM8",
     action: "heeft een video geplaatst",
     messageResponse: "en 3 anderen hebben verwonderd gereageerd op dit bericht",
-    smiley: "😮"
+    smiley: "😮",
+    firstPost: true
   },
   {
     type: "picture",
@@ -100,7 +106,8 @@ let DATA = [
     image: "/imagesIntro/Mark_vow.jpg",
     action: "heeft een foto geplaatst",
     messageResponse: "en 968 anderen hebben verbaasd gekeken naar dit bericht",
-    smiley: "😂🤪"
+    smiley: "😂🤪",
+    firstPost: true
   },
 
   {
@@ -113,7 +120,8 @@ let DATA = [
     image: "/imagesIntro/procesfolio_mockup.png",
     action: "heeft een bericht gedeeld",
     messageResponse: "en 256 anderen hebben gelachen naar dit bericht",
-    smiley: "🤪"
+    smiley: "🤪",
+    firstPost: true
   },
   {
     type: "bigNewsOwnPost",
@@ -129,7 +137,8 @@ let DATA = [
     messageSourceWebsite: "www.canvas.be",
     action: "heeft een bericht gedeeld",
     messageResponse: "en 83 anderen hebben benieuwd gekeken naar dit bericht",
-    smiley: "😱"
+    smiley: "😱",
+    firstPost: true
   },
   {
     type: "bigNewsOwnPost",
@@ -145,7 +154,8 @@ let DATA = [
     messageSourceWebsite: "www.theverge.com",
     action: "heeft een bericht gedeeld",
     messageResponse: "en 83 anderen hebben benieuwd gekeken naar dit bericht",
-    smiley: "😰😨😢😂😀"
+    smiley: "😰😨😢😂😀",
+    firstPost: true
   },
   {
     type: "picture",
@@ -159,7 +169,8 @@ let DATA = [
     action: "heeft een bericht gedeeld",
     messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
     smiley: "😮",
-    onVisible: "showFaceTracking"
+    onVisible: "showFaceTracking",
+    firstPost: true
   },
   {
     type: "bigNewsOwnPost",
@@ -176,7 +187,8 @@ let DATA = [
     action: "heeft een bericht gedeeld",
     messageResponse: "en 83 anderen hebben benieuwd gekeken naar dit bericht",
     smiley: "😀",
-    onVisible: "showAds"
+    onVisible: "showAds",
+    firstPost: true
   },
   {
     type: "picture",
@@ -190,7 +202,8 @@ let DATA = [
     action: "heeft een bericht gedeeld",
     messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
     smiley: "🙂😍",
-    onVisible: "showNotifications"
+    onVisible: "showNotifications",
+    firstPost: true
   },
   {
     type: "picture",
@@ -203,7 +216,8 @@ let DATA = [
     action: "heeft een bericht gedeeld",
     messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
     smiley: "😀",
-    onVisible: "switchToNewStyle"
+    onVisible: "switchToNewStyle",
+    firstPost: true
   },
 
   // -------------------------------------------------------------------FIRST NOTIFICATION----------------------------------------------------------------------//
@@ -314,9 +328,32 @@ let DATA = [
     message:
       "Je positieve berichten zijn op voor vandaag. Als je meer positieve berichten wil zien, ga dan naar de FacebookStore.",
     text: "Alles wat je nodig hebt om optimaal te kunnen scrollen!",
-
     image: "/imagesNotifications/facebook-store1.jpg",
     textTitle: "Facebook Store"
+  },
+
+  {
+    type: "notification",
+    emotionStatus: "anger",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Als je die dubbele kin wil wegwerken, zal je toch wat meer moeten gaan sporten hoor...",
+    text:
+      "Wacht niet tot het superdruk is in de fitness en start nu met je goede voornemens. Samen met Basic-Fit zorgen we er voor dat je in topvorm bent voor de zomer!",
+    image: "/imagesNotifications/basic_fit.jpg",
+    textTitle: "Win een jaar gratis fitness!"
+  },
+  {
+    type: "notification",
+    emotionStatus: "anger",
+    dt: 1234981243,
+    message:
+      "De wallen onder je ogen doen je er moe uitzien... Misschien moet je vanavond wat vroeger gaan slapen?",
+    text:
+      "Een beetje moe? probeer Sleepy Time™! Slapen was nog nooit zo makkelijk.",
+    image: "/imagesNotifications/Sleepy_Time_App.jpg",
+    textTitle: "Sleepy Time™ — 10 dagen gratis testen"
   },
 
   // —SADNESS—//
@@ -331,25 +368,6 @@ let DATA = [
 
   // —X—//
 
-  {
-    type: "notification",
-    dt: 1234981243,
-    message:
-      "We merken dat je er wat moe uitziet vandaag... Misschien moet je vanavond wat vroeger gaan slapen?",
-    text:
-      "Een beetje moe? probeer Sleepy Time™! Slapen was nog nooit zo makkelijk.",
-    image: "/imagesNotifications/Sleepy_Time_App.jpg",
-    textTitle: "Sleepy Time™ — 10 dagen gratis testen"
-  },
-  {
-    type: "notification",
-    dt: 1234981243,
-    message: "Hallo, zware dag gehad? Je ziet er een beetje moe uit...",
-    text:
-      "Heel de dag lang energie met het sinaasappelsap van je AD Delhaize. Nu met bovendien 35% korting!",
-    image: "/imagesNotifications/minute_maid.jpeg",
-    textTitle: "Ad Delhaize — Vers sinaasappelsap"
-  },
   {
     type: "notification",
     dt: 1234981243,
@@ -569,6 +587,35 @@ let DATA = [
       "Wat zie je er gelukkig uit vandaag! Geef jezelf nog een boost met een klavertje vier. Kijk maar tussen je advertenties."
   },
 
+  {
+    type: "miniNotification",
+    emotionStatus: "joy",
+    order: 3,
+    dt: 1234981243,
+    message: "Je hebt nu meer dan 500 vrienden! Het leven lacht je toe."
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "joy",
+    order: 3,
+    dt: 1234981243,
+    message: "Zo'n colgate smile verdient een like!"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "joy",
+    order: 3,
+    dt: 1234981243,
+    message: "Je straalt als je lacht"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "joy",
+    order: 3,
+    dt: 1234981243,
+    message: "Deel je geluk nu met je vrienden door een status te plaatsen!"
+  },
+
   // —ANGRY—//
 
   {
@@ -577,7 +624,7 @@ let DATA = [
     order: 11,
     dt: 1234981243,
     message:
-      "Je scrollt zeer snel door je feed: vanaf nu bedraagt je scrollsnelheid slechts 50%."
+      "Je scrollt zeer snel door je feed: vanaf nu bedraagt je scrollsnelheid slechts 50%." //fix me
   },
 
   {
@@ -586,7 +633,7 @@ let DATA = [
     order: 5,
     dt: 1234981243,
     message:
-      "Je hebt je gegevens nog niet volledig aangevuld. We missen je banknummer nog."
+      "Je hebt je gegevens nog niet volledig aangevuld. Ik missen je banknummer nog."
   },
   {
     type: "miniNotification",
@@ -594,7 +641,7 @@ let DATA = [
     order: 6,
     dt: 1234981243,
     message:
-      "Je hebt je gegevens nog niet volledig aangevuld. We missen je pincode nog."
+      "Je hebt je gegevens nog niet volledig aangevuld. Ik missen je pincode nog."
   },
   {
     type: "miniNotification",
@@ -602,7 +649,7 @@ let DATA = [
     order: 7,
     dt: 1234981243,
     message:
-      "Je hebt je gegevens nog niet volledig aangevuld. We missen je adres nog."
+      "Je hebt je gegevens nog niet volledig aangevuld. Ik missen je adres nog."
   },
   {
     type: "miniNotification",
@@ -617,7 +664,15 @@ let DATA = [
     order: 9,
     dt: 1234981243,
     message:
-      "We hebben een aantal spelfouten ontdekt in je laatste status. Passen we ze even aan voor u?"
+      "We hebben een aantal spelfouten ontdekt in je laatste status. Passen ik ze even aan voor u?"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "anger",
+    order: 10,
+    dt: 1234981243,
+    message:
+      "Je hebt je gegevens nog niet volledig aangevuld. We missen je telefonnnummer nog."
   },
   {
     type: "miniNotification",
@@ -635,21 +690,30 @@ let DATA = [
     emotionStatus: "sadness",
     order: 1,
     dt: 1234981243,
-    message: "sadness"
+    message: "Het leven is soms hard..."
   },
   {
     type: "miniNotification",
     emotionStatus: "sadness",
     order: 2,
     dt: 1234981243,
-    message: "sadness2"
+    message:
+      "Het weer lijkt er niet beter op te worden. Haal die paraplu maar boven!"
   },
   {
     type: "miniNotification",
     emotionStatus: "sadness",
     order: 3,
     dt: 1234981243,
-    message: "sadness3"
+    message:
+      "Ik heb gehoord dat er dingen over je worden gezegd in chat. Ben je zeker dat Jeroen de Vries wel een echt vriend is?"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "sadness",
+    order: 3,
+    dt: 1234981243,
+    message: "Wil je ook geld doneren voor de armen in osn land?"
   },
 
   // —DISGUST—//
@@ -681,6 +745,29 @@ let DATA = [
   // —FEAR—//
 
   // —SURPRISE—//
+
+  {
+    type: "miniNotification",
+    emotionStatus: "surprise",
+    order: 1,
+    dt: 1234981243,
+    message: "Niet verschieten, maar ik denk dat er iemand achter je staat... "
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "surprise",
+    order: 2,
+    dt: 1234981243,
+    message: "Je hebt net je tienduizendste bericht geliket! Proficiat!"
+  },
+  {
+    type: "miniNotification",
+    emotionStatus: "surprise",
+    order: 3,
+    dt: 1234981243,
+    message:
+      "Wist je dat als je je rechteroog sluit je nooit over je rechterschouder kunt kijken? Probeer het maar eens!"
+  },
 
   // —X—//
 
@@ -2460,6 +2547,22 @@ let DATA = [
     action: "heeft een bericht gedeeld",
     messageResponse: "en 12 anderen hebben gelachen naar dit bericht",
     smiley: "🤢🤮"
+  },
+
+  {
+    type: "picture",
+    emotionStatus: "disgust",
+    order: 9,
+    dt: 1234981243,
+    text: "Never eating them again...",
+    profileName: "Mitchell Reacts",
+    profileImage: "/imagesProfilePeople/Mitchell.jpg",
+    date: "3 seconden geleden",
+    image: "/imagesPosts/mcdonalds.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse:
+      "en 12k anderen hebben vol walging naar dit bericht gekeken",
+    smiley: "🤮"
   },
   // —CONTEMPT—//
   // —FEAR—//
