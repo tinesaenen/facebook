@@ -786,6 +786,16 @@ let DATA = [
       "Nooit meer een stijve rug dankzij de ultra comfortabele zitzak van Luckt Sac",
     subText: "Verkrijgbaar in verschillende kleuren en maten"
   },
+  {
+    type: "ad",
+    target: "werner",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/integral.png",
+    pageName: "Integral",
+    image: "/imagesAds/integral_usb.png",
+    text: "Ben je je USB drive verloren in het gebouw van Sint Lucas?",
+    subText: "Verkrijgbaar in verschillende kleuren en maten"
+  },
 
   {
     type: "ad",
@@ -1059,7 +1069,7 @@ let DATA = [
 
   {
     type: "ad",
-    emotionStatus: "angry",
+    emotionStatus: "anger",
     order: 1,
     dt: 1234981243,
     profileImage: "/imagesProfilePages/dove.png",
@@ -1070,7 +1080,7 @@ let DATA = [
   },
   {
     type: "ad",
-    emotionStatus: "angry",
+    emotionStatus: "anger",
     order: 2,
     dt: 1234981243,
     profileImage: "/imagesProfilePages/h&m.png",
@@ -1265,7 +1275,22 @@ let DATA = [
     messageResponse: "en 98 anderen hebben neutraal gekeken naar dit bericht",
     smiley: "😃"
   },
-
+  {
+    type: "news",
+    emotionStatus: "joy",
+    order: 6,
+    dt: 1234981243,
+    text: "Ex-stropers worden natuurbeschermers",
+    profileName: "The Happy Broadcast",
+    profileImage: "/imagesProfilePages/happy_broadcast.png",
+    date: "8 minuten geleden",
+    image: "/imagesPosts/happy-news-mauro-gatti-17.jpg",
+    messageSource: "www.thehappybroadcast.com",
+    messageSourceWebsite: "The Happy Broadcast",
+    action: "heeft een bericht gedeeld van",
+    messageResponse: "en 98 anderen hebben neutraal gekeken naar dit bericht",
+    smiley: "😃"
+  },
   // —ANGRY—//
 
   // —SADNESS—//
@@ -1280,197 +1305,197 @@ let DATA = [
 
   // —X—//
 
-  {
-    type: "news",
-    dt: 1234981243,
-    text:
-      "Het allermooiste aan de dansvideo’s van Angèle en Léo is de liefde die je erin kan ontwaren",
-    profileName: "Atar Jabeir",
-    profileImage: "/imagesProfilePeople/Atar_Jabeir.jpeg",
-    date: "5 seconden geleden",
-    image: "/imagesPosts/Atar_Jabeir_AngeleVideo.jpeg",
-    messageSource: "De Morgen",
-    messageSourceWebsite: "demorgen.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
-    smiley: "😍😌"
-  },
+  // {
+  //   type: "news",
+  //   dt: 1234981243,
+  //   text:
+  //     "Het allermooiste aan de dansvideo’s van Angèle en Léo is de liefde die je erin kan ontwaren",
+  //   profileName: "Atar Jabeir",
+  //   profileImage: "/imagesProfilePeople/Atar_Jabeir.jpeg",
+  //   date: "5 seconden geleden",
+  //   image: "/imagesPosts/Atar_Jabeir_AngeleVideo.jpeg",
+  //   messageSource: "De Morgen",
+  //   messageSourceWebsite: "demorgen.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
+  //   smiley: "😍😌"
+  // },
 
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Senaat herroept Trumps noodtoestand",
-    profileName: "Lucien de Feyter",
-    profileImage: "/imagesProfilePeople/Lucien_De_Feyter.jpeg",
-    date: "3 minuten geleden",
-    image: "/imagesPosts/Senaat_Trump_noodtoestand.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 34 anderen hebben neutraal gekeken naar dit bericht",
-    smiley: "😐"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Hij kwam van Kanegem en hij wist van (n)iets",
-    profileName: "Wouter Gijsemans",
-    profileImage: "/imagesProfilePeople/Wouter_Gijsemans.jpeg",
-    date: "3 uur geleden",
-    image: "/imagesPosts/kardinaal_daneels.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 34 anderen hebben neutraal gekeken naar dit bericht",
-    smiley: "😶"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Kamer keurt minimale dienstverlening in gevangenissen goed",
-    profileName: "Tessa Van Den Driessche",
-    profileImage: "/imagesProfilePeople/Tessa_Van_den_Driessche.jpeg",
-    date: "2 uur geleden",
-    image: "/imagesPosts/gevangenissen.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 21 anderen hebben neutraal gekeken naar dit bericht",
-    smiley: "😶"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Lachen met Lubach",
-    profileName: "Sara Hendriksen",
-    profileImage: "/imagesProfilePeople/Sara_Hendriksen.jpeg",
-    date: "2 uur geleden",
-    image: "/imagesPosts/lubach.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 21 anderen hebben gelachen naar dit bericht",
-    smiley: "😁"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Pleidooi voor een harde Brexit",
-    profileName: "Rik Torfs",
-    profileImage: "/imagesProfilePeople/Rik_Torfs.jpeg",
-    date: "2 uur geleden",
-    image: "/imagesPosts/pleidooi_brexit_voetbal.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 21 anderen hebben droevig naar dit bericht",
-    smiley: "😢"
-  },
+  // {
+  //   type: "news",
+  //   dt: 1234981243,
+  //   text: "Senaat herroept Trumps noodtoestand",
+  //   profileName: "Lucien de Feyter",
+  //   profileImage: "/imagesProfilePeople/Lucien_De_Feyter.jpeg",
+  //   date: "3 minuten geleden",
+  //   image: "/imagesPosts/Senaat_Trump_noodtoestand.jpg",
+  //   messageSource: "De Standaard",
+  //   messageSourceWebsite: "standaard.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse: "en 34 anderen hebben neutraal gekeken naar dit bericht",
+  //   smiley: "😐"
+  // },
+  // {
+  //   type: "news",
+  //   dt: 1234981243,
+  //   text: "Hij kwam van Kanegem en hij wist van (n)iets",
+  //   profileName: "Wouter Gijsemans",
+  //   profileImage: "/imagesProfilePeople/Wouter_Gijsemans.jpeg",
+  //   date: "3 uur geleden",
+  //   image: "/imagesPosts/kardinaal_daneels.jpg",
+  //   messageSource: "De Standaard",
+  //   messageSourceWebsite: "standaard.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse: "en 34 anderen hebben neutraal gekeken naar dit bericht",
+  //   smiley: "😶"
+  // },
+  // {
+  //   type: "news",
+  //   dt: 1234981243,
+  //   text: "Kamer keurt minimale dienstverlening in gevangenissen goed",
+  //   profileName: "Tessa Van Den Driessche",
+  //   profileImage: "/imagesProfilePeople/Tessa_Van_den_Driessche.jpeg",
+  //   date: "2 uur geleden",
+  //   image: "/imagesPosts/gevangenissen.jpg",
+  //   messageSource: "De Standaard",
+  //   messageSourceWebsite: "standaard.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse: "en 21 anderen hebben neutraal gekeken naar dit bericht",
+  //   smiley: "😶"
+  // },
+  // {
+  //   type: "news",
+  //   dt: 1234981243,
+  //   text: "Lachen met Lubach",
+  //   profileName: "Sara Hendriksen",
+  //   profileImage: "/imagesProfilePeople/Sara_Hendriksen.jpeg",
+  //   date: "2 uur geleden",
+  //   image: "/imagesPosts/lubach.jpg",
+  //   messageSource: "De Standaard",
+  //   messageSourceWebsite: "standaard.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse: "en 21 anderen hebben gelachen naar dit bericht",
+  //   smiley: "😁"
+  // },
+  // {
+  //   type: "news",
+  //   dt: 1234981243,
+  //   text: "Pleidooi voor een harde Brexit",
+  //   profileName: "Rik Torfs",
+  //   profileImage: "/imagesProfilePeople/Rik_Torfs.jpeg",
+  //   date: "2 uur geleden",
+  //   image: "/imagesPosts/pleidooi_brexit_voetbal.jpg",
+  //   messageSource: "De Standaard",
+  //   messageSourceWebsite: "standaard.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse: "en 21 anderen hebben droevig naar dit bericht",
+  //   smiley: "😢"
+  // },
 
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "The Intercept trekt stekker uit Snowden-archief",
-    profileName: "Melanie Baerdman",
-    profileImage: "/imagesProfilePeople/Melanie_Baerdman.jpeg",
-    date: "23 minuten geleden",
-    image: "/imagesPosts/snowden.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 21 anderen hebben gelachen naar dit bericht",
-    smiley: "😃"
-  },
+  // {
+  //   type: "news",
+  //   dt: 1234981243,
+  //   text: "The Intercept trekt stekker uit Snowden-archief",
+  //   profileName: "Melanie Baerdman",
+  //   profileImage: "/imagesProfilePeople/Melanie_Baerdman.jpeg",
+  //   date: "23 minuten geleden",
+  //   image: "/imagesPosts/snowden.jpg",
+  //   messageSource: "De Standaard",
+  //   messageSourceWebsite: "standaard.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse: "en 21 anderen hebben gelachen naar dit bericht",
+  //   smiley: "😃"
+  // },
 
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Jongeren kicken niet meer op een auto",
-    profileName: "Fien Helsen",
-    profileImage: "/imagesProfilePeople/Fien_Helsen.jpeg",
-    date: "3 minuten geleden",
-    image: "/imagesPosts/jongeren_kick_auto.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
-    smiley: "😲"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "België blijft ver onder zijn CO2-doelstellingen",
-    profileName: "Dylan Cools",
-    profileImage: "/imagesProfilePeople/Dylan_Cools.jpeg",
-    date: "2 seconden geleden",
-    image: "/imagesPosts/belgië_CO2.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 3 anderen hebben droevig gekeken naar dit bericht",
-    smiley: "😭"
-  },
+  // {
+  //   type: "news",
+  //   dt: 1234981243,
+  //   text: "Jongeren kicken niet meer op een auto",
+  //   profileName: "Fien Helsen",
+  //   profileImage: "/imagesProfilePeople/Fien_Helsen.jpeg",
+  //   date: "3 minuten geleden",
+  //   image: "/imagesPosts/jongeren_kick_auto.jpg",
+  //   messageSource: "De Standaard",
+  //   messageSourceWebsite: "standaard.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
+  //   smiley: "😲"
+  // },
+  // {
+  //   type: "news",
+  //   dt: 1234981243,
+  //   text: "België blijft ver onder zijn CO2-doelstellingen",
+  //   profileName: "Dylan Cools",
+  //   profileImage: "/imagesProfilePeople/Dylan_Cools.jpeg",
+  //   date: "2 seconden geleden",
+  //   image: "/imagesPosts/belgië_CO2.jpg",
+  //   messageSource: "De Standaard",
+  //   messageSourceWebsite: "standaard.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse: "en 3 anderen hebben droevig gekeken naar dit bericht",
+  //   smiley: "😭"
+  // },
 
-  {
-    type: "news",
-    dt: 1234981243,
-    text:
-      "Joodse graven geschonden in aanloop van protesten tegen antisemitisme",
-    profileName: "Aline Van Heverlee",
-    profileImage: "/imagesProfilePeople/Aline_Van_Heverlee.jpeg",
-    date: "20 minuten geleden",
-    image: "/imagesPosts/ALine_van_Heverlee_joosdeGraven.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 20 anderen hebben kwaad gekeken naar dit bericht",
-    smiley: "😡"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Kinderen willen wel sporten, maar er zijn geen trainers meer",
-    profileName: "Arianne Janssens",
-    profileImage: "/imagesProfilePeople/Arianne_Janssens.jpeg",
-    date: "2 minuten geleden",
-    image: "/imagesPosts/Arianne_Jansses_trainersSporten.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft gereageerd op een bericht van",
-    messageResponse: "en 3 anderen hebben triest gekeken naar dit bericht",
-    smiley: "😔"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text:
-      "Nu al bloeiende krokussen en fladderende vlinders: is dat wel goed voor de natuur?",
-    profileName: "Arne Goossens",
-    profileImage: "/imagesProfilePeople/Arne_Goossens.jpeg",
-    date: "3 uur geleden",
-    image: "/imagesPosts/Arne_Goossens_Krokussen.jpeg",
-    messageSource: "De Morgen",
-    messageSourceWebsite: "demorgen.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
-    smiley: "😨😱"
-  },
+  // {
+  //   type: "news",
+  //   dt: 1234981243,
+  //   text:
+  //     "Joodse graven geschonden in aanloop van protesten tegen antisemitisme",
+  //   profileName: "Aline Van Heverlee",
+  //   profileImage: "/imagesProfilePeople/Aline_Van_Heverlee.jpeg",
+  //   date: "20 minuten geleden",
+  //   image: "/imagesPosts/ALine_van_Heverlee_joosdeGraven.jpg",
+  //   messageSource: "De Standaard",
+  //   messageSourceWebsite: "standaard.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse: "en 20 anderen hebben kwaad gekeken naar dit bericht",
+  //   smiley: "😡"
+  // },
+  // {
+  //   type: "news",
+  //   dt: 1234981243,
+  //   text: "Kinderen willen wel sporten, maar er zijn geen trainers meer",
+  //   profileName: "Arianne Janssens",
+  //   profileImage: "/imagesProfilePeople/Arianne_Janssens.jpeg",
+  //   date: "2 minuten geleden",
+  //   image: "/imagesPosts/Arianne_Jansses_trainersSporten.jpg",
+  //   messageSource: "De Standaard",
+  //   messageSourceWebsite: "standaard.be",
+  //   action: "heeft gereageerd op een bericht van",
+  //   messageResponse: "en 3 anderen hebben triest gekeken naar dit bericht",
+  //   smiley: "😔"
+  // },
+  // {
+  //   type: "news",
+  //   dt: 1234981243,
+  //   text:
+  //     "Nu al bloeiende krokussen en fladderende vlinders: is dat wel goed voor de natuur?",
+  //   profileName: "Arne Goossens",
+  //   profileImage: "/imagesProfilePeople/Arne_Goossens.jpeg",
+  //   date: "3 uur geleden",
+  //   image: "/imagesPosts/Arne_Goossens_Krokussen.jpeg",
+  //   messageSource: "De Morgen",
+  //   messageSourceWebsite: "demorgen.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
+  //   smiley: "😨😱"
+  // },
 
-  {
-    type: "news",
-    dt: 1234981243,
-    text:
-      "Aflevering 3 van ‘Temptation’ in vogelvlucht: de mannen houden bitchfight met verleiders",
-    profileName: "Vijf",
-    profileImage: "/imagesProfilePages/Vijf.png",
-    date: "5 minuten geleden",
-    image: "/imagesPosts/Vijf_temptation.jpeg",
-    messageSource: "Vijf",
-    messageSourceWebsite: "vijf.be",
-    action: "heeft gereageerd op een bericht van",
-    messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
-    smiley: "😍😌"
-  },
+  // {
+  //   type: "news",
+  //   dt: 1234981243,
+  //   text:
+  //     "Aflevering 3 van ‘Temptation’ in vogelvlucht: de mannen houden bitchfight met verleiders",
+  //   profileName: "Vijf",
+  //   profileImage: "/imagesProfilePages/Vijf.png",
+  //   date: "5 minuten geleden",
+  //   image: "/imagesPosts/Vijf_temptation.jpeg",
+  //   messageSource: "Vijf",
+  //   messageSourceWebsite: "vijf.be",
+  //   action: "heeft gereageerd op een bericht van",
+  //   messageResponse: "en 3 anderen hebben verbaasd gekeken naar dit bericht",
+  //   smiley: "😍😌"
+  // },
 
   // --------------------------------------------------------------------------BIG NEWS----------------------------------------------------------------------//
   // --------------------------------------------------------------------------BIG NEWS----------------------------------------------------------------------//
@@ -1545,113 +1570,113 @@ let DATA = [
 
   // —X—//
 
-  {
-    type: "bigNews",
-    dt: 1234981243,
-    text: "EU behandelt klacht Spotify tegen Apple",
-    subText:
-      "De Europese Commissie gaat serieus kijken naar de klacht van Spotify tegen Apple. Dart zei EU-commissaris voor Mededinging Margrethe Vestager in reactie op de door het van oorsprong Zweedse streamingbedrijf aangespannen aanklacht. Het team van Vestager neemt de aanklacht nog deze week in behandeling.",
-    profileName: "Steven Segerink",
-    profileImage: "/imagesProfilePeople/steven_Segerink.jpeg",
-    date: "56 minuten geleden",
-    image: "/imagesPosts/spotify_apple.jpeg",
-    messageSource: " Het Laatste Nieuws",
-    messageSourceWebsite: "hln.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse:
-      "en 87 anderen hebben verbaasd en kwaad gekeken naar dit bericht",
-    smiley: "😱"
-  },
-  {
-    type: "bigNews",
-    dt: 1234981243,
-    text:
-      "Vlees en vis verpakken in zelf meegebrachte tupperware of bokalen: het kan vanaf vandaag bij Carrrefour Spanje",
-    subText:
-      "Wie in een Spaanse vestiging van Carrefour winkelt, mag vanaf vandaag vlees, charcuterie, vis, groenten en fruit verpakken in zelf meegebrachte plastic dozen of glazen bokalen. De Franse supermarktgigant heeft in het koninkrijk meer dan duizend winkels en wil zo de afvalberg terugdringen.",
-    profileName: "Victor Selissen",
-    profileImage: "/imagesProfilePeople/Victor_Selissen.jpeg",
-    date: "9 minuten geleden",
-    image: "/imagesPosts/tupperware_vlees.jpeg",
-    messageSource: " Het Laatste Nieuws",
-    messageSourceWebsite: "hln.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse:
-      "en 231 anderen hebben verbaasd en kwaad gekeken naar dit bericht",
-    smiley: "😱"
-  },
-  {
-    type: "bigNews",
-    dt: 1234981243,
-    text:
-      "Trump dreigt met nieuwe douanetarieven op tal van Europese producten",
-    subText:
-      "De Amerikaanse president Donald Trump dreigt vandaag met nieuwe douanetarieven op tal van Europese producten, indien de Europeanen geen onderhandelingen zouden opstarten over een nieuw handelsakkoord....",
-    profileName: "Yikhay Lee",
-    profileImage: "/imagesProfilePeople/Yikhay_Lee.jpeg",
-    date: "2 minuten geleden",
-    image: "/imagesPosts/trump_geld.jpeg",
-    messageSource: " Het Laatste Nieuws",
-    messageSourceWebsite: "hln.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse:
-      "en 231 anderen hebben hopeloos en kwaad gekeken naar dit bericht",
-    smiley: "😫"
-  },
+  // {
+  //   type: "bigNews",
+  //   dt: 1234981243,
+  //   text: "EU behandelt klacht Spotify tegen Apple",
+  //   subText:
+  //     "De Europese Commissie gaat serieus kijken naar de klacht van Spotify tegen Apple. Dart zei EU-commissaris voor Mededinging Margrethe Vestager in reactie op de door het van oorsprong Zweedse streamingbedrijf aangespannen aanklacht. Het team van Vestager neemt de aanklacht nog deze week in behandeling.",
+  //   profileName: "Steven Segerink",
+  //   profileImage: "/imagesProfilePeople/steven_Segerink.jpeg",
+  //   date: "56 minuten geleden",
+  //   image: "/imagesPosts/spotify_apple.jpeg",
+  //   messageSource: " Het Laatste Nieuws",
+  //   messageSourceWebsite: "hln.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse:
+  //     "en 87 anderen hebben verbaasd en kwaad gekeken naar dit bericht",
+  //   smiley: "😱"
+  // },
+  // {
+  //   type: "bigNews",
+  //   dt: 1234981243,
+  //   text:
+  //     "Vlees en vis verpakken in zelf meegebrachte tupperware of bokalen: het kan vanaf vandaag bij Carrrefour Spanje",
+  //   subText:
+  //     "Wie in een Spaanse vestiging van Carrefour winkelt, mag vanaf vandaag vlees, charcuterie, vis, groenten en fruit verpakken in zelf meegebrachte plastic dozen of glazen bokalen. De Franse supermarktgigant heeft in het koninkrijk meer dan duizend winkels en wil zo de afvalberg terugdringen.",
+  //   profileName: "Victor Selissen",
+  //   profileImage: "/imagesProfilePeople/Victor_Selissen.jpeg",
+  //   date: "9 minuten geleden",
+  //   image: "/imagesPosts/tupperware_vlees.jpeg",
+  //   messageSource: " Het Laatste Nieuws",
+  //   messageSourceWebsite: "hln.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse:
+  //     "en 231 anderen hebben verbaasd en kwaad gekeken naar dit bericht",
+  //   smiley: "😱"
+  // },
+  // {
+  //   type: "bigNews",
+  //   dt: 1234981243,
+  //   text:
+  //     "Trump dreigt met nieuwe douanetarieven op tal van Europese producten",
+  //   subText:
+  //     "De Amerikaanse president Donald Trump dreigt vandaag met nieuwe douanetarieven op tal van Europese producten, indien de Europeanen geen onderhandelingen zouden opstarten over een nieuw handelsakkoord....",
+  //   profileName: "Yikhay Lee",
+  //   profileImage: "/imagesProfilePeople/Yikhay_Lee.jpeg",
+  //   date: "2 minuten geleden",
+  //   image: "/imagesPosts/trump_geld.jpeg",
+  //   messageSource: " Het Laatste Nieuws",
+  //   messageSourceWebsite: "hln.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse:
+  //     "en 231 anderen hebben hopeloos en kwaad gekeken naar dit bericht",
+  //   smiley: "😫"
+  // },
 
-  {
-    type: "bigNews",
-    dt: 1234981243,
-    text: "Geniet mee van deze superwolk vlinders",
-    subText:
-      "Rond deze tijd tref je opnieuw een massa vlinders aan in Californië. Speciaal dit jaar is dat het wereldwijde natuurverschijnsel nog nooit zo groot is geweest sind 2015. De groei heeft te maken...",
-    profileName: "Hln",
-    profileImage: "/imagesProfilePages/hln.png",
-    date: "2 minuten geleden",
-    image: "/imagesPosts/vlinders.jpeg",
-    messageSource: " Het Laatste Nieuws",
-    messageSourceWebsite: "hln.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse:
-      "en 3 anderen hebben blij en kwaad gekeken naar dit bericht",
-    smiley: "😀"
-  },
+  // {
+  //   type: "bigNews",
+  //   dt: 1234981243,
+  //   text: "Geniet mee van deze superwolk vlinders",
+  //   subText:
+  //     "Rond deze tijd tref je opnieuw een massa vlinders aan in Californië. Speciaal dit jaar is dat het wereldwijde natuurverschijnsel nog nooit zo groot is geweest sind 2015. De groei heeft te maken...",
+  //   profileName: "Hln",
+  //   profileImage: "/imagesProfilePages/hln.png",
+  //   date: "2 minuten geleden",
+  //   image: "/imagesPosts/vlinders.jpeg",
+  //   messageSource: " Het Laatste Nieuws",
+  //   messageSourceWebsite: "hln.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   messageResponse:
+  //     "en 3 anderen hebben blij en kwaad gekeken naar dit bericht",
+  //   smiley: "😀"
+  // },
 
-  {
-    type: "bigNews",
-    dt: 1234981243,
-    text: "Slachtoffer zinloos geweld getuigt anoniem",
-    subText:
-      "Een leerling die dinsdagavond na school werd afgetuigd door leeftijdsgenoten, doet anoniem zijn verhaal. Hij vertelt hoe hij in een straatje werd gelokt. Daar kreeg hij plots klappen. De beelden van het zinloos geweld verschenen op social media en werden massaal gedeeld...",
-    profileName: "Beatrix Verhoeven",
-    profileImage: "/imagesProfilePeople/Beatrix_Verhoeven.jpeg",
-    date: "22 minuten geleden",
-    image: "/imagesPosts/Beatrix_Verhoeven_geweldJongeren.jpeg",
-    messageSource: "Het Laatste Nieuws",
-    messageSourceWebsite: "hln.be",
-    action: "heeft een bericht gedeeld van ",
-    messageResponse:
-      "en 3 anderen hebben droevig en kwaad gekeken naar dit bericht",
-    smiley: "😤😢"
-  },
+  // {
+  //   type: "bigNews",
+  //   dt: 1234981243,
+  //   text: "Slachtoffer zinloos geweld getuigt anoniem",
+  //   subText:
+  //     "Een leerling die dinsdagavond na school werd afgetuigd door leeftijdsgenoten, doet anoniem zijn verhaal. Hij vertelt hoe hij in een straatje werd gelokt. Daar kreeg hij plots klappen. De beelden van het zinloos geweld verschenen op social media en werden massaal gedeeld...",
+  //   profileName: "Beatrix Verhoeven",
+  //   profileImage: "/imagesProfilePeople/Beatrix_Verhoeven.jpeg",
+  //   date: "22 minuten geleden",
+  //   image: "/imagesPosts/Beatrix_Verhoeven_geweldJongeren.jpeg",
+  //   messageSource: "Het Laatste Nieuws",
+  //   messageSourceWebsite: "hln.be",
+  //   action: "heeft een bericht gedeeld van ",
+  //   messageResponse:
+  //     "en 3 anderen hebben droevig en kwaad gekeken naar dit bericht",
+  //   smiley: "😤😢"
+  // },
 
-  {
-    type: "bigNews",
-    dt: 1234981243,
-    text:
-      "Protesterende bewoner Delfgauw brengt blauwe kliko terug naar gemeente",
-    subText:
-      "Leen van Vliet bracht zijn blauwe kliko uit protest terug naar de gemeente Pijnacker-Nootdorp. ‘Ik zie geen toegevoegde waarde in een extra kliko, als de grijze niet regelmatig geleegd wordt’, schrijft hij in een op de prullenbak geplakte brief...",
-    profileName: "Robin Debont",
-    profileImage: "/imagesProfilePeople/Robin_Debont.jpeg",
-    date: "22 minuten geleden",
-    image: "/imagesPosts/blauwe_kliko.jpeg",
-    messageSource: "AD",
-    messageSourceWebsite: "ad.n",
-    action: "heeft een bericht gedeeld van ",
-    messageResponse: "en 10 anderen hebben neutraal gekeken naar dit bericht",
-    smiley: "🙂"
-  },
+  // {
+  //   type: "bigNews",
+  //   dt: 1234981243,
+  //   text:
+  //     "Protesterende bewoner Delfgauw brengt blauwe kliko terug naar gemeente",
+  //   subText:
+  //     "Leen van Vliet bracht zijn blauwe kliko uit protest terug naar de gemeente Pijnacker-Nootdorp. ‘Ik zie geen toegevoegde waarde in een extra kliko, als de grijze niet regelmatig geleegd wordt’, schrijft hij in een op de prullenbak geplakte brief...",
+  //   profileName: "Robin Debont",
+  //   profileImage: "/imagesProfilePeople/Robin_Debont.jpeg",
+  //   date: "22 minuten geleden",
+  //   image: "/imagesPosts/blauwe_kliko.jpeg",
+  //   messageSource: "AD",
+  //   messageSourceWebsite: "ad.n",
+  //   action: "heeft een bericht gedeeld van ",
+  //   messageResponse: "en 10 anderen hebben neutraal gekeken naar dit bericht",
+  //   smiley: "🙂"
+  // },
 
   // --------------------------------------------------------------------------BIG NEWS OWN POST----------------------------------------------------------------------//
   // --------------------------------------------------------------------------BIG NEWS OWN POST----------------------------------------------------------------------//
@@ -1660,6 +1685,27 @@ let DATA = [
   // --***********--PERSONEN----***********---//
 
   // —WERNER—//
+
+  {
+    type: "bigNewsOwnPost",
+    target: "werner",
+    dt: 1234981243,
+    text:
+      "Neon Oranje Holografische Fluorescerende Pigment Poeder voor Verven, Nail Art, zeep Maken, kaars Maken, Nagellak",
+    subText:
+      "Ruilingen worden geaccepteerd indien het product anders is dan beschreven, koper betaalt kosten retourzending; of houdt het product & regelt terugbetaling met verkoper",
+    profileName: "AliExpress",
+    profileImage: "/imagesProfilePages/aliexpress.png",
+    date: "1 minuut geleden",
+    image: "/imagesPosts/neon_oranje_werner.jpg",
+    messageSource:
+      "https://nl.aliexpress.com/item/Neon-Orange-Holographic-Fluorescent-Pigment-Powder-for-Paints-Nail-Art-Soap-Making-Candle-Making-Nail-Polish/32368806335.html",
+    messageSourceWebsite: "perfectportions.com",
+    action: "aliexpres.com",
+    messageResponse: "en 195 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😨"
+  },
+
   // —GEERT—//
   // —HUGO—//
   // —JAN—//
@@ -1718,7 +1764,45 @@ let DATA = [
     smiley: "😨"
   },
 
+  {
+    type: "bigNewsOwnPost",
+    emotionStatus: "anger",
+    dt: 1234981243,
+    text: "Seen the new Hulk trailer yet?",
+    subText:
+      "Mark Ruffalo was the better Bruce Banner, but man, this hulk was so much more intimidating. I don't care if they didn't look alike, I wish this was the one in Avengers",
+    profileName: "IMDB",
+    profileImage: "/imagesProfilePages/imdb.png",
+    date: "1 minuut geleden",
+    image: "/imagesPosts/hulk_angry.jpg",
+    messageSource: "www.moviepulp.be",
+    messageSourceWebsite: "www.moviepulp.be",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 195 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😨"
+  },
+
   // —SADNESS—//
+
+  {
+    type: "bigNewsOwnPost",
+    emotionStatus: "sadness",
+    dt: 1234981243,
+    text: "‘Sad’ polar bear imprisoned in Chinese mall ‘for shoppers’ selfies’",
+    subText:
+      "More than 285,000 people have signed a petition urging the Grandview Aquarium to close",
+    profileName: "The Independent",
+    profileImage: "/imagesProfilePages/independant.png",
+    date: "1 minuut geleden",
+    image: "/imagesPosts/sad_polar_bear.jpg",
+    messageSource: "www.independent.co.uk",
+    messageSourceWebsite: "www.independent.co.uk",
+    action: "heeft een bericht gedeeld",
+    messageResponse:
+      "en 12k anderen hebben verdrietig gekeken naar dit bericht",
+    smiley: "😭"
+  },
+
   // —DISGUST—//
   // —CONTEMPT—//
   // —FEAR—//
@@ -1884,7 +1968,7 @@ let DATA = [
 
   {
     type: "gif",
-    emotionStatus: "angry",
+    emotionStatus: "anger",
     order: 3,
     dt: 1234981243,
     text: "Hoofdpijn...",
@@ -1895,6 +1979,49 @@ let DATA = [
     action: "heeft een video geplaatst",
     messageResponse: "en 7 anderen hebben ingestemd met dit bericht",
     smiley: "😵"
+  },
+
+  {
+    type: "gif",
+    emotionStatus: "anger",
+    order: 3,
+    dt: 1234981243,
+    text: "💛Parks and Recreation💛",
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    date: "zojuist",
+    image: "https://media.giphy.com/media/n60aPuXZLJNiU/giphy.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 1 anderen hebben ingestemd met dit bericht",
+    smiley: "😡😂"
+  },
+
+  {
+    type: "gif",
+    emotionStatus: "anger",
+    dt: 1234981243,
+    text: "Me when I look in the mirror",
+    profileName: "Pieter Rosseel",
+    profileImage: "/imagesProfilePeople/Pieter_Rosseel.jpeg",
+    date: "47 minuten geleden",
+    image: "https://media.giphy.com/media/12saS2pegWMpeo/giphy.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 3 anderen hebben gelachen met dit bericht",
+    smiley: "😂"
+  },
+
+  {
+    type: "gif",
+    emotionStatus: "anger",
+    dt: 1234981243,
+    text: "Wait for it",
+    profileName: "9gag",
+    profileImage: "/imagesProfilePages/9gag.png",
+    date: "58 minuten geleden",
+    image: "https://media.giphy.com/media/3AMRa6DRUhMli/giphy.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 9 anderen hebben gelachen met dit bericht",
+    smiley: "😤"
   },
 
   // —SADNESS—//
@@ -1920,24 +2047,9 @@ let DATA = [
 
   // —FEAR—//
 
-  // —SURPRISE—//
-
-  // —X—//
-
   {
     type: "gif",
-    dt: 1234981243,
-    text: "I Feel Fancy",
-    profileName: "Guy Gabriëls",
-    profileImage: "/imagesProfilePeople/Guy_Gabriëls.jpeg",
-    date: "zojuist",
-    image: "https://media.giphy.com/media/35xM7aBzdCg7WzvK7b/giphy.gif",
-    action: "heeft een video geplaatst",
-    messageResponse: "en 7 anderen hebben ingestemd met dit bericht",
-    smiley: "🤩"
-  },
-  {
-    type: "gif",
+    emotionStatus: "fear",
     dt: 1234981243,
     text: "I'd die right there",
     profileName: "Margot Janssens",
@@ -1948,90 +2060,97 @@ let DATA = [
     messageResponse: "en 90 anderen hebben vreselijk gekeken naar dit bericht",
     smiley: "😵"
   },
-  {
-    type: "gif",
-    dt: 1234981243,
-    text: "Er moet dringend iets gebeuren aan ons klimaat hoor...",
-    profileName: "Magalie Felix",
-    profileImage: "/imagesProfilePeople/Magalie_Felix.jpeg",
-    date: "8 minuten geleden",
-    image: "https://media.giphy.com/media/Fr51PdEf2NxOE/giphy.gif",
-    action: "heeft een video geplaatst",
-    messageResponse: "en 56 anderen hebben een duim gegeven aan dit bericht",
-    smiley: "👍"
-  },
-  {
-    type: "gif",
-    dt: 1234981243,
-    text: "In Love",
-    profileName: "Magalie Felix",
-    profileImage: "/imagesProfilePeople/Magalie_Felix.jpeg",
-    date: "8 minuten geleden",
-    image: "https://media.giphy.com/media/Y4pAQv58ETJgRwoLxj/giphy.gif",
-    action: "heeft een video geplaatst",
-    messageResponse: "en 2 anderen hebben gelachen met dit bericht",
-    smiley: "😍"
-  },
-  {
-    type: "gif",
-    dt: 1234981243,
-    text: "hehe",
-    profileName: "Mark Verbruggen",
-    profileImage: "/imagesProfilePeople/Mark_Verbruggen.jpeg",
-    date: "4 minuten geleden",
-    image: "https://media.giphy.com/media/JyOsEVxu2Nk8E/giphy.gif",
-    action: "heeft een video geplaatst",
-    messageResponse: "en 9 anderen hebben gelachen met dit bericht",
-    smiley: "😝"
-  },
-  {
-    type: "gif",
-    dt: 1234981243,
-    text: "Amen",
-    profileName: "Melanie Baerdman",
-    profileImage: "/imagesProfilePeople/Melanie_Baerdman.jpeg",
-    date: "42 seconden geleden",
-    image: "https://media.giphy.com/media/3o7WTrwPAZdPyuULtu/giphy.gif",
-    action: "heeft een video geplaatst",
-    messageResponse: "en 98 anderen hebben serieus met dit bericht",
-    smiley: "😕"
-  },
-  {
-    type: "gif",
-    dt: 1234981243,
-    text: "😂🤣😂🤣😂🤣",
-    profileName: "Natan Konings",
-    profileImage: "/imagesProfilePeople/Natan_Konings.jpeg",
-    date: "2 seconden geleden",
-    image: "https://media.giphy.com/media/TIyJGNK325XGciFEnI/giphy.gif",
-    action: "heeft een video geplaatst",
-    messageResponse: "en 53 anderen hebben gelachen met dit bericht",
-    smiley: "😂"
-  },
-  {
-    type: "gif",
-    dt: 1234981243,
-    text: "Blijft grappig toch?",
-    profileName: "Philip Aerts",
-    profileImage: "/imagesProfilePeople/Philip_Aerts.jpeg",
-    date: "5 minuten geleden",
-    image: "https://media.giphy.com/media/iBcLqvp8FMwy3AiPGY/giphy.gif",
-    action: "heeft een video geplaatst",
-    messageResponse: "en 725 anderen hebben gelachen met dit bericht",
-    smiley: "😁"
-  },
-  {
-    type: "gif",
-    dt: 1234981243,
-    text: "Me when I look in the mirror",
-    profileName: "Pieter Rosseel",
-    profileImage: "/imagesProfilePeople/Pieter_Rosseel.jpeg",
-    date: "47 minuten geleden",
-    image: "https://media.giphy.com/media/12saS2pegWMpeo/giphy.gif",
-    action: "heeft een video geplaatst",
-    messageResponse: "en 3 anderen hebben gelachen met dit bericht",
-    smiley: "😂"
-  },
+
+  // —SURPRISE—//
+
+  // —X—//
+
+  // {
+  //   type: "gif",
+  //   dt: 1234981243,
+  //   text: "I Feel Fancy",
+  //   profileName: "Guy Gabriëls",
+  //   profileImage: "/imagesProfilePeople/Guy_Gabriëls.jpeg",
+  //   date: "zojuist",
+  //   image: "https://media.giphy.com/media/35xM7aBzdCg7WzvK7b/giphy.gif",
+  //   action: "heeft een video geplaatst",
+  //   messageResponse: "en 7 anderen hebben ingestemd met dit bericht",
+  //   smiley: "🤩"
+  // },
+  //
+  // {
+  //   type: "gif",
+  //   dt: 1234981243,
+  //   text: "Er moet dringend iets gebeuren aan ons klimaat hoor...",
+  //   profileName: "Magalie Felix",
+  //   profileImage: "/imagesProfilePeople/Magalie_Felix.jpeg",
+  //   date: "8 minuten geleden",
+  //   image: "https://media.giphy.com/media/Fr51PdEf2NxOE/giphy.gif",
+  //   action: "heeft een video geplaatst",
+  //   messageResponse: "en 56 anderen hebben een duim gegeven aan dit bericht",
+  //   smiley: "👍"
+  // },
+  // {
+  //   type: "gif",
+  //   dt: 1234981243,
+  //   text: "In Love",
+  //   profileName: "Magalie Felix",
+  //   profileImage: "/imagesProfilePeople/Magalie_Felix.jpeg",
+  //   date: "8 minuten geleden",
+  //   image: "https://media.giphy.com/media/Y4pAQv58ETJgRwoLxj/giphy.gif",
+  //   action: "heeft een video geplaatst",
+  //   messageResponse: "en 2 anderen hebben gelachen met dit bericht",
+  //   smiley: "😍"
+  // },
+  // {
+  //   type: "gif",
+  //   dt: 1234981243,
+  //   text: "hehe",
+  //   profileName: "Mark Verbruggen",
+  //   profileImage: "/imagesProfilePeople/Mark_Verbruggen.jpeg",
+  //   date: "4 minuten geleden",
+  //   image: "https://media.giphy.com/media/JyOsEVxu2Nk8E/giphy.gif",
+  //   action: "heeft een video geplaatst",
+  //   messageResponse: "en 9 anderen hebben gelachen met dit bericht",
+  //   smiley: "😝"
+  // },
+  // {
+  //   type: "gif",
+  //   dt: 1234981243,
+  //   text: "Amen",
+  //   profileName: "Melanie Baerdman",
+  //   profileImage: "/imagesProfilePeople/Melanie_Baerdman.jpeg",
+  //   date: "42 seconden geleden",
+  //   image: "https://media.giphy.com/media/3o7WTrwPAZdPyuULtu/giphy.gif",
+  //   action: "heeft een video geplaatst",
+  //   messageResponse: "en 98 anderen hebben serieus met dit bericht",
+  //   smiley: "😕"
+  // },
+  // {
+  //   type: "gif",
+  //   dt: 1234981243,
+  //   text: "😂🤣😂🤣😂🤣",
+  //   profileName: "Natan Konings",
+  //   profileImage: "/imagesProfilePeople/Natan_Konings.jpeg",
+  //   date: "2 seconden geleden",
+  //   image: "https://media.giphy.com/media/TIyJGNK325XGciFEnI/giphy.gif",
+  //   action: "heeft een video geplaatst",
+  //   messageResponse: "en 53 anderen hebben gelachen met dit bericht",
+  //   smiley: "😂"
+  // },
+  // {
+  //   type: "gif",
+  //   dt: 1234981243,
+  //   text: "Blijft grappig toch?",
+  //   profileName: "Philip Aerts",
+  //   profileImage: "/imagesProfilePeople/Philip_Aerts.jpeg",
+  //   date: "5 minuten geleden",
+  //   image: "https://media.giphy.com/media/iBcLqvp8FMwy3AiPGY/giphy.gif",
+  //   action: "heeft een video geplaatst",
+  //   messageResponse: "en 725 anderen hebben gelachen met dit bericht",
+  //   smiley: "😁"
+  // },
+  //
   {
     type: "gif",
     dt: 1234981243,
@@ -2058,13 +2177,27 @@ let DATA = [
     target: "werner",
     order: 8,
     dt: 1234981243,
-    text: "Herinneringen ophalen",
-    profileName: "x", //fix me
-    profileImage: "/imagesProfilePages/funny_cats.jpg",
+    text: "Herinneringen ophalen? Om te delen met vrienden klik hier.", //fix me
+    profileName: "Facebook",
+    profileImage: "/imagesProfilePages/facebook.png",
     date: "2 minuten geleden",
     image: "/imagesPosts/Werner1.jpg",
     action: "heeft een bericht gedeeld",
     messageResponse: "en 256 anderen hebben gelachen naar dit bericht",
+    smiley: "🤪"
+  },
+  {
+    type: "picture",
+    target: "werner",
+    order: 8,
+    dt: 1234981243,
+    text: "One from the archives!",
+    profileName: "Second Life",
+    profileImage: "/imagesProfilePages/second_life.jpg",
+    date: "5 minuten geleden",
+    image: "/imagesPosts/werner_002.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 56 anderen hebben gelachen naar dit bericht",
     smiley: "🤪"
   },
 
@@ -2162,13 +2295,15 @@ let DATA = [
     emotionStatus: "joy",
     order: 8,
     dt: 1234981243,
-    text: "If this doesn't make you laugh, I'm giving up",
-    profileName: "Camille Bats",
-    profileImage: "/imagesProfilePeople/Camille_Bats.jpeg",
+    text:
+      "Photos of People Doing the Things That Make Them Really, Really Happy",
+    profileName: "Vice",
+    profileImage: "/imagesProfilePages/vice.jpg",
     date: "38 minuten geleden",
-    image: "/imagesPosts/happy_doggo.jpg",
+    image:
+      "/imagesPosts/photographs-of-people-doing-things-that-make-them-really-really-happy-body-image-1457633766-size_1000.webp",
     action: "heeft een bericht gedeeld",
-    messageResponse: "en 9732 anderen hebben gelachen naar dit bericht",
+    messageResponse: "en 52 anderen hebben gelachen naar dit bericht",
     smiley: "😁"
   },
 
@@ -2215,7 +2350,7 @@ let DATA = [
     image: "/imagesPosts/We-seem-to-be-angry-all-the-time-Fox-Emerson.jpg",
     action: "heeft een bericht gedeeld",
     messageResponse: "en 23 anderen hebben gelachen naar dit bericht",
-    smiley: "🤪"
+    smiley: "😩"
   },
 
   {
@@ -2223,17 +2358,78 @@ let DATA = [
     emotionStatus: "anger",
     order: 9,
     dt: 1234981243,
-    text: "Feeling frustrated today",
-    profileName: "Steven Segerinnk",
-    profileImage: "/imagesProfilePeople/steven_Segerink.jpeg",
-    date: "9 minuten geleden",
-    image: "/imagesPosts/We-seem-to-be-angry-all-the-time-Fox-Emerson.jpg",
+    text: "Yes indeed... 🤯",
+    profileName: "Pieter Rosseel",
+    profileImage: "/imagesProfilePeople/Pieter_Rosseel.jpeg",
+    date: "18  minuten geleden",
+    image: "/imagesPosts/trump_dumb_angry.jpg",
     action: "heeft een bericht gedeeld",
-    messageResponse: "en 23 anderen hebben gelachen naar dit bericht",
-    smiley: "🤪"
+    messageResponse: "en 19 anderen hebben gelachen naar dit bericht",
+    smiley: "🤬"
+  },
+
+  {
+    type: "picture",
+    emotionStatus: "anger",
+    order: 9,
+    dt: 1234981243,
+    text: "K I L L   M E   N O W ",
+    profileName: "Arianne Janssens",
+    profileImage: "/imagesProfilePeople/Arianne_Janssens.jpeg",
+    date: "1 minuut geleden",
+    image: "/imagesPosts/non_stick_pan.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 9 anderen hebben kwaad gekeken naar dit bericht",
+    smiley: "😡"
+  },
+
+  {
+    type: "picture",
+    emotionStatus: "anger",
+    order: 9,
+    dt: 1234981243,
+    text: "Feel annoyed yet?",
+    profileName: "9gag",
+    profileImage: "/imagesProfilePages/9gag.png",
+    date: "12 minuten geleden",
+    image: "/imagesPosts/puzzle_angry.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 9 anderen hebben kwaad gekeken naar dit bericht",
+    smiley: "😡"
   },
 
   // —SADNESS—//
+
+  {
+    type: "picture",
+    emotionStatus: "sadness",
+    order: 9,
+    dt: 1234981243,
+    text:
+      "Een paar jaar geleden begon ik met amateurfotografie. Dit was mijn eerste foto! Wat vinden jullie ervan?",
+    profileName: "Boris Lewalski",
+    profileImage: "/imagesProfilePeople/Boris_Lewalski.jpeg",
+    date: "2 minuten geleden",
+    image: "/imagesPosts/sad_flower.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 923 anderen hebben kwaad gekeken naar dit bericht",
+    smiley: "😢"
+  },
+  {
+    type: "picture",
+    emotionStatus: "sadness",
+    order: 9,
+    dt: 1234981243,
+    text: "Love sad quotes? Visit https://emoquotes.tumblr.com/",
+    profileName: "Tumblr",
+    profileImage: "/imagesProfilePages/tumblr.png",
+    date: "6 minuten geleden",
+    image: "/imagesPosts/sad_tumblr.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 9K anderen hebben kwaad gekeken naar dit bericht",
+    smiley: "😕"
+  },
+
   // —DISGUST—//
 
   {
@@ -2271,58 +2467,58 @@ let DATA = [
 
   // —X—//
 
-  {
-    type: "picture",
-    dt: 1234981243,
-    text:
-      "Mijn dochter Hailey is sinds deze ochtend vermist! Ze is 12jaar 1m55 heeft u haar gezien contacteer me aub en delen is lief...Laatst gezien in schoten",
-    profileName: "Simon Martin",
-    profileImage: "/imagesProfilePeople/Simon_Martin.jpeg",
-    date: "59 minuten geleden",
-    image: "/imagesPosts/vermist_schoten.jpg",
-    action: "heeft een foto geplaatst",
-    messageResponse: "en 3 anderen hebben droevig gereageerd op dit bericht",
-    smiley: "😢"
-  },
+  // {
+  //   type: "picture",
+  //   dt: 1234981243,
+  //   text:
+  //     "Mijn dochter Hailey is sinds deze ochtend vermist! Ze is 12jaar 1m55 heeft u haar gezien contacteer me aub en delen is lief...Laatst gezien in schoten",
+  //   profileName: "Simon Martin",
+  //   profileImage: "/imagesProfilePeople/Simon_Martin.jpeg",
+  //   date: "59 minuten geleden",
+  //   image: "/imagesPosts/vermist_schoten.jpg",
+  //   action: "heeft een foto geplaatst",
+  //   messageResponse: "en 3 anderen hebben droevig gereageerd op dit bericht",
+  //   smiley: "😢"
+  // },
 
-  {
-    type: "picture",
-    dt: 1234981243,
-    text: "Out now!!!",
-    profileName: "Ruffmercy",
-    profileImage: "/imagesProfilePeople/ruffmercy.jpeg",
-    date: "12 minuten geleden",
-    image: "/imagesPosts/ruffmercy.png",
-    action: "heeft een foto geplaatst",
-    messageResponse: "en 3 anderen hebben kwaad gereageerd op dit bericht",
-    smiley: "😡"
-  },
+  // {
+  //   type: "picture",
+  //   dt: 1234981243,
+  //   text: "Out now!!!",
+  //   profileName: "Ruffmercy",
+  //   profileImage: "/imagesProfilePeople/ruffmercy.jpeg",
+  //   date: "12 minuten geleden",
+  //   image: "/imagesPosts/ruffmercy.png",
+  //   action: "heeft een foto geplaatst",
+  //   messageResponse: "en 3 anderen hebben kwaad gereageerd op dit bericht",
+  //   smiley: "😡"
+  // },
 
-  {
-    type: "picture",
-    dt: 1234981243,
-    text: "pls",
-    profileName: "Erik Bosmans",
-    profileImage: "/imagesProfilePeople/Erik_Bosmans.jpeg",
-    date: "12 minuten geleden",
-    image: "/imagesPosts/be_like_bil.png",
-    action: "heeft een foto geplaatst",
-    messageResponse: "en 3 anderen hebben kwaad gereageerd op dit bericht",
-    smiley: "😡"
-  },
+  // {
+  //   type: "picture",
+  //   dt: 1234981243,
+  //   text: "pls",
+  //   profileName: "Erik Bosmans",
+  //   profileImage: "/imagesProfilePeople/Erik_Bosmans.jpeg",
+  //   date: "12 minuten geleden",
+  //   image: "/imagesPosts/be_like_bil.png",
+  //   action: "heeft een foto geplaatst",
+  //   messageResponse: "en 3 anderen hebben kwaad gereageerd op dit bericht",
+  //   smiley: "😡"
+  // },
 
-  {
-    type: "picture",
-    dt: 1234981243,
-    text: "See you in two weeks everybody!",
-    profileName: "Hanne Bregman",
-    profileImage: "/imagesProfilePeople/Hanne_Bregman.jpeg",
-    date: "56 minuten geleden",
-    image: "/imagesPosts/vliegtuid_raam_op_reis.jpg",
-    action: "heeft haar status bewerkt",
-    messageResponse: "en 3 anderen hebben kwaad gereageerd op dit bericht",
-    smiley: "😡"
-  },
+  // {
+  //   type: "picture",
+  //   dt: 1234981243,
+  //   text: "See you in two weeks everybody!",
+  //   profileName: "Hanne Bregman",
+  //   profileImage: "/imagesProfilePeople/Hanne_Bregman.jpeg",
+  //   date: "56 minuten geleden",
+  //   image: "/imagesPosts/vliegtuid_raam_op_reis.jpg",
+  //   action: "heeft haar status bewerkt",
+  //   messageResponse: "en 3 anderen hebben kwaad gereageerd op dit bericht",
+  //   smiley: "😡"
+  // },
 
   // --------------------------------------------------------------------------STATUS----------------------------------------------------------------------//
   // --------------------------------------------------------------------------STATUS----------------------------------------------------------------------//
@@ -2374,92 +2570,92 @@ let DATA = [
 
   // —X—//
 
-  {
-    type: "status",
-    dt: 1234981243,
-    text:
-      "En wat met de mensen die met hun zuurverdiende centen een ouder huisje konden kopen en geen geld hebben voor dak of gevel isolatie???",
-    profileName: "Stan Vanroosbroek",
-    profileImage: "/imagesProfilePeople/Stan_Vanroosbroek.jpeg",
-    action: "heeft een status geplaatst",
-    date: "4 minuut geleden",
-    messageResponse: "en 56 anderen hebben gereageerd op dit bericht",
-    smiley: "😤😢"
-  },
-  {
-    type: "status",
-    dt: 1234981243,
-    text:
-      "Iemand tips voor een rondreis in Ijsland? We gaan een rondtrip maken aan de noordkant van het eiland! Alvast bedankt 💙💜🧡",
-    profileName: "Inne Grijp",
-    profileImage: "/imagesProfilePeople/Beatrix_Verhoeven.jpeg",
-    action: "heeft een status geplaatst",
-    date: "1 minuut geleden",
-    messageResponse: "en 3 anderen hebben gereageerd op dit bericht",
-    smiley: "😤😢"
-  },
+  // {
+  //   type: "status",
+  //   dt: 1234981243,
+  //   text:
+  //     "En wat met de mensen die met hun zuurverdiende centen een ouder huisje konden kopen en geen geld hebben voor dak of gevel isolatie???",
+  //   profileName: "Stan Vanroosbroek",
+  //   profileImage: "/imagesProfilePeople/Stan_Vanroosbroek.jpeg",
+  //   action: "heeft een status geplaatst",
+  //   date: "4 minuut geleden",
+  //   messageResponse: "en 56 anderen hebben gereageerd op dit bericht",
+  //   smiley: "😤😢"
+  // },
+  // {
+  //   type: "status",
+  //   dt: 1234981243,
+  //   text:
+  //     "Iemand tips voor een rondreis in Ijsland? We gaan een rondtrip maken aan de noordkant van het eiland! Alvast bedankt 💙💜🧡",
+  //   profileName: "Inne Grijp",
+  //   profileImage: "/imagesProfilePeople/Beatrix_Verhoeven.jpeg",
+  //   action: "heeft een status geplaatst",
+  //   date: "1 minuut geleden",
+  //   messageResponse: "en 3 anderen hebben gereageerd op dit bericht",
+  //   smiley: "😤😢"
+  // },
 
-  {
-    type: "status",
-    dt: 1234981243,
-    text:
-      "Tips and tricks voor Rome? (20 dagen gaan we) 🚘🇮🇹🚘🇮🇹🚘🇮🇹🚘🇮🇹🚘🇮🇹🚘🇮🇹🚘🇮🇹🚘🇮🇹🚘🇮🇹🚘🇮🇹 ",
-    profileName: "Boris Lewalski",
-    profileImage: "/imagesProfilePeople/Boris_Lewalski.jpeg",
-    action: "heeft een status geplaatst",
-    date: "2 minuten geleden",
-    messageResponse: "en 3 anderen hebben gereageerd op dit bericht",
-    smiley: "😍"
-  },
+  // {
+  //   type: "status",
+  //   dt: 1234981243,
+  //   text:
+  //     "Tips and tricks voor Rome? (20 dagen gaan we) 🚘🇮🇹🚘🇮🇹🚘🇮🇹🚘🇮🇹🚘🇮🇹🚘🇮🇹🚘🇮🇹🚘🇮🇹🚘🇮🇹🚘🇮🇹 ",
+  //   profileName: "Boris Lewalski",
+  //   profileImage: "/imagesProfilePeople/Boris_Lewalski.jpeg",
+  //   action: "heeft een status geplaatst",
+  //   date: "2 minuten geleden",
+  //   messageResponse: "en 3 anderen hebben gereageerd op dit bericht",
+  //   smiley: "😍"
+  // },
 
-  {
-    type: "status",
-    dt: 1234981243,
-    text:
-      "Ben op zoek naar een kat (liefst een kattin), regio Antwerpen! Danku",
-    profileName: "Dennis Heyens",
-    profileImage: "/imagesProfilePeople/Dennis_Heyens.jpeg",
-    action: "heeft een status geplaatst",
-    date: "30 seconden geleden",
-    messageResponse: "en 3 anderen hebben gereageerd op dit bericht",
-    smiley: "😍"
-  },
-  {
-    type: "status",
-    dt: 1234981243,
-    text:
-      "Ontbijten in een gezellige bar op zondag in stad suggesties aub ☕️🍳🥓",
-    profileName: "Dieter De Reyck",
-    profileImage: "/imagesProfilePeople/Dieter_De_Reyck.jpeg",
-    action: "heeft een status geplaatst",
-    date: "1 dag geleden",
-    messageResponse: "en 3 anderen hebben gereageerd op dit bericht",
-    smiley: "😍"
-  },
-  {
-    type: "status",
-    dt: 1234981243,
-    text:
-      "  Aan wie betalen elektischetijdcentrales eigelijk hun stroomverbruik?",
-    profileName: "Elke Saenen",
-    profileImage: "/imagesProfilePeople/Elke_Saenen.jpeg",
-    action: "heeft een status geplaatst",
-    date: "34 minuten geleden",
-    messageResponse: "en 3 anderen hebben gereageerd op dit bericht",
-    smiley: "🐑"
-  },
-  {
-    type: "status",
-    dt: 1234981243,
-    text:
-      "Vergeet niet dat morgen de nieuwe Facebook-regel begint waarin ze jouw foto kunnen gebruiken. Deadline morgen niet vergeten !!! Alles wat je ooit hebt gepost wordt vanaf morgen openbaar. Zelfs berichten die zijn verwijderd of de foto's niet zijn toegestaan. Het kost niets voor een eenvoudig kopiëren en plakken, beter dan genezen. Channel 13 News sprak over de verandering in het privacybeleid van Facebook. Ik geef Facebook of met Facebook geassocieerde entiteiten geen toestemming om mijn foto's, informatie, berichten of berichten te gebruiken, zowel in het verleden als in de toekomst.",
-    profileName: "Elke Saenen",
-    profileImage: "/imagesProfilePeople/Elke_Saenen.jpeg",
-    action: "heeft een status geplaatst",
-    date: "43 minuten geleden",
-    messageResponse: "en 24 anderen hebben dit bericht gedeeld",
-    smiley: "😨"
-  },
+  // {
+  //   type: "status",
+  //   dt: 1234981243,
+  //   text:
+  //     "Ben op zoek naar een kat (liefst een kattin), regio Antwerpen! Danku",
+  //   profileName: "Dennis Heyens",
+  //   profileImage: "/imagesProfilePeople/Dennis_Heyens.jpeg",
+  //   action: "heeft een status geplaatst",
+  //   date: "30 seconden geleden",
+  //   messageResponse: "en 3 anderen hebben gereageerd op dit bericht",
+  //   smiley: "😍"
+  // },
+  // {
+  //   type: "status",
+  //   dt: 1234981243,
+  //   text:
+  //     "Ontbijten in een gezellige bar op zondag in stad suggesties aub ☕️🍳🥓",
+  //   profileName: "Dieter De Reyck",
+  //   profileImage: "/imagesProfilePeople/Dieter_De_Reyck.jpeg",
+  //   action: "heeft een status geplaatst",
+  //   date: "1 dag geleden",
+  //   messageResponse: "en 3 anderen hebben gereageerd op dit bericht",
+  //   smiley: "😍"
+  // },
+  // {
+  //   type: "status",
+  //   dt: 1234981243,
+  //   text:
+  //     "  Aan wie betalen elektischetijdcentrales eigelijk hun stroomverbruik?",
+  //   profileName: "Elke Saenen",
+  //   profileImage: "/imagesProfilePeople/Elke_Saenen.jpeg",
+  //   action: "heeft een status geplaatst",
+  //   date: "34 minuten geleden",
+  //   messageResponse: "en 3 anderen hebben gereageerd op dit bericht",
+  //   smiley: "🐑"
+  // },
+  // {
+  //   type: "status",
+  //   dt: 1234981243,
+  //   text:
+  //     "Vergeet niet dat morgen de nieuwe Facebook-regel begint waarin ze jouw foto kunnen gebruiken. Deadline morgen niet vergeten !!! Alles wat je ooit hebt gepost wordt vanaf morgen openbaar. Zelfs berichten die zijn verwijderd of de foto's niet zijn toegestaan. Het kost niets voor een eenvoudig kopiëren en plakken, beter dan genezen. Channel 13 News sprak over de verandering in het privacybeleid van Facebook. Ik geef Facebook of met Facebook geassocieerde entiteiten geen toestemming om mijn foto's, informatie, berichten of berichten te gebruiken, zowel in het verleden als in de toekomst.",
+  //   profileName: "Elke Saenen",
+  //   profileImage: "/imagesProfilePeople/Elke_Saenen.jpeg",
+  //   action: "heeft een status geplaatst",
+  //   date: "43 minuten geleden",
+  //   messageResponse: "en 24 anderen hebben dit bericht gedeeld",
+  //   smiley: "😨"
+  // },
 
   // -------------------------------------------------------------------STORY----------------------------------------------------------------------//
   // -------------------------------------------------------------------STORY----------------------------------------------------------------------//
