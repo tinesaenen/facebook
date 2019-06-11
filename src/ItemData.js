@@ -3,6 +3,45 @@ let DATA = [
   // --------------------------------------------------------------------------INTRO----------------------------------------------------------------------//
   // --------------------------------------------------------------------------INTRO----------------------------------------------------------------------//
 
+  // {
+  //   type: "modalVideo",
+  //   dt: 1234981243,
+  //   text: "WE WORDEN AFGELUISTERD!!! 😵😵😵",
+  //   profileName: "Conspiracy Time",
+  //   profileImage: "/imagesProfilePages/conspiracy_time.png",
+  //   date: "2 minuten geleden",
+  //   videolink: "https://www.youtube.com/embed/SkYNivD8iM8",
+  //   action: "heeft een foto geplaatst",
+  //   messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
+  //   smiley: "😰",
+  //   firstPost: true
+  // },
+  {
+    type: "modalPost",
+    dt: 1234981243,
+    text: "WE WORDEN AFGELUISTERD!!! 😵😵😵",
+    profileName: "Conspiracy Time",
+    profileImage: "/imagesProfilePages/conspiracy_time.png",
+    date: "2 minuten geleden",
+    image: "/imagesIntro/FB_mental_health_1.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
+    smiley: "😰",
+    firstPost: true
+  },
+  {
+    type: "modalPost",
+    dt: 6528201072,
+    text: "WE WORDEN AFGELUISTERD!!! 😵😵😵",
+    profileName: "Conspiracy Time",
+    profileImage: "/imagesProfilePages/conspiracy_time.png",
+    date: "2 minuten geleden",
+    image: "/imagesIntro/Mark_tape_cam.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
+    smiley: "😰",
+    firstPost: true
+  },
   {
     type: "bigNewsOwnPost",
     dt: 1234981243,
@@ -368,25 +407,25 @@ let DATA = [
 
   // —X—//
 
-  {
-    type: "notification",
-    dt: 1234981243,
-    message: "Je bent gespannen... ontspannen kan met deze foto's",
-    text:
-      "Say goodbye to insomnia and experience sleep like you never slept before.",
-    image: "/imagesNotifications/relax_app.jpg",
-    textTitle: "Relax Melodies — Sleep like never before"
-  },
-  ,
-  {
-    type: "notification",
-    dt: 1234981243,
-    message:
-      "We hebben je gezicht gevonden op 31 foto's die door je vrienden zijn geüpload. We hebben de vrijheid genomen om jouw tag toe te voegen.",
-    text: "Zelf taggen voor een kleine prijs met de Dymo label maker",
-    image: "/imagesAds/label_maker.jpg",
-    textTitle: "Dymo — Goed gelabeld is goed geordend!"
-  },
+  // {
+  //   type: "notification",
+  //   dt: 1234981243,
+  //   message: "Je bent gespannen... ontspannen kan met deze foto's",
+  //   text:
+  //     "Say goodbye to insomnia and experience sleep like you never slept before.",
+  //   image: "/imagesNotifications/relax_app.jpg",
+  //   textTitle: "Relax Melodies — Sleep like never before"
+  // },
+  // ,
+  // {
+  //   type: "notification",
+  //   dt: 1234981243,
+  //   message:
+  //     "We hebben je gezicht gevonden op 31 foto's die door je vrienden zijn geüpload. We hebben de vrijheid genomen om jouw tag toe te voegen.",
+  //   text: "Zelf taggen voor een kleine prijs met de Dymo label maker",
+  //   image: "/imagesAds/label_maker.jpg",
+  //   textTitle: "Dymo — Goed gelabeld is goed geordend!"
+  // },
 
   // -------------------------------------------------------------------MINI NOTIFICATION----------------------------------------------------------------------//
   // -------------------------------------------------------------------MINI NOTIFICATION----------------------------------------------------------------------//
@@ -543,9 +582,92 @@ let DATA = [
   },
 
   // —LAURA—//
+  {
+    type: "miniNotification",
+    target: "laura",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Hey Laura, je profielfoto dateert van 24 maart 2017. Ik raad aan om een recentere foto te gebruiken als profielfoto"
+  },
+  {
+    type: "miniNotification",
+    target: "laura",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Laura! Integrated 2019 staat voor de deur. Al een outfit uitgekozen?"
+  },
+
   // —RENATE—//
+  {
+    type: "miniNotification",
+    target: "renate",
+    order: 2,
+    dt: 1234981243,
+    message: "Renate..."
+  },
+  {
+    type: "miniNotification",
+    target: "renate",
+    order: 2,
+    dt: 1234981243,
+    message: "Renate..."
+  },
+  {
+    type: "miniNotification",
+    target: "renate",
+    order: 2,
+    dt: 1234981243,
+    message: "Renate..."
+  },
+
   // —MIEKE—//
+  {
+    type: "miniNotification",
+    target: "mieke",
+    order: 2,
+    dt: 1234981243,
+    message: "Mieke..."
+  },
+  {
+    type: "miniNotification",
+    target: "mieke",
+    order: 2,
+    dt: 1234981243,
+    message: "Mieke..."
+  },
+  {
+    type: "miniNotification",
+    target: "mieke",
+    order: 2,
+    dt: 1234981243,
+    message: "Mieke..."
+  },
+
   // —AN—//
+  {
+    type: "miniNotification",
+    target: "an",
+    order: 2,
+    dt: 1234981243,
+    message: "An..."
+  },
+  {
+    type: "miniNotification",
+    target: "an",
+    order: 2,
+    dt: 1234981243,
+    message: "An..."
+  },
+  {
+    type: "miniNotification",
+    target: "an",
+    order: 2,
+    dt: 1234981243,
+    message: "An..."
+  },
+
   // —VITAL—//
 
   {

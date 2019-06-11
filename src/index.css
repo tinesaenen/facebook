@@ -75,6 +75,7 @@
 .newStyle .header__input {
   border-color: var(--header-inputfield-border-color-newStyle);
   border-radius: var(--header-inputfield-border-radius-newStyle);
+  margin-top: 4px;
 }
 
 .oldStyle input::placeholder {
@@ -91,6 +92,10 @@
 
 .newStyle .logo_oldStyle {
   display: var(--header-logo-oldStyle-newStyle);
+}
+
+.oldStyle .header__icons_newStyle {
+  display: none;
 }
 
 .newStyle .header__icons_oldStyle {
@@ -369,7 +374,7 @@ body {
 
 .header {
   /* background: #4267b2; */
-  padding: 10px 10px;
+  padding: 15px 10px 10px 10px;
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -402,10 +407,16 @@ body {
   padding-left: 280px;
 }
 
+.header__icons_newStyle {
+  padding-left: 636px;
+  margin-top: 4px;
+}
+
 .header__input {
   width: 350px;
   height: 25px;
   border: 1px solid;
+  margin-top: 0px;
 }
 
 input::placeholder {
@@ -832,4 +843,72 @@ main {
 .item__storyItem {
   width: 60px;
   padding: 0px 4px 0px 4px;
+}
+
+/*-----------------------modalPost-------------------------*/
+
+#originalImage {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#originalImage:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  /*  padding-top: 140px; Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  height: 90vh;
+  padding-top: 10vh;
+  /* max-width: 900px; */
+}
+
+/* Add Animation */
+.modal-content {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 1s;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
 }

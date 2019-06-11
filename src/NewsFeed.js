@@ -59,7 +59,7 @@ export default class Feed extends Component {
           !this.seen.has(item)
       );
     }
-    console.log("fetchNewItems", newItem);
+    // console.log("fetchNewItems", newItem);
     if (newItem) {
       this.seen.add(newItem);
       const items = this.state.items;
@@ -105,9 +105,28 @@ export default class Feed extends Component {
     );
   }
 
+  onClickModalPost() {
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("originalImage");
+    var modalImg = document.getElementById("modalImage");
+    img.onclick = function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    };
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0]; //"modal" er ook bijzetten, moet nog twee keer klikken voordat het opspringt
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    };
+  }
+
   renderItem(item) {
-    // console.log(this.state.items.length);
-    // console.log(item);
     let element;
 
     if (item.type === "news") {
@@ -128,6 +147,10 @@ export default class Feed extends Component {
       element = this.renderAd(item);
     } else if (item.type === "story") {
       element = this.renderStory(item);
+    } else if (item.type === "modalPost") {
+      element = this.renderModalPost(item);
+      // } else if (item.type === "modalVideo") {
+      //   element = this.renderModalVideo(item);
     } else if (item.type === "video") {
       element = this.renderVideo(item);
     } else if (item.type === "gif") {
@@ -310,6 +333,86 @@ export default class Feed extends Component {
       </div>
     );
   }
+
+  renderModalPost(modalPost) {
+    //-----------------------------------------------------modalpost!!!!!!!!!!!!!!!!!!!!!!!!!----------------------------------------
+    return (
+      <div className="item news-item" key={modalPost.id}>
+        <div className="item__newsHeader">
+          <img
+            className="item__profileImage"
+            src={modalPost.profileImage}
+            width={45}
+            height={45}
+            alt={modalPost.profileName}
+          />
+          <div className="item__profileNameContainer">
+            <span className="item__profileName">{modalPost.profileName}</span>
+            <span className="item__action"> {modalPost.action}</span>
+            <p className="item__date"> {modalPost.date}</p>
+          </div>
+        </div>
+        <div className="item__body">
+          <div className="item__subText">{modalPost.text}</div>
+          <img
+            onClick={this.onClickModalPost.bind(this)}
+            id="originalImage"
+            className="item__image"
+            src={modalPost.image}
+            alt={modalPost.text}
+          />
+        </div>
+        <div id="myModal" className="modal">
+          <span className="close">&times;</span>
+          <img className="modal-content" id="modalImage" />
+        </div>
+        <div className="item__actions">
+          <span className="item__smiley">{modalPost.smiley}</span>
+        </div>
+      </div>
+    );
+  }
+
+  // renderModalVideo(modalVideo) {
+  //   //-----------------------------------------------------modalpost!!!!!!!!!!!!!!!!!!!!!!!!!----------------------------------------
+  //   return (
+  //     <div className="item news-item" key={modalVideo.id}>
+  //       <div className="item__newsHeader">
+  //         <img
+  //           className="item__profileImage"
+  //           src={modalVideo.profileImage}
+  //           width={45}
+  //           height={45}
+  //           alt={modalVideo.profileName}
+  //         />
+  //         <div className="item__profileNameContainer">
+  //           <span className="item__profileName">{modalVideo.profileName}</span>
+  //           <span className="item__action"> {modalVideo.action}</span>
+  //           <p className="item__date"> {modalVideo.date}</p>
+  //         </div>
+  //       </div>
+  //       <div className="item__body">
+  //         <div className="item__subText">{modalVideo.text}</div>
+  //         <iframe
+  //           onClick={this.onClickModalPost.bind(this)}
+  //           id="originalImage"
+  //           width="548"
+  //           height="308"
+  //           src={modalVideo.videolink}
+  //           frameBorder="0"
+  //           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  //         />
+  //       </div>
+  //       <div id="myModal" className="modal">
+  //         <span className="close">&times;</span>
+  //         <img className="modal-content" id="modalImage" />
+  //       </div>
+  //       <div className="item__actions">
+  //         <span className="item__smiley">{modalVideo.smiley}</span>
+  //       </div>
+  //     </div>
+  //   );
+  // }
 
   renderGif(gif) {
     return (
