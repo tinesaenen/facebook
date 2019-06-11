@@ -126,6 +126,12 @@ export default class App extends Component {
             alt="logo"
             height="30"
           />
+          <img
+            src="/imagesIcons/icons_newStyle.png"
+            className="header__icons_newStyle"
+            alt="logo"
+            height="26"
+          />
         </header>
         <main>
           <div className="leftColumn">
@@ -165,7 +171,9 @@ export default class App extends Component {
                 "picture",
                 "gif",
                 "video",
-                "introPicture"
+                "introPicture",
+                "modalPost"
+                // "modalVideo"
               ]}
               emotion={this.state.currentEmotion}
               app={this}
