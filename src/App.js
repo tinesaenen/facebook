@@ -92,6 +92,8 @@ export default class App extends Component {
     this.setState({ showNotifications: true });
   }
 
+  onClickScrollDown() {}
+
   render() {
     const { emotions, showFaceTracking, currentTarget } = this.state;
 
@@ -111,6 +113,7 @@ export default class App extends Component {
               className="header__logo logo_oldStyle"
               alt="logo"
               height="25"
+              onClick={this.onClickScrollDown.bind(this)} // fix me
             />
             <img
               src="/imagesIcons/logoFacebook3.gif"

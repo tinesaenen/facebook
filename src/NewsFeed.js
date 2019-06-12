@@ -17,7 +17,6 @@ export default class Feed extends Component {
     super(props);
     this.state = { isLoading: true, items: [] };
     this.seen = new Set();
-    this.prevEmotion = null;
   }
 
   componentDidMount() {
@@ -28,7 +27,13 @@ export default class Feed extends Component {
     this.setState({ items, isLoading: false });
   }
 
-  fetchNewItems() {
+  componentDidUpdate(prevProps) {
+    if (prevProps.emotion !== this.props.emotion) {
+      this.fetchNewItems();
+    }
+  }
+
+  fetchNewItem() {
     let newItem;
     if (this.props.target) {
       newItem = DATA.find(
@@ -48,6 +53,13 @@ export default class Feed extends Component {
           item.emotionStatus === this.props.emotion &&
           !this.seen.has(item)
       );
+      if (!newItem) {
+        this.seen.forEach(item => {
+          if (item.emotionStatus === this.props.emotion && !item.firstPost) {
+            this.seen.delete(item);
+          }
+        });
+      }
     } else {
       newItem = DATA.find(
         item =>
@@ -62,9 +74,22 @@ export default class Feed extends Component {
     // console.log("fetchNewItems", newItem);
     if (newItem) {
       this.seen.add(newItem);
+      newItem = JSON.parse(JSON.stringify(newItem));
+      newItem.id = Math.floor(Math.random() * 1000000);
       const items = this.state.items;
-      items.unshift(newItem);
+      //items.unshift(newItem);
+      items.push(newItem);
       this.setState({ items });
+    } else {
+      // console.log("NO NEW ITEMS FOUND – clearing seen");
+      // this.seen.clear();
+      // this.fetchNewItem();
+    }
+  }
+
+  fetchNewItems() {
+    for (let i = 0; i < 2; i++) {
+      this.fetchNewItem();
     }
   }
 

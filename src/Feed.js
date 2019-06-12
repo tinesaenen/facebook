@@ -13,7 +13,8 @@ export default class Feed extends Component {
       items: []
     };
     this.seen = new Set();
-    this.prevEmotion = null;
+    this.timeForNewItems = Date.now() + 2 * 1000;
+    // this.prevEmotion = null;
     // console.log(this.state.allItems);
   }
 
@@ -33,20 +34,23 @@ export default class Feed extends Component {
     // console.log("ITEMS", items);
     this.setState({ allItems, items, isLoading: false });
     if (this.props.autoRefresh) {
-      // setTimeout(this.fetchNewItems.bind(this), random(1000, 7000));
+      // setTimeout(this.fetchNewItem.bind(this), random(1000, 7000));
     } else {
       this.setState({ items: allItems });
     }
+    setInterval(this.fetchNewItem.bind(this), 1000);
   }
 
-  componentDidUpdate() {
-    if (this.prevEmotion !== this.props.emotion) {
-      this.prevEmotion = this.props.emotion;
-      this.fetchNewItems();
+  componentDidUpdate(prevProps) {
+    if (prevProps.emotion !== this.props.emotion) {
+      this.fetchNewItem();
+      this.timeForNewItems = Date.now();
     }
   }
 
-  fetchNewItems() {
+  fetchNewItem() {
+    if (this.timeForNewItems > Date.now()) return;
+    // console.log("fetchNewItem", this.props.emotion);
     let newItem;
     if (this.props.target) {
       newItem = DATA.find(
@@ -60,7 +64,7 @@ export default class Feed extends Component {
       newItem = DATA.find(
         item =>
           item &&
-          this.props.types.includes(item.type) && //waarom hier geen !item.firstAd?
+          this.props.types.includes(item.type) &&
           !item.target &&
           !item.firstNotification &&
           item.emotionStatus === this.props.emotion &&
@@ -73,7 +77,8 @@ export default class Feed extends Component {
       items.unshift(newItem);
       this.setState({ items });
     }
-    setTimeout(this.fetchNewItems.bind(this), random(10000, 15000));
+    this.timeForNewItems = Date.now() + random(5000, 8000);
+    //setTimeout(this.fetchNewItem.bind(this), );
   }
 
   render() {
