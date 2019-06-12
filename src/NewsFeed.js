@@ -4,12 +4,12 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import Observer from "@researchgate/react-intersection-observer";
 import spinner from "./spinner.gif";
 
-// let currentFeedItems = [];
-let loadNewData = 0;
-// let items;
-
 function random(min, max) {
   return min + Math.random() * (max - min);
+}
+
+function choice(l) {
+  return l[Math.floor(Math.random() * l.length)];
 }
 
 export default class Feed extends Component {
@@ -27,13 +27,18 @@ export default class Feed extends Component {
     this.setState({ items, isLoading: false });
   }
 
-  componentDidUpdate(prevProps) {
-    if (prevProps.emotion !== this.props.emotion) {
-      this.fetchNewItems();
-    }
-  }
+  // componentDidUpdate(prevProps) {
+  //   if (prevProps.emotion !== this.props.emotion) {
+  //     console.log(`EMOTION: ${prevProps.emotion} --> ${this.props.emotion}`);
+  //     this.fetchNewItems();
+  //   } else if (prevProps.target !== this.props.target) {
+  //     console.log(`TARGET: ${prevProps.target} --> ${this.props.target}`);
+  //     this.fetchNewItems();
+  //   }
+  // }
 
   fetchNewItem() {
+    console.log("fetchNewItem", this.props.target, this.props.emotion);
     let newItem;
     if (this.props.target) {
       newItem = DATA.find(
@@ -43,6 +48,13 @@ export default class Feed extends Component {
           item.target === this.props.target &&
           !this.seen.has(item)
       );
+      if (!newItem) {
+        this.seen.forEach(item => {
+          if (item.target === this.props.target && !item.firstPost) {
+            this.seen.delete(item);
+          }
+        });
+      }
     } else if (this.props.emotion) {
       newItem = DATA.find(
         item =>
@@ -70,27 +82,41 @@ export default class Feed extends Component {
           !item.emotionStatus &&
           !this.seen.has(item)
       );
+      if (!newItem) {
+        this.seen.forEach(item => {
+          if (!item.emotionStatus && !item.target) {
+            this.seen.delete(item);
+          }
+        });
+      }
     }
     // console.log("fetchNewItems", newItem);
-    if (newItem) {
-      this.seen.add(newItem);
-      newItem = JSON.parse(JSON.stringify(newItem));
-      newItem.id = Math.floor(Math.random() * 1000000);
-      const items = this.state.items;
-      //items.unshift(newItem);
-      items.push(newItem);
-      this.setState({ items });
-    } else {
-      // console.log("NO NEW ITEMS FOUND – clearing seen");
-      // this.seen.clear();
-      // this.fetchNewItem();
+    if (!newItem) {
+      //console.log("NO NEW ITEMS FOUND – clearing seen");
+      const newItems = DATA.filter(
+        item =>
+          item &&
+          this.props.types.includes(item.type) &&
+          !item.target &&
+          !item.firstPost &&
+          !item.emotionStatus &&
+          !this.seen.has(item)
+      );
+      newItem = choice(newItems);
     }
+    this.seen.add(newItem);
+    newItem = JSON.parse(JSON.stringify(newItem));
+    newItem.id = Math.floor(Math.random() * 1000000);
+    const items = this.state.items;
+    //items.unshift(newItem);
+    items.push(newItem);
+    this.setState({ items });
   }
 
   fetchNewItems() {
-    for (let i = 0; i < 2; i++) {
-      this.fetchNewItem();
-    }
+    // for (let i = 0; i < 2; i++) {
+    this.fetchNewItem();
+    // }
   }
 
   render() {
@@ -119,7 +145,7 @@ export default class Feed extends Component {
             <b>Yay! You have seen it all</b>
           </p>
         }
-        // scrollThreshold={0.7}
+        scrollThreshold={0.99}
       >
         {/* <p>EMOTION: { this.props.emotion}</p> */}
         {this.state.items.map((i, index) =>
@@ -130,25 +156,20 @@ export default class Feed extends Component {
     );
   }
 
-  onClickModalPost() {
-    // Get the modal
-    var modal = document.getElementById("myModal");
+  onClickModalPost(modalPost) {
+    const modal = document.getElementById(`myModal-${modalPost.id}`);
+    const modalImage = modal.querySelector(".modal-content");
+    const closeSpan = modal.querySelector(".close");
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("originalImage");
-    var modalImg = document.getElementById("modalImage");
-    img.onclick = function() {
-      modal.style.display = "block";
-      modalImg.src = this.src;
-    };
+    modal.style.display = "block";
+    modalImage.src = modalPost.image;
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0]; //"modal" er ook bijzetten, moet nog twee keer klikken voordat het opspringt
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
+    const closeFn = () => {
       modal.style.display = "none";
     };
+
+    modal.addEventListener("click", closeFn);
+    closeSpan.addEventListener("click", closeFn);
   }
 
   renderItem(item) {
@@ -174,8 +195,8 @@ export default class Feed extends Component {
       element = this.renderStory(item);
     } else if (item.type === "modalPost") {
       element = this.renderModalPost(item);
-      // } else if (item.type === "modalVideo") {
-      //   element = this.renderModalVideo(item);
+    } else if (item.type === "modalVideo") {
+      element = this.renderModalVideo(item);
     } else if (item.type === "video") {
       element = this.renderVideo(item);
     } else if (item.type === "gif") {
@@ -380,16 +401,16 @@ export default class Feed extends Component {
         <div className="item__body">
           <div className="item__subText">{modalPost.text}</div>
           <img
-            onClick={this.onClickModalPost.bind(this)}
+            onClick={this.onClickModalPost.bind(this, modalPost)}
             id="originalImage"
             className="item__image"
             src={modalPost.image}
             alt={modalPost.text}
           />
         </div>
-        <div id="myModal" className="modal">
+        <div id={`myModal-${modalPost.id}`} className="modal">
           <span className="close">&times;</span>
-          <img className="modal-content" id="modalImage" />
+          <img className="modal-content" />
         </div>
         <div className="item__actions">
           <span className="item__smiley">{modalPost.smiley}</span>
@@ -398,46 +419,46 @@ export default class Feed extends Component {
     );
   }
 
-  // renderModalVideo(modalVideo) {
-  //   //-----------------------------------------------------modalpost!!!!!!!!!!!!!!!!!!!!!!!!!----------------------------------------
-  //   return (
-  //     <div className="item news-item" key={modalVideo.id}>
-  //       <div className="item__newsHeader">
-  //         <img
-  //           className="item__profileImage"
-  //           src={modalVideo.profileImage}
-  //           width={45}
-  //           height={45}
-  //           alt={modalVideo.profileName}
-  //         />
-  //         <div className="item__profileNameContainer">
-  //           <span className="item__profileName">{modalVideo.profileName}</span>
-  //           <span className="item__action"> {modalVideo.action}</span>
-  //           <p className="item__date"> {modalVideo.date}</p>
-  //         </div>
-  //       </div>
-  //       <div className="item__body">
-  //         <div className="item__subText">{modalVideo.text}</div>
-  //         <iframe
-  //           onClick={this.onClickModalPost.bind(this)}
-  //           id="originalImage"
-  //           width="548"
-  //           height="308"
-  //           src={modalVideo.videolink}
-  //           frameBorder="0"
-  //           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-  //         />
-  //       </div>
-  //       <div id="myModal" className="modal">
-  //         <span className="close">&times;</span>
-  //         <img className="modal-content" id="modalImage" />
-  //       </div>
-  //       <div className="item__actions">
-  //         <span className="item__smiley">{modalVideo.smiley}</span>
-  //       </div>
-  //     </div>
-  //   );
-  // }
+  renderModalVideo(modalVideo) {
+    //-----------------------------------------------------modalpost!!!!!!!!!!!!!!!!!!!!!!!!!----------------------------------------
+    return (
+      <div className="item news-item" key={modalVideo.id}>
+        <div className="item__newsHeader">
+          <img
+            className="item__profileImage"
+            src={modalVideo.profileImage}
+            width={45}
+            height={45}
+            alt={modalVideo.profileName}
+          />
+          <div className="item__profileNameContainer">
+            <span className="item__profileName">{modalVideo.profileName}</span>
+            <span className="item__action"> {modalVideo.action}</span>
+            <p className="item__date"> {modalVideo.date}</p>
+          </div>
+        </div>
+        <div className="item__body">
+          <div className="item__subText">{modalVideo.text}</div>
+          <iframe
+            onClick={this.onClickModalPost.bind(this)}
+            id="originalImage"
+            width="548"
+            height="308"
+            src={modalVideo.videolink}
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          />
+        </div>
+        <div id="myModal" className="modal">
+          <span className="close">&times;</span>
+          <img className="modal-content" id="modalImage" />
+        </div>
+        <div className="item__actions">
+          <span className="item__smiley">{modalVideo.smiley}</span>
+        </div>
+      </div>
+    );
+  }
 
   renderGif(gif) {
     return (

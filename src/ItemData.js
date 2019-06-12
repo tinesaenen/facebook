@@ -3,45 +3,45 @@ let DATA = [
   // --------------------------------------------------------------------------INTRO----------------------------------------------------------------------//
   // --------------------------------------------------------------------------INTRO----------------------------------------------------------------------//
 
-  // {
-  //   type: "modalVideo",
-  //   dt: 1234981243,
-  //   text: "WE WORDEN AFGELUISTERD!!! 😵😵😵",
-  //   profileName: "Conspiracy Time",
-  //   profileImage: "/imagesProfilePages/conspiracy_time.png",
-  //   date: "2 minuten geleden",
-  //   videolink: "https://www.youtube.com/embed/SkYNivD8iM8",
-  //   action: "heeft een foto geplaatst",
-  //   messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
-  //   smiley: "😰",
-  //   firstPost: true
-  // },
-  // {
-  //   type: "modalPost",
-  //   dt: 1234981243,
-  //   text: "WE WORDEN AFGELUISTERD!!! 😵😵😵",
-  //   profileName: "Conspiracy Time",
-  //   profileImage: "/imagesProfilePages/conspiracy_time.png",
-  //   date: "2 minuten geleden",
-  //   image: "/imagesIntro/FB_mental_health_1.jpg",
-  //   action: "heeft een foto geplaatst",
-  //   messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
-  //   smiley: "😰",
-  //   firstPost: true
-  // },
-  // {
-  //   type: "modalPost",
-  //   dt: 6528201072,
-  //   text: "WE WORDEN AFGELUISTERD!!! 😵😵😵",
-  //   profileName: "Conspiracy Time",
-  //   profileImage: "/imagesProfilePages/conspiracy_time.png",
-  //   date: "2 minuten geleden",
-  //   image: "/imagesIntro/Mark_tape_cam.jpg",
-  //   action: "heeft een foto geplaatst",
-  //   messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
-  //   smiley: "😰",
-  //   firstPost: true
-  // },
+  {
+    type: "modalVideo",
+    dt: 1234981243,
+    text: "WE WORDEN AFGELUISTERD!!! 😵😵😵",
+    profileName: "Conspiracy Time",
+    profileImage: "/imagesProfilePages/conspiracy_time.png",
+    date: "2 minuten geleden",
+    videolink: "https://www.youtube.com/embed/SkYNivD8iM8",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
+    smiley: "😰",
+    firstPost: true
+  },
+  {
+    type: "modalPost",
+    dt: 1234981243,
+    text: "WE WORDEN AFGELUISTERD!!! 😵😵😵",
+    profileName: "Conspiracy Time",
+    profileImage: "/imagesProfilePages/conspiracy_time.png",
+    date: "2 minuten geleden",
+    image: "/imagesIntro/FB_mental_health_1.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
+    smiley: "😰",
+    firstPost: true
+  },
+  {
+    type: "modalPost",
+    dt: 6528201072,
+    text: "WE WORDEN AFGELUISTERD!!! 😵😵😵",
+    profileName: "Conspiracy Time",
+    profileImage: "/imagesProfilePages/conspiracy_time.png",
+    date: "2 minuten geleden",
+    image: "/imagesIntro/Mark_tape_cam.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
+    smiley: "😰",
+    firstPost: true
+  },
 
   {
     type: "picture",

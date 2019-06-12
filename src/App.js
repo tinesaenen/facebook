@@ -175,8 +175,8 @@ export default class App extends Component {
                 "gif",
                 "video",
                 "introPicture",
-                "modalPost"
-                // "modalVideo"
+                "modalPost",
+                "modalVideo"
               ]}
               emotion={this.state.currentEmotion}
               app={this}
