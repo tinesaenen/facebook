@@ -172,6 +172,22 @@ export default class Feed extends Component {
     closeSpan.addEventListener("click", closeFn);
   }
 
+  onClickModalVideo(modalVideo) {
+    const modal = document.getElementById(`myModal-${modalVideo.id}`);
+    const modalImage = modal.querySelector(".modal-content");
+    const closeSpan = modal.querySelector(".close");
+
+    modal.style.display = "block";
+    modalImage.src = modalVideo.video;
+
+    const closeFn = () => {
+      modal.style.display = "none";
+    };
+
+    modal.addEventListener("click", closeFn);
+    closeSpan.addEventListener("click", closeFn);
+  }
+
   renderItem(item) {
     let element;
 
@@ -420,7 +436,7 @@ export default class Feed extends Component {
   }
 
   renderModalVideo(modalVideo) {
-    //-----------------------------------------------------modalpost!!!!!!!!!!!!!!!!!!!!!!!!!----------------------------------------
+    //-----------------------------------------------------modalvideo!!!!!!!!!!!!!!!!!!!!!!!!!----------------------------------------
     return (
       <div className="item news-item" key={modalVideo.id}>
         <div className="item__newsHeader">
@@ -439,19 +455,21 @@ export default class Feed extends Component {
         </div>
         <div className="item__body">
           <div className="item__subText">{modalVideo.text}</div>
-          <iframe
-            onClick={this.onClickModalPost.bind(this)}
-            id="originalImage"
-            width="548"
-            height="308"
-            src={modalVideo.videolink}
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          />
+          <video
+            autoPlay
+            muted
+            loop
+            id="ownVideo"
+            width="495"
+            height="310"
+            onClick={this.onClickModalVideo.bind(this, modalVideo)}
+          >
+            <source src={modalVideo.video} type="video/mp4" />
+          </video>
         </div>
-        <div id="myModal" className="modal">
+        <div id={`myModal-${modalVideo.id}`} className="modal">
           <span className="close">&times;</span>
-          <img className="modal-content" id="modalImage" />
+          <video className="modal-content" autoPlay muted />
         </div>
         <div className="item__actions">
           <span className="item__smiley">{modalVideo.smiley}</span>
@@ -510,7 +528,7 @@ export default class Feed extends Component {
         <div className="item__body">
           <div className="item__subText">{video.text}</div>
           <iframe
-            width="548"
+            width="495"
             height="308"
             src={video.videolink}
             frameBorder="0"

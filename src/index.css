@@ -597,10 +597,6 @@ main {
   /* border-radius: 11px; */
 }
 
-.item__bigNotificationHeader {
-  /* border-radius: 11px 11px 0px 0px; */
-}
-
 .item__notificationHeaderText {
   margin: 0px;
   padding: 8px 10px 6px 10px;
@@ -856,6 +852,15 @@ main {
   opacity: 0.7;
 }
 
+#ownVideo:hover {
+  opacity: 0.7;
+}
+
+#ownVideo:hover {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -892,11 +897,11 @@ main {
 .close {
   position: absolute;
   top: 15px;
-  right: 35px;
+  right: 13px;
   color: #f1f1f1;
   font-size: 40px;
-  font-weight: bold;
   transition: 0.3s;
+  color: grey;
 }
 
 .close:hover,

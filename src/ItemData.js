@@ -3,59 +3,36 @@ let DATA = [
   // --------------------------------------------------------------------------INTRO----------------------------------------------------------------------//
   // --------------------------------------------------------------------------INTRO----------------------------------------------------------------------//
 
+  // --------------------------------------Vorig jaar-------------------------------------------//
   {
     type: "modalVideo",
     dt: 1234981243,
-    text: "WE WORDEN AFGELUISTERD!!! 😵😵😵",
-    profileName: "Conspiracy Time",
-    profileImage: "/imagesProfilePages/conspiracy_time.png",
-    date: "2 minuten geleden",
-    videolink: "https://www.youtube.com/embed/SkYNivD8iM8",
+    text:
+      "'Ways to Trick The Camera' is het einderesultaat van de bachelorproef in BA3. Hieronder een kort fragment uit de video: ik zocht manieren om mijn gezicht te verbergen voor facial recognition camera's.  ",
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    date: "9 minuten geleden",
+    video: "/imagesIntro/Facial_Recognition_Video.mp4",
     action: "heeft een foto geplaatst",
-    messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
-    smiley: "😰",
-    firstPost: true
-  },
-  {
-    type: "modalPost",
-    dt: 1234981243,
-    text: "WE WORDEN AFGELUISTERD!!! 😵😵😵",
-    profileName: "Conspiracy Time",
-    profileImage: "/imagesProfilePages/conspiracy_time.png",
-    date: "2 minuten geleden",
-    image: "/imagesIntro/FB_mental_health_1.jpg",
-    action: "heeft een foto geplaatst",
-    messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
-    smiley: "😰",
-    firstPost: true
-  },
-  {
-    type: "modalPost",
-    dt: 6528201072,
-    text: "WE WORDEN AFGELUISTERD!!! 😵😵😵",
-    profileName: "Conspiracy Time",
-    profileImage: "/imagesProfilePages/conspiracy_time.png",
-    date: "2 minuten geleden",
-    image: "/imagesIntro/Mark_tape_cam.jpg",
-    action: "heeft een foto geplaatst",
-    messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
-    smiley: "😰",
+    messageResponse: "en 82 anderen hebben geschokt gereageerd op dit bericht",
+    smiley: "😁",
     firstPost: true
   },
 
-  {
-    type: "picture",
-    dt: 1234981243,
-    text: "Still uit filmpje 'Ways to trick the camera'",
-    profileName: "Tine Saenen",
-    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-    date: "zojuist",
-    image: "/imagesIntro/ways_to_trick_the_camera",
-    action: "heeft een foto geplaatst",
-    messageResponse: "en 10 anderen hebben blij gereageerd op dit bericht",
-    smiley: "😁👍🏻",
-    firstPost: true
-  },
+  // {
+  //   type: "modalPost",
+  //   dt: 6528201072,
+  //   text: "WE WORDEN AFGELUISTERD!!! 😵😵😵",
+  //   profileName: "Conspiracy Time",
+  //   profileImage: "/imagesProfilePages/conspiracy_time.png",
+  //   date: "2 minuten geleden",
+  //   image: "/imagesIntro/Mark_tape_cam.jpg",
+  //   action: "heeft een foto geplaatst",
+  //   messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
+  //   smiley: "😰",
+  //   firstPost: true
+  // },
+
   {
     type: "picture",
     dt: 1234981243,
@@ -69,6 +46,7 @@ let DATA = [
     smiley: "👍🏻",
     firstPost: true
   },
+
   {
     type: "news",
     dt: 1234981243,
@@ -102,6 +80,9 @@ let DATA = [
     smiley: "🤓",
     firstPost: true
   },
+
+  // --------------------------------------facebook-------------------------------------------//
+
   {
     type: "bigNewsOwnPost",
     dt: 1234981243,
@@ -148,6 +129,8 @@ let DATA = [
     smiley: "😰",
     firstPost: true
   },
+
+  // --------------------------------------facebook depressie-------------------------------------------//
 
   {
     type: "bigNewsOwnPost",
@@ -202,6 +185,8 @@ let DATA = [
     firstPost: true
   },
 
+  // --------------------------------------facebook schandalen-------------------------------------------//
+
   {
     type: "bigNewsOwnPost",
     dt: 1234981243,
@@ -239,6 +224,33 @@ let DATA = [
   },
 
   {
+    type: "picture",
+    dt: 1234981243,
+    text: "😂😂😂😂😂",
+    profileName: "Vanessa Heaght",
+    profileImage: "/imagesProfilePeople/Vanessa_Heaght.jpeg",
+    date: "45 minuten geleden",
+    image: "/imagesIntro/mark_meme.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
+    smiley: "🤪",
+    firstPost: true
+  },
+  {
+    type: "picture",
+    dt: 1234981243,
+    text: "Go ahead and prove me wrong",
+    profileName: "Rik Janssens",
+    profileImage: "/imagesProfilePeople/Rik_Torfs.jpeg",
+    date: "45 minuten geleden",
+    image: "/imagesIntro/tweet_zombie.jpeg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 9 anderen hebben geschokt gereageerd op dit bericht",
+    smiley: "😂",
+    firstPost: true
+  },
+
+  {
     type: "bigNewsOwnPost",
     dt: 1234981243,
     text:
@@ -256,6 +268,8 @@ let DATA = [
     firstPost: true
   },
 
+  // --------------------------------------facebook conspiracy-------------------------------------------//
+
   {
     type: "picture",
     dt: 1234981243,
@@ -267,6 +281,37 @@ let DATA = [
     action: "heeft een foto geplaatst",
     messageResponse: "en 3 anderen hebben geschokt gereageerd op dit bericht",
     smiley: "😰",
+    firstPost: true
+  },
+
+  {
+    type: "picture",
+    dt: 1234981243,
+    text: "Read a good book today 😁",
+    profileName: "Yikhay Lee",
+    profileImage: "/imagesProfilePeople/Yikhay_Lee.jpeg",
+    date: "9 minuten geleden",
+    image: "/imagesIntro/circle.jpeg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 2 anderen hebben geschokt gereageerd op dit bericht",
+    smiley: "👍🏻",
+    firstPost: true
+  },
+
+  {
+    type: "bigNewsOwnPost",
+    dt: 1234981243,
+    text: "The Simplest Way to Secure Your Webcam Without Any Software",
+    subText:
+      "Let’s start with the bad news: Your webcam is vulnerable. It can be remotely activated and you won’t even know it’s on. A report this month in the Washington Post revealed that the FBI figured out how to do this years ago.",
+    profileName: "CNBC",
+    profileImage: "/imagesProfilePages/cnbc.png",
+    date: "22 minuten geleden",
+    image: "/imagesIntro/webcam_postit.jpg",
+    messageSourceWebsite: "www.cnbc.com",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 6k anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "🤭🤔",
     firstPost: true
   },
 
@@ -285,6 +330,19 @@ let DATA = [
     firstPost: true
   },
 
+  {
+    type: "status",
+    dt: 1234981243,
+    text:
+      "Praat je de ene dag met je partner over een zomervakantie naar Hawaï, dan zie je de volgende dag een advertentie over lastminutevakanties naar gelijkaardige tropische eilanden. Dat is in een notendop wat ik constant meemaak! Facebook luistert me af, ik zweer het!!! 😡😨😡😨😡😨",
+    profileName: "Boris Lewalski",
+    profileImage: "/imagesProfilePeople/Boris_Lewalski.jpeg",
+    action: "heeft een status geplaatst",
+    date: "2 minuten geleden",
+    messageResponse: "en 187 anderen hebben gereageerd op dit bericht",
+    smiley: "😱",
+    firstPost: true
+  },
   {
     type: "bigNewsOwnPost",
     dt: 1234981243,
@@ -320,12 +378,58 @@ let DATA = [
   },
 
   {
-    type: "picture",
+    type: "status",
     dt: 1234981243,
-    text: "Alles staat gebundeld op een WordPressblog",
+    text:
+      "Ik geloof niet dat het aan het toeval te wijten is! Als tegen mijn vriendin praat over een segway, komt er reclame van een segway op mijn Facebookpagina... Dit kan tich niet?! Ik delete mijn account. ",
+    profileName: "Victor Selissen",
+    profileImage: "/imagesProfilePeople/Victor_Selissen.jpeg",
+    action: "heeft een status geplaatst",
+    date: "2 minuten geleden",
+    messageResponse: "en 187 anderen hebben gereageerd op dit bericht",
+    smiley: "😱",
+    firstPost: true
+  },
+
+  // --------------------------------------emoties proberen tracken-------------------------------------------//
+
+  {
+    type: "modalVideo",
+    dt: 1234981243,
+    text: "Teachable machine experimenten",
     profileName: "Tine Saenen",
     profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-    date: "zojuist",
+    date: "9 minuten geleden",
+    video: "/imagesIntro/teachable machine korter.mp4",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 26 anderen hebben geschokt gereageerd op dit bericht",
+    smiley: "😁",
+    firstPost: true
+  },
+
+  {
+    type: "picture",
+    dt: 1234981243,
+    text:
+      "Face Reader website! Als je voor de camera gaat zitten en lacht, zal de computer je lach herkennen. Dit geldt natuurlijk ook voor alle andere enoties die op het scherm staan. 😀",
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    date: "3 minuten geleden",
+    image: "/imagesIntro/face_reader_website.png",
+    action: "heeft een foto geplaatst",
+    messageResponse:
+      "en 1 anderen hebben geïnteresseerd gekeken naar dit bericht",
+    smiley: "🙂",
+    firstPost: true
+  },
+
+  {
+    type: "picture",
+    dt: 1234981243,
+    text: "Al mijn onderzoek staat gebundeld op een WordPressblog.",
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    date: "1 minutte geleden",
     image: "/imagesIntro/wordpress.png",
     action: "heeft een foto geplaatst",
     messageResponse:
@@ -550,6 +654,37 @@ let DATA = [
   // —AN—//
 
   // —VITAL—//
+
+  {
+    type: "notification",
+    target: "vital",
+    dt: 1234981243,
+    message:
+      "Nog steeds geen Facebookprofiel aangemaakt, Vital? Wordt dat eens geen tijd?",
+    text:
+      "Tune in now: Facebook + Dear Evan Hansen host “Today You’re You, and That’s Enough: A Mental Health Discussion. It’s likely that you or someone you know has struggled with mental health. The more we open up, the more we can support one another. That’s why we’re bringing together the cast of Dear Evan Hansen and mental health experts and advocates live today to discuss reducing stigma and opening up the conversation around mental health.",
+    image: "/imagesNotifications/Facebook-logo.png",
+    textTitle: "Let's find more that brings us together!"
+  },
+  {
+    type: "notification",
+    target: "vital",
+    dt: 1234981243,
+    message: "Je haar lijkt best wel lang! Zal ik een kapperbezoek regelen?",
+    textTitle: "Barber shop Berberia",
+    text: "The art of beautiful hair awaits you.",
+    image: "/imagesNotifications/barber.png"
+  },
+  {
+    type: "notification",
+    target: "vital",
+    dt: 1234981243,
+    message: "Vital, de tovergroentjes zijn terug bij Delhaize!",
+    textTitle: "Delhaize",
+    text:
+      "Vanaf 2 mei kan je 6 weken lang elke week een nieuwe aflevering ontdekken op delhaize.be/tovergroentjes, maar ook op Podcast van iTunes, Deezer, YouTube en Spotify. ",
+    image: "/imagesNotifications/twba.png"
+  },
 
   // —ONNO—//
 
@@ -898,7 +1033,17 @@ let DATA = [
     target: "onno",
     order: 2,
     dt: 1234981243,
-    message: "Onno,"
+    message:
+      "Hey Onno, het is al even geleden dat je een nieuw nummer hebt toegevoegd aan je Discogs pagina. Stay active! 😁 "
+  },
+
+  {
+    type: "miniNotification",
+    target: "onno",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Hey Onno, je profielfoto is een zwart vierkant... Ik raad je aan om een foto van je gezicht te gebruiken. Zo kunnen je vrienden je beter herkennen! "
   },
 
   // --***********--EMOTIES----***********---//
@@ -1411,7 +1556,89 @@ let DATA = [
 
   // —VITAL—//
 
+  {
+    type: "ad",
+    target: "vital",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/twba.png",
+    pageName: "TWBA",
+    image: "/imagesPosts/twba.jpg",
+    text: "The Disruption Company",
+    subText: "How can we help you?"
+  },
+
+  {
+    type: "ad",
+    target: "vital",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/bob-1.svg",
+    pageName: "BOB",
+    image: "/imagesPosts/bob.jpg",
+    text: "Helemaal BOB. Nul op. Je verzekeraar is trots op BOB.",
+    subText:
+      "Ook deze zomer staat het BOB-team klaar met een gloednieuwe campagne. Van 7 juni tot 2 september luidt de slogan ‘Helemaal BOB. Nul op.’ Want wie BOB is, drinkt uitsluitend alcoholvrije alternatieven. En brengt zo iedereen veilig thuis. "
+  },
+
+  {
+    type: "ad",
+    target: "vital",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/genereuzen.jpg",
+    pageName: "De Genereuzen",
+    image: "/imagesPosts/reuzen.png",
+    text: "Iedereen hoort erbij: met of zonder beperking samen op pad.",
+    subText:
+      "Kies een activiteit waaraan jij (met je vrienden) graag wil deelnemen. Wij zoeken voor jou de perfecte maatjes."
+  },
+
   // —ONNO—//
+
+  {
+    type: "ad",
+    target: "onno",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/luon.png",
+    pageName: "LUON",
+    image: "/imagesPosts/amora-detail.jpg",
+    text: "Content creation for an inconic activation campaign",
+    subText:
+      "Can you believe it’s been nearly 20 years since Amora sold his last mustard goblet with a Smurf scenery on it? Back in the days an average family had at least one of these must-haves in the tableware cupboard. So when Amora decided to reintroduce the Smurf prints, they called on LUON to make the news spread like a fire."
+  },
+
+  {
+    type: "ad",
+    target: "onno",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/nh_news.jpg",
+    pageName: "NH News",
+    image: "/imagesPosts/zandvoort_form1.jpg",
+    text: "Zo kom je aan kaarten voor de Formule 1 in Zandvoort",
+    subText:
+      "Na de hysterie over de komst van de Grand Prix naar Zandvoort, vragen fans zich natuurlijk af: hoe zorg ik ervoor dat ik in het voorjaar van 2020 op het circuit ben? Hieronder lees je hoe jij aan kaarten komt."
+  },
+
+  {
+    type: "ad",
+    target: "onno",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/catawiki.jpg",
+    pageName: "Catawiki",
+    image: "/imagesPosts/maserati.jpg",
+    text: "Maserati - Biturbo - 1984",
+    subText:
+      "Hij kan worden bekeken in Italië - één eigenaar - complete beurt met distributie - officiële Maserati document van originaliteit beschikbaar"
+  },
+
+  {
+    type: "ad",
+    target: "onno",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/torfs.png",
+    pageName: "Torfs",
+    image: "/imagesPosts/torfs_onno.png",
+    text: "Torfs",
+    subText: "Sterk in schoenen"
+  },
 
   // —***********—EMOTIES——***********—//
 
@@ -1675,7 +1902,40 @@ let DATA = [
 
   // —VITAL—//
 
+  {
+    type: "news",
+    target: "vital",
+    dt: 1234981243,
+    text:
+      "Met UP willen we samen, stap voor stap, heel België energie-efficiënter maken. Huis na huis, straat na straat, stad na stad. We willen niet wachten om te doen wat moét, maar vandaag al doen wat kán. Het is tenslotte 2018. Time to move UP.",
+    profileName: "Engie",
+    profileImage: "/imagesProfilePages/engie.png",
+    date: "4 minuten geleden",
+    image: "/imagesPosts/up.jpg",
+    messageSource: "Engie",
+    messageSourceWebsite: "http://www.engie.be",
+    action: "heeft gereageerd op een bericht van",
+    messageResponse: "en 725 anderen hebben gelachen gekeken naar dit bericht",
+    smiley: "😀"
+  },
+
   // —ONNO—//
+
+  {
+    type: "news",
+    target: "onno",
+    dt: 1234981243,
+    text: "Neem een kijkje binnen in het gerenoveerde herenhuis van Onno",
+    profileName: "HLN",
+    profileImage: "/imagesProfilePages/hln.png",
+    date: "54 minuten geleden",
+    image: "/imagesPosts/onno_stoel.jpeg",
+    messageSource: "HLN",
+    messageSourceWebsite: "www.hln.be",
+    action: "heeft gereageerd op een bericht van",
+    messageResponse: "en 210 anderen hebben gelachen gekeken naar dit bericht",
+    smiley: "😀"
+  },
 
   // —***********—EMOTIES——***********—//
 
@@ -2140,7 +2400,62 @@ let DATA = [
   // —MIEKE—//
   // —AN—//
   // —VITAL—//
+  {
+    type: "bigNewsOwnPost",
+    target: "vital",
+    dt: 1234981243,
+    text: "KBC EN TBWA SPOREN AAN OM BUS OF TRAM TE NEMEN",
+    subText:
+      "Dat de KBC Mobile App niet alleen supergemakkelijk maar ook handig is, bewijst KBC met een ludieke campagne rond zijn kersverse feature. Vanaf nu kan je er namelijk ook je ticket van De Lijn mee betalen. Simple comme bonjour dus. Hadden ze dat maar geweten, de pechvogels uit de campagne die op de openbare weg af te rekenen krijgen met een flinke tegenvaller.",
+    profileName: "Pub",
+    profileImage: "/imagesProfilePages/pub.png",
+    date: "1 minuut geleden",
+    image: "/imagesPosts/twba_kbc.jpg",
+    messageSource: "pub.be",
+    messageSourceWebsite: "pub.be",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 294 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "👍🏻"
+  },
+
+  {
+    type: "bigNewsOwnPost",
+    target: "vital",
+    dt: 1234981243,
+    text: "TELENET ZET OMROEPERS VAN TOEN OP YOUTUBE",
+    subText:
+      "Telenet heeft in het kader van zijn Vollenbak Vooruit campagne een leuk initiatief genomen. Het heeft een samenwerking met YouTube opgezet. Vier tv-omroep(st)ers uit de jaren ‘80 (Luc Appermont, Paul Codde, Alexandra Potvin en Rachel Frederix) nemen Vlaanderen gedurende twee weken mee terug in de tijd en kondigen net als toen filmpjes aan op YouTube. U moet gewoon gaan kijken hoe Rachel Frederix kwistig omspringt met hiphoptermen.",
+    profileName: "Made In Mechelen",
+    profileImage: "/imagesProfilePages/made_in_mechelen.png",
+    date: "3 minuten geleden",
+    image: "/imagesPosts/youtube_omroep.jpg",
+    messageSource: "http://www.madeinmechelen.be",
+    messageSourceWebsite: "http://www.madeinmechelen.be",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 65 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😻"
+  },
+
   // —ONNO—//
+
+  {
+    type: "bigNewsOwnPost",
+    target: "onno",
+    dt: 1234981243,
+    text:
+      "In de garage van Onno Hesselink: 'Met nieuwe auto’s heb ik helemaal niets'",
+    subText:
+      "Een tocht langs Belgische garages. Deze week: de liefde voor de drietand van Onno Hesselink.",
+    profileName: "De Tijd",
+    profileImage: "/imagesProfilePages/tijd.svg",
+    date: "8 minuten geleden",
+    image: "/imagesPosts/onno_auto.jpeg",
+    messageSource: "www.tijd.be",
+    messageSourceWebsite: "www.tijd.be",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 98 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "🚖🚘👍🏻"
+  },
 
   // —***********—EMOTIES——***********—//
 
@@ -2262,7 +2577,50 @@ let DATA = [
 
   // —VITAL—//
 
+  {
+    type: "video",
+    target: "vital",
+    dt: 1234981243,
+    text:
+      "Five Creepy Facts About The Madeleine McCann Case...Totally freaked me out man",
+    profileName: "Techlore",
+    profileImage: "/imagesProfilePages/techlore.jpg",
+    date: "2 minuten geleden",
+    videolink: "https://www.youtube.com/embed/4Z7H5tXqMGo",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 92 anderen hebben kwaad gereageerd op dit bericht",
+    smiley: "🤔"
+  },
+
   // —ONNO—//
+
+  {
+    type: "video",
+    target: "onno",
+    dt: 1234981243,
+    text: "Lipton - Giphy (arts and entertainment - rap hiphop)",
+    profileName: "LUON",
+    profileImage: "/imagesProfilePages/luon.png",
+    date: "9 minuten geleden",
+    videolink: "https://www.youtube.com/embed/t4UdlREOWkU",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 9 anderen hebben kwaad gereageerd op dit bericht",
+    smiley: "🍹"
+  },
+
+  {
+    type: "video",
+    target: "onno",
+    dt: 1234981243,
+    text: "Maserati Ghibli 1994",
+    profileName: "Jens Honoré",
+    profileImage: "/imagesProfilePeople/Jens_honore.jpg",
+    date: "8 minuten geleden",
+    videolink: "https://www.youtube.com/embed/tZkW_zaqLE4",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 9 anderen hebben kwaad gereageerd op dit bericht",
+    smiley: "🚘"
+  },
 
   // —***********—EMOTIES——***********—//
 
@@ -2379,6 +2737,34 @@ let DATA = [
   // —AN—//
 
   // —VITAL—//
+
+  {
+    type: "gif",
+    target: "vital",
+    dt: 1234981243,
+    text: "😁",
+    profileName: "Robin Debont",
+    profileImage: "/imagesProfilePeople/Robin_Debont.jpeg",
+    date: "zojuist",
+    image: "https://media.giphy.com/media/oydIov5VxxXcG0mu1P/giphy.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 98 anderen hebben ingestemd met dit bericht",
+    smiley: "👴🏼"
+  },
+
+  {
+    type: "gif",
+    target: "vital",
+    dt: 1234981243,
+    text: "They see me flying",
+    profileName: "Robin Debont",
+    profileImage: "/imagesProfilePeople/Robin_Debont.jpeg",
+    date: "2 minuten geleden",
+    image: "/imagesPosts/brussels_air.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 7 anderen hebben ingestemd met dit bericht",
+    smiley: "😎"
+  },
 
   // —ONNO—//
 
@@ -2678,7 +3064,51 @@ let DATA = [
   // —MIEKE—//
   // —AN—//
   // —VITAL—//
+  {
+    type: "picture",
+    target: "vital",
+    dt: 1234981243,
+    text: "Fijn je terug te hebben tijdens de jury van de masters van 2019",
+    profileName: "Sint Lucas",
+    profileImage: "/imagesProfilePages/st_luc.png",
+    date: "38 minuten geleden",
+    image: "/imagesPosts/vital_jury.JPG",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 9 anderen hebben kwaad gereageerd op dit bericht",
+    smiley: "😁👍🏻"
+  },
+
   // —ONNO—//
+
+  {
+    type: "picture",
+    target: "onno",
+    dt: 1234981243,
+    text:
+      "Profile of today: Onno Hesselink - Belgian musician and designer. Is the creative director and a partner at LUON in Overijse.",
+    profileName: "Discogs",
+    profileImage: "/imagesProfilePages/discogs.png",
+    date: "2 minuten geleden",
+    image: "/imagesPosts/onno_discogs.png",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 12 anderen hebben kwaad gereageerd op dit bericht",
+    smiley: "😁👍🏻"
+  },
+
+  {
+    type: "picture",
+    target: "onno",
+    dt: 1234981243,
+    text:
+      "Je was bij L'Officina in Overijse. Wil een review achterlaten op hun pagina?",
+    profileName: "Facebook",
+    profileImage: "/imagesProfilePages/facebook.png",
+    date: "6 minuten geleden",
+    image: "/imagesPosts/onno_garage.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 2 anderen hebben gelachen naar dit bericht",
+    smiley: "🙂"
+  },
 
   // —***********—EMOTIES——***********—//
 
