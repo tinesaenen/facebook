@@ -649,9 +649,40 @@ let DATA = [
 
   // —RENATE—//
 
+  {
+    type: "notification",
+    target: "renate",
+    dt: 1234981243,
+    message: "Zin in een lekere koffie tijdens je middag break?",
+    text: "Koffiehuis Irmak",
+    image: "/imagesNotifications/irmak.jpeg",
+    textTitle: "Koffiehuis Irmak op de Vaillantlaan 379 in Den Haag"
+  },
+
   // —MIEKE—//
 
   // —AN—//
+  {
+    type: "notification",
+    target: "an",
+    dt: 1234981243,
+    message:
+      "Ben je gefascineerd door de donkere kant van de maan? 🌚 Misschien kan dit album je verderhelpen?",
+    text: "Dark Side Of The Moon by Pink Floyd",
+    image: "/imagesPosts/moon.jpg",
+    textTitle:
+      "Deze week bestaat het album 'Dark Side Of The Moon' van Pink Floyd 46 jaar! De plaat werd op 1 maart 1973 uitgebracht en er zijn sindsdien meer dan 45 miljoen exemplaren van verkocht. Wist jij dit al over het iconische album?"
+  },
+  {
+    type: "notification",
+    target: "an",
+    dt: 1234981243,
+    message:
+      "Ben jij dit? Ik voeg je tag toe aan een foto die een van vrienden heeft geüpload!",
+    text: "We tagegn je zodat je over op Facebook gekend bent",
+    image: "/imagesNotifications/an_detail.JPG",
+    textTitle: "Facebook automatic tags"
+  },
 
   // —VITAL—//
 
@@ -786,6 +817,13 @@ let DATA = [
     order: 2,
     dt: 1234981243,
     message: "Hallo Werner, wat zie je er stralend uit vandaag!"
+  },
+  {
+    type: "miniNotification",
+    target: "werner",
+    order: 2,
+    dt: 1234981243,
+    message: "Rem Koolhaas heeft je gepord"
   },
   {
     type: "miniNotification",
@@ -944,6 +982,14 @@ let DATA = [
     order: 2,
     dt: 1234981243,
     message:
+      "Hey Laura, vandaag is het 1 dag geleden dat je op de master jury stond van Sint Lucas. Wil je dit delen met je vrienden? Je was toen we erg streng... Zou je dit jaar niet wat milder zijn?"
+  },
+  {
+    type: "miniNotification",
+    target: "laura",
+    order: 2,
+    dt: 1234981243,
+    message:
       "Laura! Integrated 2019 staat voor de deur. Al een outfit uitgekozen?"
   },
 
@@ -953,21 +999,16 @@ let DATA = [
     target: "renate",
     order: 2,
     dt: 1234981243,
-    message: "Renate..."
+    message:
+      "Renate, is dit jouw telefoonnummer: +31 6 24525557? Ik voeg het even toe aan je profiel."
   },
   {
     type: "miniNotification",
     target: "renate",
     order: 2,
     dt: 1234981243,
-    message: "Renate..."
-  },
-  {
-    type: "miniNotification",
-    target: "renate",
-    order: 2,
-    dt: 1234981243,
-    message: "Renate..."
+    message:
+      "Hey Renate, op 24 juli is er een oudleerlingen avond op de KABK. Zet ik ja aanwezig op het evenement?"
   },
 
   // —MIEKE—//
@@ -999,21 +1040,25 @@ let DATA = [
     target: "an",
     order: 2,
     dt: 1234981243,
-    message: "An..."
+    message:
+      "Hey An, klopt het dat dit je telefoonnummuer is? Dat voeg ik het even toe aan je profiel! +32 (0) 476 02 46 28"
   },
+
   {
     type: "miniNotification",
     target: "an",
     order: 2,
     dt: 1234981243,
-    message: "An..."
+    message:
+      "Ik heb gelezen dt je grafisch werk zich tussen analoog en digitaal bevindt. Misschien moet je eens kijken op de pagina van analogvsdigitalart? Zeer sterk werk!"
   },
+
   {
     type: "miniNotification",
     target: "an",
     order: 2,
     dt: 1234981243,
-    message: "An..."
+    message: "Ben je gefascineerd door de donkere kant van de maan? 🌚 B"
   },
 
   // —VITAL—//
@@ -1447,6 +1492,41 @@ let DATA = [
 
   // —HUGO—//
 
+  {
+    type: "ad",
+    target: "hugo",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/mrcod.jpeg",
+    pageName: "Mr. Cod",
+    image: "/imagesPosts/mrcod.jpg",
+    text: "Mr. Cod Belgium",
+    subText:
+      "Mr. Cod has typical American fast food systems as standard, with equipment designed by US companies and available on a worldwide basis. However, the roots of the company lie in the British quality end of the fast food industry."
+  },
+
+  {
+    type: "ad",
+    target: "hugo",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/mrmint.jpeg",
+    pageName: "Mister Minit",
+    image: "/imagesPosts/mrMint.jpeg",
+    text: "MISTER MINIT Basilix Shopping Center",
+    subText:
+      "Of je nu kapotte schoenen hebt die hersteld moeten worden, een horlogebatterij hebt dat vervangen moet worden of je wil sleutels laten bijmaken - met onze jarenlange ervaring kunnen we jou de service bieden die je nodig hebt in hartje Sint-Agatha-Berchem."
+  },
+
+  {
+    type: "ad",
+    target: "hugo",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/graf_logo.png",
+    pageName: "Graphius",
+    image: "/imagesPosts/graphius_bedrijf.webp",
+    text: "Graphius Gent",
+    subText: "We make your print work!"
+  },
+
   // —JAN—//
 
   {
@@ -1483,6 +1563,18 @@ let DATA = [
     text:
       "Oude versie beu? Tijd voor een nieuwe? De Apple watch series 4 is nu verkrijgbaar in de App Store",
     subText: "Ga langs bij je lokale Switch handelaar en vraag voor meer info"
+  },
+
+  {
+    type: "ad",
+    target: "jan",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/11.11.11.jpg",
+    pageName: "11.11.11",
+    image: "/imagesPosts/111111_campagne.jpg",
+    text: "11.11.11",
+    subText:
+      "Wereldwijd zijn 65 miljoen mensen op de vlucht. Ze migreren door armoede, ongelijkheid, vervolging of de klimaatverandering."
   },
 
   // —REG—//
@@ -1548,11 +1640,152 @@ let DATA = [
 
   // —LAURA—//
 
+  {
+    type: "ad",
+    target: "laura",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/lorevankeer.jpg",
+    pageName: "Lore Van Keer",
+    image: "/imagesPosts/lore_ad.jpg",
+    text: "Lore Van Keer",
+    subText:
+      "Lore designs perfect objects for an imperfect world. Once the objects are made, she lets them go. They are bought and worn by men and women in this bustling world. Esthetically stripped down, her jewellery is created to bring peace, beauty and timeless luxury to counterbalance this chaos."
+  },
+
+  {
+    type: "ad",
+    target: "laura",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/aveve.png",
+    pageName: "Aveve",
+    image: "/imagesPosts/pastel.jpg",
+    text: "Pastel vetplantjes",
+    subText: "Korting op heel ons succulent assortiment!"
+  },
+
+  {
+    type: "ad",
+    target: "laura",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/konditori_logo.png",
+    pageName: "Konditori",
+    image: "/imagesPosts/konditori.jpg",
+    text: "Konitori Antwerpen",
+    subText:
+      "Ovenvers, origineel en overheerlijk brood en gebak in het hart van Antwerpen."
+  },
+
+  {
+    type: "ad",
+    target: "laura",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/kornel.png",
+    pageName: "Kornel",
+    image: "/imagesPosts/kornel_post.jpg",
+    text: "Kornel Koffiebar",
+    subText:
+      "Kornél is je woonkamer, de plek waar je werkt en waar je cultuur ontdekt. Kornél brengt mensen samen: thuiswerkers, kunstenaars, ontwerpers, buurtbewoners en zij die gewoon zin hebben in een goeie koffie. Kornél is toegankelijk voor iedereen. Kornél is van ons allemaal…"
+  },
+
   // —RENATE—//
+
+  {
+    type: "ad",
+    target: "renate",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/pyrasied.jpg",
+    pageName: "Pyrasied",
+    image: "/imagesPosts/fluor_platen.jpg",
+    text: "SAMPLES Fluor acrylaat kleuren, Vanaf €2,00 per sample ex BTW",
+    subText:
+      "Bekijk, bewonder en test het materiaal! Van alle kleuren zijn er samples! Sampleformaat: 50x50mm en 100x60mm"
+  },
+
+  {
+    type: "ad",
+    target: "renate",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/bol_com.jpg",
+    pageName: "Bol.com",
+    image: "/imagesPosts/christie.jpg",
+    text: "Sproken - Fairy Tales",
+    subText:
+      "Dit boek documenteert 35 jaar werk van beeldend kunstenaar Christie van der Haak, aan wie dit jaar de Ouborgprijs 2015 wordt uitgereikt. Van der Haak is van huis uit schilder en ging later stoffen ontwerpen die als autonome kunstwerken kunnen functioneren maar ook als bekleding, wandbespanning, tafelkleden e.d. Zij opereert in het spanningsveld tussen kunst en design..."
+  },
+  {
+    type: "ad",
+    target: "renate",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePeople/eethuis_fes.png",
+    pageName: "Eethuis Fes",
+    image: "/imagesPosts/eethuis_fes.jpg",
+    text: "Eethuis Fes",
+    subText:
+      "Reserveren niet verplicht | Geschikt voor kinderen | Afhaalrestaurants | Bezorgservice | Catering | Bediening"
+  },
+
+  {
+    type: "ad",
+    target: "renate",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/haagwonen.jpeg",
+    pageName: "Haag Wonen",
+    image: "/imagesPosts/den_haag.jpg",
+    text: "Haag Wonen",
+    subText:
+      "Als wijkbeheerder ben jij de ‘oren en ogen’ van Haag Wonen. Je houdt toezicht op wooncomplexen en hun omgeving en bent het eerste aanspreekpunt voor onze huurders. Iets voor jou? Solliciteer dan nu."
+  },
 
   // —MIEKE—//
 
   // —AN—//
+
+  {
+    type: "ad",
+    target: "an",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/st_luc.png",
+    pageName: "Sint Lucas",
+    image: "/imagesPosts/integrated.jpg",
+    text: "Integrated 2019",
+    subText:
+      "RADICAL IMAGINATION BIENNIAL INTERNATIONAL ART & DESIGN CONFERENCE 5, 6 & 7 NOVEMBER DESINGEL ANTWERP"
+  },
+
+  {
+    type: "ad",
+    target: "an",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/kabina.png",
+    pageName: "Kabinet",
+    image: "/imagesPosts/kabinet.jpg",
+    text: "Kabinet",
+    subText: "Graphic design & print studio based in Antwerp."
+  },
+
+  {
+    type: "ad",
+    target: "an",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/facebook.png",
+    pageName: "Facebook",
+    image: "/imagesPosts/analoog_digit.jpeg",
+    text: "Analog vs. Digital",
+    subText: "Join this group for a wide range on digital vs analogue art! "
+  },
+
+  {
+    type: "ad",
+    target: "an",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/riso.jpg",
+    pageName: "Riso",
+    image: "/imagesPosts/riso.jpg",
+    text:
+      "RISO - reducing print costs. Home to the world's fastest cut sheet A4 printer",
+    subText:
+      "RISO is a leading global manufacturer of high quality printers and offers smart high-speed, high-volume print solutions to a wide variety of clients in diverse markets all around the world."
+  },
 
   // —VITAL—//
 
@@ -2194,6 +2427,27 @@ let DATA = [
     type: "bigNews",
     target: "jan",
     dt: 1234981243,
+    text: "IS E-SIGARET EVEN SCHADELIJK ALS EEN GEWONE SIGARET?",
+    subText:
+      "E-sigaretten worden algemeen beschouwd als veel minder schadelijk dan gewone sigaretten, met 95 procent minder schadelijke stoffen. Twee Britse onderzoekers maken de vergelijking van een maand roken met een e-sigaret, een maand gewone sigaretten roken en een maand niet roken. Het resultaat is overduidelijk.",
+    profileName: "Vrt News",
+    profileImage: "/imagesProfilePages/vrnt_news.jpg",
+    date: "3 minuten geleden",
+    image: "/imagesPosts/e_sig.jpg",
+    messageSource: "nieuws.vtm.be",
+    messageSourceWebsite: "nieuws.vtm.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse:
+      "en 3 anderen hebben kwaad en geschokt gekeken naar dit bericht",
+    smiley: "😡😱"
+  },
+
+  // —REG—//
+
+  {
+    type: "bigNews",
+    target: "reg",
+    dt: 1234981243,
     text: "Studenten zetten koffie met creativiteit (of doen toch alsof)",
     subText:
       "Studenten van het tweede jaar Reclamevormgeving aan Sint-Lucas Antwerpen hebben hun eigen koffie voorgesteld. DRD4-7R heet de koffie. De naam verwijst naar het gen dat creativiteit, experiment en durf stimuleert.",
@@ -2208,8 +2462,6 @@ let DATA = [
       "en 3 anderen hebben droevig en kwaad gekeken naar dit bericht",
     smiley: "😤😢"
   },
-
-  // —REG—//
   // —FREDERIK—//
   // —LIEVEN—//
   // —LAURA—//
@@ -2383,22 +2635,226 @@ let DATA = [
     messageSource:
       "https://nl.aliexpress.com/item/Neon-Orange-Holographic-Fluorescent-Pigment-Powder-for-Paints-Nail-Art-Soap-Making-Candle-Making-Nail-Polish/32368806335.html",
     messageSourceWebsite: "perfectportions.com",
-    action: "aliexpres.com",
+    action: "heeft een bericht gedeeld van ",
     messageResponse: "en 195 anderen hebben verbaasd gekeken naar dit bericht",
     smiley: "😨"
   },
 
+  {
+    type: "bigNewsOwnPost",
+    target: "werner",
+    dt: 1234981243,
+    text: "Mediterraans restaurant Cuzina verhuist naar Mechelsesteenweg",
+    subText:
+      "Het Mediterraanse restaurant Cuzina – een vaste waarde in de Lierse horeca - gaat verhuizen. Na tien jaar trok zaakvoerder Aziz Chaoui onlangs de deur van zijn oude pand in de Berlaarsestraat achter zich dicht. Binnenkort heropent Cuzina aan de Mechelsesteenweg 96.",
+    profileName: "HLN",
+    profileImage: "/imagesProfilePages/hln.png",
+    date: "23 minuten geleden",
+    image: "/imagesPosts/resto_mechelsesteenweg.jpeg",
+    messageSource:
+      "https://www.hln.be/in-de-buurt/lier/mediterraans-restaurant-cuzina-verhuist-naar-mechelsesteenweg~a70f22e7/",
+    messageSourceWebsite: "www.hln.be",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 76 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😻"
+  },
+
+  {
+    type: "bigNewsOwnPost",
+    target: "werner",
+    dt: 1234981243,
+    text:
+      "Huis renoveren in Frankrijk: 3 tips die voorkomen dat u erop leegloopt",
+    subText:
+      "Denkt u na over het renoveren van een huis in Frankrijk? Een geweldig idee, mits u dat niet onderschat natuurlijk. ",
+    profileName: "Maison France",
+    profileImage: "/imagesProfilePages/maison_france.png",
+    date: "1 minuut geleden",
+    image: "/imagesPosts/fr_reno.png",
+    messageSource: "https://brfrance.eu/renoveren/",
+    messageSourceWebsite: "brfrance.eu",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 23 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "👍🏻"
+  },
+
   // —GEERT—//
   // —HUGO—//
+
+  {
+    type: "bigNewsOwnPost",
+    target: "hugo",
+    dt: 1234981243,
+    text: "Bicycle parking building, Antwerp.",
+    subText:
+      "Bicycle parking building, Antwerp. Visionandfactory was selected by the NMBS (Belgian Railway Corporation) to design an architectual intervention for  a new bicycle parking building in Antwerp. The building was designed by the...",
+    profileName: "Als ge van Antwerpen zijt...",
+    profileImage: "/imagesProfilePages/als_ge_van_a_zijt.jpg",
+    date: "1 minuut geleden",
+    image: "/imagesPosts/berchem_hugo.jpg",
+    messageSource: "Als ge van Antwerpen zijt",
+    messageSourceWebsite: "Als ge van Antwerpen zijt",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 195 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😁😍"
+  },
+
   // —JAN—//
+
+  {
+    type: "bigNewsOwnPost",
+    target: "jan",
+    dt: 1234981243,
+    text: "Patrick Janssens: 'Met bewondering naar Genk gekeken'",
+    subText:
+      "Patrick Janssens is met onmiddellijke ingang de nieuwe algemene directeur van Racing Genk. Dat bevestigde de club maandag op een persconferentie. De voormalige voorzitter van de sp.a en ex-burgemeester van Antwerpen solliciteerde zelf voor de job. Hij is de opvolger van de in april ontslagen Dirk Degraen en tekende een contract voor onbepaalde duur bij de Limburgse topclub.",
+    profileName: "Gazet van Antwerpen",
+    profileImage: "/imagesProfilePages/gva.png",
+    date: "33 minuten geleden geleden",
+    image: "/imagesPosts/jans_BBDO.jpg",
+    messageSource: "https://www.nieuwsblad.be/cnt/dmf20140825_01231624",
+    messageSourceWebsite: "Gazet van Antwerpen",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 85 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "🙂"
+  },
 
   // —REG—//
   // —FREDERIK—//
   // —LIEVEN—//
   // —LAURA—//
+
+  {
+    type: "bigNewsOwnPost",
+    target: "laura",
+    dt: 1234981243,
+    text: "Juweelontwerpster Lore Van Keer strijkt neer in Nationalestraat",
+    subText:
+      "ANTWERPEN - Juweelontwerpster Lore Van Keer spreidt haar vleugels: gesterkt door haar succes in thuisbasis Wolvertem begint ze aan de verovering van Antwerpen. Ze start met een tijdelijke stek, maar dat zou wel eens een permanente winkel kunnen worden.",
+    profileName: "Gazet van Antwerpen",
+    profileImage: "/imagesProfilePages/gva.png",
+    date: "3 minuten geleden geleden",
+    image: "/imagesPosts/lore_nieuwsverichte.jpg",
+    messageSource:
+      "https://nl.aliexpress.com/item/Neon-Orange-Holographic-Fluorescent-Pigment-Powder-for-Paints-Nail-Art-Soap-Making-Candle-Making-Nail-Polish/32368806335.html",
+    messageSourceWebsite: "perfectportions.com",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 195 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😨"
+  },
+
+  {
+    type: "bigNewsOwnPost",
+    target: "laura",
+    dt: 1234981243,
+    text: "Familie stelt expo samen in koffiehuis Kornél",
+    subText:
+      "...vormgeefster Laura Broux (25) exposeert er samen met haar tante Dominique Zonnekein.",
+    profileName: "Gazet van Antwerpen",
+    profileImage: "/imagesProfilePages/gva.png",
+    date: "9 minuten geleden geleden",
+    image: "/imagesPosts/gva_broux.jpg",
+    messageSource: "https://www.pressreader.com/",
+    messageSourceWebsite: "www.pressreader.com",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 34 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😍"
+  },
   // —RENATE—//
+
+  {
+    type: "bigNewsOwnPost",
+    target: "renate",
+    dt: 1234981243,
+    text: "Balans opmaken na Pure Digital",
+    subText:
+      "De eerste editie van Pure Digital in Amsterdam zit er op. Een eenmalig experiment of de start van een nieuwe formule? Vast staat dat het concept nog wel moet worden bijgeschaafd.",
+    profileName: "Sign Magazine",
+    profileImage: "/imagesProfilePages/sign.jpg",
+    date: "8 minuten geleden",
+    image: "/imagesPosts/Pure_Digital_Antalis-2.jpg",
+    messageSource: "www.sign.nl",
+    messageSourceWebsite: "www.sign.nl",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 294 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "👍🏻😀"
+  },
+
+  {
+    type: "bigNewsOwnPost",
+    target: "renate",
+    dt: 1234981243,
+    text: "Moet je paardenpoep opruimen in Den Haag?",
+    subText:
+      "In Den Haag zien we regelmatig mensen paardrijden, lekker door de duinen of over het strand. Maar ook in de stad, meestal gaat het dan om de politie die de dieren van stal haalt. Leuk, maar die dieren leggen flinke drollen. Moeten ruiters die opruimen?",
+    profileName: "In De Buurt",
+    profileImage: "/imagesProfilePages/indebuurt.png",
+    date: "33 minuten geleden",
+    image: "/imagesPosts/in_de_buurt.jpg",
+    messageSource: "indebuurt.n",
+    messageSourceWebsite: "indebuurt.n",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 32 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "🤔"
+  },
+
+  {
+    type: "bigNewsOwnPost",
+    target: "renate",
+    dt: 1234981243,
+    text: "Recyclage een goede zaak? Niet per se",
+    subText:
+      "In 2011 richtte hij met ontwerper Renate Boere ontwerp-onderzoeksbureau DRS22 op, waar hij onderzoek doet naar lichtgewicht constructies.",
+    profileName: "De Morgen",
+    profileImage: "/imagesProfilePages/de_morgen.png",
+    date: "2 minuten geleden",
+    image: "/imagesPosts/recyclage.jpeg",
+    messageSource: "www.demorgen.be",
+    messageSourceWebsite: "www.demorgen.be",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 23 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "🤔"
+  },
+
   // —MIEKE—//
   // —AN—//
+
+  {
+    type: "bigNewsOwnPost",
+    target: "an",
+    dt: 1234981243,
+    text: "De nieuwe directeur wil de Jan van Eyck Academie versterken",
+    subText:
+      "Jan van Eyk Academie Hicham Khalidi, de nieuwe directeur van de Jan van Eyck Academie, wil niet veel veranderen bij het instituut, maar versterken hoe het al gaat. Hij begon zelf met het scouten van jonge kunstenaars.",
+    profileName: "De Tijd",
+    profileImage: "/imagesProfilePages/tijd.svg",
+    date: "1 minuut geleden",
+    image: "/imagesPosts/jve_directeur.jpg",
+    messageSource: "www.nrc.nl",
+    messageSourceWebsite: "www.nrc.nl",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 195 anderen hebben blij gekeken naar dit bericht",
+    smiley: "😀"
+  },
+
+  {
+    type: "bigNewsOwnPost",
+    target: "an",
+    dt: 1234981243,
+    text: "Art Center Sarasota Dives Into New Season",
+    subText:
+      "A wide variety of shows, artists and media occupy the 2018-19 schedule.",
+    profileName: "Art Center Sarosota",
+    profileImage: "/imagesProfilePages/sarosota.png",
+    date: "6 minuten geleden",
+    image: "/imagesPosts/friet.jpg",
+    messageSource: "www.sarasotamagazine.com",
+    messageSourceWebsite: "www.sarasotamagazine.com",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 3 anderen hebben blij gekeken naar dit bericht",
+    smiley: "😀"
+  },
+
   // —VITAL—//
   {
     type: "bigNewsOwnPost",
@@ -2575,6 +3031,20 @@ let DATA = [
 
   // —AN—//
 
+  {
+    type: "video",
+    target: "an",
+    dt: 1234981243,
+    text: "An Onghena voor FORMAT2019",
+    profileName: "Format",
+    profileImage: "/imagesProfilePages/format.png",
+    date: "74 minuten geleden",
+    videolink: "https://player.vimeo.com/video/278036888",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 3 anderen hebben blij gereageerd op dit bericht",
+    smiley: "🤔"
+  },
+
   // —VITAL—//
 
   {
@@ -2716,6 +3186,33 @@ let DATA = [
 
   // —WERNER—//
 
+  {
+    type: "gif",
+    target: "werner",
+    dt: 1234981243,
+    text: "😎😎😎",
+    profileName: "Arne Joostens",
+    profileImage: "/imagesProfilePeople/Arne_Goossens.jpeg",
+    date: "23 minuten geleden",
+    image: "https://media.giphy.com/media/5geS15GQH4rmM/giphy.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 7 anderen hebben gelachen naar dit bericht",
+    smiley: "🤪"
+  },
+  {
+    type: "gif",
+    target: "werner",
+    dt: 1234981243,
+    text: "Glassessssss",
+    profileName: "Arne Joostens",
+    profileImage: "/imagesProfilePeople/Arne_Goossens.jpeg",
+    date: "23 minuten geleden",
+    image: "https://media.giphy.com/media/shIRdgYzujbZC/giphy.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 7 anderen hebben gelachen naar dit bericht",
+    smiley: "🤪"
+  },
+
   // —GEERT—//
 
   // —HUGO—//
@@ -2730,7 +3227,35 @@ let DATA = [
 
   // —LAURA—//
 
+  {
+    type: "gif",
+    target: "laura",
+    dt: 1234981243,
+    text: "🐆",
+    profileName: "Arne Joostens",
+    profileImage: "/imagesProfilePeople/Arne_Goossens.jpeg",
+    date: "23 minuten geleden",
+    image: "https://media.giphy.com/media/rAQ91zQgBxfFe/giphy.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 7 anderen hebben gelachen naar dit bericht",
+    smiley: "🤪"
+  },
+
   // —RENATE—//
+
+  {
+    type: "gif",
+    target: "renate",
+    dt: 1234981243,
+    text: "😁",
+    profileName: "Andrea Freckmann",
+    profileImage: "/imagesProfilePeople/anderea_f.jpg",
+    date: "3 minuten geleden",
+    image: "https://media.giphy.com/media/Y42EecqsurzfebIwSD/source.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 5 anderen hebben ingestemd met dit bericht",
+    smiley: "🤪"
+  },
 
   // —MIEKE—//
 
@@ -2994,6 +3519,21 @@ let DATA = [
     messageResponse: "en 256 anderen hebben gelachen naar dit bericht",
     smiley: "🤪"
   },
+
+  {
+    type: "picture",
+    target: "werner",
+    order: 8,
+    dt: 1234981243,
+    text: "Whiskas lanceert eigen persoonlijke assistent",
+    profileName: "HLN",
+    profileImage: "/imagesProfilePages/hln.png",
+    date: "4 minuten geleden",
+    image: "/imagesPosts/whiskas.png",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 54 anderen hebben gelachen naar dit bericht",
+    smiley: "🧐"
+  },
   {
     type: "picture",
     target: "werner",
@@ -3027,6 +3567,37 @@ let DATA = [
   },
 
   // —HUGO—//
+
+  {
+    type: "picture",
+    target: "hugo",
+    dt: 1234981243,
+    text:
+      "The book is available in three cover versions, yellow-red, green, blue and magenta-purple.",
+    profileName: "Bol",
+    profileImage: "/imagesProfilePages/bol_com.jpg",
+    date: "9 minuten geleden",
+    image: "/imagesPosts/think_in_c.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 3 anderen hebben verbaasd gereageerd op dit bericht",
+    smiley: "😍"
+  },
+
+  {
+    type: "picture",
+    target: "hugo",
+    dt: 1234981243,
+    text:
+      "NEXT PRIVATE SALE on Sundays 19 May 2019, between 2pm and 6 pm. To get your personal invitation for private sales or to stay informed, please sign up",
+    profileName: "Handbags Gerda De Ceukelaire",
+    profileImage: "/public/imagesProfilePages/gerda-de-ceukelaire_5be3ec22.png",
+    date: "9 minuten geleden",
+    image: "/imagesPosts/handbags.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 7 anderen hebben verbaasd gereageerd op dit bericht",
+    smiley: "😍"
+  },
+
   // —JAN—//
 
   {
@@ -3060,9 +3631,126 @@ let DATA = [
   // —FREDERIK—//
   // —LIEVEN—//
   // —LAURA—//
+  {
+    type: "picture",
+    target: "laura",
+    dt: 1234981243,
+    text:
+      "ROMWE Flamingo Print Crop T-shirt 2019 Vrouwen Ivory Slit Side Casual Korte Mouw Zomer Tops Fashion Nieuwe Korte O Neck t-shirt",
+    profileName: "Ali Express",
+    profileImage: "/imagesProfilePages/aliexpress.png",
+    date: "4 minuten geleden",
+    image: "/imagesPosts/flamingo.webp",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 3 anderen hebben gelachen naar dit bericht",
+    smiley: "😁"
+  },
+  {
+    type: "picture",
+    target: "laura",
+    dt: 1234981243,
+    text: "Brown Leopard Suit Trousers",
+    profileName: "Zalando",
+    profileImage: "/imagesProfilePages/zalando.jpg",
+    date: "3 minuten geleden",
+    image: "/imagesPosts/suit_laura.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 23 anderen hebben gelachen naar dit bericht",
+    smiley: "😀"
+  },
+
+  {
+    type: "picture",
+    target: "laura",
+    dt: 1234981243,
+    text: "Throwback to Integrated 2011",
+    profileName: "Sint Lucas",
+    profileImage: "/imagesProfilePages/st_luc.png",
+    date: "43 minuten geleden",
+    image: "/imagesPosts/laura_integrated.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 8 anderen hebben gelachen naar dit bericht",
+    smiley: "😁"
+  },
+
   // —RENATE—//
+
+  {
+    type: "picture",
+    target: "renate",
+    dt: 1234981243,
+    text:
+      "Gouden German Design Award voor het boekontwerp 'The Living Surface - Lizan Freijsen'",
+    profileName: "German Design Award",
+    profileImage: "/imagesProfilePages/design_german.jpg",
+    date: "3 minuten geleden",
+    image: "/imagesPosts/renate_german.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 425 anderen hebben gelachen naar dit bericht",
+    smiley: "😁"
+  },
+
+  {
+    type: "picture",
+    target: "renate",
+    dt: 1234981243,
+    text:
+      "Open Dag 2019 | Wil je je oriënteren op een studie aan de KABK? Kom eens langs tijdens de Open Dag!",
+    profileName: "Koninklijke Academie van Beeldende Kunsten",
+    profileImage: "/imagesProfilePages/KABK.png",
+    date: "4 minuten geleden",
+    image: "/imagesPosts/kabk-open-dag-2019-1.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 23 anderen hebben gelachen naar dit bericht",
+    smiley: "😀"
+  },
+
   // —MIEKE—//
   // —AN—//
+  {
+    type: "picture",
+    target: "an",
+    dt: 1234981243,
+    text:
+      "TYPP#3 met bijdragen van alumni An Onghena, Hanne Van Dyck & Yvonne Lake, docenten Ward Heirwegh, Michel van Beirendonck & Thomas Crombez, alsook van gastdocenten als Wendy Morris en Ilse Van Rijn. Ward Heirwegh verzorgde de vormgeving. Sint Lucas studenten / docenten kunnen elk een gratis exemplaar ophalen, zoniet betaal je 12€.",
+    profileName: "Sint Lucas",
+    profileImage: "/imagesProfilePages/st_luc.png",
+    date: "3 minuten geleden",
+    image: "/imagesPosts/yellowPress.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 23 anderen hebben kwaad gereageerd op dit bericht",
+    smiley: "😀"
+  },
+
+  {
+    type: "picture",
+    target: "an",
+    dt: 1234981243,
+    text: "Yelena Popova, An Onghena en Katrein Breukers: Routines and Figures",
+    profileName: "Sea Foundation",
+    profileImage: "/imagesProfilePages/sea.png",
+    date: "9 minuten geleden",
+    image: "/imagesPosts/onghena_geel.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 2 anderen hebben verbaasd gereageerd op dit bericht",
+    smiley: "😀"
+  },
+
+  {
+    type: "picture",
+    target: "an",
+    order: 8,
+    dt: 1234981243,
+    text: "😁",
+    profileName: "Jan Van Eyck Academie",
+    profileImage: "/imagesProfilePages/jve.jpeg",
+    date: "8 minuten geleden",
+    image: "/imagesPosts/jan_van_eyck.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 56 anderen hebben gelachen naar dit bericht",
+    smiley: "🤪"
+  },
+
   // —VITAL—//
   {
     type: "picture",
