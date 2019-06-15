@@ -374,8 +374,8 @@ body {
 
 .header {
   /* background: #4267b2; */
-  padding: 15px 10px 10px 10px;
-  height: 40px;
+  padding: 28px 25px 25px 25px;
+  height: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -404,7 +404,7 @@ body {
 }
 
 .header__icons_oldStyle {
-  padding-left: 280px;
+  padding-left: 700px;
 }
 
 .header__icons_newStyle {
@@ -413,16 +413,18 @@ body {
 }
 
 .header__input {
-  width: 350px;
-  height: 25px;
+  width: 875px;
+  height: 62.5px;
   border: 1px solid;
   margin-top: 0px;
+  font-size: 30px;
+  margin-left: 20px;
 }
 
 input::placeholder {
   color: grey;
-  font-size: 12px;
-  padding: 0px 0px 0px 8px;
+  font-size: 30px;
+  padding: 0px 0px 0px 28px;
 }
 
 main {

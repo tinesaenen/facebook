@@ -112,14 +112,14 @@ export default class App extends Component {
               src="/imagesIcons/logo_fb_oldStyle.png"
               className="header__logo logo_oldStyle"
               alt="logo"
-              height="25"
+              height="62.5"
               onClick={this.onClickScrollDown.bind(this)} // fix me
             />
             <img
               src="/imagesIcons/logoFacebook3.gif"
               className="header__logo logo_newStyle"
               alt="logo"
-              height="25"
+              height="62.5"
             />
             <input className="header__input" placeholder="zoeken" />
           </div>
@@ -127,13 +127,13 @@ export default class App extends Component {
             src="/imagesIcons/icons_oldStyle.png"
             className="header__icons_oldStyle"
             alt="logo"
-            height="30"
+            height="75"
           />
           <img
             src="/imagesIcons/icons_newStyle.png"
             className="header__icons_newStyle"
             alt="logo"
-            height="26"
+            height="65"
           />
         </header>
         <main>
@@ -146,7 +146,7 @@ export default class App extends Component {
                 src="/imagesIcons/linker_kolom_oldStyle.png"
                 className="linkerkolom__icons_oldStyle"
                 alt="logo"
-                height="inherit"
+                // height="2200"
               />
             )}
 
@@ -190,7 +190,7 @@ export default class App extends Component {
                 src="/imagesIcons/rechter_kolom_oldstyle.jpg"
                 className="rechterkolom__icons_oldStyle"
                 alt="logo"
-                height="inherit"
+                // height="inherit"
               />
             )}
             {this.state.showAds && (
