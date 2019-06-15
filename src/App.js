@@ -100,13 +100,13 @@ export default class App extends Component {
     return (
       <div className="app">
         <header className="header">
-          {/* <button
+          <button
             id="switch"
             onClick={this.onSwitch.bind(this)}
             style={{ position: "absolute", right: 0 }}
           >
             Switch
-          </button> */}
+          </button>
           <div className="logo_search_container">
             <img
               src="/imagesIcons/logo_fb_oldStyle.png"
@@ -146,7 +146,8 @@ export default class App extends Component {
                 src="/imagesIcons/linker_kolom_oldStyle.png"
                 className="linkerkolom__icons_oldStyle"
                 alt="logo"
-                // height="2200"
+                // width="720"
+                height="2700"
               />
             )}
 
@@ -190,7 +191,7 @@ export default class App extends Component {
                 src="/imagesIcons/rechter_kolom_oldstyle.jpg"
                 className="rechterkolom__icons_oldStyle"
                 alt="logo"
-                // height="inherit"
+                height="2300"
               />
             )}
             {this.state.showAds && (

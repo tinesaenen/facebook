@@ -28,9 +28,9 @@
   /* --rechterkolom-icons-oldStyle-newStyle: none; */
 
   /* posts */
-  --post-border-radius-oldStyle: 4px;
+  --post-border-radius-oldStyle: 10px;
   --post-border-radius-newStyle: 11px;
-  --post-border-color-oldStyle: 1px solid #dddfe2;
+  --post-border-color-oldStyle: 2.5px solid #dddfe2;
   --post-border-color-newStyle: 1px solid #e8eef6;
   --post-item-profile-name-color-oldStyle: #355899;
   --post-item-profile-name-color-newStyle: #0d76ff;
@@ -156,6 +156,14 @@
   line-height: 120%;
 }
 
+.oldStyle .item__profileNameContainer {
+  margin: 43px 25px 0px 0px;
+}
+
+.newStyle .item__profileNameContainer {
+  margin: 35px 25px 0px 0px;
+}
+
 .oldStyle .item__action {
   color: var(--post-item-action-color-oldStyle);
 }
@@ -219,14 +227,14 @@
   color: var(--post-item-subText-color-newStyle);
   line-height: 130%;
   color: #95989a;
-  font-size: 14px;
+  font-size: 28px;
 }
 
 .oldStyle .item__subText {
   color: var(--post-item-subText-color-oldStyle);
-  line-height: 115%;
+  line-height: 130%;
   color: black;
-  font-size: 14px;
+  font-size: 35px;
   padding-top: 3px;
 }
 
@@ -234,7 +242,7 @@
   color: var(--post-item-subText-color-newStyle);
   line-height: 130%;
   color: #474848;
-  font-size: 14px;
+  font-size: 35px;
 }
 
 .oldStyle .item__subTextBigNews {
@@ -267,6 +275,14 @@
 }
 
 /*----------------------andere css------------------------*/
+
+.rechterkolom__icons_oldStyle {
+  margin-top: 20px;
+}
+
+.linkerkolom__icons_oldStyle {
+  margin-top: 20px;
+}
 
 @font-face {
   font-family: "Din Medium Regular";
@@ -340,7 +356,7 @@ body {
 .leftColumn {
   height: 100%;
   width: 25%;
-  margin: 0 10px;
+  margin: 0 20px;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -359,7 +375,7 @@ body {
 
 .middleColumn {
   width: 35%;
-  margin: 0 10px;
+  margin: 20px 20px 0px 10px;
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
@@ -367,7 +383,7 @@ body {
 
 .rightColumn {
   width: 25%;
-  margin: 0 10px;
+  margin: 0 20px;
   height: 100%;
   overflow-y: auto;
 }
@@ -525,20 +541,17 @@ main {
   flex-direction: row;
 }
 
-.item__profileNameContainer {
-  margin: 17px 10px 0px 0px;
-}
 .item__profileImage {
   border-radius: 50%;
-  border: 1px;
+  border: 2.5px;
   border-style: solid;
   border-color: lightsteelblue;
-  margin: 10px;
+  margin: 25px;
 }
 
 .item__profileName {
   color: #4667a8;
-  font-size: 16px;
+  font-size: 35px;
 }
 
 /*
@@ -550,6 +563,7 @@ main {
 
 .item__messageSource {
   color: #4667a8;
+  font-size: 35px;
 }
 
 .item__bodyColor {
@@ -557,11 +571,12 @@ main {
 }
 
 .item__messageSourceWebsite {
-  margin: 4px 10px 0px 10px;
+  margin: 25px 25px 20px 25px;
 }
 
 .item__messageSourceWebsite a {
   text-decoration: none;
+  font-size: 35px;
 }
 
 .item__image {
@@ -569,27 +584,31 @@ main {
 }
 
 .item__text {
-  font-size: 18px;
-  margin: 4px 10px 3px 10px;
+  font-size: 45px;
+  margin: 10px 25px 15px 25px;
 }
 
 .item__statusText {
-  font-size: 18px;
-  line-height: 120%;
-  margin: 0px 10px 10px 10px;
+  font-size: 45px;
+  line-height: 135%;
+  margin: 0px 25px 18px 25px;
 }
 
 .item__action {
-  font-size: 16px;
+  font-size: 35px;
 }
 
 .item__actions {
-  padding: 8px 10px 5px 10px;
+  padding: 30px 10px 20px 20px;
 }
 
 .item__date {
-  margin: 3px 0px 5px 0px;
-  font-size: 14px;
+  margin: 16px 0px 12.5px 0px;
+  font-size: 28px;
+}
+
+.item__smiley {
+  font-size: 40px;
 }
 
 .item__notificationHeader {
@@ -616,18 +635,18 @@ main {
 }
 
 .item__pageNameContainer {
-  margin: 13px 10px 10px 0px;
+  margin: 45px 25px 25px 0px;
   line-height: 85%;
 }
 
 .item__gesponsord {
-  margin: 3px 0px 0px 0px;
+  margin: 18px 0px 0px 0px;
   font-size: 13px;
   color: grey;
 }
 
 .item__subText {
-  padding: 0px 10px 5px 10px;
+  padding: 0px 25px 12.5px 25px;
 }
 
 .item__notificationText {
@@ -654,24 +673,24 @@ main {
 
 .item__adName,
 .item__gesponsord {
-  font-size: 13px;
+  font-size: 30px;
   color: #95989a;
 }
 
 .item__gesponsordBolletje {
-  font-size: 9px;
+  font-size: 22px;
 }
 
 .item__textAd {
   color: #0d76ff;
-  font-size: 10px;
-  margin: 4px 10px 0px 10px;
+  font-size: 25px;
+  margin: 10px 25px 0px 25px;
   line-height: 130%;
 }
 
 .item__subTextAd {
-  padding: 0px 10px 0px 10px;
-  font-size: 10px;
+  padding: 0px 25px 0px 25px;
+  font-size: 28px;
   color: #95989a;
   line-height: 130%;
 }
@@ -918,4 +937,8 @@ main {
   .modal-content {
     width: 100%;
   }
+}
+
+.linkerkolom__icons_oldStyle {
+  margin-right: 50px;
 }

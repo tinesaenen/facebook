@@ -60,7 +60,7 @@ let DATA = [
     messageSourceWebsite: "www.hln.be",
     action: "heeft een bericht gedeeld van",
     messageResponse: "en 3 anderen hebben droevig gekeken naar dit bericht",
-    smiley: "😢😐",
+    smiley: "😢 😐",
     firstPost: true
   },
   {
@@ -2184,7 +2184,7 @@ let DATA = [
     profileImage: "/imagesProfilePages/goed_nieuws_vlaanderen.jpg",
     date: "5 minuten geleden",
     image: "/imagesPosts/stroper_natuurbeschermer.jpg",
-    messageSource: "Goed Nieuws Vlaanderen",
+    messageSource: "GNV",
     messageSourceWebsite: "goednieuws.vlaanderen",
     action: "heeft een bericht gedeeld van",
     messageResponse: "en 98 anderen hebben neutraal gekeken naar dit bericht",

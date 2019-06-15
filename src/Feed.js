@@ -380,8 +380,8 @@ export default class Feed extends Component {
           <img
             className="item__profileImage"
             src={ad.profileImage}
-            width={32}
-            height={32}
+            width={80}
+            height={80}
             alt={ad.pageName}
           />
           <div className="item__pageNameContainer">
@@ -407,8 +407,8 @@ export default class Feed extends Component {
           <img
             className="item__storyProfileImage"
             src={story.profileImage}
-            width={45}
-            height={45}
+            width={80}
+            height={80}
             alt={story.profileName}
           />
           <p className="item__storyProfileName">{story.profileName}</p>

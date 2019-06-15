@@ -241,8 +241,8 @@ export default class Feed extends Component {
           <img
             className="item__profileImage"
             src={news.profileImage}
-            width={45}
-            height={45}
+            width={90}
+            height={90}
             alt={news.profileName}
           />
           <div className="item__profileNameContainer">
@@ -279,8 +279,8 @@ export default class Feed extends Component {
           <img
             className="item__profileImage"
             src={bigNews.profileImage}
-            width={45}
-            height={45}
+            width={90}
+            height={90}
             alt={bigNews.profileName}
           />
           <div className="item__profileNameContainer">
@@ -321,8 +321,8 @@ export default class Feed extends Component {
           <img
             className="item__profileImage"
             src={bigNewsOwnPost.profileImage}
-            width={45}
-            height={45}
+            width={90}
+            height={90}
             alt={bigNewsOwnPost.profileName}
           />
           <div className="item__profileNameContainer">
@@ -373,8 +373,8 @@ export default class Feed extends Component {
           <img
             className="item__profileImage"
             src={picture.profileImage}
-            width={45}
-            height={45}
+            width={90}
+            height={90}
             alt={picture.profileName}
           />
           <div className="item__profileNameContainer">
@@ -404,8 +404,8 @@ export default class Feed extends Component {
           <img
             className="item__profileImage"
             src={modalPost.profileImage}
-            width={45}
-            height={45}
+            width={90}
+            height={90}
             alt={modalPost.profileName}
           />
           <div className="item__profileNameContainer">
@@ -443,8 +443,8 @@ export default class Feed extends Component {
           <img
             className="item__profileImage"
             src={modalVideo.profileImage}
-            width={45}
-            height={45}
+            width={90}
+            height={90}
             alt={modalVideo.profileName}
           />
           <div className="item__profileNameContainer">
@@ -460,8 +460,8 @@ export default class Feed extends Component {
             muted
             loop
             id="ownVideo"
-            width="495"
-            height="310"
+            width="1332"
+            height="830"
             onClick={this.onClickModalVideo.bind(this, modalVideo)}
           >
             <source src={modalVideo.video} type="video/mp4" />
@@ -485,8 +485,8 @@ export default class Feed extends Component {
           <img
             className="item__profileImage"
             src={gif.profileImage}
-            width={45}
-            height={45}
+            width={90}
+            height={90}
             alt={gif.profileName}
           />
           <div className="item__profileNameContainer">
@@ -515,8 +515,8 @@ export default class Feed extends Component {
           <img
             className="item__profileImage"
             src={video.profileImage}
-            width={45}
-            height={45}
+            width={90}
+            height={90}
             alt={video.profileName}
           />
           <div className="item__profileNameContainer">
@@ -528,8 +528,8 @@ export default class Feed extends Component {
         <div className="item__body">
           <div className="item__subText">{video.text}</div>
           <iframe
-            width="495"
-            height="308"
+            width="1332"
+            height="828.8"
             src={video.videolink}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -551,8 +551,8 @@ export default class Feed extends Component {
           <img
             className="item__profileImage"
             src={status.profileImage}
-            width={45}
-            height={45}
+            width={90}
+            height={90}
             alt={status.profileName}
           />
           <div className="item__profileNameContainer">
@@ -629,8 +629,8 @@ export default class Feed extends Component {
           <img
             className="item__profileImage"
             src={ad.profileImage}
-            width={45}
-            height={45}
+            width={90}
+            height={90}
             alt={ad.pageName}
           />
           <div className="item__pageNameContainer">
@@ -654,8 +654,8 @@ export default class Feed extends Component {
           <img
             className="item__storyProfileImage"
             src={story.profileImage}
-            width={45}
-            height={45}
+            width={90}
+            height={90}
             alt={story.profileName}
           />
           <p className="item__storyProfileName">{story.profileName}</p>
