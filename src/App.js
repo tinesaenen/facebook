@@ -100,19 +100,18 @@ export default class App extends Component {
     return (
       <div className="app">
         <header className="header">
-          <button
+          {/* <button
             id="switch"
             onClick={this.onSwitch.bind(this)}
             style={{ position: "absolute", right: 0 }}
           >
-            Switch
-          </button>
+          </button> */}
           <div className="logo_search_container">
             <img
               src="/imagesIcons/logo_fb_oldStyle.png"
               className="header__logo logo_oldStyle"
               alt="logo"
-              height="62.5"
+              height="60"
               onClick={this.onClickScrollDown.bind(this)} // fix me
             />
             <img
@@ -194,11 +193,11 @@ export default class App extends Component {
                 height="2300"
               />
             )}
-            {this.state.showAds && (
+            {/* {this.state.showAds && (
               <div className="storyContainer">
                 <Feed className="horizontalFeed" types={["story"]} />
               </div>
-            )}
+            )} */}
             {this.state.showAds && (
               <div className="rightColumnScroll">
                 <Feed

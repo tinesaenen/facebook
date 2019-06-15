@@ -400,22 +400,22 @@ export default class Feed extends Component {
     );
   }
 
-  renderStory(story) {
-    return (
-      <div className="item story-item" key={story.id}>
-        <div className="item__storyItem">
-          <img
-            className="item__storyProfileImage"
-            src={story.profileImage}
-            width={80}
-            height={80}
-            alt={story.profileName}
-          />
-          <p className="item__storyProfileName">{story.profileName}</p>
-        </div>
-      </div>
-    );
-  }
+  // renderStory(story) {
+  //   return (
+  //     <div className="item story-item" key={story.id}>
+  //       <div className="item__storyItem">
+  //         <img
+  //           className="item__storyProfileImage"
+  //           src={story.profileImage}
+  //           width={80}
+  //           height={80}
+  //           alt={story.profileName}
+  //         />
+  //         <p className="item__storyProfileName">{story.profileName}</p>
+  //       </div>
+  //     </div>
+  //   );
+  // }
 
   renderIntroPicture(introPicture) {
     return (
