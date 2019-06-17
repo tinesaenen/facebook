@@ -99,8 +99,8 @@ export default class Feed extends Component {
           this.props.types.includes(item.type) &&
           !item.target &&
           !item.firstPost &&
-          !item.emotionStatus &&
-          !this.seen.has(item)
+          !item.emotionStatus
+        // !this.seen.has(item)
       );
       newItem = choice(newItems);
     }

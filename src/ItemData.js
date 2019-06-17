@@ -185,6 +185,24 @@ let DATA = [
     firstPost: true
   },
 
+  {
+    type: "bigNewsOwnPost",
+    dt: 1234981243,
+    text:
+      "Facebook Depression: 5 Ways Facebook Could Be Secretly Making You Feel Bad",
+    subText:
+      "Is Facebook depression real? Since social media became more popular among people, there have been studies looking into any potential side effects of long-term use.",
+    profileName: "The Verge",
+    profileImage: "/imagesProfilePages/the_verge.jpg",
+    date: "9 minuten geleden",
+    image: "/imagesIntro/facebook-depression-800x529.jpg",
+    messageSource: "Norman Simon",
+    messageSourceWebsite: "www.theverge.com",
+    action: "heeft een bericht gedeeld",
+    smiley: "😨",
+    firstPost: true
+  },
+
   // --------------------------------------facebook schandalen-------------------------------------------//
 
   {
@@ -391,6 +409,20 @@ let DATA = [
     firstPost: true
   },
 
+  {
+    type: "picture",
+    dt: 1234981243,
+    text: "Onderzoeksvraag op de cover van het procesfolio",
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    date: "56 minuten geleden",
+    image: "/imagesIntro/procesfolio.JPG",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 256 anderen hebben gelachen naar dit bericht",
+    smiley: "🤪",
+    firstPost: true
+  },
+
   // --------------------------------------emoties proberen tracken-------------------------------------------//
 
   {
@@ -423,6 +455,20 @@ let DATA = [
     firstPost: true
   },
 
+  {
+    type: "video",
+    dt: 1234981243,
+    text: "Affectiva Automotive AI",
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    date: "2 minuten geleden",
+    videolink: "https://www.youtube.com/embed/V_rr7pDPdNM",
+    action: "heeft een video geplaatst",
+
+    smiley: "😀",
+    firstPost: true
+  },
+
   // -------------------------------------Google Docs-----------------------------------------//
 
   {
@@ -439,20 +485,6 @@ let DATA = [
   },
 
   {
-    type: "video",
-    dt: 1234981243,
-    text:
-      "How To Set Up Your Facebook Pixel For Beginners In 2019 | Easy Facebook Pixel Tutorial",
-    profileName: "Jason Wardrop",
-    profileImage: "/imagesProfilePeople/jason_wardrop.jpg",
-    date: "9 minuten geleden",
-    videolink: "https://www.youtube.com/embed/SkYNivD8iM8",
-    action: "heeft een video geplaatst",
-    messageResponse: "en 3 anderen hebben verwonderd gereageerd op dit bericht",
-    smiley: "😮",
-    firstPost: true
-  },
-  {
     type: "picture",
     dt: 1234981243,
     text: "I assure you, Facebook Respects your privacy... YEAH RIGHT!? 😂",
@@ -466,19 +498,6 @@ let DATA = [
     firstPost: true
   },
 
-  {
-    type: "picture",
-    dt: 1234981243,
-    text: "Heeey, ik verkoop mijn procesfolio na de jury!",
-    profileName: "Tine Saenen",
-    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
-    date: "56 minuten geleden",
-    image: "/imagesIntro/procesfolio_mockup.png",
-    action: "heeft een bericht gedeeld",
-    messageResponse: "en 256 anderen hebben gelachen naar dit bericht",
-    smiley: "🤪",
-    firstPost: true
-  },
   {
     type: "bigNewsOwnPost",
     dt: 1234981243,
@@ -1618,7 +1637,7 @@ let DATA = [
     type: "ad",
     target: "reg",
     dt: 1234981243,
-    profileImage: "/public/imagesProfilePages/als_ge_van_a_zijt.jpg",
+    profileImage: "/imagesProfilePages/als_ge_van_a_zijt.jpg",
     pageName: "Als ge van Antwerpen zijt...",
     image: "/imagesPosts/creme_m_reg.jpg",
     text: "Creme Marieke",
@@ -2264,7 +2283,7 @@ let DATA = [
     emotionStatus: "surprise",
     order: 2,
     dt: 1234981243,
-    profileImage: "/public/imagesProfilePages/mrmint.jpeg",
+    profileImage: "/imagesProfilePages/mrmint.jpeg",
     pageName: "Mr. Minit",
     image: "/imagesPosts/ksurprise.jpg",
     text: "Kinder Surprise",
@@ -3819,7 +3838,7 @@ let DATA = [
     dt: 1234981243,
     text: "I feel you",
     profileName: "RT",
-    profileImage: "/public/imagesProfilePages/rt.png",
+    profileImage: "/imagesProfilePages/rt.png",
     date: "43 minuten geleden",
     image: "https://media.giphy.com/media/2rtQMJvhzOnRe/giphy.gif",
     action: "heeft een video geplaatst",
