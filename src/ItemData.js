@@ -423,6 +423,8 @@ let DATA = [
     firstPost: true
   },
 
+  // -------------------------------------Google Docs-----------------------------------------//
+
   {
     type: "picture",
     dt: 1234981243,
@@ -430,11 +432,9 @@ let DATA = [
     profileName: "Tine Saenen",
     profileImage: "/imagesProfilePeople/Tine_Saenen.png",
     date: "1 minutte geleden",
-    image: "/imagesIntro/wordpress.png",
+    image: "/imagesIntro/google_doc.png",
     action: "heeft een foto geplaatst",
-    messageResponse:
-      "en 1 anderen hebben geïnteresseerd gekeken naar dit bericht",
-    smiley: "🧐",
+    smiley: "😀",
     firstPost: true
   },
 
@@ -645,6 +645,17 @@ let DATA = [
 
   // —LIEVEN—//
 
+  {
+    type: "notification",
+    target: "lieven",
+    dt: 1234981243,
+    message:
+      "Lieven, ben jij dit? Ik voeg je tag toe aan een foto die een van vrienden heeft geüpload!",
+    text: "We tagegn je zodat je over op Facebook gekend bent",
+    image: "/imagesPosts/lieven_disu.png",
+    textTitle: "Facebook automatic tags"
+  },
+
   // —LAURA—//
 
   // —RENATE—//
@@ -666,8 +677,7 @@ let DATA = [
     type: "notification",
     target: "an",
     dt: 1234981243,
-    message:
-      "Ben je gefascineerd door de donkere kant van de maan? 🌚 Misschien kan dit album je verderhelpen?",
+    message: "Ben je gefascineerd door de donkere kant van de maan? 🌚",
     text: "Dark Side Of The Moon by Pink Floyd",
     image: "/imagesPosts/moon.jpg",
     textTitle:
@@ -786,25 +796,25 @@ let DATA = [
 
   // —X—//
 
-  // {
-  //   type: "notification",
-  //   dt: 1234981243,
-  //   message: "Je bent gespannen... ontspannen kan met deze foto's",
-  //   text:
-  //     "Say goodbye to insomnia and experience sleep like you never slept before.",
-  //   image: "/imagesNotifications/relax_app.jpg",
-  //   textTitle: "Relax Melodies — Sleep like never before"
-  // },
-  // ,
-  // {
-  //   type: "notification",
-  //   dt: 1234981243,
-  //   message:
-  //     "We hebben je gezicht gevonden op 31 foto's die door je vrienden zijn geüpload. We hebben de vrijheid genomen om jouw tag toe te voegen.",
-  //   text: "Zelf taggen voor een kleine prijs met de Dymo label maker",
-  //   image: "/imagesAds/label_maker.jpg",
-  //   textTitle: "Dymo — Goed gelabeld is goed geordend!"
-  // },
+  {
+    type: "notification",
+    dt: 1234981243,
+    message: "Je bent gespannen... ontspannen kan met deze foto's",
+    text:
+      "Say goodbye to insomnia and experience sleep like you never slept before.",
+    image: "/imagesNotifications/relax_app.jpg",
+    textTitle: "Relax Melodies — Sleep like never before"
+  },
+  ,
+  {
+    type: "notification",
+    dt: 1234981243,
+    message:
+      "We hebben je gezicht gevonden op 31 foto's die door je vrienden zijn geüpload. We hebben de vrijheid genomen om jouw tag toe te voegen.",
+    text: "Zelf taggen voor een kleine prijs met de Dymo label maker",
+    image: "/imagesAds/label_maker.jpg",
+    textTitle: "Dymo — Goed gelabeld is goed geordend!"
+  },
 
   // -------------------------------------------------------------------MINI NOTIFICATION----------------------------------------------------------------------//
   // -------------------------------------------------------------------MINI NOTIFICATION----------------------------------------------------------------------//
@@ -926,8 +936,17 @@ let DATA = [
     target: "reg",
     order: 2,
     dt: 1234981243,
-    message: "Hey Reg, wat vond je van de masterproef van ..." //fix me
+    message: "Hey Reg, wat vond je van de masterproef van Madelon Vlam?"
   },
+
+  {
+    type: "miniNotification",
+    target: "reg",
+    order: 2,
+    dt: 1234981243,
+    message: "Reg! Er is goed nieuws gepost op de pagina van Sint Lucas!"
+  },
+
   {
     type: "miniNotification",
     target: "reg",
@@ -955,6 +974,14 @@ let DATA = [
     message:
       "Hey Frederik, waarom vind ik nergens waar je woont? Wil je je adres even toevoegen?"
   },
+  {
+    type: "miniNotification",
+    target: "frederik",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Frederik... ik heb gezien dat je een fake profiel hebt aangemaakt. Dit wordt niet getolereerd binnen onze community. Je account wordt dan ook onmiddelijk verwijderd uit het systeem. "
+  },
 
   // -LIEVEN-//
 
@@ -965,6 +992,15 @@ let DATA = [
     dt: 1234981243,
     message:
       "Hey Lieven, je hebt nog steeds geen Facebookprofiel. Weet je zeker dat je er geen wil aanmaken?"
+  },
+
+  {
+    type: "miniNotification",
+    target: "lieven",
+    order: 2,
+    dt: 1234981243,
+    message:
+      "Hey Lieven, ik heb een facebookprofiel gevonden met jouw foto's erop. Is dit een echt of een vals profiel?"
   },
 
   // —LAURA—//
@@ -1017,21 +1053,23 @@ let DATA = [
     target: "mieke",
     order: 2,
     dt: 1234981243,
-    message: "Mieke..."
+    message: "Hey Mieke, je haar ligt goed vandaag!"
   },
   {
     type: "miniNotification",
     target: "mieke",
     order: 2,
     dt: 1234981243,
-    message: "Mieke..."
+    message:
+      "Mieke, ik heb nog artiesten gevonden die, net zoals jij, agressief knuteselen: https://www.hln.be/in-de-buurt/zelzate/juffen-knutselen-zelf-speelpleinmeubilair-in-elkaar~a34d9c31/"
   },
   {
     type: "miniNotification",
     target: "mieke",
     order: 2,
     dt: 1234981243,
-    message: "Mieke..."
+    message:
+      "Hey Mieke, binnenkort komt de reunie van Sint Lucas eraan. Zet ik je op aanwezig?"
   },
 
   // —AN—//
@@ -1051,14 +1089,6 @@ let DATA = [
     dt: 1234981243,
     message:
       "Ik heb gelezen dt je grafisch werk zich tussen analoog en digitaal bevindt. Misschien moet je eens kijken op de pagina van analogvsdigitalart? Zeer sterk werk!"
-  },
-
-  {
-    type: "miniNotification",
-    target: "an",
-    order: 2,
-    dt: 1234981243,
-    message: "Ben je gefascineerd door de donkere kant van de maan? 🌚 B"
   },
 
   // —VITAL—//
@@ -1240,6 +1270,13 @@ let DATA = [
     dt: 1234981243,
     message: "Wil je ook geld doneren voor de armen in osn land?"
   },
+  {
+    type: "miniNotification",
+    emotionStatus: "sadness",
+    order: 3,
+    dt: 1234981243,
+    message: "Laat die tranen maar lopen!"
+  },
 
   // —DISGUST—//
 
@@ -1248,21 +1285,7 @@ let DATA = [
     emotionStatus: "disgust",
     order: 1,
     dt: 1234981243,
-    message: "disgust"
-  },
-  {
-    type: "miniNotification",
-    emotionStatus: "disgust",
-    order: 2,
-    dt: 1234981243,
-    message: "disgust2"
-  },
-  {
-    type: "miniNotification",
-    emotionStatus: "disgust",
-    order: 3,
-    dt: 1234981243,
-    message: "disgust3"
+    message: "Wist je dat Durian het slechtst ruikende fruit is?"
   },
 
   // —CONTEMPT—//
@@ -1590,6 +1613,18 @@ let DATA = [
     subText:
       "Serax looks for beauty every day, for the good things that make life worth living, the things that create a home that inspires happiness. To experience, to share, and to discover…"
   },
+
+  {
+    type: "ad",
+    target: "reg",
+    dt: 1234981243,
+    profileImage: "/public/imagesProfilePages/als_ge_van_a_zijt.jpg",
+    pageName: "Als ge van Antwerpen zijt...",
+    image: "/imagesPosts/creme_m_reg.jpg",
+    text: "Creme Marieke",
+    subText:
+      "Zowel iambachtelijk gemaakt ijs en wafels, maar er is zoveel lekkers. We maken het met passie en vakkunde, en lees daarom de reacties via de sociale media, ..."
+  },
   {
     type: "ad",
     target: "reg",
@@ -1636,7 +1671,101 @@ let DATA = [
 
   // —FREDERIK—//
 
+  {
+    type: "ad",
+    target: "frederik",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/st_luc.png",
+    pageName: "Sint Lucas",
+    image: "/imagesPosts/studio Data.jpg",
+    text: "Studio Data, Code en Ontwerp!",
+    subText:
+      "Kiezen tussen een studie design of development, da’s nergens voor nodig. Studio data combineert het beste van de twee en doet dat als àllereerste opleiding in Antwerpen. De relatie tussen mens en computer was namelijk nog nooit zo spannend. En de vraag naar creatieve geeks nog nooit zo groot"
+  },
+
+  {
+    type: "ad",
+    target: "frederik",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/st_luc.png",
+    pageName: "Sint Lucas",
+    image: "/imagesPosts/champdactionad.jpg",
+    text: "ChampdAction.LAbO",
+    subText:
+      "ChampdAction.LAbO is a laboratory for young creators, organized by Antwerp-based production platform for new music and interdisciplinary arts ChampdAction, and part of deSingel's International Summer School. Its main purpose is creation through means of communication and interaction between the various arts disciplines: dance, music, fine arts and others."
+  },
+
+  {
+    type: "ad",
+    target: "frederik",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/nodebox.jpeg",
+    pageName: "Nodebox Live",
+    image: "/imagesPosts/nodebox.jpg",
+    text: "Nodebox Live",
+    subText: "Datavisualisation and computational design made easy"
+  },
+
+  {
+    type: "ad",
+    target: "frederik",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/bump.png",
+    pageName: "Bump",
+    image: "/imagesPosts/wes_bos_ad.png",
+    text: "Wes Bos",
+    subText:
+      "Here you will find an archive of slide decks, demos and resources I've made available after my talks. I am available for speaking opportunities as well as both ..."
+  },
+
+  {
+    type: "ad",
+    target: "frederik",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/codepen.png",
+    pageName: "Codepen",
+    image: "/imagesPosts/codepen-pen.png",
+    text: "CodePen",
+    subText:
+      "Build, share, and learn JavaScript, CSS, and HTML with our online code editor. Discover web applications and hire talent from the world's largest community of ..."
+  },
+
   // —LIEVEN—//
+
+  {
+    type: "ad",
+    target: "lieven",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/nodebox.jpeg",
+    pageName: "Nodebox Live",
+    image: "/imagesPosts/nodebox.jpg",
+    text: "Nodebox Live",
+    subText: "Datavisualisation and computational design made easy"
+  },
+
+  {
+    type: "ad",
+    target: "lieven",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/codepen.png",
+    pageName: "Codepen",
+    image: "/imagesPosts/codepen-pen.png",
+    text: "CodePen",
+    subText:
+      "Build, share, and learn JavaScript, CSS, and HTML with our online code editor. Discover web applications and hire talent from the world's largest community of ..."
+  },
+
+  {
+    type: "ad",
+    target: "lieven",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/lindenw.jpg",
+    pageName: "Lindenwood University",
+    image: "/imagesPosts/game design.jpg",
+    text: "Game Design",
+    subText:
+      "Lindenwood University offers you the chance to earn a bachelor of arts degree in game design. The Game Design program is designed to prepare you for working in a game studio environment..."
+  },
 
   // —LAURA—//
 
@@ -1737,6 +1866,54 @@ let DATA = [
   },
 
   // —MIEKE—//
+
+  {
+    type: "ad",
+    target: "mieke",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/mhka.jpg",
+    pageName: "M HKA",
+    image: "/imagesPosts/mhka_mieke.jpeg",
+    text: "NBOX: Winter School | 4 feb - 26 feb 2017",
+    subText:
+      "Het M HKA reserveert de vijfde verdieping voor verrassende interventies en intieme pop-uppresentaties. INBOX is een plaats die inspireert en verrast, en ons een blik gunt in het universum van bevlogen denkers en doeners. Met INBOX creëert het M HKA ruimte voor een aantal van de vragen die vaak aan het museum worden gesteld."
+  },
+
+  {
+    type: "ad",
+    target: "mieke",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/kask_g.png",
+    pageName: "KASK Gent",
+    image: "/imagesProfilePages/kask_gent.jpeg",
+    text: "KASK DRAMA | 14 juni om 14:13",
+    subText:
+      "Masterstudenten KASK DRAMA zetten alle masterproeven nog eens op een (weekend) rij. Vanavond in de Minard 19u Openingsspeech | 19u30 Some Things Last A Long Time | 21:30 liquid dreams. Enkel nog (laatste) tickets aan de kassa ter plaatse!"
+  },
+
+  {
+    type: "ad",
+    target: "mieke",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/onbetaalbaar_profo.jpg",
+    pageName: "Onbetaalbaar VZW",
+    image: "/imagesPosts/onbetaalbaar.jpg",
+    text:
+      "werkplaats die mensen, objecten, ideeën samenbrengt en streeft naar een materialisme dat emotie in zich draagt.",
+    subText:
+      "ONBETAALBAAR is een onderzoeksproject geboren uit liefde voor objecten. Het is zowel werkplaats als denktank, een plek waar meubelmakers, stoffeerders, schrijve..."
+  },
+
+  {
+    type: "ad",
+    target: "mieke",
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/campo.jpeg",
+    pageName: "Campo Antwerpen",
+    image: "/imagesProfilePages/campo_zaal.jpg",
+    text: "Campo.",
+    subText: "Trust in art."
+  },
 
   // —AN—//
 
@@ -1975,13 +2152,136 @@ let DATA = [
 
   // —SADNESS—//
 
+  {
+    type: "ad",
+    emotionStatus: "sadness",
+    order: 2,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/canada.png",
+    pageName: "Canada",
+    image: "/imagesPosts/smoking_sad.png",
+    text: "Stop Smoking",
+    subText: "You are not the only one smoking"
+  },
+
+  {
+    type: "ad",
+    emotionStatus: "sadness",
+    order: 2,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/unicef.png",
+    pageName: "Unicef",
+    image: "/imagesPosts/unicef.jpg",
+    text: "He's startving. We're not. It's time to share.",
+    subText:
+      "UNICEF welcomes the initiative of the Government to increase child benefits for the most vulnerable children"
+  },
+
+  {
+    type: "ad",
+    emotionStatus: "sadness",
+    order: 2,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/aspca.jpg",
+    pageName: "ASPCA",
+    image: "/imagesPosts/saddoggo.png",
+    text: "Join ASPCA.org and help",
+    subText: "Donate now 18 euro's a month"
+  },
+
+  {
+    type: "ad",
+    emotionStatus: "sadness",
+    order: 2,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/imdb.png",
+    pageName: "IMDB",
+    image: "/imagesPosts/champ.jpg",
+    text: "Recently declared 'the saddest movies ever'.",
+    subText: "Tears guaranteed!"
+  },
+
   // —DISGUST—//
+
+  {
+    type: "ad",
+    emotionStatus: "disgust",
+    order: 2,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/wendy.jpeg",
+    pageName: "Bewust leven",
+    image: "/imagesPosts/Jaloezie-en-afgunst500bl-c.png",
+    text: "Jaloezie en afgunst",
+    subText: "Meer informatie op het gratis telefoonnummer +31628843480"
+  },
+
+  {
+    type: "ad",
+    emotionStatus: "disgust",
+    order: 2,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/standaard_boekhandel.png",
+    pageName: "Standaar Boekhandel",
+    image: "/imagesProfilePages/boek_afgunst.jpg",
+    text: "Afgunst van Saski Noort",
+    subText: "Een Nederlandstalige literaire thriller van Saskia Noort"
+  },
+
+  {
+    type: "ad",
+    emotionStatus: "disgust",
+    order: 2,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/standaard_boekhandel.png",
+    pageName: "Standaar Boekhandel",
+    image: "/imagesPosts/disgust_book.jpg",
+    text:
+      "The Revolting Self: Perspectives on the Psychological, Social, and Clinical Implications of Self-Directed Disgust",
+    subText:
+      "Self-disgust (viewing the self as an object of abhorrence) is somewhat of a novel subject for psychological research and theory, yet its significance is increasingly being recognised in the clinical domain..."
+  },
 
   // —CONTEMPT—//
 
   // —FEAR—//
 
   // —SURPRISE—//
+
+  {
+    type: "ad",
+    emotionStatus: "surprise",
+    order: 2,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/bol_com.jpg",
+    pageName: "Bol.com",
+    image: "/imagesPosts/home_alone.jpg",
+    text: "Home Alone",
+    subText: "Deze klassieker kan je niet missen uit je collectie! "
+  },
+
+  {
+    type: "ad",
+    emotionStatus: "surprise",
+    order: 2,
+    dt: 1234981243,
+    profileImage: "/public/imagesProfilePages/mrmint.jpeg",
+    pageName: "Mr. Minit",
+    image: "/imagesPosts/ksurprise.jpg",
+    text: "Kinder Surprise",
+    subText: "A treat for the imagination and exciting new toys"
+  },
+
+  {
+    type: "ad",
+    emotionStatus: "surprise",
+    order: 2,
+    dt: 1234981243,
+    profileImage: "/imagesProfilePages/dl.jpg",
+    pageName: "Dream Land",
+    image: "/imagesPosts/lol_surprise_ott_channel_promo.png",
+    text: "Lol Surprise Channel",
+    subText: "Check out the website for more LOL!"
+  },
 
   // —X—//
 
@@ -2121,6 +2421,24 @@ let DATA = [
 
   // —REG—//
 
+  {
+    type: "news",
+    target: "reg",
+    dt: 1234981243,
+    text:
+      "At Tique Salon #11 artist Ksenia Galiaeva will present her new publication 'NOLEMON NOMELON' and graphic designer Reg Herygers will talk about the process of designing publications with and for artists. Ksenia Galiaeva The term ‘autocommunication’ as...",
+    profileName: "Arianne Janssens",
+    profileImage: "/imagesProfilePeople/Arianne_Janssens.jpeg",
+    date: "2 minuten geleden",
+    image: "/imagesPosts/reg_blauwe_knieen.jpg",
+    messageSource: "FOMO",
+    messageSourceWebsite:
+      "https://fomo.be/fomo_events/tique-salon-11-ksenia-galiaeva-reg-herygers/",
+    action: "heeft gereageerd op een bericht van",
+    messageResponse: "en 3 anderen hebben gelachen gekeken naar dit bericht",
+    smiley: "🤩"
+  },
+
   // —FREDERIK—//
 
   // —LIEVEN—//
@@ -2218,6 +2536,22 @@ let DATA = [
 
   // —SURPRISE—//
 
+  // {
+  //   type: "news",
+  //   emotionStatus: "surprise",
+  //   dt: 1234981243,
+  //   text: "Steiner is het eens met Horner: Banden zijn net een kinder surprise",
+  //   profileName: "Ilse Danis",
+  //   profileImage: "/imagesProfilePeople/Ilse_Danis.jpeg",
+  //   date: "2 seconden geleden",
+  //   image: "/imagesPosts/news_surprise_kin.jpg",
+  //   messageSource: "HLN",
+  //   messageSourceWebsite: "www.hln.be",
+  //   action: "heeft een bericht gedeeld van",
+  //   smiley: "😮",
+  //   firstPost: true
+  // },
+
   // —X—//
 
   {
@@ -2239,48 +2573,6 @@ let DATA = [
   {
     type: "news",
     dt: 1234981243,
-    text: "Senaat herroept Trumps noodtoestand",
-    profileName: "Lucien de Feyter",
-    profileImage: "/imagesProfilePeople/Lucien_De_Feyter.jpeg",
-    date: "3 minuten geleden",
-    image: "/imagesPosts/Senaat_Trump_noodtoestand.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 34 anderen hebben neutraal gekeken naar dit bericht",
-    smiley: "😐"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Hij kwam van Kanegem en hij wist van (n)iets",
-    profileName: "Wouter Gijsemans",
-    profileImage: "/imagesProfilePeople/Wouter_Gijsemans.jpeg",
-    date: "3 uur geleden",
-    image: "/imagesPosts/kardinaal_daneels.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 34 anderen hebben neutraal gekeken naar dit bericht",
-    smiley: "😶"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Kamer keurt minimale dienstverlening in gevangenissen goed",
-    profileName: "Tessa Van Den Driessche",
-    profileImage: "/imagesProfilePeople/Tessa_Van_den_Driessche.jpeg",
-    date: "2 uur geleden",
-    image: "/imagesPosts/gevangenissen.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 21 anderen hebben neutraal gekeken naar dit bericht",
-    smiley: "😶"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
     text: "Lachen met Lubach",
     profileName: "Sara Hendriksen",
     profileImage: "/imagesProfilePeople/Sara_Hendriksen.jpeg",
@@ -2291,35 +2583,6 @@ let DATA = [
     action: "heeft een bericht gedeeld van",
     messageResponse: "en 21 anderen hebben gelachen naar dit bericht",
     smiley: "😁"
-  },
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "Pleidooi voor een harde Brexit",
-    profileName: "Rik Torfs",
-    profileImage: "/imagesProfilePeople/Rik_Torfs.jpeg",
-    date: "2 uur geleden",
-    image: "/imagesPosts/pleidooi_brexit_voetbal.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 21 anderen hebben droevig naar dit bericht",
-    smiley: "😢"
-  },
-
-  {
-    type: "news",
-    dt: 1234981243,
-    text: "The Intercept trekt stekker uit Snowden-archief",
-    profileName: "Melanie Baerdman",
-    profileImage: "/imagesProfilePeople/Melanie_Baerdman.jpeg",
-    date: "23 minuten geleden",
-    image: "/imagesPosts/snowden.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 21 anderen hebben gelachen naar dit bericht",
-    smiley: "😃"
   },
 
   {
@@ -2351,21 +2614,6 @@ let DATA = [
     smiley: "😭"
   },
 
-  {
-    type: "news",
-    dt: 1234981243,
-    text:
-      "Joodse graven geschonden in aanloop van protesten tegen antisemitisme",
-    profileName: "Aline Van Heverlee",
-    profileImage: "/imagesProfilePeople/Aline_Van_Heverlee.jpeg",
-    date: "20 minuten geleden",
-    image: "/imagesPosts/ALine_van_Heverlee_joosdeGraven.jpg",
-    messageSource: "De Standaard",
-    messageSourceWebsite: "standaard.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse: "en 20 anderen hebben kwaad gekeken naar dit bericht",
-    smiley: "😡"
-  },
   {
     type: "news",
     dt: 1234981243,
@@ -2539,24 +2787,6 @@ let DATA = [
       "en 231 anderen hebben verbaasd en kwaad gekeken naar dit bericht",
     smiley: "😱"
   },
-  {
-    type: "bigNews",
-    dt: 1234981243,
-    text:
-      "Trump dreigt met nieuwe douanetarieven op tal van Europese producten",
-    subText:
-      "De Amerikaanse president Donald Trump dreigt vandaag met nieuwe douanetarieven op tal van Europese producten, indien de Europeanen geen onderhandelingen zouden opstarten over een nieuw handelsakkoord....",
-    profileName: "Yikhay Lee",
-    profileImage: "/imagesProfilePeople/Yikhay_Lee.jpeg",
-    date: "2 minuten geleden",
-    image: "/imagesPosts/trump_geld.jpeg",
-    messageSource: " Het Laatste Nieuws",
-    messageSourceWebsite: "hln.be",
-    action: "heeft een bericht gedeeld van",
-    messageResponse:
-      "en 231 anderen hebben hopeloos en kwaad gekeken naar dit bericht",
-    smiley: "😫"
-  },
 
   {
     type: "bigNews",
@@ -2621,6 +2851,21 @@ let DATA = [
   // —WERNER—//
 
   {
+    type: "picture",
+    target: "werner",
+    order: 8,
+    dt: 1234981243,
+    text: "Herinneringen ophalen? Om te delen met vrienden klik hier.",
+    profileName: "Facebook",
+    profileImage: "/imagesProfilePages/facebook.png",
+    date: "2 minuten geleden",
+    image: "/imagesPosts/Werner1.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 256 anderen hebben gelachen naar dit bericht",
+    smiley: "🤪"
+  },
+
+  {
     type: "bigNewsOwnPost",
     target: "werner",
     dt: 1234981243,
@@ -2679,6 +2924,24 @@ let DATA = [
   },
 
   // —GEERT—//
+  {
+    type: "bigNewsOwnPost",
+    target: "geert",
+    dt: 1234981243,
+    text: "Zes boeken genomineerd voor de Woutertje Pieterse Prijs 2019",
+    subText:
+      "Op 11 maart zijn in het programma Kunststof op NPO radio 1 de nominaties voor de Woutertje Pieterse Prijs bekendgemaakt. De jury, onder voorzitterschap van Noraly Beyer, nomineerde zes boeken uit het volledige aanbod aan kinder- en jeugdboeken dat verscheen tussen 1 januari en 31 december 2018. Welke van de zes boeken bekroond wordt met de 32e Woutertje Pieterse Prijs, wordt op donderdag 11 april 2019 bekendgemaakt tijdens de uitreiking in Vlaams Cultuurhuis De Brakke Grond.",
+    profileName: "Woutertje Pieterse Prijs",
+    profileImage: "/imagesProfilePages/wpp.svg",
+    date: "15 minuten geleden",
+    image: "/imagesPosts/tierenduin_wpp.png",
+    messageSource: "Woutertjepieterseprijs.nl",
+    messageSourceWebsite: "Woutertjepieterseprijs.nl",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 287 anderen hebben gelachen naar dit bericht",
+    smiley: "😁 😍"
+  },
+
   // —HUGO—//
 
   {
@@ -2721,7 +2984,45 @@ let DATA = [
 
   // —REG—//
   // —FREDERIK—//
+
+  {
+    type: "bigNewsOwnPost",
+    target: "frederik",
+    dt: 1234981243,
+    text: "Welkom in Assenende!",
+    subText:
+      "Aan de toog van Café Passé weten ze het al langer: de Assenedenaars zijn best tevreden over hun gemeente. Wat maakt het leven in Assenede dan zo aangenaam? En op welke vlakken kan het nog beter? Spendeer een dag in Assenede, van opstaan tot slapengaan, en ontdek de sterktes en zwaktes van uw gemeente.",
+    profileName: "De Standaard",
+    profileImage: "/imagesProfilePages/standaard.jpg",
+    date: "33 minuten geleden geleden",
+    image: "/imagesPosts/standaard.png",
+    messageSource: "standaard",
+    messageSourceWebsite: "De Standaard",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 3 anderen hebben verwonderd gekeken naar dit bericht",
+    smiley: "🙂"
+  },
+
   // —LIEVEN—//
+
+  {
+    type: "bigNewsOwnPost",
+    target: "lieven",
+    dt: 1234981243,
+    text: "Game Design op C-Mine Genk",
+    subText:
+      "Een gedreven team coacht jou tijdens je studietraject binnen de opleiding. Docenten met jarenlange praktijkervaring werken samen met theoretici en onderzoekers. Ze laten je proeven van alle aspecten van een ontwerp- en onderzoekspraktijk.",
+    profileName: "Luca School of Arts",
+    profileImage: "/imagesProfilePages/luca.svg",
+    date: "23 minuten geleden geleden",
+    image: "/imagesPosts/cmine.jpg",
+    messageSource: "www.luca-arts.be",
+    messageSourceWebsite: "Luca",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 54 anderen hebben verwonderd gekeken naar dit bericht",
+    smiley: "🧐"
+  },
+
   // —LAURA—//
 
   {
@@ -2761,6 +3062,21 @@ let DATA = [
     smiley: "😍"
   },
   // —RENATE—//
+
+  {
+    type: "picture",
+    target: "renate",
+    dt: 1234981243,
+    text:
+      "Gouden German Design Award voor het boekontwerp 'The Living Surface - Lizan Freijsen'",
+    profileName: "German Design Award",
+    profileImage: "/imagesProfilePages/design_german.jpg",
+    date: "3 minuten geleden",
+    image: "/imagesPosts/renate_german.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 425 anderen hebben gelachen naar dit bericht",
+    smiley: "😁"
+  },
 
   {
     type: "bigNewsOwnPost",
@@ -2817,6 +3133,43 @@ let DATA = [
   },
 
   // —MIEKE—//
+
+  {
+    type: "bigNewsOwnPost",
+    target: "mieke",
+    dt: 1234981243,
+    text: "Gents collectief geeft oude voorwerpen een nieuwe ziel",
+    subText:
+      "Tekenaar Mieke Hooghe kijkt op van haar werk: de zwarte letters onder haar penseel vormen de woorden 'materialisme met emotie'...",
+    profileName: "De Morgen",
+    profileImage: "/imagesProfilePages/de_morgen.png",
+    date: "3 minuten geleden",
+    image: "/imagesPosts/gent_mieke.jpeg",
+    messageSource: "www.demorgen.be",
+    messageSourceWebsite: "www.demorgen.be",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 23 anderen hebben verbaasd gekeken naar dit bericht",
+    smiley: "😀"
+  },
+
+  {
+    type: "bigNewsOwnPost",
+    target: "mieke",
+    dt: 1234981243,
+    text: "Designers aan de slag met afdankertjes",
+    subText:
+      "Dit weekend is er op C-mine in Genk een verkoop van originele meubelen en voorwerpen. Een groep ontwerpers en restaurateurs heeft van oude afgedankte spullen, nieuwe dingen gemaakt. Die worden zaterdag en zondag per opbod verkocht.",
+    profileName: "Radio 2",
+    profileImage: "/imagesProfilePages/radio2.svg",
+    date: "2 minuten geleden",
+    image: "/imagesPosts/Radio2_mieke.jpg",
+    messageSource: "Radio 2",
+    messageSourceWebsite: "www.radio2.be",
+    action: "heeft een bericht gedeeld van ",
+    messageResponse: "en 86 anderen hebben gelachen naar dit bericht",
+    smiley: "😁"
+  },
+
   // —AN—//
 
   {
@@ -2958,6 +3311,26 @@ let DATA = [
   },
 
   {
+    type: "bigNews",
+    emotionStatus: "anger",
+    dt: 1234981243,
+    text:
+      "Trump dreigt met nieuwe douanetarieven op tal van Europese producten",
+    subText:
+      "De Amerikaanse president Donald Trump dreigt vandaag met nieuwe douanetarieven op tal van Europese producten, indien de Europeanen geen onderhandelingen zouden opstarten over een nieuw handelsakkoord....",
+    profileName: "Yikhay Lee",
+    profileImage: "/imagesProfilePeople/Yikhay_Lee.jpeg",
+    date: "2 minuten geleden",
+    image: "/imagesPosts/trump_geld.jpeg",
+    messageSource: " Het Laatste Nieuws",
+    messageSourceWebsite: "hln.be",
+    action: "heeft een bericht gedeeld van",
+    messageResponse:
+      "en 231 anderen hebben hopeloos en kwaad gekeken naar dit bericht",
+    smiley: "😫"
+  },
+
+  {
     type: "bigNewsOwnPost",
     emotionStatus: "anger",
     dt: 1234981243,
@@ -2996,10 +3369,47 @@ let DATA = [
     smiley: "😭"
   },
 
+  {
+    type: "bigNewsOwnPost",
+    emotionStatus: "sadness",
+    dt: 1234981243,
+    text: "Grumpy Cat, whose grumpiness brought joy to the internet, has died",
+    subText:
+      "Grumpy Cat, one of the internet’s most famous cats, died this week due to complications with a urinary tract infection...",
+    profileName: "The Verge",
+    profileImage: "/imagesProfilePages/the_verge.jpg",
+    date: "2 minuten geleden",
+    image: "/imagesPosts/Grumpy-Cat-Obit.jpg",
+    messageSource: "www.theverge.com",
+    messageSourceWebsite: "www.theverge.com",
+    action: "heeft een bericht gedeeld",
+    messageResponse:
+      "en 12k anderen hebben verdrietig gekeken naar dit bericht",
+    smiley: "😓"
+  },
+
   // —DISGUST—//
   // —CONTEMPT—//
   // —FEAR—//
   // —SURPRISE—//
+
+  {
+    type: "bigNewsOwnPost",
+    emotionStatus: "surprise",
+    dt: 1234981243,
+    text:
+      "Taylor Swift gives surprise Pride Month performance at the Stonewall Inn",
+    subText:
+      "Taylor Swift gave a surprise performance Friday night at the Stonewall Inn and wished the crowd at the site of the LGBTQ rights landmark a happy Pride Month.",
+    profileName: "The Verge",
+    profileImage: "/imagesProfilePages/the_verge.jpg",
+    date: "9 minuten geleden",
+    image: "/imagesPosts/swift.jpeg",
+    messageSource: "www.theverge.com",
+    messageSourceWebsite: "www.theverge.com",
+    action: "heeft een bericht gedeeld",
+    smiley: "😮 🌈"
+  },
 
   // —X—//
 
@@ -3021,7 +3431,35 @@ let DATA = [
 
   // —FREDERIK—//
 
+  {
+    type: "video",
+    target: "frederik",
+    dt: 1234981243,
+    text: "Artist Lauren McCarthy Will Be Your Home's Brain",
+    profileName: "Sasha Smets",
+    profileImage: "/imagesProfilePeople/Sasha_Smets.jpeg",
+    date: "3 minuten geleden",
+    videolink: "https://www.youtube.com/embed/jRzsaVg_Cr4",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 4 anderen hebben blij gereageerd op dit bericht",
+    smiley: "😀"
+  },
+
   // —LIEVEN—//
+
+  {
+    type: "video",
+    target: "lieven",
+    dt: 1234981243,
+    text: "Amazing Science Toys/Gadgets 4",
+    profileName: "Mr. Mind Blown",
+    profileImage: "/imagesProfilePages/mrmind.jpg",
+    date: "59 minuten geleden",
+    videolink: "https://www.youtube.com/embed/mwzExNYs12Y",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 4 anderen hebben blij gereageerd op dit bericht",
+    smiley: "😀"
+  },
 
   // —LAURA—//
 
@@ -3046,21 +3484,6 @@ let DATA = [
   },
 
   // —VITAL—//
-
-  {
-    type: "video",
-    target: "vital",
-    dt: 1234981243,
-    text:
-      "Five Creepy Facts About The Madeleine McCann Case...Totally freaked me out man",
-    profileName: "Techlore",
-    profileImage: "/imagesProfilePages/techlore.jpg",
-    date: "2 minuten geleden",
-    videolink: "https://www.youtube.com/embed/4Z7H5tXqMGo",
-    action: "heeft een video geplaatst",
-    messageResponse: "en 92 anderen hebben kwaad gereageerd op dit bericht",
-    smiley: "🤔"
-  },
 
   // —ONNO—//
 
@@ -3127,20 +3550,6 @@ let DATA = [
   {
     type: "video",
     dt: 1234981243,
-    text:
-      "Paid two bucks at a local flea market for this old, rusty cleaver. It did not look like much and hat a lot of rust pitting on one side, the handle was ruined and had severe blow marks on the spine. The seller seemed surprised I took it. As you can see in the video, as soon as I took the first layer of rust out, the makers mark became visible. It is made by an old German company named DANKRE, that specialized in kitchen cutlery. After all the rust was removed, it became visible that the cleaver was made from two different types of steel, one hard for the cutting edge and one softer for the main body and spine, so it can better take shocks. From this I get this was a good quality tool that deserves to be restored.",
-    profileName: "The Small Workshop",
-    profileImage: "/imagesProfilePages/the_small_workshop.jpg",
-    date: "49 minuten geleden",
-    videolink: "https://www.youtube.com/embed/hS9PA6SuyyU",
-    action: "heeft een video geplaatst",
-    messageResponse: "en 3 anderen hebben verwonderd gereageerd op dit bericht",
-    smiley: "😮"
-  },
-
-  {
-    type: "video",
-    dt: 1234981243,
     text: "OMG check:",
     profileName: "Inne Grijp",
     profileImage: "/imagesProfilePeople/inne_Grijp.jpeg",
@@ -3163,19 +3572,6 @@ let DATA = [
     messageResponse:
       "en 24 anderen hebben verwonderd gereageerd op dit bericht",
     smiley: "😮"
-  },
-  {
-    type: "video",
-    dt: 1234981243,
-    text:
-      "Five Creepy Facts About The Madeleine McCann Case...Totally freaked me out man",
-    profileName: "Erik Bosmans",
-    profileImage: "/imagesProfilePeople/Erik_Bosmans.jpeg",
-    date: "12 minuten geleden",
-    videolink: "https://www.youtube.com/embed/_0AuBVd7NjM",
-    action: "heeft een video geplaatst",
-    messageResponse: "en 24 anderen hebben kwaad gereageerd op dit bericht",
-    smiley: "😡"
   },
 
   // --------------------------------------------------------------------------GIFS----------------------------------------------------------------------//
@@ -3293,9 +3689,38 @@ let DATA = [
 
   // —ONNO—//
 
-  // —***********—EMOTIES——***********—//
+  // —***********************—EMOTIES——***********—//
 
   // —JOY—//
+  {
+    type: "gif",
+    emotionStatus: "joy",
+    order: 3,
+    dt: 1234981243,
+    text: "champaiiiinnnn 🍾🍾🍾🍾🍾🍾🍾🍾",
+    profileName: "Erik Bosmans",
+    profileImage: "/imagesProfilePeople/Erik_Bosmans.jpeg",
+    date: "zojuist",
+    image: "https://media.giphy.com/media/rjkJD1v80CjYs/giphy.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 7 anderen hebben ingestemd met dit bericht",
+    smiley: "😆"
+  },
+
+  {
+    type: "gif",
+    emotionStatus: "joy",
+    order: 3,
+    dt: 1234981243,
+    text: "Approved :D",
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    date: "zojuist",
+    image: "https://media.giphy.com/media/XbxZ41fWLeRECPsGIJ/giphy.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 43 anderen hebben ingestemd met dit bericht",
+    smiley: "😂"
+  },
 
   // —ANGRY—//
 
@@ -3312,6 +3737,21 @@ let DATA = [
     action: "heeft een video geplaatst",
     messageResponse: "en 7 anderen hebben ingestemd met dit bericht",
     smiley: "😵"
+  },
+
+  {
+    type: "gif",
+    emotionStatus: "anger",
+    order: 3,
+    dt: 1234981243,
+    text: "...",
+    profileName: "Wouter Gijsemans",
+    profileImage: "/imagesProfilePeople/Wouter_Gijsemans.jpeg",
+    date: "zojuist",
+    image: "https://media.giphy.com/media/7NP07dTr1gZstAan9f/giphy.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 8 anderen hebben ingestemd met dit bericht",
+    smiley: "😡"
   },
 
   {
@@ -3359,6 +3799,48 @@ let DATA = [
 
   // —SADNESS—//
 
+  {
+    type: "gif",
+    emotionStatus: "sadness",
+    dt: 1234981243,
+    text: "I feel you",
+    profileName: "9gag",
+    profileImage: "/imagesProfilePages/9gag.png",
+    date: "58 minuten geleden",
+    image: "https://media.giphy.com/media/Ty9Sg8oHghPWg/giphy.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 9 anderen hebben gelachen met dit bericht",
+    smiley: "😢"
+  },
+
+  {
+    type: "gif",
+    emotionStatus: "sadness",
+    dt: 1234981243,
+    text: "I feel you",
+    profileName: "RT",
+    profileImage: "/public/imagesProfilePages/rt.png",
+    date: "43 minuten geleden",
+    image: "https://media.giphy.com/media/2rtQMJvhzOnRe/giphy.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 70 anderen hebben gelachen met dit bericht",
+    smiley: "😢"
+  },
+
+  {
+    type: "gif",
+    emotionStatus: "sadness",
+    dt: 1234981243,
+    text: "I feel you",
+    profileName: "9gag",
+    profileImage: "/imagesProfilePages/9gag.png",
+    date: "43 minuten geleden",
+    image: "https://media.giphy.com/media/xhGs7QaEVy57W/giphy.gif",
+    action: "heeft een video geplaatst",
+    messageResponse: "en 70 anderen hebben gelachen met dit bericht",
+    smiley: "😢"
+  },
+
   // —DISGUST—//
 
   {
@@ -3380,9 +3862,24 @@ let DATA = [
 
   // —FEAR—//
 
+  // —SURPRISE—//
+
   {
     type: "gif",
-    emotionStatus: "fear",
+    emotionStatus: "surprise",
+    dt: 1234981243,
+    text: "😮",
+    profileName: "Simon Martin",
+    profileImage: "/imagesProfilePeople/Simon_Martin.jpeg",
+    date: "10 minuten geleden",
+    image: "https://media.giphy.com/media/5VKbvrjxpVJCM/giphy.gif",
+    action: "heeft een video geplaatst",
+    smiley: "😧"
+  },
+
+  {
+    type: "gif",
+    emotionStatus: "surprise",
     dt: 1234981243,
     text: "I'd die right there",
     profileName: "Margot Janssens",
@@ -3390,11 +3887,21 @@ let DATA = [
     date: "10 minuten geleden",
     image: "https://media.giphy.com/media/Yzzsh5eVQcqMU/giphy.gif",
     action: "heeft een video geplaatst",
-    messageResponse: "en 90 anderen hebben vreselijk gekeken naar dit bericht",
     smiley: "😵"
   },
 
-  // —SURPRISE—//
+  {
+    type: "gif",
+    emotionStatus: "surprise",
+    dt: 1234981243,
+    text: "Surprise! I'm pregnant!",
+    profileName: "Ilke Strobe",
+    profileImage: "/imagesProfilePeople/Ilke_Strobe.jpeg",
+    date: "10 minuten geleden",
+    image: "https://media.giphy.com/media/l0HlO3BJ8LALPW4sE/giphy.gif",
+    action: "heeft een video geplaatst",
+    smiley: "😵"
+  },
 
   // —X—//
 
@@ -3411,18 +3918,6 @@ let DATA = [
     smiley: "🤩"
   },
 
-  {
-    type: "gif",
-    dt: 1234981243,
-    text: "Er moet dringend iets gebeuren aan ons klimaat hoor...",
-    profileName: "Magalie Felix",
-    profileImage: "/imagesProfilePeople/Magalie_Felix.jpeg",
-    date: "8 minuten geleden",
-    image: "https://media.giphy.com/media/Fr51PdEf2NxOE/giphy.gif",
-    action: "heeft een video geplaatst",
-    messageResponse: "en 56 anderen hebben een duim gegeven aan dit bericht",
-    smiley: "👍"
-  },
   {
     type: "gif",
     dt: 1234981243,
@@ -3459,30 +3954,6 @@ let DATA = [
     messageResponse: "en 98 anderen hebben serieus met dit bericht",
     smiley: "😕"
   },
-  {
-    type: "gif",
-    dt: 1234981243,
-    text: "😂🤣😂🤣😂🤣",
-    profileName: "Natan Konings",
-    profileImage: "/imagesProfilePeople/Natan_Konings.jpeg",
-    date: "2 seconden geleden",
-    image: "https://media.giphy.com/media/TIyJGNK325XGciFEnI/giphy.gif",
-    action: "heeft een video geplaatst",
-    messageResponse: "en 53 anderen hebben gelachen met dit bericht",
-    smiley: "😂"
-  },
-  {
-    type: "gif",
-    dt: 1234981243,
-    text: "Blijft grappig toch?",
-    profileName: "Philip Aerts",
-    profileImage: "/imagesProfilePeople/Philip_Aerts.jpeg",
-    date: "5 minuten geleden",
-    image: "https://media.giphy.com/media/iBcLqvp8FMwy3AiPGY/giphy.gif",
-    action: "heeft een video geplaatst",
-    messageResponse: "en 725 anderen hebben gelachen met dit bericht",
-    smiley: "😁"
-  },
 
   {
     type: "gif",
@@ -3504,21 +3975,6 @@ let DATA = [
   // --***********--PERSONEN----***********---//
 
   // —WERNER—//
-
-  {
-    type: "picture",
-    target: "werner",
-    order: 8,
-    dt: 1234981243,
-    text: "Herinneringen ophalen? Om te delen met vrienden klik hier.", //fix me
-    profileName: "Facebook",
-    profileImage: "/imagesProfilePages/facebook.png",
-    date: "2 minuten geleden",
-    image: "/imagesPosts/Werner1.jpg",
-    action: "heeft een bericht gedeeld",
-    messageResponse: "en 256 anderen hebben gelachen naar dit bericht",
-    smiley: "🤪"
-  },
 
   {
     type: "picture",
@@ -3556,6 +4012,21 @@ let DATA = [
     target: "geert",
     dt: 1234981243,
     text:
+      "Een tentoonstelling voor kinderen en iedereen die ooit kind is geweest. Met werk van illustratoren, filmmakers en kunstenaars waaronder Isabelle Vandenabeele, Fatinha Ramos, Kaatje Vermeire, Marc & Emma, Geert Vervaeke, Jacques en Lise, Sassafras De Bruyn, Klaas Verplancke, Tim Van den Abeele, Sabien Clement, Alain Verster, Karolien Raeymaekers, Saar De Buysere, Heike Sofia Villavicencio Rammeloo, Postkantoor 00/00/00, Tom Liekens, Maaike Huys, Luk Duflou, Julie Vangeel, Silke Groffy, Gudrun Makelberge, Jan De Kinder, Isidro Ferrer (Spa) en Icinori (Fra).",
+    profileName: "CC Sint Niklaas",
+    profileImage: "/imagesProfilePages/cc_st_nik.png",
+    date: "15 minuten geleden",
+    image: "/imagesPosts/biennale_geert.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 21 anderen hebben kwaad gereageerd op dit bericht",
+    smiley: "🤪"
+  },
+
+  {
+    type: "picture",
+    target: "geert",
+    dt: 1234981243,
+    text:
       "Al 25.500 leden!!! Word jij ook lid aangezien je in Antwerpen woont?",
     profileName: "Als ge van Antwerpen zijt...",
     profileImage: "/imagesProfilePages/als_ge_van_a_zijt.jpg",
@@ -3564,6 +4035,36 @@ let DATA = [
     action: "heeft een foto geplaatst",
     messageResponse: "en 3 anderen hebben kwaad gereageerd op dit bericht",
     smiley: "😡"
+  },
+
+  {
+    type: "picture",
+    target: "geert",
+    dt: 1234981243,
+    text:
+      "Al 25.500 leden!!! Word jij ook lid aangezien je in Antwerpen woont?",
+    profileName: "Sint Lucas",
+    profileImage: "/imagesProfilePages/st_luc.png",
+    date: "9 minuten geleden",
+    image: "/imagesPosts/geert_jury.png",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 925 anderen hebben blij gekeken naar dit bericht",
+    smiley: "👍🏻😁"
+  },
+
+  {
+    type: "picture",
+    target: "geert",
+    dt: 1234981243,
+    text:
+      "De dichter en de illustrator daagden elkaar uit om versjes of prenten te maken over ongewone huisdieren. Verrassende dieren en mensen zijn het gevolg: de (w)arme, de zakkenvuller, het spinnenkopje, de beestenwagen ... Steeds gekker en gekker werd het en toen was er dit prachtige prentenboek. Tekening en tekst vormen samen één grote woordspeling.",
+    profileName: "De Eenhoorn",
+    profileImage: "/imagesProfilePages/logo-de-eenhoorn.png",
+    date: "10 minuten geleden",
+    image: "/imagesPosts/geert_huisdieren.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 9 anderen hebben blij gereageerd op dit bericht",
+    smiley: "😁"
   },
 
   // —HUGO—//
@@ -3590,11 +4091,39 @@ let DATA = [
     text:
       "NEXT PRIVATE SALE on Sundays 19 May 2019, between 2pm and 6 pm. To get your personal invitation for private sales or to stay informed, please sign up",
     profileName: "Handbags Gerda De Ceukelaire",
-    profileImage: "/public/imagesProfilePages/gerda-de-ceukelaire_5be3ec22.png",
+    profileImage: "/imagesProfilePages/gerda-de-ceukelaire_5be3ec22.png",
     date: "9 minuten geleden",
     image: "/imagesPosts/handbags.jpg",
     action: "heeft een foto geplaatst",
     messageResponse: "en 7 anderen hebben verbaasd gereageerd op dit bericht",
+    smiley: "😍"
+  },
+
+  {
+    type: "picture",
+    target: "hugo",
+    dt: 1234981243,
+    text: "One of our models back in the day...",
+    profileName: "Hugo Boss",
+    profileImage: "/imagesProfilePages/boss.png",
+    date: "12 minuten geleden",
+    image: "/imagesPosts/hugo.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 802 anderen hebben gelachen naar dit bericht",
+    smiley: "😱"
+  },
+
+  {
+    type: "picture",
+    target: "hugo",
+    dt: 1234981243,
+    text: "Loving this!",
+    profileName: "Me Studio",
+    profileImage: "/imagesProfilePages/me_studio.png",
+    date: "14 minuten geleden",
+    image: "/imagesPosts/groen_me.png",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 635 anderen hebben gelachen naar dit bericht",
     smiley: "😍"
   },
 
@@ -3628,8 +4157,132 @@ let DATA = [
   },
 
   // —REG—//
+
+  {
+    type: "picture",
+    target: "reg",
+    dt: 1234981243,
+    text: "Throwback eindjury 2018",
+    profileName: "Sint Lucas",
+    profileImage: "/imagesProfilePages/st_luc.png",
+    date: "12 minuten geleden",
+    image: "/imagesPosts/reg_jury.JPG",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 123 anderen hebben blij gereageerd op dit bericht",
+    smiley: "😀"
+  },
+
+  {
+    type: "picture",
+    target: "reg",
+    dt: 1234981243,
+    text: "Integratedddd",
+    profileName: "Sebastiaan Van Donicnk",
+    profileImage: "/imagesProfilePeople/sebi.jpg",
+    date: "3 minuten geleden",
+    image: "/imagesPosts/reg_sebi.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 825 anderen hebben gelachen naar dit bericht",
+    smiley: "😍"
+  },
+
   // —FREDERIK—//
+
+  {
+    type: "picture",
+    target: "frederik",
+    order: 8,
+    dt: 1234981243,
+    text:
+      "Jawel, we zijn begonnen aan de voorbereidingen voor Fri3d Camp 2020! Geen nieuwe locatie deze keer. We blijven op De Kluis, en we houden het aantal deelnemers (512). We willen onze energie vooral stoppen in het verder verbeteren van de Fri3d Camp ervaring voor de deelnemers.",
+    profileName: "Fr3d Camp",
+    profileImage: "/imagesProfilePages/friedcamp_ok.png",
+    date: "4 minuten geleden",
+    image: "/imagesPosts/friedcamp.png",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 54 anderen hebben gelachen naar dit bericht",
+    smiley: "🙂"
+  },
+
+  {
+    type: "picture",
+    target: "frederik",
+    order: 8,
+    dt: 1234981243,
+    text:
+      "City in a bottle. A computer game that focusses on a virtual ecosystem of plants and insects. The game world mechanics are based on the principles of emergence and evolution by natural selection. Complex social behavior and new life forms will evolve by themselves as the game progresses. The game music adapts in synch with life in the game world. Players have a number of options to domesticate their own organisms and observe their influence on the evolution. The game engine is an open source, cross-platform version of NodeBox optimized for hardware-accelerated image processing (NodeBox for OpenGL). City In A Bottle is funded by the Flemish Audiovisual Fund. It is developed in collaboration with Champ d'Action (Belgium-based ensemble for contemporary classical music). Scientific advisor is Johan Gielis (author of the superformula, first published in the March 2003 American Journal of Botany). People working on City In A Bottle: Nicolas Marinus (project manager), Ludivine Lechat (visual artist), Tim Vets (Champ d'Action, musician), Frederik De Bleser, Tom De Smedt.",
+    profileName: "CHAMPDACTION",
+    profileImage: "/imagesProfilePages/st_luc.png",
+    date: "8 minuten geleden",
+    image: "/imagesPosts/champdaction_fre.png",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 8 anderen hebben gelachen naar dit bericht",
+    smiley: "😁"
+  },
+
+  {
+    type: "picture",
+    target: "frederik",
+    order: 8,
+    dt: 1234981243,
+    text:
+      "It's here, it's here! 🎉 Discover our amazing aftermovie of two (even more amazing) days of Hack The Future! We had a blast and hope you had too!",
+    profileName: "Hack The Future",
+    profileImage: "/imagesProfilePages/hackthefuture.jpg",
+    date: "9 minuten geleden",
+    image: "/imagesPosts/htf.png",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 23 anderen hebben gelachen naar dit bericht",
+    smiley: "😁"
+  },
+
   // —LIEVEN—//
+
+  {
+    type: "picture",
+    target: "lieven",
+    order: 8,
+    dt: 1234981243,
+    text: "Thanks!!",
+    profileName: "Tine Saenen",
+    profileImage: "/imagesProfilePeople/Tine_Saenen.png",
+    date: "8 minuten geleden",
+    image: "/imagesPosts/equaliser.png",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 3 anderen hebben gelachen naar dit bericht",
+    smiley: "😁"
+  },
+
+  {
+    type: "picture",
+    target: "lieven",
+    order: 8,
+    dt: 1234981243,
+    text: "🤖",
+    profileName: "ESA Saint-Luc Liège",
+    profileImage: "/imagesProfilePages/esa.jpg",
+    date: "46 minuten geleden",
+    image: "/imagesPosts/lieven_picture.jpg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 635 anderen hebben gelachen naar dit bericht",
+    smiley: "👍🏻"
+  },
+
+  {
+    type: "picture",
+    target: "lieven",
+    order: 8,
+    dt: 1234981243,
+    text: "The Augmented Arthropod.",
+    profileName: "Arduino",
+    profileImage: "/imagesProfilePages/arduino.jpg",
+    date: "9 minuten geleden",
+    image: "/imagesPosts/arduino_rob.jpeg",
+    action: "heeft een bericht gedeeld",
+    messageResponse: "en 2 anderen hebben gelachen naar dit bericht",
+    smiley: "😁😍"
+  },
+
   // —LAURA—//
   {
     type: "picture",
@@ -3706,6 +4359,64 @@ let DATA = [
   },
 
   // —MIEKE—//
+
+  {
+    type: "picture",
+    target: "mieke",
+    dt: 1234981243,
+    text: "Throwback!",
+    profileName: "Sint Lucas",
+    profileImage: "/imagesProfilePages/st_luc.png",
+    date: "14 minuten geleden",
+    image: "/imagesPosts/mieke_integrated.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 76 anderen hebben gelachen naar dit bericht",
+    smiley: "👍🏻"
+  },
+
+  {
+    type: "picture",
+    target: "mieke",
+    dt: 1234981243,
+    text: "Throwback!",
+    profileName: "Renee Verboven",
+    profileImage: "/imagesProfilePeople/Renee_Verboven.jpeg",
+    date: "57 minuten geleden",
+    image: "/imagesPosts/simpsons_mieke.jpg",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 9 anderen hebben gelachen naar dit bericht",
+    smiley: "😍"
+  },
+
+  {
+    type: "picture",
+    target: "mieke",
+    dt: 1234981243,
+    text: "Throwback!",
+    profileName: "Nick Mattan",
+    profileImage: "/imagesProfilePeople/nick.png",
+    date: "4 minuten geleden",
+    image: "/imagesPosts/gif_mieke.gif",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 7 anderen hebben gelachen naar dit bericht",
+    smiley: "👍🏻"
+  },
+
+  {
+    type: "picture",
+    target: "mieke",
+    dt: 1234981243,
+    text:
+      "Het profiel dat we vandaag in de kijker willenz etten is dat van Mieke Hooghe",
+    profileName: "Good Reads",
+    profileImage: "/imagesProfilePages/goodreads.jpeg",
+    date: "21 minuten geleden",
+    image: "/imagesPosts/miekei_goodrea.png",
+    action: "heeft een foto geplaatst",
+    messageResponse: "en 2 anderen hebben gelachen naar dit bericht",
+    smiley: "👍"
+  },
+
   // —AN—//
   {
     type: "picture",
@@ -3840,8 +4551,7 @@ let DATA = [
     profileName: "Vice",
     profileImage: "/imagesProfilePages/vice.jpg",
     date: "38 minuten geleden",
-    image:
-      "/imagesPosts/photographs-of-people-doing-things-that-make-them-really-really-happy-body-image-1457633766-size_1000.webp",
+    image: "/imagesPosts/happy_lady_frog.png",
     action: "heeft een bericht gedeeld",
     messageResponse: "en 52 anderen hebben gelachen naar dit bericht",
     smiley: "😁"
@@ -3966,7 +4676,6 @@ let DATA = [
     date: "6 minuten geleden",
     image: "/imagesPosts/sad_tumblr.jpg",
     action: "heeft een bericht gedeeld",
-    messageResponse: "en 9K anderen hebben kwaad gekeken naar dit bericht",
     smiley: "😕"
   },
 
@@ -3983,8 +4692,36 @@ let DATA = [
     date: "9 minuten geleden",
     image: "/imagesPosts/disgust_worm.jpg",
     action: "heeft een bericht gedeeld",
-    messageResponse: "en 12 anderen hebben gelachen naar dit bericht",
     smiley: "🤢🤮"
+  },
+
+  {
+    type: "picture",
+    emotionStatus: "disgust",
+    order: 9,
+    dt: 1234981243,
+    text:
+      "Actions of Disgust. The possible actions resulting from any of the states/intensity of disgust mentioned earlier are shown in the following figure:",
+    profileName: "Hanne Bregman",
+    profileImage: "/imagesProfilePeople/Hanne_Bregman.jpeg",
+    date: "54 minuten geleden",
+    image: "/imagesPosts/actions of disgust.png",
+    action: "heeft een bericht gedeeld",
+    smiley: "🤢"
+  },
+
+  {
+    type: "picture",
+    emotionStatus: "disgust",
+    order: 9,
+    dt: 1234981243,
+    text: "Waarheid!",
+    profileName: "Steven Denteer",
+    profileImage: "/imagesProfilePeople/Steven_Denteneer.jpeg",
+    date: "2 minuten geleden",
+    image: "/imagesPosts/afgust_blauw.png",
+    action: "heeft een bericht gedeeld",
+    smiley: "😕"
   },
 
   {
@@ -4019,23 +4756,66 @@ let DATA = [
   },
   // —CONTEMPT—//
   // —FEAR—//
-  // —SURPRISE—//
-
-  // —X—//
 
   {
     type: "picture",
+    emotionStatus: "fear",
+    order: 9,
     dt: 1234981243,
-    text:
-      "Mijn dochter Hailey is sinds deze ochtend vermist! Ze is 12jaar 1m55 heeft u haar gezien contacteer me aub en delen is lief...Laatst gezien in schoten",
-    profileName: "Simon Martin",
-    profileImage: "/imagesProfilePeople/Simon_Martin.jpeg",
-    date: "59 minuten geleden",
-    image: "/imagesPosts/vermist_schoten.jpg",
-    action: "heeft een foto geplaatst",
-    messageResponse: "en 3 anderen hebben droevig gereageerd op dit bericht",
-    smiley: "😢"
+    text: "Today's the anniversary of Edvard Munch's 'The Scream'",
+    profileName: "Facebook",
+    profileImage: "/imagesProfilePages/facebook.png",
+    date: "8 seconden geleden",
+    image: "/imagesPosts/scream_fb.jpg",
+    action: "heeft een bericht gedeeld",
+    smiley: "😱"
   },
+
+  {
+    type: "picture",
+    emotionStatus: "contempt",
+    order: 9,
+    dt: 1234981243,
+    text: "Today's the anniversary of Edvard Munch's 'The Scream'",
+    profileName: "Facebook",
+    profileImage: "/imagesProfilePages/facebook.png",
+    date: "8 seconden geleden",
+    image: "/imagesPosts/scream_fb.jpg",
+    action: "heeft een bericht gedeeld",
+    smiley: "😱"
+  },
+
+  // —SURPRISE—//
+
+  {
+    type: "picture",
+    emotionStatus: "surprise",
+    order: 9,
+    dt: 1234981243,
+    text: "I'd die...",
+    profileName: "Mitchell Reacts",
+    profileImage: "/imagesProfilePeople/Mitchell.jpg",
+    date: "9 seconden geleden",
+    image: "/imagesPosts/surprise_scream.jpg",
+    action: "heeft een bericht gedeeld",
+    smiley: "😱"
+  },
+
+  {
+    type: "picture",
+    emotionStatus: "surprise",
+    order: 9,
+    dt: 1234981243,
+    text: "Today's the anniversary of Edvard Munch's 'The Scream'",
+    profileName: "Facebook",
+    profileImage: "/imagesProfilePages/facebook.png",
+    date: "8 seconden geleden",
+    image: "/imagesPosts/scream_fb.jpg",
+    action: "heeft een bericht gedeeld",
+    smiley: "😱"
+  },
+
+  // —X—//
 
   {
     type: "picture",
@@ -4122,7 +4902,35 @@ let DATA = [
 
   // —FEAR—//
 
-  // —SURPRISE—//
+  // special//
+
+  // {
+  //   type: "status",
+  //   emotionStatus: "engagement",
+  //   dt: 1234981243,
+  //   text:
+  //     "Ben op zoek naar een kat (liefst een kattin), regio Antwerpen! Danku",
+  //   profileName: "Dennis Heyens",
+  //   profileImage: "/imagesProfilePeople/Dennis_Heyens.jpeg",
+  //   action: "heeft een status geplaatst",
+  //   date: "30 seconden geleden",
+  //   messageResponse: "en 3 anderen hebben gereageerd op dit bericht",
+  //   smiley: "😍"
+  // },
+
+  // {
+  //   type: "status",
+  //   emotionStatus: "valence",
+  //   dt: 1234981243,
+  //   text:
+  //     "Ben op zoek naar een kat (liefst een kattin), regio Antwerpen! Danku",
+  //   profileName: "Dennis Heyens",
+  //   profileImage: "/imagesProfilePeople/Dennis_Heyens.jpeg",
+  //   action: "heeft een status geplaatst",
+  //   date: "30 seconden geleden",
+  //   messageResponse: "en 3 anderen hebben gereageerd op dit bericht",
+  //   smiley: "😍"
+  // },
 
   // —X—//
 
