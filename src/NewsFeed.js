@@ -104,13 +104,15 @@ export default class Feed extends Component {
       );
       newItem = choice(newItems);
     }
-    this.seen.add(newItem);
-    newItem = JSON.parse(JSON.stringify(newItem));
-    newItem.id = Math.floor(Math.random() * 1000000);
-    const items = this.state.items;
-    //items.unshift(newItem);
-    items.push(newItem);
-    this.setState({ items });
+    if (newItem) {
+      this.seen.add(newItem);
+      newItem = JSON.parse(JSON.stringify(newItem));
+      newItem.id = Math.floor(Math.random() * 1000000);
+      const items = this.state.items;
+      //items.unshift(newItem);
+      items.push(newItem);
+      this.setState({ items });
+    }
   }
 
   fetchNewItems() {
