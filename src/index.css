@@ -382,7 +382,7 @@ body {
   overflow-x: hidden;
 }
 
-.middleColumn .infinite-scroll-component {
+#newsfeed-wrapper {
   height: calc(100vh - 100px) !important;
 }
 
@@ -425,7 +425,7 @@ body {
 }
 
 .header__icons_oldStyle {
-  padding-left: 716px;
+  padding-left: 1997px;
 }
 
 .header__icons_newStyle {
